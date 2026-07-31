@@ -1,0 +1,305 @@
+# Section 6.1
+
+## Review of Topics
+
+One categorical variable (ch.1):
+
+- The long run proportion of "context".
+
+One quantitative variable (ch.2):
+
+- The long run average "context.
+
+Two categorical variables (ch.5):
+
+- The long run difference in proportion of "context" between "group 1" and "group 2".
+
+![](media/image1.png)Two quantitative variables (ch.6):
+
+- The long run difference in average "context" between "group 1" and "group 2".
+
+## Overview
+
+Summarization of quantitative data
+
+- Dot plots
+
+- Five number summaries
+
+- Boxplots
+
+- Difference in averages
+
+## Five Number Summaries
+
+A common method of looking at quantitative data is with a boxplot. There are 6 components that make up the boxplot.
+
+- **Minimum** - the smallest value
+
+- **Lower quartile (Q1)** - value for which 25% of the data lie below ("median" of minimum and median
+
+- **Median** - the middle value (if there is an even number of values, then take the average of the two values in the middle)
+
+- **Upper Quartile (Q3)** - the value for which 75% of the data lie below ("median" of median and max)
+
+- **Maximum** - the largest value
+
+- **Outliers** - unusual extreme values in the data
+
+![](media/image2.png)
+
+**Interquartile range**
+
+- ![](media/image3.png)![](media/image4.png)The difference between \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+- This will be resistant to outliers
+
+**Boxplot**
+
+- Visual display of the five number summary
+
+## Boxplot Example
+
+Suppose you collected the following ten values from your sample:
+
+![](media/image5.png)23 22 27 23 28 26 27 27 25 21
+
+The first step is to arrange the numbers in order from least to greatest:
+
+![](media/image6.png)![](media/image7.png)21 22 23 23 25 26 27 27 27 28
+
+![](media/image8.png)![](media/image9.png)
+
+Since there is an even count of values, we need to take the average of the two values in the middle. Here, the values are 25 and 26, so the median is 25.5.
+
+![](media/image10.png)![](media/image11.png)**Note:** There appears to be a discrepancy in the calculations of Q1 and Q3. I have seen some software include the use of the median and other software exclude the median. However, this discrepancy is negligible because the goal of quartiles for summarizing data is to get an idea of how the data behaves. In this class, you are not expected to calculate quartiles other than the median.
+
+![](media/image12.png)![](media/image13.png)![](media/image14.png)
+
+![](media/image15.png)![](media/image16.png)![](media/image17.png)Boxplot on the data
+
+![](media/image18.png)![](media/image19.png)21 22 23 23 25 26 27 27 27 28
+
+Boxplot to scale
+
+![](media/image20.png)![](media/image21.png)![Chart, box and whisker chart Description automatically generated](media/image22.png){width="2.7777777777777777in" height="4.166666666666667in"}
+
+Here, you can see that Q1 is 23 and Q3 is 27. Therefore, the interquartile range is $27 - 23 = 4$
+
+To find outliers, check values that are $Q1 - 1.5 \cdot IQR$ or $Q3 + 1.5 \cdot IQR$. Some software programs use points on the plot to specify values that are outliers.
+
+Question: are there any outliers in this example set of data?
+
+![](media/image23.png)![](media/image24.png)![](media/image25.png)![](media/image26.png)![](media/image27.png)
+
+## Geyser Example
+
+Recall the example that measured the amount of time between eruptions at Old Faithful. The data and boxplot are below for the years 1978 and 2003.
+
+![Table Description automatically generated](media/image28.png){width="4.3157895888014in" height="1.2103576115485564in"}
+
+![](media/image29.png)![](media/image30.png)![https://s3.amazonaws.com/wiley-p/411/media/images/106/RT_w0135.png](media/image31.png){width="4.535191382327209in" height="2.6197397200349957in"}
+
+![](media/image32.png)![](media/image33.png)![](media/image34.png)![https://s3.amazonaws.com/wiley-p/411/media/images/106/RT_w0134.png](media/image35.png){width="4.9078947944007in" height="1.6564140419947506in"}
+
+Note: The whiskers of the plot do not extend to the minimum. They extend to the farthest point that is not considered an outlier.
+
+![](media/image36.png)
+
+![](media/image37.png)Questions
+
+1)  What is the explanatory variable? Is it categorical or quantitative?
+
+2)  ![](media/image38.png)![](media/image39.png)![](media/image40.png)![](media/image41.png)What is the response variable? Is it categorical or quantitative?
+
+3)  Describe the difference between the two distributions. Which year had a higher average time between eruptions?
+
+![](media/image42.png)
+
+## Notation
+
+![](media/image43.png)
+
++---------------+-------------------------------------------+------------------------------------------------------------+
+|               | **Categorical**                           | **Quantitative**                                           |
+|               |                                           |                                                            |
+|               | **(2 Groups)**                            | ![](media/image44.png)![](media/image45.png)**(2 Groups)** |
++:=============:+:=========================================:+:==========================================================:+
+| Parameter     | $$\pi_{1} - \pi_{2}$$                     | $$\mu_{1} - \mu_{2}$$                                      |
++---------------+-------------------------------------------+------------------------------------------------------------+
+| Statistic     | $${\widehat{p}}_{1} - {\widehat{p}}_{2}$$ | $${\overline{x}}_{1} - {\overline{x}}_{2}$$                |
++---------------+-------------------------------------------+------------------------------------------------------------+
+
+**Parameter:** The long run difference in average "context" between "group 1" and "group 2"
+
+**Important note:** This is not the same as "The long run average difference." We will talk more about this in Chapter 7.
+
+# Section 6.3
+
+## Parameters and Hypotheses
+
+**Parameter:**
+
+Long run difference in average "context here" between group 1 and group 2
+
+**Hypotheses:**
+
+Symbols
+
+$$H_{0}:\ \mu_{Group\ 1}\  - \ \mu_{Group\ 2} = 0$$
+
+$$H_{A}:\ \mu_{Group\ 1}\  - \ \mu_{Group\ 2} > OR < OR \neq 0$$
+
+**Words**
+
+Null: The long run difference in average "context" between group 1 and group 2 is equal to zero
+
+Alt: The long run difference in average "context" between group 1 and group 2 \_\_\_\_\_\_ zero
+
+## Validity conditions
+
+1)  At least 20 observations in each group
+
+2)  Distributions are not strongly skewed
+
+## Standard Error
+
+The standard error for two means is as follows:
+
+$$SE = \sqrt{\frac{s_{1}^{2}}{n_{1}} + \frac{s_{2}^{2}}{n_{2}}}$$
+
+## Two Sample T-test (Standardized Statistic)
+
+$$t = \frac{\left( {\overline{x}}_{Group\ 1}\  - \ {\overline{x}}_{Group\ 2} \right) - 0\ }{SE} = \frac{{\overline{x}}_{\ 1}\  - \ {\overline{x}}_{\ 2}}{\sqrt{\frac{s_{1}^{2}}{n_{1}} + \frac{s_{2}^{2}}{n_{2}}}}$$
+
+## Confidence Interval
+
+![](media/image46.png)
+
+$${\overline{x}}_{\ 1}\  - \ {\overline{x}}_{\ 2} \pm multipler\ *\sqrt{\frac{s_{1}^{2}}{n_{1}} + \frac{s_{2}^{2}}{n_{2}}}$$
+
+Formal Interpretation: We are 95% confident that the long run difference in average **"*context"*** between "***group A"*** and **"*group B"*** falls between \_\_\_\_\_\_ and \_\_\_\_\_\_.
+
+# Example (Aquarium)
+
+![](media/image47.png)![](media/image48.png)An aquarium is testing out a new brand of chemicals to balance pH levels for their fish. The aquarium has 100 available fish tanks to compare the two chemicals, so they randomly assign 50 tanks to each chemical and record the pH level after the pH levels stabilize after a few days. The summary statistics and data plots are below. Is there a difference between the two chemicals?
+
+![](media/image49.png)![](media/image50.png)![](media/image51.png)![](media/image52.png)![](media/image53.png)![](media/image54.png)![](media/image55.png)![](media/image56.png)![](media/image57.png)![Chart Description automatically generated](media/image58.png){width="3.8172047244094487in" height="2.8629035433070866in"}
+
+  ---------------------------------------------------------
+   **Chemical**            **Mean**              **SD**
+  -------------- ---------------------------- -------------
+     Current      ![](media/image59.png)7.10      0.01
+
+       New                   7.61                 0.03
+  ---------------------------------------------------------
+
+Answer the following questions.
+
+1)  ![](media/image60.png)![](media/image61.png)Was the study observational or experimental?
+
+2)  ![](media/image62.png)![](media/image63.png)Did the study use random sampling or random assignment?
+
+3)  ![](media/image64.png)![](media/image65.png)![](media/image66.png)![](media/image67.png)What is the observational unit?
+
+4)  What is the explanatory variable? Is this categorical or quantitative?
+
+![](media/image68.png)![](media/image69.png)
+
+5)  What is the response variable? is this categorical or quantitative?
+
+![](media/image70.png)![](media/image71.png)
+
+![](media/image72.png)![](media/image73.png)![](media/image74.png)![](media/image75.png)![](media/image76.png)![](media/image77.png)
+
+![](media/image78.png)
+
+6)  Set up the null and alternative hypotheses.
+
+![](media/image79.png)![](media/image80.png)![](media/image81.png)
+
+![](media/image82.png)![](media/image83.png)
+
+$$
+$$
+
+7)  Are the validity conditions met? Why or why not?
+
+![](media/image84.png)![](media/image85.png)![](media/image86.png)
+
+![](media/image87.png)![](media/image88.png)![](media/image89.png)![](media/image90.png)
+
+8)  Calculate the standard error.
+
+![](media/image91.png)![](media/image92.png)![](media/image93.png)
+
+![](media/image94.png)![](media/image95.png)![](media/image96.png)![](media/image97.png)![](media/image98.png)
+
+![](media/image99.png)![](media/image100.png)
+
+9)  Calculate the standardized statistic.
+
+![](media/image101.png)![](media/image102.png)
+
+![](media/image103.png)![](media/image104.png)![](media/image105.png)![](media/image106.png)![](media/image107.png)![](media/image108.png)![](media/image109.png)
+
+![](media/image110.png)
+
+10) ![](media/image111.png)Calculate the 95% confidence interval using the 2SD method.
+
+![](media/image112.png)![](media/image113.png)![](media/image114.png)![](media/image115.png)![](media/image116.png)![](media/image117.png)
+
+![](media/image118.png)
+
+11) Write a conclusion for the two brands of chemicals.
+
+![](media/image119.png)![](media/image120.png)![](media/image121.png)![](media/image122.png)![](media/image123.png)![](media/image124.png)![](media/image125.png)![](media/image126.png)![](media/image127.png)![](media/image128.png)![](media/image129.png)![](media/image130.png)![](media/image131.png)![](media/image132.png)![](media/image133.png)![](media/image134.png)![](media/image135.png)![](media/image136.png)![](media/image137.png)![](media/image138.png)![](media/image139.png)![](media/image140.png)![](media/image141.png)![](media/image142.png)![](media/image143.png)![](media/image144.png)![](media/image145.png)![](media/image146.png)
+
+## Example (Bike; in class)
+
+A bike company wants to test the effect of two brands of bike tires (Roadster and Trail-days) on the amount of miles ridden before the tires wear out. The company randomly selects 40 customers from their records and ask them to participate in the study in exchange for free tires. The participants were randomly assigned to either tire (20 participants to each tire brand). The data is summarized below, and you may assume that the data was not strongly skewed. Did the Roaster bike tires on average get more miles than the Trail-days tires?
+
+  ----------------------------------------------------
+   **Tire Brand**   **Mean (miles)**   **SD (miles)**
+  ---------------- ------------------ ----------------
+      Roadster            2120              201
+
+     Trail-days           2080              196
+  ----------------------------------------------------
+
+1)  How might the data look in a spreadsheet?
+
+  --------------- --------------- ---------------
+                                  
+
+                                  
+
+        ...             ...             ...
+
+                                  
+  --------------- --------------- ---------------
+
+2)  Which variable is the explanatory variable?
+
+3)  Which variable is the response variable?
+
+4)  What is the population of interest?
+
+5)  What is the parameter of interest?
+
+6)  Set up the null and alterative hypothesis.
+
+> $$H_{0}:$$
+>
+> $$
+> {H_{A}:}$$
+
+7)  Intuitively, would you expect there to be a difference between the two tire brands?
+
+8)  Calculate the standard error.
+
+9)  Calculate the standardized statistic.
+
+10) Calculate the confidence interval.
+
+11) Write a conclusion based on the research question.

@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>notes218_chapter_5 – STAT 218</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">STAT 218</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Course Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../canvas.html"> 
+<span class="menu-text">Canvas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../assignments.html"> 
+<span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section-5.1-comparing-two-groups---categorical-response" id="toc-section-5.1-comparing-two-groups---categorical-response" class="nav-link active" data-scroll-target="#section-5.1-comparing-two-groups---categorical-response">Section 5.1: Comparing Two Groups - Categorical Response</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#example-murderous-nurse" id="toc-example-murderous-nurse" class="nav-link" data-scroll-target="#example-murderous-nurse">Example: Murderous Nurse</a></li>
+  <li><a href="#two-way-table" id="toc-two-way-table" class="nav-link" data-scroll-target="#two-way-table">Two-Way Table</a></li>
+  <li><a href="#conditional-proportions" id="toc-conditional-proportions" class="nav-link" data-scroll-target="#conditional-proportions">Conditional Proportions</a></li>
+  <li><a href="#relative-risk" id="toc-relative-risk" class="nav-link" data-scroll-target="#relative-risk">Relative Risk</a></li>
+  <li><a href="#example-murderous-nurse-1" id="toc-example-murderous-nurse-1" class="nav-link" data-scroll-target="#example-murderous-nurse-1">Example: Murderous Nurse</a></li>
+  </ul></li>
+  <li><a href="#section-5.2-simulation-based-approach" id="toc-section-5.2-simulation-based-approach" class="nav-link" data-scroll-target="#section-5.2-simulation-based-approach">Section 5.2: Simulation-Based Approach</a>
+  <ul class="collapse">
+  <li><a href="#example-swimming-with-dolphins" id="toc-example-swimming-with-dolphins" class="nav-link" data-scroll-target="#example-swimming-with-dolphins">Example: Swimming with Dolphins</a></li>
+  </ul></li>
+  <li><a href="#section-5.3-theory-based-approach" id="toc-section-5.3-theory-based-approach" class="nav-link" data-scroll-target="#section-5.3-theory-based-approach">Section 5.3: Theory Based Approach</a>
+  <ul class="collapse">
+  <li><a href="#setting-up-the-hypothesis" id="toc-setting-up-the-hypothesis" class="nav-link" data-scroll-target="#setting-up-the-hypothesis">Setting up the hypothesis</a></li>
+  <li><a href="#validity-conditions" id="toc-validity-conditions" class="nav-link" data-scroll-target="#validity-conditions">Validity Conditions</a></li>
+  <li><a href="#standard-error-for-standardized-statistics" id="toc-standard-error-for-standardized-statistics" class="nav-link" data-scroll-target="#standard-error-for-standardized-statistics">Standard Error for Standardized Statistics</a></li>
+  <li><a href="#standardized-statistic" id="toc-standardized-statistic" class="nav-link" data-scroll-target="#standardized-statistic">Standardized Statistic</a></li>
+  <li><a href="#confidence-interval" id="toc-confidence-interval" class="nav-link" data-scroll-target="#confidence-interval">Confidence Interval</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  <li><a href="#example-near-sightedness" id="toc-example-near-sightedness" class="nav-link" data-scroll-target="#example-near-sightedness">Example: Near-sightedness</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
+<section id="section-5.1-comparing-two-groups---categorical-response" class="level1">
+<h1>Section 5.1: Comparing Two Groups - Categorical Response</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p><img src="media/image1.png" class="img-fluid"><img src="media/image2.png" class="img-fluid"><img src="media/image3.png" class="img-fluid">Main focus: “Are these two groups different?”</p>
+<p><img src="media/image4.png" class="img-fluid"><img src="media/image5.png" class="img-fluid"><img src="media/image6.png" class="img-fluid"></p>
+<p><img src="media/image7.png" class="img-fluid">For strength of evidence, we will use:</p>
+<ul>
+<li><p>p-values (simulation only)</p></li>
+<li><p>Standardized statistics</p></li>
+<li><p><img src="media/image8.png" class="img-fluid"><img src="media/image9.png" class="img-fluid"><img src="media/image10.png" class="img-fluid"><img src="media/image11.png" class="img-fluid">Confidence intervals</p></li>
+</ul>
+</section>
+<section id="example-murderous-nurse" class="level2">
+<h2 class="anchored" data-anchor-id="example-murderous-nurse">Example: Murderous Nurse</h2>
+<p><img src="media/image12.png" class="img-fluid"><img src="media/image13.png" class="img-fluid"><img src="media/image14.png" class="img-fluid">For several years in the 1990s, Kristen Gilbert worked as a nurse in the intensive care unit (ICU) of the Veterans Administration Hospital in Northampton, Massachusetts. Over the course of her time there, other nurses came to suspect that she was killing patients by injecting them with the heart stimulant epinephrine. Gilbert was eventually arrested and charged with these murders. Part of the evidence presented against Gilbert at her murder trial was a statistical analysis of 1,641 eight-hour shifts during the time Gilbert worked in the ICU. For each of these shifts, researchers recorded two variables: whether or not Gilbert worked on the shift and whether or not at least one patient died during the shift.</p>
+<p><img src="media/image15.png" class="img-fluid">Results: Of the 257 shifts that Gilbert worked, 40 of the shifts had a patient that died. Of the 1,384 shifts that Gilbert did not work, 34 had a patient that died</p>
+<p>Answer the following questions:</p>
+<ol type="1">
+<li>What is the observational unit?</li>
+</ol>
+<p><img src="media/image16.png" class="img-fluid"><img src="media/image17.png" class="img-fluid"><img src="media/image18.png" class="img-fluid"><img src="media/image19.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>What is the explanatory variable? Variable type?</li>
+</ol>
+<p><img src="media/image20.png" class="img-fluid"><img src="media/image21.png" class="img-fluid"><img src="media/image22.png" class="img-fluid"><img src="media/image23.png" class="img-fluid"><img src="media/image24.png" class="img-fluid"><img src="media/image25.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>What is the response variable? Variable type?</li>
+</ol>
+<p><img src="media/image26.png" class="img-fluid"><img src="media/image27.png" class="img-fluid"><img src="media/image28.png" class="img-fluid"><img src="media/image29.png" class="img-fluid"><img src="media/image30.png" class="img-fluid"><img src="media/image31.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Was the study observational or experimental? Why?</li>
+</ol>
+<p><img src="media/image32.png" class="img-fluid"><img src="media/image33.png" class="img-fluid"></p>
+<p><img src="media/image34.png" class="img-fluid"><img src="media/image35.png" class="img-fluid"><img src="media/image36.png" class="img-fluid"><img src="media/image37.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>How would the data look in a spreadsheet?</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 41%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Shift ID</strong></th>
+<th style="text-align: center;"><img src="media/image38.png" class="img-fluid"><img src="media/image39.png" class="img-fluid"></th>
+<th style="text-align: center;"><img src="media/image40.png" class="img-fluid"><img src="media/image41.png" class="img-fluid"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><img src="media/image42.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image43.png" class="img-fluid"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><img src="media/image44.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image45.png" class="img-fluid"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;"><img src="media/image46.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image47.png" class="img-fluid"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+<td style="text-align: center;">…</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1,641</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="two-way-table" class="level2">
+<h2 class="anchored" data-anchor-id="two-way-table">Two-Way Table</h2>
+<p>A contingency table (also known as a two-way table) is a convenient method for organizing categorical data. In this course, we will put the explanatory variables as the column names and the response variable as the row names.</p>
+<p><img src="media/image48.png" class="img-fluid"><img src="media/image49.png" class="img-fluid"></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 26%">
+<col style="width: 30%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;"><strong>Gilbert working on shift</strong></th>
+<th style="text-align: center;"><strong>Gilbert not working on shift</strong></th>
+<th style="text-align: center;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Patient died during shift</strong></td>
+<td style="text-align: center;"><img src="media/image50.png" class="img-fluid">40</td>
+<td style="text-align: center;">34</td>
+<td style="text-align: center;">74</td>
+</tr>
+<tr class="even">
+<td><strong>No patient died during shift</strong></td>
+<td style="text-align: center;"><img src="media/image51.png" class="img-fluid">217</td>
+<td style="text-align: center;"><img src="media/image52.png" class="img-fluid">1,350</td>
+<td style="text-align: center;">1,567</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;"><img src="media/image53.png" class="img-fluid">257</td>
+<td style="text-align: center;">1,384</td>
+<td style="text-align: center;">1,641</td>
+</tr>
+</tbody>
+</table>
+<p>Now that the data is organized, why would comparing 40 to 34 not be a good idea?</p>
+<p><img src="media/image54.png" class="img-fluid"><img src="media/image55.png" class="img-fluid"><img src="media/image56.png" class="img-fluid"><img src="media/image57.png" class="img-fluid"><img src="media/image58.png" class="img-fluid"><img src="media/image59.png" class="img-fluid"><img src="media/image60.png" class="img-fluid"><img src="media/image61.png" class="img-fluid"></p>
+</section>
+<section id="conditional-proportions" class="level2">
+<h2 class="anchored" data-anchor-id="conditional-proportions">Conditional Proportions</h2>
+<p><img src="media/image62.png" class="img-fluid"><strong>Conditional proportion:</strong> the proportion of “successes” within each _______________________</p>
+<p><img src="media/image63.png" class="img-fluid"></p>
+<p><img src="media/image64.png" class="img-fluid"></p>
+<p><img src="media/image65.png" class="img-fluid"><img src="media/image66.png" class="img-fluid"></p>
+<p><img src="media/image67.png" class="img-fluid"><img src="media/image68.png" class="img-fluid"><img src="media/image69.png" class="img-fluid"></p>
+<p><img src="media/image70.png" class="img-fluid"></p>
+<p>Calculating the conditional proportions</p>
+<ul>
+<li><p>Proportion of Gilberts shifts in which a patient died</p>
+<ul>
+<li><p><span class="math inline">\({\widehat{\mathbf{p}}}_{\mathbf{G}}\mathbf{=}\frac{Patients\ died\ Given\ Gilbert\ Working}{Total\ Shifts\ Gilbert\ Works} = \frac{40}{257} = 0.156\)</span></p></li>
+<li><p>15.6% of patients die when Gilbert is working</p></li>
+</ul></li>
+<li><p>Proportion of non-Gilbert shifts in which a patient died</p>
+<ul>
+<li><p><span class="math inline">\({\widehat{\mathbf{p}}}_{\mathbf{NG}}\mathbf{=}\frac{Patients\ died\ Given\ Gilbert\ NOT\ Working}{Total\ Shifts\ Gilbert\ Does\ NOT\ Work} = \frac{34}{1384} = 0.025\)</span></p></li>
+<li><p>2.5% of patients die when Gilbert is not working</p></li>
+</ul></li>
+</ul>
+<p>Compare positive responses in both groups by looking at the <strong>difference in proportion</strong></p>
+<p><img src="media/image71.png" class="img-fluid"><img src="media/image72.png" class="img-fluid"><img src="media/image73.png" class="img-fluid"></p>
+<p><span class="math display">\[{\widehat{p}}_{G} - {\widehat{p}}_{NG} = 0.156 - 0.025 = 0.131\]</span></p>
+<p><strong>Interpretation:</strong> Proportion of deaths was 13.1% higher for Gilbert shifts than for non-Gilbert shifts.</p>
+</section>
+<section id="relative-risk" class="level2">
+<h2 class="anchored" data-anchor-id="relative-risk">Relative Risk</h2>
+<p><img src="media/image74.png" class="img-fluid"><img src="media/image75.png" class="img-fluid">Relative risk: ratio between two ________________________________</p>
+<ul>
+<li>“How many times as large the risk of an outcome is for one group compared to another”</li>
+</ul>
+<p>From the example,</p>
+<p><img src="media/image76.png" class="img-fluid"><img src="media/image77.png" class="img-fluid"><img src="media/image78.png" class="img-fluid"></p>
+<p><span class="math display">\[\frac{{\widehat{\mathbf{p}}}_{\mathbf{G}}}{{\widehat{\mathbf{p}}}_{\mathbf{NG}}}\mathbf{=}\frac{\frac{40}{257}}{\frac{34}{1384}} = \ \frac{0.15}{0.02} = 7.5\]</span></p>
+<p><strong>Interpretation:</strong> The proportion of deaths is 7.5 times as large on a Gilbert shift than a non-Gilbert shift.</p>
+<p>In general, it is common to calculate the relative risk using the larger proportion in the numerator.</p>
+<p>A word of caution, the use of relative risk can sometimes be misleading. Consider the following two examples:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math display">\[\frac{0.0005}{0.0001} = 5\]</span> <span class="math display">\[\frac{0.5}{0.1} = 5\]</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>If the proportions represent having a disease or not based on a particular genetic factor or not, which scenario would you have a lesser probability of having the disease?</p>
+</section>
+<section id="example-murderous-nurse-1" class="level2">
+<h2 class="anchored" data-anchor-id="example-murderous-nurse-1">Example: Murderous Nurse</h2>
+<p>Consider the evidence from the murderous nurse scenario. Would you present the difference in proportion and relative to a jury as evidence?</p>
+<ul>
+<li><p>The difference was greater than 0</p></li>
+<li><p>The relative risk is greater than 1</p></li>
+</ul>
+<p>However, the study was observational and thus cannot conclude that Gilbert caused the deaths (no random assignment to shifts). One such possible alternative is that Gilbert possibly worked shifts where more patients die.</p>
+</section>
+</section>
+<section id="section-5.2-simulation-based-approach" class="level1">
+<h1>Section 5.2: Simulation-Based Approach</h1>
+<p><img src="media/image79.png" class="img-fluid"><img src="media/image80.png" class="img-fluid">Now that we are working with two proportions, our research question becomes “is there a difference between the two groups?”</p>
+<p><strong>Null hypothesis:</strong> no difference in probability of success</p>
+<p><strong>One repetition:</strong> Random assignment of response outcomes to two groups</p>
+<p><strong>Parameter:</strong></p>
+<ul>
+<li><p><img src="media/image81.png" class="img-fluid"><img src="media/image82.png" class="img-fluid">Long run difference in proportion of <strong><em>“context here”</em></strong> between <strong><em>group 1</em></strong> and <strong><em>group 2</em></strong>.</p></li>
+<li><p><span class="math inline">\(\pi_{Group\ 1} - \ \pi_{Group\ 2}\)</span></p></li>
+</ul>
+<p><img src="media/image83.png" class="img-fluid"><img src="media/image84.png" class="img-fluid"><strong>Observed Statistic:</strong> Difference in conditional proportions</p>
+<ul>
+<li><span class="math inline">\({\widehat{p}}_{Group\ 1} - \ {\widehat{p}}_{Group\ 2}\)</span></li>
+</ul>
+<p><img src="media/image85.png" class="img-fluid"><img src="media/image86.png" class="img-fluid"><img src="media/image87.png" class="img-fluid"><strong>Hypotheses:</strong></p>
+<ul>
+<li><p><span class="math inline">\(H_{O}:\ \pi_{Group\ 1} - \ \pi_{Group\ 2} = 0\)</span></p></li>
+<li><p><span class="math inline">\(H_{A}:\ \pi_{Group\ 1} - \ \pi_{Group\ 2}\  &lt; ,\  &gt; , \neq 0\)</span></p></li>
+<li><p><img src="media/image88.png" class="img-fluid"><img src="media/image89.png" class="img-fluid"><img src="media/image90.png" class="img-fluid">Or equivalently,</p>
+<ul>
+<li><p><span class="math inline">\(H_{O}:\ \pi_{Group\ 1} = \pi_{Group\ 2}\)</span></p></li>
+<li><p><span class="math inline">\(H_{A}:\ \pi_{Group\ 1} &lt; ,\  &gt; , \neq \pi_{Group\ 2}\)</span></p></li>
+</ul></li>
+</ul>
+<section id="example-swimming-with-dolphins" class="level2">
+<h2 class="anchored" data-anchor-id="example-swimming-with-dolphins">Example: Swimming with Dolphins</h2>
+<p><img src="media/image91.png" class="img-fluid"><img src="media/image92.png" class="img-fluid"><img src="media/image93.png" class="img-fluid"><img src="media/image94.png" class="img-fluid"><img src="media/image95.png" class="img-fluid"><img src="media/image96.png" class="img-fluid"><img src="media/image97.png" class="img-fluid"><img src="media/image98.png" class="img-fluid"><img src="media/image99.png" class="img-fluid">Is swimming with dolphins therapeutic for patients with clinical depression? A 2005 study (Antonioli and Reveley) recruited 30 subjects with a clinical diagnosis of mild to moderate depression. These 30 subjects went to an island oﬀ the coast of Honduras, where they were randomly assigned to one of two treatment groups. Both groups engaged in one hour of swimming and snorkeling each day, but one group did so in the presence of bottlenose dolphins and the other group did not. However, note that participants in the dolphin group and the control group experienced identical conditions except for the presence of dolphins. At the end of two weeks, each subject’s level of depression was evaluated. The researchers looked to see whether or not the subject achieved substantial reduction (improvement) in their depression. They found that, of the 10 subjects in the dolphin group, 9 showed substantial improvement. Of the 20 in the control group, 3 showed substantial improvement.</p>
+<p><em>Source: <a href="https://www.medpagetoday.com/psychiatry/depression/2221" class="uri">https://www.medpagetoday.com/psychiatry/depression/2221</a></em></p>
+<p><strong>Research question:</strong> Is swimming with dolphins therapeutic?</p>
+<p><strong>Explanatory Variable:</strong> Dolphin or control (categorical)</p>
+<p><strong>Response Variable:</strong> Improve or did not improve (categorical)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 44%">
+<col style="width: 23%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;"><strong>Dolphin</strong></th>
+<th style="text-align: center;"><strong>Control</strong></th>
+<th style="text-align: center;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Improve</strong></td>
+<td style="text-align: center;"><img src="media/image100.png" class="img-fluid"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr class="even">
+<td><strong>Not Improve</strong></td>
+<td style="text-align: center;"><img src="media/image101.png" class="img-fluid"><img src="media/image102.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image103.png" class="img-fluid"></td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">30</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conditional Proportions of Improved</strong></p>
+<p><img src="media/image104.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Dolphin group: <span class="math inline">\({\widehat{p}}_{D} = \frac{9}{10} = 0.9\)</span></p>
+<p>Control group: <span class="math inline">\({\widehat{p}}_{C} = \frac{3}{20} = 0.15\)</span></p>
+</blockquote>
+<p><strong>Relative risk</strong></p>
+<blockquote class="blockquote">
+<p><span class="math inline">\(\frac{\frac{9}{10}}{\frac{3}{20}}\)</span> = 6</p>
+<p><img src="media/image105.png" class="img-fluid"><img src="media/image106.png" class="img-fluid"><img src="media/image107.png" class="img-fluid"><img src="media/image108.png" class="img-fluid"><img src="media/image109.png" class="img-fluid"><img src="media/image110.png" class="img-fluid">What is the interpretation?</p>
+</blockquote>
+<p><img src="media/image111.png" class="img-fluid"><img src="media/image112.png" class="img-fluid"><img src="media/image113.png" class="img-fluid"><strong>Difference in proportions</strong></p>
+<blockquote class="blockquote">
+<p>0.9 – 0.15 = 0.75</p>
+<p><img src="media/image114.png" class="img-fluid"><img src="media/image115.png" class="img-fluid"><img src="media/image116.png" class="img-fluid"><img src="media/image117.png" class="img-fluid"><img src="media/image118.png" class="img-fluid"></p>
+<p><img src="media/image119.png" class="img-fluid">What is the interpretation?</p>
+<p><img src="media/image120.png" class="img-fluid"><img src="media/image121.png" class="img-fluid"><img src="media/image122.png" class="img-fluid"><img src="media/image123.png" class="img-fluid"><img src="media/image124.png" class="img-fluid"><img src="media/image125.png" class="img-fluid"></p>
+</blockquote>
+<p><img src="media/image126.png" class="img-fluid">Consider the research question to formulate the hypothesis test.</p>
+<p><img src="media/image127.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p><span class="math display">\[{H_{0}:\ \pi_{D} = \pi_{C}
+}{H_{0}:\pi_{D} &gt; \pi_{C}}\]</span></p>
+<p><img src="media/image128.png" class="img-fluid"></p>
+</blockquote>
+<p>or equivalently,</p>
+<blockquote class="blockquote">
+<p><img src="media/image129.png" class="img-fluid"><img src="media/image130.png" class="img-fluid"><img src="media/image131.png" class="img-fluid"><img src="media/image132.png" class="img-fluid"><img src="media/image133.png" class="img-fluid"><img src="media/image134.png" class="img-fluid"><img src="media/image135.png" class="img-fluid"></p>
+<p><span class="math display">\[H_{0}:\ \]</span></p>
+<p><span class="math display">\[
+{H_{0}:}\]</span></p>
+</blockquote>
+<p><img src="media/image136.png" class="img-fluid"></p>
+<p>Two Proportions Applet:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image137.png" style="width:4.09302in;height:3.92433in" class="figure-img"></p>
+<figcaption>A picture containing diagram Description automatically generated</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image138.png" style="width:5.17502in;height:4.09302in" class="figure-img"></p>
+<figcaption>Chart Description automatically generated</figcaption>
+</figure>
+</div>
+<p>The applet calculates the p-value using the alternative hypothesis of</p>
+<p><span class="math display">\[GroupA - GroupB &lt; , &gt; , \neq 0\]</span></p>
+<p>It is important to keep track of the difference in proportions and the interpretation of the hypothesis test.</p>
+<p><img src="media/image139.png" class="img-fluid"></p>
+<p><strong>Standardized statistic</strong></p>
+<p><img src="media/image140.png" class="img-fluid"></p>
+<p><span class="math display">\[\frac{\mathbf{Observed\ Statistic\  - Hypothesized\ value}}{\mathbf{Standard\ Deviation\ of\ the\ Null}} = \frac{(\ {\widehat{p}}_{1}\  - \ {\widehat{p}}_{2}\ )\  - \text{0~}}{Simulated\ from\ Applet}\]</span></p>
+<p><img src="media/image141.png" class="img-fluid"></p>
+<p><strong>Conclusions</strong></p>
+<p>We use the same p-value and standardized statistic conclusions as before. For p-values, we have evidence against the null if the p-value is less than the significance level (typically 0.05). For standardized statistics, we have evidence against the null if the standardized statistic is outside of the 2’s.</p>
+<p>In context,</p>
+<ul>
+<li><img src="media/image142.png" class="img-fluid"><img src="media/image143.png" class="img-fluid"><img src="media/image144.png" class="img-fluid">We <strong><em>“do/do not”</em></strong> have strong evidence to conclude that the long run difference in proportions of <strong><em>“context”</em></strong> between the <strong><em>“group 1”</em></strong> and <strong><em>“group 2”</em></strong> is <strong><em>“greater than/less than/not equal to”</em></strong> zero.</li>
+</ul>
+<p>From the example, the standardized statistic is</p>
+<p><img src="media/image145.png" class="img-fluid"><img src="media/image146.png" class="img-fluid"><img src="media/image147.png" class="img-fluid"></p>
+<p><span class="math display">\[\frac{{\widehat{p}}_{Dolphin} - {\widehat{p}}_{Control}}{Simulated\ SD} = \frac{0.75 - 0}{0.191} = 3.9\]</span></p>
+<p>Since 3.9 is outside of the 2’s, our conclusion is:</p>
+<ul>
+<li>We do have strong evidence to conclude that the long run difference in proportions of improvers between the dolphin group and the control group is greater than zero.</li>
+</ul>
+<p><strong>Confidence interval</strong></p>
+<ul>
+<li><img src="media/image148.png" class="img-fluid"><img src="media/image149.png" class="img-fluid"><img src="media/image150.png" class="img-fluid">95% Confidence Interval from simulation</li>
+</ul>
+<p><span class="math display">\[observed\ statistic \pm 2*SE = \widehat{p_{1}} - \widehat{p_{2}} \pm 2*(SD\ of\ Null)\]</span></p>
+<ul>
+<li><p>Interpretation in Context</p>
+<ul>
+<li><img src="media/image151.png" class="img-fluid"><img src="media/image152.png" class="img-fluid">We’re 95% confident that the long run difference in proportions of <strong><em>“context”</em></strong> between “<em><strong>group 1”</strong> and <strong>“group 2”</strong></em> falls between ________ and _________.</li>
+</ul></li>
+<li><p><img src="media/image153.png" class="img-fluid"><img src="media/image154.png" class="img-fluid">If 0 is inside the interval $$ Fail to Reject</p>
+<ul>
+<li>0 is a plausible value, and it is possible that the groups are the same</li>
+</ul></li>
+<li><p>If 0 is outside the interval <span class="math inline">\(\rightarrow\)</span> Reject</p>
+<ul>
+<li>We would not expect to see 0 as a difference and the groups are different</li>
+</ul></li>
+</ul>
+<p><img src="media/image155.png" class="img-fluid"><img src="media/image156.png" class="img-fluid"></p>
+<p><img src="media/image157.png" class="img-fluid"><img src="media/image158.png" class="img-fluid"><img src="media/image159.png" class="img-fluid"><img src="media/image160.png" class="img-fluid"><img src="media/image161.png" class="img-fluid"><img src="media/image162.png" class="img-fluid">From the example,</p>
+<p><img src="media/image163.png" class="img-fluid"></p>
+<ul>
+<li><img src="media/image164.png" class="img-fluid"><img src="media/image165.png" class="img-fluid"><img src="media/image166.png" class="img-fluid">C<span class="math inline">\(onfidence\ Interval\)</span></li>
+</ul>
+<blockquote class="blockquote">
+<p><span class="math display">\[0.75 \pm 2*(0.193) = (\ \ \ \ \ \ ,\ \ \ \ \ \ )\]</span></p>
+<p><img src="media/image167.png" class="img-fluid"></p>
+</blockquote>
+<ul>
+<li><img src="media/image168.png" class="img-fluid"><img src="media/image169.png" class="img-fluid"><img src="media/image170.png" class="img-fluid">We are 95% confident that the long run difference in proportions of improvers between the dolphin group and the control group falls between _____and _______.</li>
+</ul>
+</section>
+</section>
+<section id="section-5.3-theory-based-approach" class="level1">
+<h1>Section 5.3: Theory Based Approach</h1>
+<section id="setting-up-the-hypothesis" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-the-hypothesis">Setting up the hypothesis</h2>
+<ul>
+<li><p>Parameter: Long run difference in proportion of <strong><em>“context here”</em></strong> between <strong><em>group 1</em></strong> and <strong><em>group 2</em></strong>.</p></li>
+<li><p>Hypotheses in words:</p>
+<ul>
+<li><p>Null: Long run difference in proportion of <strong><em>“context here”</em></strong> between <strong><em>group 1</em></strong> and <strong><em>group 2</em></strong> is <strong><em>zero</em></strong>.</p></li>
+<li><p>Alternative: Long run difference in proportion of <strong><em>“context here”</em></strong> between <strong><em>group 1</em></strong> and <strong><em>group 2</em></strong> is (less than, greater than, not equal to) <strong><em>zero.</em></strong></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="validity-conditions" class="level2">
+<h2 class="anchored" data-anchor-id="validity-conditions">Validity Conditions</h2>
+<p>For the theory conditions to hold, we need to have at least 10 observations of the 2x2 table.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong>Group 1</strong></th>
+<th style="text-align: center;"><strong>Group 2</strong></th>
+<th style="text-align: center;"><img src="media/image171.png" class="img-fluid"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><p><strong>Response 1</strong></p>
+<p><strong>(Success)</strong></p></td>
+<td style="text-align: center;"><span class="math display">\[s_{1} \geq 10\]</span></td>
+<td style="text-align: center;"><span class="math display">\[s_{2} &gt; 10\]</span></td>
+<td style="text-align: center;"><span class="math display">\[s_{1} + s_{2}\]</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><p><strong>Response 2</strong></p>
+<p><strong>(Failure)</strong></p></td>
+<td style="text-align: center;"><span class="math display">\[f_{1} \geq 10\]</span></td>
+<td style="text-align: center;"><span class="math display">\[f_{2} \geq 10\]</span></td>
+<td style="text-align: center;"><img src="media/image172.png" class="img-fluid"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Total</strong></td>
+<td style="text-align: center;"><span class="math display">\[n_{1}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[n_{2}\]</span></td>
+<td style="text-align: center;"><span class="math display">\[n_{1} + n_{2}\]</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="standard-error-for-standardized-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="standard-error-for-standardized-statistics">Standard Error for Standardized Statistics</h2>
+<p><img src="media/image173.png" class="img-fluid"></p>
+<ul>
+<li><p><span class="math inline">\(SE = \sqrt{\overline{p}\left( 1 - \overline{p} \right)(\frac{1}{n_{1}} + \frac{1}{n_{2}}\ )}\)</span></p></li>
+<li><p>Where does <span class="math inline">\(\overline{p}\)</span> come from?</p>
+<ul>
+<li><p>we’re assuming the null hypothesis is true and trying to show the alternative is true</p></li>
+<li><p>if the null is true, there is no difference in <span class="math inline">\({\widehat{p}}_{1}\ and\ {\widehat{p}}_{2}\)</span>. Why??</p></li>
+</ul></li>
+</ul>
+<p><img src="media/image174.png" class="img-fluid"></p>
+<p><span class="math display">\[\overline{\mathbf{p}}\mathbf{=}\frac{\mathbf{s1 + s2}}{\mathbf{n1 + n2}}\]</span></p>
+</section>
+<section id="standardized-statistic" class="level2">
+<h2 class="anchored" data-anchor-id="standardized-statistic">Standardized Statistic</h2>
+<ul>
+<li>General Formula:</li>
+</ul>
+<p><span class="math display">\[SS = \frac{observed\ statistic\  - null\ value}{SD\ of\ the\ null\ (or\ SE)}\]</span></p>
+<ul>
+<li><img src="media/image175.png" class="img-fluid"><img src="media/image176.png" class="img-fluid">Two Group Categorical Specific:</li>
+</ul>
+<p><span class="math display">\[SS = \frac{\left( {\widehat{p}}_{1}\  - \ {\widehat{p}}_{2} \right) - 0\ \text{~}}{SE} = \frac{\left( {\widehat{p}}_{1}\  - \ {\widehat{p}}_{2} \right) - 0\ \text{~}}{\sqrt{\overline{p}\left( 1 - \overline{p} \right)(\frac{1}{n_{1}} + \frac{1}{n_{2}}\ )}}\]</span></p>
+</section>
+<section id="confidence-interval" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-interval">Confidence Interval</h2>
+<ul>
+<li><img src="media/image177.png" class="img-fluid">General Formula:</li>
+</ul>
+<p><span class="math display">\[\ Observed\ Statistic \pm Multiplier*SE\]</span></p>
+<p>Margin of Error (MOE)</p>
+<p>Recall that we had a different standard error formula in Chapter 1 when we are calculating for either a standardized statistic or confidence interval when the data is categorical. For confidence intervals,</p>
+<p><img src="media/image178.png" class="img-fluid"><img src="media/image179.png" class="img-fluid"></p>
+<p><span class="math display">\[SE = \sqrt{\frac{{\widehat{p}}_{1}(1 - {\widehat{p}}_{1})}{n_{1}} + \frac{{\widehat{p}}_{2}(1 - {\widehat{p}}_{2})}{n_{2}}}\]</span></p>
+<ul>
+<li>Two Group Categorical Specific (95% Confidence):</li>
+</ul>
+<p><span class="math display">\[\widehat{(p_{1}} - \widehat{p_{2}}\ ) \pm 2*\sqrt{\frac{{\widehat{p}}_{1}(1 - {\widehat{p}}_{1})}{n_{1}} + \frac{{\widehat{p}}_{2}(1 - {\widehat{p}}_{2})}{n_{2}}}\]</span></p>
+<p><img src="media/image180.png" class="img-fluid"><strong><u>Interpretation</u></strong></p>
+<ul>
+<li>We are 95% confident that the long run difference in proportion of <strong><em>“context here”</em></strong> between <strong><em>group 1</em></strong> and <strong><em>group 2</em></strong> is between ________ and _________.</li>
+</ul>
+<p><strong><u>Alternately… Be careful with wording on this one!</u></strong></p>
+<ul>
+<li><p>We are 95% confident the true proportion of <strong>“context”</strong> in “<strong>group 1”</strong> is <strong>”lower limit”</strong> to <strong>”upper limit” ”more or less”</strong> than the true proportion of <strong>”context”</strong> in”<strong>group 2.”</strong></p></li>
+<li><p>With differences, if <strong>0</strong> in interval, <strong>NOT</strong> significantly different</p></li>
+</ul>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<p><img src="media/image181.png" class="img-fluid"><img src="media/image182.png" class="img-fluid"><img src="media/image183.png" class="img-fluid"><img src="media/image184.png" class="img-fluid"><img src="media/image185.png" class="img-fluid"><img src="media/image186.png" class="img-fluid"><img src="media/image187.png" class="img-fluid"><img src="media/image188.png" class="img-fluid"><img src="media/image189.png" class="img-fluid"></p>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1"></h2>
+</section>
+<section id="example-near-sightedness" class="level2">
+<h2 class="anchored" data-anchor-id="example-near-sightedness">Example: Near-sightedness</h2>
+<p>Myopia, or near-sightedness, typically develops during childhood years. Some studies have explored whether there is an association between development of myopia and the use of nightlights with infants. One study (Quinn, et al., 1999) interviewed parents of 479 children who were seen as outpatients in a university pediatric ophthalmology clinic. One of the questions asked whether the child typically slept with light in the room or in darkness before age 2. Based on the child’s most recent eye examination, the children were also separated into two groups: near-sighted or not near-sighted.</p>
+<p>Research Question:</p>
+<ul>
+<li><img src="media/image190.png" class="img-fluid">Are children who sleep in darkness less likely to develop near-sightedness?</li>
+</ul>
+<p>Explanatory Variable:</p>
+<ul>
+<li>Darkness or Light in Room, categorical</li>
+</ul>
+<p>Response Variable:</p>
+<ul>
+<li>Near-sighted or Not near-sighted, categorical</li>
+</ul>
+<p>Parameter:</p>
+<ul>
+<li><p>The long run difference in proportions between children who sleep in darkness and those who sleep with light in their rooms.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 25%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;"><strong>Darkness</strong></th>
+<th style="text-align: center;"><strong>Light in Room</strong></th>
+<th style="text-align: center;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Near-sighted</strong></td>
+<td style="text-align: center;"><img src="media/image191.png" class="img-fluid">18</td>
+<td style="text-align: center;"><img src="media/image192.png" class="img-fluid">119</td>
+<td style="text-align: center;"><img src="media/image193.png" class="img-fluid">137</td>
+</tr>
+<tr class="even">
+<td><strong>Not near-sighted</strong></td>
+<td style="text-align: center;">154</td>
+<td style="text-align: center;">188</td>
+<td style="text-align: center;">342</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td style="text-align: center;">172</td>
+<td style="text-align: center;">307</td>
+<td style="text-align: center;"><img src="media/image194.png" class="img-fluid">479</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<p>Answer the following questions</p>
+<ol type="1">
+<li>Set up the null and alternative hypothesis, in symbols.</li>
+</ol>
+<p><img src="media/image195.png" class="img-fluid"><img src="media/image196.png" class="img-fluid"><img src="media/image197.png" class="img-fluid"><img src="media/image198.png" class="img-fluid"><img src="media/image199.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p><span class="math display">\[{H_{0}:\
+}{H_{A}:\ }\]</span></p>
+</blockquote>
+<p><img src="media/image200.png" class="img-fluid"><img src="media/image201.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Are the validity conditions met? Why or why not?</li>
+</ol>
+<p><img src="media/image202.png" class="img-fluid"><img src="media/image203.png" class="img-fluid"><img src="media/image204.png" class="img-fluid"><img src="media/image205.png" class="img-fluid"><img src="media/image206.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><img src="media/image207.png" class="img-fluid"><img src="media/image208.png" class="img-fluid">Calculate the conditional proportions.</li>
+</ol>
+<p><img src="media/image209.png" class="img-fluid"><img src="media/image210.png" class="img-fluid"><img src="media/image211.png" class="img-fluid"><img src="media/image212.png" class="img-fluid"><img src="media/image213.png" class="img-fluid"><img src="media/image214.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Calculate the difference in proportions.</li>
+</ol>
+<p><img src="media/image215.png" class="img-fluid"><img src="media/image216.png" class="img-fluid"><img src="media/image217.png" class="img-fluid"><img src="media/image218.png" class="img-fluid"><img src="media/image219.png" class="img-fluid"><img src="media/image220.png" class="img-fluid"><img src="media/image221.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>Calculate the relative risk.</li>
+</ol>
+<p><img src="media/image222.png" class="img-fluid"></p>
+<ol start="6" type="1">
+<li><img src="media/image223.png" class="img-fluid"><img src="media/image224.png" class="img-fluid"><img src="media/image225.png" class="img-fluid"><img src="media/image226.png" class="img-fluid"><img src="media/image227.png" class="img-fluid">Calculate <span class="math inline">\(\overline{p}\)</span>.</li>
+</ol>
+<p><img src="media/image228.png" class="img-fluid"><img src="media/image229.png" class="img-fluid"><img src="media/image230.png" class="img-fluid"><img src="media/image231.png" class="img-fluid"><img src="media/image232.png" class="img-fluid"></p>
+<ol start="7" type="1">
+<li><p><img src="media/image233.png" class="img-fluid"><img src="media/image234.png" class="img-fluid"><img src="media/image235.png" class="img-fluid">Calculate the standard error.</p></li>
+<li><p><img src="media/image236.png" class="img-fluid"><img src="media/image237.png" class="img-fluid"><img src="media/image238.png" class="img-fluid"><img src="media/image239.png" class="img-fluid"><img src="media/image240.png" class="img-fluid">Calculate the standardized statistic. Does this reject or fail to reject the null hypothesis? Explain why.</p></li>
+</ol>
+<p><img src="media/image241.png" class="img-fluid"><img src="media/image242.png" class="img-fluid"></p>
+<ol start="9" type="1">
+<li><p><img src="media/image243.png" class="img-fluid">Calculate the 95% confidence interval. Does this reject or fail to reject the null hypothesis? Explain why.</p></li>
+<li><p>What conclusion would you tell the researchers?</p></li>
+</ol>
+<p>We do have evidence to conclude that the long run difference in proportion for developing near-sightedness between children who slept in the dark and children who slept in the light is less than 0.</p>
+<ol start="11" type="1">
+<li><img src="media/image244.png" class="img-fluid"><img src="media/image245.png" class="img-fluid"><img src="media/image246.png" class="img-fluid"><img src="media/image247.png" class="img-fluid"><img src="media/image248.png" class="img-fluid"><img src="media/image249.png" class="img-fluid"><img src="media/image250.png" class="img-fluid"><img src="media/image251.png" class="img-fluid"><img src="media/image252.png" class="img-fluid"><img src="media/image253.png" class="img-fluid"><img src="media/image254.png" class="img-fluid"><img src="media/image255.png" class="img-fluid"><img src="media/image256.png" class="img-fluid"><img src="media/image257.png" class="img-fluid"><img src="media/image258.png" class="img-fluid">What type of error might this study have made?</li>
+</ol>
+<p>Type I error is possible</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

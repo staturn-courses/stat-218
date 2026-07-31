@@ -1,0 +1,111 @@
+---
+title: STAT 218 (Fall 2026)
+subtitle: Introduction to Statistics
+format:
+  html: default
+  pdf: default
+---
+
+# Instructor
+
+Name: Tyler Wiederich, Ph.D. \
+Office: Hardin Hall 343A \
+Office hours: TBD. \
+E-mail: [twiederich2@unl.edu](mailto:twiederich2@unl.edu)
+
+
+All office hours are guaranteed for the first 30 minutes. If no students are present after 30 minutes, office hours are ended.
+
+# Course Description
+
+The practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing.
+
+**ACE 3 Outcomes**: Use mathematical, computational, statistical, or formal reasoning (including reasoning based on principles of logic) to solve problems, draw inferences, and determine reasonableness. The reinforced skills for STAT 218 are Writing and Critical Thinking. STAT 218 will provide the student opportunities to achieve this learning outcome through readings, quizzes, and in-class activities. These assignments (together with exams) will be used by the instructor to assess achievement of the outcome. The final exam will be used by the Department of Statistics to carry out an overall assessment of STAT 218, and the course's effectiveness at assisting students in achieving Outcome 3.
+
+# Assessments
+
+This course consists of quizzes, projects, and exams. 
+
+**Quizzes**: After the completion of each chapter, 
+
+**Projects**: Four group projects (2-3 people/group) will be assigned throughout the semester. 
+
+**Exams**: There will be 2 exams during the semester. Each exam will have a closed-book and open-book portion. More details will be provided in class.
+
+**Final**: To be announced in class
+
+These assessments are weighted as follows:
+
+| | Quizzes | Projects\* | Exams\*\* | Final | 
+| :---: | :---: | :---: | :---: | :---: |
+| % of grade | 20% | 30% | 30% | 20% |
+
+\*Each project is worth 10% of your grade.\
+\*\*Each exam is worth 15% of your grade.
+
+All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. No late projects or quizzes are accepted.
+
+For group projects, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student's project grade if he/she/they do not abide by this group work policy.
+
+# Grades
+
+Your overall course grade percentage guarantees the following grade for the course.
+
+| Letter Grade | + | | - |
+| :-----: | :---: | :---: | :---: | :---: |
+| A | | 93 | 90 |
+| B | 87 |  83 | 80 |
+| C | 77 | 73 | 70 |
+| D | 67 | 63 | 60 | 
+| F | | <60 | |
+
+
+# Continuity of Instruction Policy
+
+In the event that the university is closed during our regular class hours, please check the Canvas announcements for alternative class arrangements.
+
+# AI Disclaimer
+
+The recent popularity of large language models and other artificial intelligence tools introduces a unique challenge in the academic community. As an instructor, my goal is to promote critical thinking for the topics taught in this course. Unless otherwise stated, **the use of AI tools is not permitted**. If you are suspected of using AI, I reserve the right to give a zero grade.
+
+
+\newpage
+
+# Tentative Schedule
+
+| Week | Monday | Topics | Notes | 
+| :---: | :---: | ------- | ------- | 
+| 1 | 8/24 | Chapter P | No lab |
+| 2 | 8/31 | Chapter 1 | |
+| 3 | 9/7 | Chapter 1 | No lab (Labor Day) |
+| 4 | 9/14 | Chapter 2 |  |
+| 5 | 9/21 | Chapter 2  | |
+| 6 | 9/28 | Review + Exam 1 | |
+| 7 | 9/28 | Inference for two means  | |
+| 8 | 10/12 | Inference for proportions  | |
+| 9 | 10/19 | Inference for Variances | No class on Tuesday  (Fall break) |
+| 10 | 10/26 | ANOVA | |
+| 11 | 11/2 | ANOVA | No class on Tuesday -- Go Vote! |
+| 12 | 11/9 | Review + Exam 2 | |
+| 13 | 11/16 | Regression | |
+| 14 | 11/23 | No class/lab | Thanksgiving |
+| 15 | 11/30 | Regression |  |
+| 16 | 12/7 | Dead week  |  |
+| 17 | 12/14 | Final\*  |  |
+
+\*The final will be held in-person on Monday, Dec. 14 from 10:00 to noon. 
+
+# UNL Course Policies and Resources
+
+Students are responsible for knowing the university policies and resources found on this page: <https://go.unl.edu/coursepolicies>
+
+- University-wide Attendance Policy
+- Academic Honesty Policy
+- Services for Students with Disabilities
+- Mental Health and Well-Being Resources
+- Final Exam Schedule
+- Fifteenth Week Policy
+- Emergency Procedures
+- Diversity & Inclusiveness
+- Title IX Policy
+- Other Relevant University-Wide Policies

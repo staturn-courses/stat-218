@@ -1,0 +1,5 @@
+---
+title: "STAT 218"
+---
+
+**Course description:** The practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing.

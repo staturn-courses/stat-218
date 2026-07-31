@@ -1,0 +1,32 @@
+---
+title: "HW 1"
+subtitle: "50 points"
+date: today
+date-format: "[Due on] dddd, MMMM D [at 5 pm] "
+format:
+  html: default
+  pdf: 
+    documentclass: article
+    include-in-header:
+      text: |
+        \pagenumbering{gobble}
+---
+
+**Instructions**
+
+Complete the following problems and submit them on Canvas by the due date. 
+
+**Syllabus**
+
+1. When does your instructor host office hours, and where?
+2. The following table is an example of grades awarded for the semester. What is their final letter grade according to this course's grading scheme?
+
+**Chapter P**
+
+3. 
+4. 
+5. 
+6. 
+7. 
+8.
+9. 

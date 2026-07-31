@@ -1,0 +1,329 @@
+# Sampling from a Finite Population
+
+## Definitions
+
+**Population**
+
+- Entire collection of observational units we are interested in
+
+- Relates to the \_\_\_\_\_\_\_\_\_\_\_
+
+**Sample**
+
+- A subset of the population
+
+- Relates to the \_\_\_\_\_\_\_\_\_\_\_
+
+**Generalizations**
+
+- Not only to describe a sample, but to generalize characteristics of a sample to a much larger population
+
+![](media/image1.png)
+
+## Sampling
+
+A sample is considered to be a \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ sample if it is like or represents the whole population from which it has been drawn.
+
+- Would our class be representative of all UNL students?
+
+Bias is when a statistic \_\_\_\_\_\_\_\_\_\_\_\_\_\_ overestimates or underestimates the population for the parameter of interest.
+
+- Would asking UNL students enrolled in 8 am classes if they are morning people be representative of all UNL students?
+
+## Sampling Methods
+
+1.  **Convenience Sampling**
+
+    - Go and pick out a set of observational units
+
+    - Not a very good way to select a sample because this will introduce \_\_\_\_\_\_\_
+
+    - Example: taking surveys outside of the cafeteria
+
+2.  **Simple Random Sample**
+
+    - Every population member has an equal probability of being chosen
+
+    - Allows us to \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ our results to the entire population
+
+    - Choose individuals randomly from the sampling frame and each individual has the same chance of being selected
+
+    - **Sampling frame:** \_\_\_\_\_\_ of all individuals in the population of interest
+
+**Example 1:** Researchers at UNL are looking for student feedback (approval/disapproval) regarding an upcoming project. They set up a table outside of each dorm hall and ask passing students for their input. The volunteers at the table talk to any student who is interested in providing feedback.
+
+- Identify the following
+
+  - Population:
+
+  - Parameter of interest:
+
+  - Sampling Frame:
+
+  - Sample:
+
+  - Potential Bias:
+
+**Example 2:** A business magazine mailed a questionnaire to the human resources of all the Fortune 500 companies and received responses from 23% of them. Those responding reported that they did not find that such surveys intruded significantly on their workday.
+
+- Identify the following
+
+  - Population:
+
+  - Parameter of interest:
+
+  - Sampling Frame:
+
+  - Sample:
+
+  - Potential Bias:
+
+**Example 3:** State police set up a roadblock to check cars for up-to-date registration and insurance. They usually find problems in about 10% of the cars they stop.
+
+- Identify the following:
+
+  - Population:
+
+  - Parameter of interest
+
+  - Sampling Frame:
+
+  - Sample:
+
+  - Potential Bias:
+
+# Inference for a Single Quantitative Variable
+
+## Definitions
+
+Summary Statistics: statistics calculated from a sample that provide numeric information about the sample
+
+- Mean / Average
+
+  - Add up all the values first, then divide by the total number of values
+
+- Median
+
+  - Half of the data is above, half is below
+
+  - "Middle" value when data is ordered
+
+- Outliers: unusual data points
+
+A summary statistic is called \_\_\_\_\_\_\_\_\_\_\_\_\_\_ if its value does not change much when outliers are included
+
+Example: Suppose that the following values are observed. Calculate the mean and median.
+
+![](media/image2.png){width="6.5in" height="0.39375in"}
+
+Suppose that instead of 15, the value 30 was observed. Calculate the mean and the median.
+
+![**30**](media/image2.png){width="6.5in" height="0.39375in"}
+
+Note: The standard deviation will \_\_\_\_\_\_\_\_\_\_\_\_\_ if an outlier is added to the data set.
+
+## Symbols
+
+Sample mean: $\overline{x}$ (observed statistic)
+
+Sample Standard Deviation: $s$
+
+Population Mean: $\mu$ (hypothesized value)
+
+Population Standard Deviation: $\sigma$
+
+Review:
+
+  -------------------------------------------------
+                **Quantitative**   **Categorical**
+  ------------ ------------------ -----------------
+   Population          µ                  π
+
+     Sample     $$\overline{x}$$   $$\widehat{p}$$
+  -------------------------------------------------
+
+## Analysis of a Single Quantitative Variable
+
+**Variable of Interest:**
+
+- Number of ... context, quantitative
+
+**Parameter:**
+
+- "The long run **average**...*context"* ($\mu$)
+
+**Hypotheses:**
+
+- Words:
+
+  - Null: The long-run average ...*context...* is equal to previously known #.
+
+  - Alternative: The long-run average ...*context...* is greater than/ less than/ different from previously known #..
+
+- Symbols:
+
+  - $H_{0}:\mu = previously\ known\ \#$
+
+  - $H_{A}:\mu > , < , \neq previously\ known\ \#$
+
+**Example:** Suppose you are interested in whether the average number of bikes sold at a store per day is less than 20
+
+- **Variable of interest:** number of bikes sold in a day, quantitative
+
+- **Parameter:** the long-run average number of bikes sold at the store (µ)
+
+- **Hypotheses**
+
+  - Words
+
+    - Null: The long-run average number of bikes sold at the store is equal to 20
+
+    - Alternative: The long run average number of bikes sold at the store is less than 20
+
+  - Symbols
+
+    - $H_{0}:$
+
+    - $H_{A}:$
+
+For the purposes of our class, we will not use the simulation approach for quantitative data because we do not have coin flips or spinners to model quantitative data. This means that we will not calculate p-values.
+
+## Theory Based Approach (Quantitative)
+
+We need to satisfy at least one of the following conditions to use the theory approach.
+
+- The quantitative variable should have a symmetric distribution
+
+- Sample size ≥ \_\_\_\_\_ and sampling distribution is not strongly skewed
+
+Standard Error = $\frac{s}{\sqrt{n}}$ where s is our sample standard deviation
+
+Standardized Statistic = $\frac{\overline{x} - \mu}{SE} = \frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}$
+
+## Standardized Statistic for Quantitative Data
+
+Remember that the standardized statistic calculates how many standard deviation from the null value that the statistics falls
+
+- For quantitative variables:
+
+$$z = \ Standardized\ statistic\  = \frac{sample\ mean\  - null\ value}{standard\ deviation\ of\ sample\ mean} = \ \frac{\overline{x} - \mu_{0}}{\frac{\sigma}{\sqrt{n}}}$$
+
+Since $\sigma\$is not usually known, we use the sample standard deviation (s) to approximate the standard deviation of sample mean
+
+- This approximation is called the **standard error** (SE) of sample mean
+
+- t = standardized statistic = $\frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}$
+
+Like with the normal approximation, we need a reference distribution. With categorical data, we used the z (standard normal) distribution. Since we are now using the sample standard deviation, we need to use the t distribution instead of the z distribution
+
+![Image result for t distribution vs z distribution](media/image3.jpeg){width="3.1011231408573927in" height="1.837415791776028in"}
+
+One Quantitative Variable
+
+$$SE = \frac{s}{\sqrt{n}} \leftarrow this\ is\ our\ new\ denominator\ for\ standardized\ statistic$$
+
+$$Standardized\ Statistic = t = \frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}$$
+
+Note that the cutoffs are the same as Chapter 1: "outside the 2's -\> reject"
+
+**Example:** You observe the bike sales for 30 days to find the average number of sales to be 19.5, with a sample standard deviation of 2.1
+
+$H_{0}:\mu = 20$
+
+$H_{A}:\mu < 20$
+
+Conclusion: "We \_\_\_\_\_\_ have evidence to conclude the long run average number of bikes sold\
+\
+at the store is \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+# Errors and Significance
+
+With all our hypotheses, we made assumptions about the null hypothesis. Our statistic provided strength of evidence.
+
+Strength of evidence
+
+- Calculate p-value- Probability of our observed statistic happening given the null is true.
+
+- p-value $< \ 0.05\  \rightarrow$ Reject the Null (suggests the alternative)
+
+- p-value $\geq \ 0.05\  \rightarrow$ Fail to Reject the Null
+
+However, some of the null distribution was true even when we rejected the null hypothesis. How do we classify the instances when we are wrong? Recall the Buzz and Doris example.
+
+Hypotheses:
+
+- $H_{O}:$ Buzz is just guessing.
+
+- $H_{A}:$ Buzz is not guessing (i.e. they are communicating).
+
+**Type I Error**
+
+- \_\_\_\_\_\_\_\_ the null hypothesis, but in reality the null is actually \_\_\_\_\_\_\_\_\_
+
+- False alarm -- believe we have discovered a difference when no difference exists
+
+- What would a Type I Error look like for the Buzz and Doris scenario?
+
+  - We conclude that Buzz is *not* guessing, but he actually is guessing
+
+**Type II Error**
+
+- \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ the null, but in reality the null is actually \_\_\_\_\_\_\_\_\_\_
+
+- Missed opportunity -- failing to detect difference that is there
+
+- What would a Type II Error look like for the Buzz and Doris scenario?
+
+  - We conclude that Buzz is guessing, when Buzz is actually *not* guessing
+
+![](media/image4.png)![Diagram Description automatically generated](media/image5.png){width="6.408334426946632in" height="2.404494750656168in"}
+
+In reality, we never know if we made an error or not. However, we can control what we want to happen: significance level and power.
+
+## Significance Level (α)
+
+α (alpha) is our "threshold" for p-value (*we have been using 0.05*).
+
+- How small a p-value needs to be to provide convincing evidence to reject the null hypothesis
+
+- p-value $< \alpha\  \rightarrow$ Reject $H_{O}$
+
+- p-value $\geq \alpha\  \rightarrow$ Fail to Reject $H_{O}$
+
+Example:
+
+- If α = 0.05, then for a p-value of 0.07, we will fail to reject our null.
+
+- If α = 0.10, then for a p-value of 0.07, we will reject our null.
+
+This value changes depending on the study, your discipline, etc. Consider a significance level of 0.1. This means, that if the null is really true, 10% of random samples would produce a sample statistic that is extreme enough to reject the null hypothesis.
+
+$\alpha = \$Probability of Type I Error
+
+- The \_\_\_\_\_\_\_\_\_\_ it is, \_\_\_\_\_\_\_\_\_ likely to make a Type I Error
+
+- As the probability of a Type I Error goes \_\_\_\_, the probability of a Type II Error goes \_\_\_
+
+## Power
+
+Power is defined as the probability of rejecting a \_\_\_\_\_ null hypothesis. The calculation of power goes beyond the scope of our class, but we want power to be as high as possible.
+
+$$Power = 1 - P(Type\ II\ Error)$$
+
+![Diagram Description automatically generated](media/image6.png){width="6.5in" height="2.567361111111111in"}
+
+Example: Suppose you are implementing an algorithm that detects fraud on credit cards. From the gathered information, you decide to test the following hypothesis:
+
+- $H_{0}:\$No fraud detected
+
+- $H_{A}:$ Fraud detected
+
+In context, describe the impacts of each type of conclusion.
+
+- Reject the null when the null is true (what type of error is this?)
+
+- Reject the null when the null is false
+
+- Fail to reject the null when the null is true
+
+- Fail to reject the null when the null is false.

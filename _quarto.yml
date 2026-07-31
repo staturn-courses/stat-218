@@ -1,0 +1,24 @@
+project:
+  type: website
+  
+website:
+  title: "STAT 218"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Course Home
+      - href: canvas.qmd
+        text: Canvas
+      - href: assignments.qmd
+        text: Assignments
+      - href: notes.qmd
+        text: Notes
+
+
+format: 
+  html:
+    theme: cosmo
+    toc: true
+    
+execute:
+  freeze: true

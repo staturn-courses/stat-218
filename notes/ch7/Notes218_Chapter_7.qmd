@@ -1,0 +1,318 @@
+# Chapter 7
+
+Recall from Chapter 6 that we were comparing two groups with a quantitative response. The steps to comparing two groups involved calculating the sample means, finding the difference, and then conducting a hypothesis test.
+
+![](media/image1.png)Consider an example where researchers are studying the effect of listening to music with or without lyrics on students' ability to memorize words. The study recruits 28 students to memorize a list of 25 common five-letter words for 90 seconds (while listening to music with or without lyrics) and then write down as many words as they can remember.
+
+Explanatory variable: Music with lyrics or music without lyrics (categorical)
+
+Response variable: Number of words remembered (quantitative)
+
+![](media/image2.png)![](media/image3.png)Previously, we would randomly assign 14 students to each music group. This is known as an **independent design.** Each individual in the group is unrelated to all the other individuals in the study.
+
+# Section 7.1: Paired Designs
+
+## Same Individual Twice
+
+In the example above, we do not really care about the variability between the students. We can design the experiment in such a way where we measure each individual twice. In this case, the randomization comes from randomly assigning which order the students listen to the music.
+
+Question: why is it important to randomize the order?
+
+The data would be arranged in the following format.
+
+![](media/image4.png)
+
+  ----------------------------------------------------------------------------
+       **Student ID**           **With Lyrics**         **Without Lyrics**
+  ------------------------ ------------------------- -------------------------
+   ![](media/image5.png)1   ![](media/image6.png)18   ![](media/image7.png)19
+
+             2                        10                        13
+
+            ...                       ...                       ...
+
+             28                        7                        15
+  ----------------------------------------------------------------------------
+
+## Matching individual
+
+Another method for creating a paired design is to match up similar experimental units. In the case of the example, we could have the students take a pretest and then pair up students based on their pretest. After the students are paired up, they are randomly assigned to listen to music either with or without lyrics.
+
+![](media/image8.png)
+
+  ----------------------------------------------------------------------------
+   **Student ID Grouping (and order)**   **With Lyrics**   **Without Lyrics**
+  ------------------------------------- ----------------- --------------------
+                 1 / 16                        18                  19
+
+                 3 / 22                        10                  13
+
+                   ...                         ...                ...
+
+                 28 / 9                         7                  15
+  ----------------------------------------------------------------------------
+
+## Paired Designs
+
+**Paired Designs:** response variables come in pairs, with one response value in the pair belonging to each explanatory variable group.
+
+![](media/image9.png)![](media/image10.png)Pairs can come from matching individuals OR measuring the same individual twice (repeated measures).
+
+![](media/image11.png)![](media/image12.png)![](media/image13.png)![](media/image14.png)With the pairs, we can focus on the differences as our response. There are advantages to using a paired design. In many cases, it is better to measure the response on the same person/thing (because of similar units, measured over time, etc.). Pairing helps us to look at the differences between the explanatory variable groups rather than the differences between the observational units. If your design is a matched paired design, it must be analyzed as matched pairs.
+
+## Examples
+
+Which of the following scenarios can be conducted as a paired design?
+
+- Reaction times for students taken at 8:00 a.m. compared to reaction times for the same students taken at 10:00 p.m.
+
+- Change in weight for those on the Atkins Diet compared to the change in weight for those on the Paleo Diet.
+
+- Times for skiers to complete a downhill skiing race course on skis treated with wax A with times for skiers with similar experience to complete the course on skis treated with wax B
+
+Which of the following scenarios are examples of a paired design?
+
+- A teacher taught one class a lesson using technology and another class without technology. Their scores on a quiz were then compared.
+
+- ![](media/image15.png)A teacher taught a lesson using technology and then compared the class scores on a quiz to the national average score.
+
+- ![](media/image16.png)![](media/image17.png)Pairs of students were matched by similar IQs. One of the pair was taught a lesson using technology and one without technology. Their scores on a quiz were then compared.
+
+# Section 7.3: Theory based Approach to Analyzing Data from Matched Pairs
+
+![](media/image18.png)**Parameters**
+
+$\mu_{d}$: The long-run **average difference** of "context" between group 1 and group 2.
+
+**Hypothesis (assuming no difference)**
+
+Null: The long-run average difference of "context" between group 1 and group 2 is 0
+
+![](media/image19.png)Alt: The long-run average difference of "context" between group 1 and group 2 is \_\_\_ zero
+
+![](media/image20.png)![](media/image21.png)![](media/image22.png)![](media/image23.png)
+
+> $$H_{0}:\ \mu_{d} = 0$$
+>
+> $$H_{A}:\mu_{d} \neq ,\  > , < 0$$
+
+**Validity Conditions**
+
+At least 20 differences without strong skewness
+
+![](media/image24.png)
+
+![](media/image25.png)![](media/image26.png)![](media/image27.png)**Standard Error**
+
+![](media/image28.png)
+
+> $$\frac{s_{d}}{\sqrt{n_{d}}}$$
+
+![](media/image29.png)
+
+![](media/image30.png)**Standardized Statistic**
+
+> $$\frac{Statistic\  - Hypothesized\ value}{SE} = \ \frac{{\overline{x}}_{d}\  - 0}{SE}$$
+
+**95% Confidence Interval**
+
+> $${\overline{x}}_{d} \pm 2 \cdot SE$$
+
+![](media/image31.png)Interpretation: We are 95% confident that the long-run average difference of "context" between group 1 and group 2 will fall between \_\_\_ and \_\_\_.
+
+![](media/image32.png)![](media/image33.png)Conclusion: We (do / do not) have evidence to conclude that the long-run average difference "context" is (greater than / less than / different than) zero.
+
+Important note: The conclusion is still based off our usual metrics! For the standardized statistic, we compare the value to the 2's. For confidence intervals, we compare the hypothesized value to the CI.
+
+## Music Example
+
+Consider the music example that introduced paired designs. Suppose that you are given the following data.
+
+  --------------------------------------------------------------------------------
+   **Student ID**      **Lyrics**           **No Lyrics**         **Difference**
+  ----------------- ----------------- -------------------------- -----------------
+          1                13                     18                    -5
+
+          2                20          ![](media/image34.png)23         -3
+
+         ...               ...                   ...                    ...
+
+         40                15                     13                     2
+  --------------------------------------------------------------------------------
+
+![](media/image35.png)![](media/image36.png)
+
+${\overline{x}}_{d}$ : -5.02$s_{d}$: 3.1$n_{d}$: 40
+
+Calculate the theory-based standardized statistic and 95% CI
+
+> ![](media/image37.png)
+>
+> $$t = \frac{- 5.02 - 0}{\frac{3.1}{\sqrt{40}}} = - 10.24$$
+>
+> ![](media/image38.png)
+>
+> CI: $- 5.02 \pm 2*\frac{3.1}{\sqrt{40}} = ( - 6,\  - 4.04)$
+
+Reject/fail to reject:
+
+> Reject since standardized statistic \< -2 and CI doesn't contain 0
+
+State a conclusion in context:
+
+> We have strong enough evidence to conclude that the long-run average difference number of words memorized while listening to music with lyrics compared to without lyrics is less than 0.
+
+![](media/image39.png)![](media/image40.png)Notice how the process is the exact same as comparing a single mean (Chapter 2). The only difference is our parameter of interest and the study design.
+
+## Example: Weight Loss
+
+![](media/image41.png)![](media/image42.png)![](media/image43.png)![](media/image44.png)Suppose that a study recruited 50 people to participate in a weight loss study. Researchers are randomly assigning two different diets, A and B, to determine if there is a difference between the two diets. Answer the following questions to each scenario of how this study could be conducted. All scenarios use Diet A - Diet B.
+
+**Scenario 1**
+
+![](media/image45.png)The researchers randomly pair up the participants according to similar characteristics and lifestyles. Within each pair, the researchers randomly assign one participant to Diet A and the other participant to Diet B. The data is listed below, and you may assume that the data is not strongly skewed.
+
+  ------------------------------------------------------------------------
+   **Grouping ID**      **Diet A**        **Diet B**      **Difference**
+  ------------------ ----------------- ---------------- ------------------
+          1                -1.3              2.1               -3.4
+
+         ...                ...              ...               ...
+
+          25               -8.8              2.8               -0.1
+  ------------------------------------------------------------------------
+
+![](media/image46.png)![](media/image47.png)
+
+![](media/image48.png)![](media/image49.png)![](media/image50.png)Difference mean: -6.49
+
+![](media/image51.png)![](media/image52.png)![](media/image53.png)![](media/image54.png)Difference SD: 4.85
+
+![](media/image55.png)![](media/image56.png)![](media/image57.png)![](media/image58.png)![](media/image59.png)Difference sample size: 25
+
+![](media/image60.png)![](media/image61.png)![](media/image62.png)
+
+![](media/image63.png)Questions
+
+1)  What is the parameter of interest in both words and symbols?
+
+2)  Set up the null and alternative hypothesis in symbols.
+
+![](media/image64.png)![](media/image65.png)![](media/image66.png)![](media/image67.png)![](media/image68.png)![](media/image69.png)![](media/image70.png)![](media/image71.png)
+
+$${H_{0}:\ 
+}{H_{A}:\ }$$
+
+3)  Calculate the standard error.
+
+4)  ![](media/image72.png)![](media/image73.png)Calculate the standardized statistic.
+
+5)  ![](media/image74.png)![](media/image75.png)![](media/image76.png)![](media/image77.png)Calculate the 95% confidence interval.
+
+6)  ![](media/image78.png)Write a conclusion for this scenario.
+
+![](media/image79.png)![](media/image80.png)![](media/image81.png)![](media/image82.png)![](media/image83.png)![](media/image84.png)![](media/image85.png)**\**
+
+**Scenario 2**
+
+The researchers randomly assigned participants to either Diet A or Diet B. The data is listed below, and you may assume that the data is not strongly skewed.
+
+  -----------------------------------------------------------------------
+          **ID**                 **Diet**              **Response**
+  ----------------------- ----------------------- -----------------------
+             1                       A                     -2.1
+
+            ...                     ...                     ...
+
+            50                       B                     -0.9
+  -----------------------------------------------------------------------
+
+![](media/image86.png)![](media/image87.png)![](media/image88.png)
+
+Diet A mean: -5.22
+
+![](media/image89.png)![](media/image90.png)![](media/image91.png)![](media/image92.png)Diet A SD: 3.46
+
+![](media/image93.png)![](media/image94.png)Diet A sample size: 25
+
+![](media/image95.png)![](media/image96.png)Diet B mean: 1.23
+
+Diet B SD: 2.86
+
+![](media/image97.png)Diet B sample size: 25
+
+Questions
+
+1)  What is the parameter of interest in both words and symbols?
+
+![](media/image98.png)![](media/image99.png)![](media/image100.png)![](media/image101.png)![](media/image102.png)
+
+2)  ![](media/image103.png)Set up the null and alternative hypothesis in symbols.
+
+![](media/image104.png)![](media/image105.png)![](media/image106.png)![](media/image107.png)
+
+$${H_{0}:\ 
+}{H_{A}:\ }$$
+
+![](media/image108.png)
+
+3)  Calculate the standard error.
+
+4)  Calculate the standardized statistic.
+
+5)  ![](media/image109.png)Calculate the 95% confidence interval.
+
+6)  Write a conclusion for this scenario.
+
+![](media/image110.png)![](media/image111.png)![](media/image112.png)![](media/image113.png)![](media/image114.png)![](media/image115.png)![](media/image116.png)![](media/image117.png)![](media/image118.png)**\**
+
+**Scenario 3**
+
+![](media/image119.png)The researchers randomly assign each participant to either take Diet A first or Diet B first. After concluding the results, they have the participants switch to the opposite diet. The data is listed below, and you may assume that the data is not strongly skewed.
+
+  ------------------------------------------------------------------------
+        **ID**          **Diet A**        **Diet B**      **Difference**
+  ------------------ ----------------- ---------------- ------------------
+          1                -1.4              -0.6              -2.0
+
+         ...                ...              ...               ...
+
+          50               -0.3              2.7               -3.0
+  ------------------------------------------------------------------------
+
+![](media/image120.png)
+
+Difference mean: -5.42
+
+![](media/image121.png)Difference SD: 4.43
+
+![](media/image122.png)Difference sample size: 50
+
+Questions
+
+1)  What is the parameter of interest in both words and symbols?
+
+![](media/image123.png)![](media/image124.png)![](media/image125.png)![](media/image126.png)![](media/image127.png)
+
+2)  Set up the null and alternative hypothesis in symbols.
+
+![](media/image128.png)![](media/image129.png)![](media/image130.png)![](media/image131.png)![](media/image132.png)![](media/image133.png)
+
+$${H_{0}:\ 
+}{H_{A}:\ }$$
+
+![](media/image134.png)![](media/image135.png)
+
+3)  Calculate the standard error.
+
+4)  Calculate the standardized statistic.
+
+5)  Calculate the 95% confidence interval.
+
+6)  Write a conclusion for this scenario.
+
+![](media/image136.png)![](media/image137.png)![](media/image138.png)![](media/image139.png)![](media/image140.png)
+
+![](media/image141.png)
+
+Which of the three scenarios do you think is the best for the given context? Explain why.

@@ -1,0 +1,484 @@
+# Section 5.1: Comparing Two Groups - Categorical Response
+
+## Introduction
+
+![](media/image1.png)![](media/image2.png)![](media/image3.png)Main focus: "Are these two groups different?"
+
+![](media/image4.png)![](media/image5.png)![](media/image6.png)
+
+![](media/image7.png)For strength of evidence, we will use:
+
+- p-values (simulation only)
+
+- Standardized statistics
+
+- ![](media/image8.png)![](media/image9.png)![](media/image10.png)![](media/image11.png)Confidence intervals
+
+## Example: Murderous Nurse
+
+![](media/image12.png)![](media/image13.png)![](media/image14.png)For several years in the 1990s, Kristen Gilbert worked as a nurse in the intensive care unit (ICU) of the Veterans Administration Hospital in Northampton, Massachusetts. Over the course of her time there, other nurses came to suspect that she was killing patients by injecting them with the heart stimulant epinephrine. Gilbert was eventually arrested and charged with these murders. Part of the evidence presented against Gilbert at her murder trial was a statistical analysis of 1,641 eight-hour shifts during the time Gilbert worked in the ICU. For each of these shifts, researchers recorded two variables: whether or not Gilbert worked on the shift and whether or not at least one patient died during the shift.
+
+![](media/image15.png)Results: Of the 257 shifts that Gilbert worked, 40 of the shifts had a patient that died. Of the 1,384 shifts that Gilbert did not work, 34 had a patient that died
+
+Answer the following questions:
+
+1)  What is the observational unit?
+
+![](media/image16.png)![](media/image17.png)![](media/image18.png)![](media/image19.png)
+
+2)  What is the explanatory variable? Variable type?
+
+![](media/image20.png)![](media/image21.png)![](media/image22.png)![](media/image23.png)![](media/image24.png)![](media/image25.png)
+
+3)  What is the response variable? Variable type?
+
+![](media/image26.png)![](media/image27.png)![](media/image28.png)![](media/image29.png)![](media/image30.png)![](media/image31.png)
+
+4)  Was the study observational or experimental? Why?
+
+![](media/image32.png)![](media/image33.png)
+
+![](media/image34.png)![](media/image35.png)![](media/image36.png)![](media/image37.png)
+
+5)  How would the data look in a spreadsheet?
+
+  ---------------------------------------------------------------------------------------------------------------
+    **Shift ID**     ![](media/image38.png)![](media/image39.png)   ![](media/image40.png)![](media/image41.png)
+  ----------------- ---------------------------------------------- ----------------------------------------------
+          1                     ![](media/image42.png)                         ![](media/image43.png)
+
+          2                     ![](media/image44.png)                         ![](media/image45.png)
+
+          3                     ![](media/image46.png)                         ![](media/image47.png)
+
+         ...                             ...                                            ...
+
+        1,641                                                      
+  ---------------------------------------------------------------------------------------------------------------
+
+## Two-Way Table
+
+A contingency table (also known as a two-way table) is a convenient method for organizing categorical data. In this course, we will put the explanatory variables as the column names and the response variable as the row names.
+
+![](media/image48.png)![](media/image49.png)
+
+  ----------------------------------------------------------------------------------------------------------------
+                                      **Gilbert working on shift**   **Gilbert not working on shift**   **Total**
+  ---------------------------------- ------------------------------ ---------------------------------- -----------
+    **Patient died during shift**       ![](media/image50.png)40                    34                     74
+
+   **No patient died during shift**    ![](media/image51.png)217       ![](media/image52.png)1,350        1,567
+
+              **Total**                ![](media/image53.png)257                  1,384                   1,641
+  ----------------------------------------------------------------------------------------------------------------
+
+Now that the data is organized, why would comparing 40 to 34 not be a good idea?
+
+![](media/image54.png)![](media/image55.png)![](media/image56.png)![](media/image57.png)![](media/image58.png)![](media/image59.png)![](media/image60.png)![](media/image61.png)
+
+## Conditional Proportions
+
+![](media/image62.png)**Conditional proportion:** the proportion of "successes" within each \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+![](media/image63.png)
+
+![](media/image64.png)
+
+![](media/image65.png)![](media/image66.png)
+
+![](media/image67.png)![](media/image68.png)![](media/image69.png)
+
+![](media/image70.png)
+
+Calculating the conditional proportions
+
+- Proportion of Gilberts shifts in which a patient died
+
+  - ${\widehat{\mathbf{p}}}_{\mathbf{G}}\mathbf{=}\frac{Patients\ died\ Given\ Gilbert\ Working}{Total\ Shifts\ Gilbert\ Works} = \frac{40}{257} = 0.156$
+
+  - 15.6% of patients die when Gilbert is working
+
+- Proportion of non-Gilbert shifts in which a patient died
+
+  - ${\widehat{\mathbf{p}}}_{\mathbf{NG}}\mathbf{=}\frac{Patients\ died\ Given\ Gilbert\ NOT\ Working}{Total\ Shifts\ Gilbert\ Does\ NOT\ Work} = \frac{34}{1384} = 0.025$
+
+  - 2.5% of patients die when Gilbert is not working
+
+Compare positive responses in both groups by looking at the **difference in proportion**
+
+![](media/image71.png)![](media/image72.png)![](media/image73.png)
+
+$${\widehat{p}}_{G} - {\widehat{p}}_{NG} = 0.156 - 0.025 = 0.131$$
+
+**Interpretation:** Proportion of deaths was 13.1% higher for Gilbert shifts than for non-Gilbert shifts.
+
+## Relative Risk
+
+![](media/image74.png)![](media/image75.png)Relative risk: ratio between two \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+- "How many times as large the risk of an outcome is for one group compared to another"
+
+From the example,
+
+![](media/image76.png)![](media/image77.png)![](media/image78.png)
+
+$$\frac{{\widehat{\mathbf{p}}}_{\mathbf{G}}}{{\widehat{\mathbf{p}}}_{\mathbf{NG}}}\mathbf{=}\frac{\frac{40}{257}}{\frac{34}{1384}} = \ \frac{0.15}{0.02} = 7.5$$
+
+**Interpretation:** The proportion of deaths is 7.5 times as large on a Gilbert shift than a non-Gilbert shift.
+
+In general, it is common to calculate the relative risk using the larger proportion in the numerator.
+
+A word of caution, the use of relative risk can sometimes be misleading. Consider the following two examples:
+
+  ---------------------------------------------------------
+  $$\frac{0.0005}{0.0001} = 5$$   $$\frac{0.5}{0.1} = 5$$
+  ------------------------------- -------------------------
+
+  ---------------------------------------------------------
+
+If the proportions represent having a disease or not based on a particular genetic factor or not, which scenario would you have a lesser probability of having the disease?
+
+## Example: Murderous Nurse
+
+Consider the evidence from the murderous nurse scenario. Would you present the difference in proportion and relative to a jury as evidence?
+
+- The difference was greater than 0
+
+- The relative risk is greater than 1
+
+However, the study was observational and thus cannot conclude that Gilbert caused the deaths (no random assignment to shifts). One such possible alternative is that Gilbert possibly worked shifts where more patients die.
+
+# Section 5.2: Simulation-Based Approach
+
+![](media/image79.png)![](media/image80.png)Now that we are working with two proportions, our research question becomes "is there a difference between the two groups?"
+
+**Null hypothesis:** no difference in probability of success
+
+**One repetition:** Random assignment of response outcomes to two groups
+
+**Parameter:**
+
+- ![](media/image81.png)![](media/image82.png)Long run difference in proportion of ***"context here"*** between ***group 1*** and ***group 2***.
+
+- $\pi_{Group\ 1} - \ \pi_{Group\ 2}$
+
+![](media/image83.png)![](media/image84.png)**Observed Statistic:** Difference in conditional proportions
+
+- ${\widehat{p}}_{Group\ 1} - \ {\widehat{p}}_{Group\ 2}$
+
+![](media/image85.png)![](media/image86.png)![](media/image87.png)**Hypotheses:**
+
+- $H_{O}:\ \pi_{Group\ 1} - \ \pi_{Group\ 2} = 0$
+
+- $H_{A}:\ \pi_{Group\ 1} - \ \pi_{Group\ 2}\  < ,\  > , \neq 0$
+
+- ![](media/image88.png)![](media/image89.png)![](media/image90.png)Or equivalently,
+
+  - $H_{O}:\ \pi_{Group\ 1} = \pi_{Group\ 2}$
+
+  - $H_{A}:\ \pi_{Group\ 1} < ,\  > , \neq \pi_{Group\ 2}$
+
+## Example: Swimming with Dolphins
+
+![](media/image91.png)![](media/image92.png)![](media/image93.png)![](media/image94.png)![](media/image95.png)![](media/image96.png)![](media/image97.png)![](media/image98.png)![](media/image99.png)Is swimming with dolphins therapeutic for patients with clinical depression? A 2005 study (Antonioli and Reveley) recruited 30 subjects with a clinical diagnosis of mild to moderate depression. These 30 subjects went to an island oﬀ the coast of Honduras, where they were randomly assigned to one of two treatment groups. Both groups engaged in one hour of swimming and snorkeling each day, but one group did so in the presence of bottlenose dolphins and the other group did not. However, note that participants in the dolphin group and the control group experienced identical conditions except for the presence of dolphins. At the end of two weeks, each subject's level of depression was evaluated. The researchers looked to see whether or not the subject achieved substantial reduction (improvement) in their depression. They found that, of the 10 subjects in the dolphin group, 9 showed substantial improvement. Of the 20 in the control group, 3 showed substantial improvement.
+
+*Source: <https://www.medpagetoday.com/psychiatry/depression/2221>*
+
+**Research question:** Is swimming with dolphins therapeutic?
+
+**Explanatory Variable:** Dolphin or control (categorical)
+
+**Response Variable:** Improve or did not improve (categorical)
+
+  ------------------------------------------------------------------------------------------------------------
+                                      **Dolphin**                           **Control**           **Total**
+  ----------------- ------------------------------------------------ ------------------------- ---------------
+     **Improve**                ![](media/image100.png)                                              12
+
+   **Not Improve**   ![](media/image101.png)![](media/image102.png)   ![](media/image103.png)        18
+
+      **Total**                            10                                   20                   30
+  ------------------------------------------------------------------------------------------------------------
+
+**Conditional Proportions of Improved**
+
+![](media/image104.png)
+
+> Dolphin group: ${\widehat{p}}_{D} = \frac{9}{10} = 0.9$
+>
+> Control group: ${\widehat{p}}_{C} = \frac{3}{20} = 0.15$
+
+**Relative risk**
+
+> $\frac{\frac{9}{10}}{\frac{3}{20}}$ = 6
+>
+> ![](media/image105.png)![](media/image106.png)![](media/image107.png)![](media/image108.png)![](media/image109.png)![](media/image110.png)What is the interpretation?
+
+![](media/image111.png)![](media/image112.png)![](media/image113.png)**Difference in proportions**
+
+> 0.9 -- 0.15 = 0.75
+>
+> ![](media/image114.png)![](media/image115.png)![](media/image116.png)![](media/image117.png)![](media/image118.png)
+>
+> ![](media/image119.png)What is the interpretation?
+>
+> ![](media/image120.png)![](media/image121.png)![](media/image122.png)![](media/image123.png)![](media/image124.png)![](media/image125.png)
+
+![](media/image126.png)Consider the research question to formulate the hypothesis test.
+
+![](media/image127.png)
+
+> $${H_{0}:\ \pi_{D} = \pi_{C}
+> }{H_{0}:\pi_{D} > \pi_{C}}$$
+>
+> ![](media/image128.png)
+
+or equivalently,
+
+> ![](media/image129.png)![](media/image130.png)![](media/image131.png)![](media/image132.png)![](media/image133.png)![](media/image134.png)![](media/image135.png)
+>
+> $$H_{0}:\ $$
+>
+> $$
+> {H_{0}:}$$
+
+![](media/image136.png)
+
+Two Proportions Applet:
+
+![A picture containing diagram Description automatically generated](media/image137.png){width="4.093022747156605in" height="3.924329615048119in"}
+
+![Chart Description automatically generated](media/image138.png){width="5.175022965879265in" height="4.093023840769904in"}
+
+The applet calculates the p-value using the alternative hypothesis of
+
+$$GroupA - GroupB < , > , \neq 0$$
+
+It is important to keep track of the difference in proportions and the interpretation of the hypothesis test.
+
+![](media/image139.png)
+
+**Standardized statistic**
+
+![](media/image140.png)
+
+$$\frac{\mathbf{Observed\ Statistic\  - Hypothesized\ value}}{\mathbf{Standard\ Deviation\ of\ the\ Null}} = \frac{(\ {\widehat{p}}_{1}\  - \ {\widehat{p}}_{2}\ )\  - \text{0~}}{Simulated\ from\ Applet}$$
+
+![](media/image141.png)
+
+**Conclusions**
+
+We use the same p-value and standardized statistic conclusions as before. For p-values, we have evidence against the null if the p-value is less than the significance level (typically 0.05). For standardized statistics, we have evidence against the null if the standardized statistic is outside of the 2's.
+
+In context,
+
+- ![](media/image142.png)![](media/image143.png)![](media/image144.png)We ***"do/do not"*** have strong evidence to conclude that the long run difference in proportions of ***"context"*** between the ***"group 1"*** and ***"group 2"*** is ***"greater than/less than/not equal to"*** zero.
+
+From the example, the standardized statistic is
+
+![](media/image145.png)![](media/image146.png)![](media/image147.png)
+
+$$\frac{{\widehat{p}}_{Dolphin} - {\widehat{p}}_{Control}}{Simulated\ SD} = \frac{0.75 - 0}{0.191} = 3.9$$
+
+Since 3.9 is outside of the 2's, our conclusion is:
+
+- We do have strong evidence to conclude that the long run difference in proportions of improvers between the dolphin group and the control group is greater than zero.
+
+**Confidence interval**
+
+- ![](media/image148.png)![](media/image149.png)![](media/image150.png)95% Confidence Interval from simulation
+
+$$observed\ statistic \pm 2*SE = \widehat{p_{1}} - \widehat{p_{2}} \pm 2*(SD\ of\ Null)$$
+
+- Interpretation in Context
+
+  - ![](media/image151.png)![](media/image152.png)We're 95% confident that the long run difference in proportions of ***"context"*** between "***group 1"** and **"group 2"*** falls between \_\_\_\_\_\_\_\_ and \_\_\_\_\_\_\_\_\_.
+
+- ![](media/image153.png)![](media/image154.png)If 0 is inside the interval $\rightarrow \$ Fail to Reject
+
+  - 0 is a plausible value, and it is possible that the groups are the same
+
+- If 0 is outside the interval $\rightarrow$ Reject
+
+  - We would not expect to see 0 as a difference and the groups are different
+
+![](media/image155.png)![](media/image156.png)
+
+![](media/image157.png)![](media/image158.png)![](media/image159.png)![](media/image160.png)![](media/image161.png)![](media/image162.png)From the example,
+
+![](media/image163.png)
+
+- ![](media/image164.png)![](media/image165.png)![](media/image166.png)C$onfidence\ Interval$
+
+> $$0.75 \pm 2*(0.193) = (\ \ \ \ \ \ ,\ \ \ \ \ \ )$$
+>
+> ![](media/image167.png)
+
+- ![](media/image168.png)![](media/image169.png)![](media/image170.png)We are 95% confident that the long run difference in proportions of improvers between the dolphin group and the control group falls between \_\_\_\_\_and \_\_\_\_\_\_\_.
+
+# Section 5.3: Theory Based Approach
+
+## Setting up the hypothesis
+
+- Parameter: Long run difference in proportion of ***"context here"*** between ***group 1*** and ***group 2***.
+
+- Hypotheses in words:
+
+  - Null: Long run difference in proportion of ***"context here"*** between ***group 1*** and ***group 2*** is ***zero***.
+
+  - Alternative: Long run difference in proportion of ***"context here"*** between ***group 1*** and ***group 2*** is (less than, greater than, not equal to) ***zero.***
+
+## Validity Conditions
+
+For the theory conditions to hold, we need to have at least 10 observations of the 2x2 table.
+
++----------------+-------------------+-------------------+----------------------------------+
+|                | **Group 1**       | **Group 2**       | ![](media/image171.png)**Total** |
++:==============:+:=================:+:=================:+:================================:+
+| **Response 1** | $$s_{1} \geq 10$$ | $$s_{2} > 10$$    | $$s_{1} + s_{2}$$                |
+|                |                   |                   |                                  |
+| **(Success)**  |                   |                   |                                  |
++----------------+-------------------+-------------------+----------------------------------+
+| **Response 2** | $$f_{1} \geq 10$$ | $$f_{2} \geq 10$$ | ![](media/image172.png)          |
+|                |                   |                   |                                  |
+| **(Failure)**  |                   |                   |                                  |
++----------------+-------------------+-------------------+----------------------------------+
+| **Total**      | $$n_{1}$$         | $$n_{2}$$         | $$n_{1} + n_{2}$$                |
++----------------+-------------------+-------------------+----------------------------------+
+
+## Standard Error for Standardized Statistics
+
+![](media/image173.png)
+
+- $SE = \sqrt{\overline{p}\left( 1 - \overline{p} \right)(\frac{1}{n_{1}} + \frac{1}{n_{2}}\ )}$
+
+- Where does $\overline{p}$ come from?
+
+  - we're assuming the null hypothesis is true and trying to show the alternative is true
+
+  - if the null is true, there is no difference in ${\widehat{p}}_{1}\ and\ {\widehat{p}}_{2}$. Why??
+
+![](media/image174.png)
+
+$$\overline{\mathbf{p}}\mathbf{=}\frac{\mathbf{s1 + s2}}{\mathbf{n1 + n2}}$$
+
+## Standardized Statistic
+
+- General Formula:
+
+$$SS = \frac{observed\ statistic\  - null\ value}{SD\ of\ the\ null\ (or\ SE)}$$
+
+- ![](media/image175.png)![](media/image176.png)Two Group Categorical Specific:
+
+$$SS = \frac{\left( {\widehat{p}}_{1}\  - \ {\widehat{p}}_{2} \right) - 0\ \text{~}}{SE} = \frac{\left( {\widehat{p}}_{1}\  - \ {\widehat{p}}_{2} \right) - 0\ \text{~}}{\sqrt{\overline{p}\left( 1 - \overline{p} \right)(\frac{1}{n_{1}} + \frac{1}{n_{2}}\ )}}$$
+
+## Confidence Interval
+
+- ![](media/image177.png)General Formula:
+
+$$\ Observed\ Statistic \pm Multiplier*SE$$
+
+Margin of Error (MOE)
+
+Recall that we had a different standard error formula in Chapter 1 when we are calculating for either a standardized statistic or confidence interval when the data is categorical. For confidence intervals,
+
+![](media/image178.png)![](media/image179.png)
+
+$$SE = \sqrt{\frac{{\widehat{p}}_{1}(1 - {\widehat{p}}_{1})}{n_{1}} + \frac{{\widehat{p}}_{2}(1 - {\widehat{p}}_{2})}{n_{2}}}$$
+
+- Two Group Categorical Specific (95% Confidence):
+
+$$\widehat{(p_{1}} - \widehat{p_{2}}\ ) \pm 2*\sqrt{\frac{{\widehat{p}}_{1}(1 - {\widehat{p}}_{1})}{n_{1}} + \frac{{\widehat{p}}_{2}(1 - {\widehat{p}}_{2})}{n_{2}}}$$
+
+![](media/image180.png)**[Interpretation]{.underline}**
+
+- We are 95% confident that the long run difference in proportion of ***"context here"*** between ***group 1*** and ***group 2*** is between \_\_\_\_\_\_\_\_ and \_\_\_\_\_\_\_\_\_.
+
+**[Alternately... Be careful with wording on this one!]{.underline}**
+
+- We are 95% confident the true proportion of **"context"** in "**group 1"** is **"lower limit"** to **"upper limit" "more or less"** than the true proportion of **"context"** in "**group 2."**
+
+- With differences, if **0** in interval, **NOT** significantly different
+
+## 
+
+![](media/image181.png)![](media/image182.png)![](media/image183.png)![](media/image184.png)![](media/image185.png)![](media/image186.png)![](media/image187.png)![](media/image188.png)![](media/image189.png)
+
+## 
+
+## Example: Near-sightedness
+
+Myopia, or near-sightedness, typically develops during childhood years. Some studies have explored whether there is an association between development of myopia and the use of nightlights with infants. One study (Quinn, et al., 1999) interviewed parents of 479 children who were seen as outpatients in a university pediatric ophthalmology clinic. One of the questions asked whether the child typically slept with light in the room or in darkness before age 2. Based on the child's most recent eye examination, the children were also separated into two groups: near-sighted or not near-sighted.
+
+Research Question:
+
+- ![](media/image190.png)Are children who sleep in darkness less likely to develop near-sightedness?
+
+Explanatory Variable:
+
+- Darkness or Light in Room, categorical
+
+Response Variable:
+
+- Near-sighted or Not near-sighted, categorical
+
+Parameter:
+
+- The long run difference in proportions between children who sleep in darkness and those who sleep with light in their rooms.
+
+  ------------------------------------------------------------------------------------------------------------
+                                **Darkness**              **Light in Room**                **Total**
+  ---------------------- --------------------------- ---------------------------- ----------------------------
+     **Near-sighted**     ![](media/image191.png)18   ![](media/image192.png)119   ![](media/image193.png)137
+
+   **Not near-sighted**              154                         188                          342
+
+        **Total**                    172                         307               ![](media/image194.png)479
+  ------------------------------------------------------------------------------------------------------------
+
+Answer the following questions
+
+1)  Set up the null and alternative hypothesis, in symbols.
+
+![](media/image195.png)![](media/image196.png)![](media/image197.png)![](media/image198.png)![](media/image199.png)
+
+> $${H_{0}:\ 
+> }{H_{A}:\ }$$
+
+![](media/image200.png)![](media/image201.png)
+
+2)  Are the validity conditions met? Why or why not?
+
+![](media/image202.png)![](media/image203.png)![](media/image204.png)![](media/image205.png)![](media/image206.png)
+
+3)  ![](media/image207.png)![](media/image208.png)Calculate the conditional proportions.
+
+![](media/image209.png)![](media/image210.png)![](media/image211.png)![](media/image212.png)![](media/image213.png)![](media/image214.png)
+
+4)  Calculate the difference in proportions.
+
+![](media/image215.png)![](media/image216.png)![](media/image217.png)![](media/image218.png)![](media/image219.png)![](media/image220.png)![](media/image221.png)
+
+5)  Calculate the relative risk.
+
+![](media/image222.png)
+
+6)  ![](media/image223.png)![](media/image224.png)![](media/image225.png)![](media/image226.png)![](media/image227.png)Calculate $\overline{p}$.
+
+![](media/image228.png)![](media/image229.png)![](media/image230.png)![](media/image231.png)![](media/image232.png)
+
+7)  ![](media/image233.png)![](media/image234.png)![](media/image235.png)Calculate the standard error.
+
+8)  ![](media/image236.png)![](media/image237.png)![](media/image238.png)![](media/image239.png)![](media/image240.png)Calculate the standardized statistic. Does this reject or fail to reject the null hypothesis? Explain why.
+
+![](media/image241.png)![](media/image242.png)
+
+9)  ![](media/image243.png)Calculate the 95% confidence interval. Does this reject or fail to reject the null hypothesis? Explain why.
+
+10) What conclusion would you tell the researchers?
+
+We do have evidence to conclude that the long run difference in proportion for developing near-sightedness between children who slept in the dark and children who slept in the light is less than 0.
+
+11) ![](media/image244.png)![](media/image245.png)![](media/image246.png)![](media/image247.png)![](media/image248.png)![](media/image249.png)![](media/image250.png)![](media/image251.png)![](media/image252.png)![](media/image253.png)![](media/image254.png)![](media/image255.png)![](media/image256.png)![](media/image257.png)![](media/image258.png)What type of error might this study have made?
+
+Type I error is possible

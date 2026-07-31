@@ -1,0 +1,14 @@
+---
+title: "Assignments"
+format: html
+---
+
+## Homework / Projects
+
+- [HW 1](assessements/test.qmd), due NOW
+
+## Tests
+
+
+
+## Final

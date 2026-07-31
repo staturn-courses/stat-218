@@ -1,0 +1,29 @@
+---
+format: html
+---
+
+**References**
+
+Simulation applets for our book can be found here: <http://www.isi-stats.com/isi2nd/applets2021.html>
+
+---
+
+**Chapter P**
+
+- [Slides](notes/ch0/Notes218_Chapter_P.qmd) | [Notes (pdf)](_site/notes/ch0/Notes218_Chapter_P.pdf)
+
+**Chapter 1**
+
+**Chapter 2**
+
+**Chapter 3**
+
+**Chapter 4**
+
+**Chapter 5**
+
+**Chapter 6**
+
+**Chapter 7**
+
+**Chapter 10**

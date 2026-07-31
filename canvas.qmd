@@ -1,0 +1,11 @@
+---
+title: "canvas.qmd"
+format: html
+---
+
+[Canvas](canvas.nebraska.edu) will be used for the following: 
+
+- Discussion/message board
+- Online quizzes
+- Submitting assignments/projects/tests
+- Checking final course grades
