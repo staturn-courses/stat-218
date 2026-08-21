@@ -5,6 +5,7 @@ date: last-modified
 date-format: "[Fall] 2026"
 format: 
   revealjs:
+    theme: beige
     smaller: true
     chalkboard: 
       src: drawings.json
@@ -200,6 +201,8 @@ Check out the following study: <https://www.youtube.com/watch?v=HBW5vdhr_PA>
   - Proportion who picked the helper = $\frac{14}{16}$ = 0.875
 
     - i.e. 87.5% of babies picked the helper toy.
+    
+---
 
 **Step 4: Draw Inferences Beyond the Data**
 

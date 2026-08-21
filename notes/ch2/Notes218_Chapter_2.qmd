@@ -1,3 +1,19 @@
+---
+format: 
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 218}
+        \chead{Chapter 2}
+        \rhead{Fall 2026}
+        \rfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
+---
+
 # Sampling from a Finite Population
 
 ## Definitions
@@ -18,7 +34,6 @@
 
 - Not only to describe a sample, but to generalize characteristics of a sample to a much larger population
 
-![](media/image1.png)
 
 ## Sampling
 
@@ -114,30 +129,33 @@ A summary statistic is called \_\_\_\_\_\_\_\_\_\_\_\_\_\_ if its value does not
 
 Example: Suppose that the following values are observed. Calculate the mean and median.
 
-![](media/image2.png){width="6.5in" height="0.39375in"}
+$$
+8,10,11,12,15,7,8,9
+$$
+
+\
+\
+\
+\
+\
+
 
 Suppose that instead of 15, the value 30 was observed. Calculate the mean and the median.
 
-![**30**](media/image2.png){width="6.5in" height="0.39375in"}
+\
+\
+\
+\
+\
 
 Note: The standard deviation will \_\_\_\_\_\_\_\_\_\_\_\_\_ if an outlier is added to the data set.
 
 ## Symbols
 
-Sample mean: $\overline{x}$ (observed statistic)
-
-Sample Standard Deviation: $s$
-
-Population Mean: $\mu$ (hypothesized value)
-
-Population Standard Deviation: $\sigma$
-
-Review:
-
   -------------------------------------------------
                 **Quantitative**   **Categorical**
   ------------ ------------------ -----------------
-   Population          µ                  π
+   Population          $\mu$                  $\pi$
 
      Sample     $$\overline{x}$$   $$\widehat{p}$$
   -------------------------------------------------
@@ -194,7 +212,7 @@ We need to satisfy at least one of the following conditions to use the theory ap
 
 - The quantitative variable should have a symmetric distribution
 
-- Sample size ≥ \_\_\_\_\_ and sampling distribution is not strongly skewed
+- Sample size $\geq$ \_\_\_\_\_ and sampling distribution is not strongly skewed
 
 Standard Error = $\frac{s}{\sqrt{n}}$ where s is our sample standard deviation
 
@@ -208,7 +226,7 @@ Remember that the standardized statistic calculates how many standard deviation 
 
 $$z = \ Standardized\ statistic\  = \frac{sample\ mean\  - null\ value}{standard\ deviation\ of\ sample\ mean} = \ \frac{\overline{x} - \mu_{0}}{\frac{\sigma}{\sqrt{n}}}$$
 
-Since $\sigma\$is not usually known, we use the sample standard deviation (s) to approximate the standard deviation of sample mean
+Since $\sigma\$ is not usually known, we use the sample standard deviation (s) to approximate the standard deviation of sample mean
 
 - This approximation is called the **standard error** (SE) of sample mean
 
@@ -216,7 +234,7 @@ Since $\sigma\$is not usually known, we use the sample standard deviation (s) to
 
 Like with the normal approximation, we need a reference distribution. With categorical data, we used the z (standard normal) distribution. Since we are now using the sample standard deviation, we need to use the t distribution instead of the z distribution
 
-![Image result for t distribution vs z distribution](media/image3.jpeg){width="3.1011231408573927in" height="1.837415791776028in"}
+
 
 One Quantitative Variable
 
@@ -226,15 +244,15 @@ $$Standardized\ Statistic = t = \frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}$$
 
 Note that the cutoffs are the same as Chapter 1: "outside the 2's -\> reject"
 
+![](../images/Notes218_Chapter_2_image3.jpeg)
+
 **Example:** You observe the bike sales for 30 days to find the average number of sales to be 19.5, with a sample standard deviation of 2.1
 
 $H_{0}:\mu = 20$
 
 $H_{A}:\mu < 20$
 
-Conclusion: "We \_\_\_\_\_\_ have evidence to conclude the long run average number of bikes sold\
-\
-at the store is \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Conclusion: "We \_\_\_\_\_\_ have evidence to conclude the long run average number of bikes sold at the store is \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 # Errors and Significance
 
@@ -242,7 +260,7 @@ With all our hypotheses, we made assumptions about the null hypothesis. Our stat
 
 Strength of evidence
 
-- Calculate p-value- Probability of our observed statistic happening given the null is true.
+- Calculate p-value -- Probability of our observed statistic happening given the null is true.
 
 - p-value $< \ 0.05\  \rightarrow$ Reject the Null (suggests the alternative)
 
@@ -276,13 +294,12 @@ Hypotheses:
 
   - We conclude that Buzz is guessing, when Buzz is actually *not* guessing
 
-![](media/image4.png)![Diagram Description automatically generated](media/image5.png){width="6.408334426946632in" height="2.404494750656168in"}
 
 In reality, we never know if we made an error or not. However, we can control what we want to happen: significance level and power.
 
 ## Significance Level (α)
 
-α (alpha) is our "threshold" for p-value (*we have been using 0.05*).
+$\alpha$ (alpha) is our "threshold" for p-value (*we have been using 0.05*).
 
 - How small a p-value needs to be to provide convincing evidence to reject the null hypothesis
 
@@ -292,13 +309,13 @@ In reality, we never know if we made an error or not. However, we can control wh
 
 Example:
 
-- If α = 0.05, then for a p-value of 0.07, we will fail to reject our null.
+- If $\alpha = 0.05$, then for a p-value of 0.07, we will fail to reject our null.
 
-- If α = 0.10, then for a p-value of 0.07, we will reject our null.
+- If $\alpha = 0.10$, then for a p-value of 0.07, we will reject our null.
 
 This value changes depending on the study, your discipline, etc. Consider a significance level of 0.1. This means, that if the null is really true, 10% of random samples would produce a sample statistic that is extreme enough to reject the null hypothesis.
 
-$\alpha = \$Probability of Type I Error
+$\alpha =$ Probability of Type I Error
 
 - The \_\_\_\_\_\_\_\_\_\_ it is, \_\_\_\_\_\_\_\_\_ likely to make a Type I Error
 
@@ -310,11 +327,11 @@ Power is defined as the probability of rejecting a \_\_\_\_\_ null hypothesis. T
 
 $$Power = 1 - P(Type\ II\ Error)$$
 
-![Diagram Description automatically generated](media/image6.png){width="6.5in" height="2.567361111111111in"}
+![](../images/Notes218_Chapter_2_image6.png)
 
 Example: Suppose you are implementing an algorithm that detects fraud on credit cards. From the gathered information, you decide to test the following hypothesis:
 
-- $H_{0}:\$No fraud detected
+- $H_{0}:$ No fraud detected
 
 - $H_{A}:$ Fraud detected
 

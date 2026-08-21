@@ -9,7 +9,7 @@ format:
         \lhead{STAT 218}
         \chead{Chapter 1}
         \rhead{Fall 2026}
-        \cfoot{\thepage}
+        \rfoot{\thepage}
         \setlength{\headheight}{14pt}
     fig-align: center
 ---
@@ -23,7 +23,6 @@ format:
       boardfmarker-width: 2
 --->
 
-\newpage
 
 ## Terminology
 
@@ -182,7 +181,7 @@ Based on the dot-plot, would you be convinced of the research question if the st
 
 ## Symbols
 
-π (pi) is the \_\_\_\_\_\_\_\_\_\_\_\_\_\_ symbol for [proportions]{.underline}
+$\pi$ (pi) is the \_\_\_\_\_\_\_\_\_\_\_\_\_\_ symbol for [proportions]{.underline}
 
 - "Long run proportion"
 
@@ -206,29 +205,29 @@ Example: Helper-Hinderer
 
 When establishing a hypothesis, we need two components: a null and alternative hypothesis.
 
-> $H_{o} \rightarrow$ Null: "random chance alone"
+$H_{o} \rightarrow$ Null: "random chance alone"
 
-- Chance model
+  - Chance model
+  
+  - Equal to (=)
 
-- Equal to (=)
+$H_{A} \rightarrow$ Alternative: "there is an effect"
 
-> $H_{A} \rightarrow$ Alternative: "there is an effect"
+  - What researchers hope to support
 
-- What researchers hope to support
-
-- Pick \<, \>, or $\neq$ based on what the researchers would like to show
+  - Pick \<, \>, or $\neq$ based on what the researchers would like to show
 
 ## Hypothesis -- One Proportion
 
 Null hypothesis (for proportions):
 
-- π = "expected parameter value"
+- $\pi$ = "expected parameter value"
 
 Alternative hypothesis (for proportions):
 
-- π (\<, \>, ≠) "expected parameter value"
+- $\pi$ (\<, \>, $\neq$) "expected parameter value"
 
-- Choose (\<, \>, ≠) from the research question
+- Choose (\<, \>, $\neq$) from the research question
 
 ## Example: Buzz and Doris
 
@@ -272,7 +271,7 @@ Suppose you played a friend 12 times and you chose scissors 3 times. Identify th
 
 - **Variable of interest:**
 
-- **Parameter (π):**
+- **Parameter ($\pi$):**
 
 - **Observed statistic (**$\widehat{\mathbf{p}}$**):**
 
@@ -310,7 +309,7 @@ Using the 3S Strategy, we can gather strength of evidence for our research quest
 
 ## P-Value
 
-**p-value:** the \_\_\_\_\_\_\_\_\_\_\_\_\_\_ of obtaining a simulated value that is \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_than the observed statistic when the null hypothesis is \_\_\_\_\_\_\_\_.
+**p-value:** the \_\_\_\_\_\_\_\_\_\_\_\_\_\_ of obtaining a simulated value that is \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ than the observed statistic when the null hypothesis is \_\_\_\_\_\_\_\_.
 
 - This value will always be between \_\_\_ and \_\_\_
 
@@ -340,13 +339,13 @@ In this course, we will mainly focus on the cutoff value for p-values \< 0.05. T
 
 Consider the Rock Paper Scissors example. When we simulate the 12 matches 100 times, we get the following null distribution.
 
-
+![]()
 
 p-value: probability of obtaining a simulated value as or more extreme than the observed statistic when the null hypothesis is true
 
 - Observed statistic (3)
 
-Counting in the direction of the alternative hypothesis (π \< 0.33)
+Counting in the direction of the alternative hypothesis ($\pi$ \< 0.33)
 
 - 0 scissors: 0 times
 
