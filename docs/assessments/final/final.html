@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>notes218_chapter_2 – STAT 218</title>
+<title>Final Project – STAT 218</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -155,344 +155,126 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sampling-from-a-finite-population" id="toc-sampling-from-a-finite-population" class="nav-link active" data-scroll-target="#sampling-from-a-finite-population">Sampling from a Finite Population</a>
-  <ul class="collapse">
-  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions">Definitions</a></li>
-  <li><a href="#sampling" id="toc-sampling" class="nav-link" data-scroll-target="#sampling">Sampling</a></li>
-  <li><a href="#sampling-methods" id="toc-sampling-methods" class="nav-link" data-scroll-target="#sampling-methods">Sampling Methods</a></li>
-  </ul></li>
-  <li><a href="#inference-for-a-single-quantitative-variable" id="toc-inference-for-a-single-quantitative-variable" class="nav-link" data-scroll-target="#inference-for-a-single-quantitative-variable">Inference for a Single Quantitative Variable</a>
-  <ul class="collapse">
-  <li><a href="#definitions-1" id="toc-definitions-1" class="nav-link" data-scroll-target="#definitions-1">Definitions</a></li>
-  <li><a href="#symbols" id="toc-symbols" class="nav-link" data-scroll-target="#symbols">Symbols</a></li>
-  <li><a href="#analysis-of-a-single-quantitative-variable" id="toc-analysis-of-a-single-quantitative-variable" class="nav-link" data-scroll-target="#analysis-of-a-single-quantitative-variable">Analysis of a Single Quantitative Variable</a></li>
-  <li><a href="#theory-based-approach-quantitative" id="toc-theory-based-approach-quantitative" class="nav-link" data-scroll-target="#theory-based-approach-quantitative">Theory Based Approach (Quantitative)</a></li>
-  <li><a href="#standardized-statistic-for-quantitative-data" id="toc-standardized-statistic-for-quantitative-data" class="nav-link" data-scroll-target="#standardized-statistic-for-quantitative-data">Standardized Statistic for Quantitative Data</a></li>
-  </ul></li>
-  <li><a href="#errors-and-significance" id="toc-errors-and-significance" class="nav-link" data-scroll-target="#errors-and-significance">Errors and Significance</a>
-  <ul class="collapse">
-  <li><a href="#significance-level-α" id="toc-significance-level-α" class="nav-link" data-scroll-target="#significance-level-α">Significance Level (α)</a></li>
-  <li><a href="#power" id="toc-power" class="nav-link" data-scroll-target="#power">Power</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#description-of-experiment" id="toc-description-of-experiment" class="nav-link" data-scroll-target="#description-of-experiment">Description of Experiment</a></li>
+  <li><a href="#written-component" id="toc-written-component" class="nav-link" data-scroll-target="#written-component">Written Component</a></li>
+  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a></li>
+  <li><a href="#rubric" id="toc-rubric" class="nav-link" data-scroll-target="#rubric">Rubric</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<section id="sampling-from-a-finite-population" class="level1">
-<h1>Sampling from a Finite Population</h1>
-<section id="definitions" class="level2">
-<h2 class="anchored" data-anchor-id="definitions">Definitions</h2>
-<p><strong>Population</strong></p>
-<ul>
-<li><p>Entire collection of observational units we are interested in</p></li>
-<li><p>Relates to the ___________</p></li>
-</ul>
-<p><strong>Sample</strong></p>
-<ul>
-<li><p>A subset of the population</p></li>
-<li><p>Relates to the ___________</p></li>
-</ul>
-<p><strong>Generalizations</strong></p>
-<ul>
-<li>Not only to describe a sample, but to generalize characteristics of a sample to a much larger population</li>
-</ul>
-<p><img src="media/image1.png" class="img-fluid"></p>
-</section>
-<section id="sampling" class="level2">
-<h2 class="anchored" data-anchor-id="sampling">Sampling</h2>
-<p>A sample is considered to be a _______________ sample if it is like or represents the whole population from which it has been drawn.</p>
-<ul>
-<li>Would our class be representative of all UNL students?</li>
-</ul>
-<p>Bias is when a statistic ______________ overestimates or underestimates the population for the parameter of interest.</p>
-<ul>
-<li>Would asking UNL students enrolled in 8 am classes if they are morning people be representative of all UNL students?</li>
-</ul>
-</section>
-<section id="sampling-methods" class="level2">
-<h2 class="anchored" data-anchor-id="sampling-methods">Sampling Methods</h2>
-<ol type="1">
-<li><p><strong>Convenience Sampling</strong></p>
-<ul>
-<li><p>Go and pick out a set of observational units</p></li>
-<li><p>Not a very good way to select a sample because this will introduce _______</p></li>
-<li><p>Example: taking surveys outside of the cafeteria</p></li>
-</ul></li>
-<li><p><strong>Simple Random Sample</strong></p>
-<ul>
-<li><p>Every population member has an equal probability of being chosen</p></li>
-<li><p>Allows us to ________________ our results to the entire population</p></li>
-<li><p>Choose individuals randomly from the sampling frame and each individual has the same chance of being selected</p></li>
-<li><p><strong>Sampling frame:</strong> ______ of all individuals in the population of interest</p></li>
-</ul></li>
-</ol>
-<p><strong>Example 1:</strong> Researchers at UNL are looking for student feedback (approval/disapproval) regarding an upcoming project. They set up a table outside of each dorm hall and ask passing students for their input. The volunteers at the table talk to any student who is interested in providing feedback.</p>
-<ul>
-<li><p>Identify the following</p>
-<ul>
-<li><p>Population:</p></li>
-<li><p>Parameter of interest:</p></li>
-<li><p>Sampling Frame:</p></li>
-<li><p>Sample:</p></li>
-<li><p>Potential Bias:</p></li>
-</ul></li>
-</ul>
-<p><strong>Example 2:</strong> A business magazine mailed a questionnaire to the human resources of all the Fortune 500 companies and received responses from 23% of them. Those responding reported that they did not find that such surveys intruded significantly on their workday.</p>
-<ul>
-<li><p>Identify the following</p>
-<ul>
-<li><p>Population:</p></li>
-<li><p>Parameter of interest:</p></li>
-<li><p>Sampling Frame:</p></li>
-<li><p>Sample:</p></li>
-<li><p>Potential Bias:</p></li>
-</ul></li>
-</ul>
-<p><strong>Example 3:</strong> State police set up a roadblock to check cars for up-to-date registration and insurance. They usually find problems in about 10% of the cars they stop.</p>
-<ul>
-<li><p>Identify the following:</p>
-<ul>
-<li><p>Population:</p></li>
-<li><p>Parameter of interest</p></li>
-<li><p>Sampling Frame:</p></li>
-<li><p>Sample:</p></li>
-<li><p>Potential Bias:</p></li>
-</ul></li>
-</ul>
-</section>
-</section>
-<section id="inference-for-a-single-quantitative-variable" class="level1">
-<h1>Inference for a Single Quantitative Variable</h1>
-<section id="definitions-1" class="level2">
-<h2 class="anchored" data-anchor-id="definitions-1">Definitions</h2>
-<p>Summary Statistics: statistics calculated from a sample that provide numeric information about the sample</p>
-<ul>
-<li><p>Mean / Average</p>
-<ul>
-<li>Add up all the values first, then divide by the total number of values</li>
-</ul></li>
-<li><p>Median</p>
-<ul>
-<li><p>Half of the data is above, half is below</p></li>
-<li><p>“Middle” value when data is ordered</p></li>
-</ul></li>
-<li><p>Outliers: unusual data points</p></li>
-</ul>
-<p>A summary statistic is called ______________ if its value does not change much when outliers are included</p>
-<p>Example: Suppose that the following values are observed. Calculate the mean and median.</p>
-<p><img src="media/image2.png" style="width:6.5in;height:0.39375in"></p>
-<p>Suppose that instead of 15, the value 30 was observed. Calculate the mean and the median.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="media/image2.png" style="width:6.5in;height:0.39375in" class="figure-img"></p>
-<figcaption><strong>30</strong></figcaption>
-</figure>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final Project</h1>
 </div>
-<p>Note: The standard deviation will _____________ if an outlier is added to the data set.</p>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do <strong>not</strong> need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.</p>
+<p>For your convenience, below are the eligible statistical tests:</p>
+<ul>
+<li>One proportion</li>
+<li>Two proportions</li>
+<li>One mean</li>
+<li>Two means</li>
+<li>Paired means</li>
+</ul>
 </section>
-<section id="symbols" class="level2">
-<h2 class="anchored" data-anchor-id="symbols">Symbols</h2>
-<p>Sample mean: <span class="math inline">\(\overline{x}\)</span> (observed statistic)</p>
-<p>Sample Standard Deviation: <span class="math inline">\(s\)</span></p>
-<p>Population Mean: <span class="math inline">\(\mu\)</span> (hypothesized value)</p>
-<p>Population Standard Deviation: <span class="math inline">\(\sigma\)</span></p>
-<p>Review:</p>
+<section id="description-of-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="description-of-experiment">Description of Experiment</h2>
+<p>The purpose of your proposed experiment is to demonstrate your knowledge of the topics taught in our course. The following criteria <strong>must</strong> be met:</p>
+<ul>
+<li>Experiment is feasible to conduct.</li>
+<li>Outcomes occur due to a random (stochastic) process (no observational data).</li>
+<li>Experimental units are able to be randomly assigned (if applicable).</li>
+<li>Hypothesis is reasonable with respect to the subject matter.</li>
+<li>Experiment can be ethically conducted.</li>
+</ul>
+</section>
+<section id="written-component" class="level2">
+<h2 class="anchored" data-anchor-id="written-component">Written Component</h2>
+<p><strong>Due date</strong>: by the end of the scheduled final exam</p>
+<p>The written component of the final includes writing up your experiment in the style of academic research. Your paper should be around 3-5 pages and include the following:</p>
+<ul>
+<li><strong>Introduction</strong>: describe what is currently known about your topic and your hypothesis/objective. If testing one group/process, what value is reasonable to test against? For two groups/processes, what difference provides practical significance? Include at least three sources and cite them correctly.</li>
+<li><strong>Methods</strong>: describe how you designed the experiment and the statistical test associated with the analysis. What are the experimental units, explanatory variable(s), response variable(s), and treatment groups? Describe how randomization occurs in the sampling and/or assignment. If appropriate, a diagram of your study would be helpful. What sample size is sufficient to meet the assumptions of the test?</li>
+<li><strong>Discussion</strong>: describe how the results of the experiment would fit into the literature, as well as potential limitations (no study is perfect!).</li>
+</ul>
+</section>
+<section id="presentation" class="level2">
+<h2 class="anchored" data-anchor-id="presentation">Presentation</h2>
+<p><strong>Dates</strong>: last week of classes</p>
+<p>Each group will have 7-10 minutes to present their experiment. In addition to the Introduction, Methods, and Discussion (as described above), you are required to analyze simulated data of the experiment and interpret it with correct conclusions using <span class="math inline">\(\alpha=0.05\)</span>. This includes calculating the appropriate point estimate, standardized statistic, and confidence interval. You may ask your instructor to help you obtain simulated data for your experiment (don’t wait until the week of presentations).</p>
+</section>
+<section id="rubric" class="level2">
+<h2 class="anchored" data-anchor-id="rubric">Rubric</h2>
+<p>Each component listed below will be graded with following scale.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 18%">
-<col style="width: 26%">
-<col style="width: 26%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
-<th style="text-align: center;"><strong>Quantitative</strong></th>
-<th style="text-align: center;"><strong>Categorical</strong></th>
+<th>Full credit</th>
+<th>80%</th>
+<th>Half Credit</th>
+<th>20%</th>
+<th>No credit</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Population</td>
-<td style="text-align: center;">µ</td>
-<td style="text-align: center;">π</td>
-</tr>
-<tr class="even">
-<td>Sample</td>
-<td style="text-align: center;"><span class="math display">\[\overline{x}\]</span></td>
-<td style="text-align: center;"><span class="math display">\[\widehat{p}\]</span></td>
+<td>Fully sufficient</td>
+<td>Minor errors</td>
+<td>Major errors</td>
+<td>Critical errors</td>
+<td>No effort was made</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="analysis-of-a-single-quantitative-variable" class="level2">
-<h2 class="anchored" data-anchor-id="analysis-of-a-single-quantitative-variable">Analysis of a Single Quantitative Variable</h2>
-<p><strong>Variable of Interest:</strong></p>
+<p><strong>Written component</strong> (40%)</p>
 <ul>
-<li>Number of … context, quantitative</li>
+<li>Introduction: sufficient background knowledge is provided on the subject matter; hypothesis is clearly stated</li>
+<li>Methods: experiment and analysis can be fully replicated</li>
+<li>Discussion: limitations are discussed; future research areas are included based on your research</li>
+<li>References: at least 3 references are used and cited correctly</li>
 </ul>
-<p><strong>Parameter:</strong></p>
+<p><strong>Presentation</strong> (40%)</p>
 <ul>
-<li>“The long run <strong>average</strong>…<em>context”</em> (<span class="math inline">\(\mu\)</span>)</li>
+<li>Introduction: motivation is clearly given; hypothesis is stated</li>
+<li>Methods: describe the setup of your experiment and statistical test</li>
+<li>Results: describe the results of your experiment; at least one visualization is included</li>
+<li>Discussion: connect your results back to the hypothesis (what is the main takeaway?)</li>
+<li>Attendance: attended and listened to your peers present their findings</li>
 </ul>
-<p><strong>Hypotheses:</strong></p>
+<p><strong>Peer Review</strong> (20%)</p>
 <ul>
-<li><p>Words:</p>
-<ul>
-<li><p>Null: The long-run average …<em>context…</em> is equal to previously known #.</p></li>
-<li><p>Alternative: The long-run average …<em>context…</em> is greater than/ less than/ different from previously known #..</p></li>
-</ul></li>
-<li><p>Symbols:</p>
-<ul>
-<li><p><span class="math inline">\(H_{0}:\mu = previously\ known\ \#\)</span></p></li>
-<li><p><span class="math inline">\(H_{A}:\mu &gt; , &lt; , \neq previously\ known\ \#\)</span></p></li>
-</ul></li>
-</ul>
-<p><strong>Example:</strong> Suppose you are interested in whether the average number of bikes sold at a store per day is less than 20</p>
-<ul>
-<li><p><strong>Variable of interest:</strong> number of bikes sold in a day, quantitative</p></li>
-<li><p><strong>Parameter:</strong> the long-run average number of bikes sold at the store (µ)</p></li>
-<li><p><strong>Hypotheses</strong></p>
-<ul>
-<li><p>Words</p>
-<ul>
-<li><p>Null: The long-run average number of bikes sold at the store is equal to 20</p></li>
-<li><p>Alternative: The long run average number of bikes sold at the store is less than 20</p></li>
-</ul></li>
-<li><p>Symbols</p>
-<ul>
-<li><p><span class="math inline">\(H_{0}:\)</span></p></li>
-<li><p><span class="math inline">\(H_{A}:\)</span></p></li>
-</ul></li>
-</ul></li>
-</ul>
-<p>For the purposes of our class, we will not use the simulation approach for quantitative data because we do not have coin flips or spinners to model quantitative data. This means that we will not calculate p-values.</p>
-</section>
-<section id="theory-based-approach-quantitative" class="level2">
-<h2 class="anchored" data-anchor-id="theory-based-approach-quantitative">Theory Based Approach (Quantitative)</h2>
-<p>We need to satisfy at least one of the following conditions to use the theory approach.</p>
-<ul>
-<li><p>The quantitative variable should have a symmetric distribution</p></li>
-<li><p>Sample size ≥ _____ and sampling distribution is not strongly skewed</p></li>
-</ul>
-<p>Standard Error = <span class="math inline">\(\frac{s}{\sqrt{n}}\)</span> where s is our sample standard deviation</p>
-<p>Standardized Statistic = <span class="math inline">\(\frac{\overline{x} - \mu}{SE} = \frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}\)</span></p>
-</section>
-<section id="standardized-statistic-for-quantitative-data" class="level2">
-<h2 class="anchored" data-anchor-id="standardized-statistic-for-quantitative-data">Standardized Statistic for Quantitative Data</h2>
-<p>Remember that the standardized statistic calculates how many standard deviation from the null value that the statistics falls</p>
-<ul>
-<li>For quantitative variables:</li>
-</ul>
-<p><span class="math display">\[z = \ Standardized\ statistic\  = \frac{sample\ mean\  - null\ value}{standard\ deviation\ of\ sample\ mean} = \ \frac{\overline{x} - \mu_{0}}{\frac{\sigma}{\sqrt{n}}}\]</span></p>
-<p>Since $$is not usually known, we use the sample standard deviation (s) to approximate the standard deviation of sample mean</p>
-<ul>
-<li><p>This approximation is called the <strong>standard error</strong> (SE) of sample mean</p></li>
-<li><p>t = standardized statistic = <span class="math inline">\(\frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}\)</span></p></li>
-</ul>
-<p>Like with the normal approximation, we need a reference distribution. With categorical data, we used the z (standard normal) distribution. Since we are now using the sample standard deviation, we need to use the t distribution instead of the z distribution</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="media/image3.jpeg" style="width:3.10112in;height:1.83742in" class="figure-img"></p>
-<figcaption>Image result for t distribution vs z distribution</figcaption>
-</figure>
-</div>
-<p>One Quantitative Variable</p>
-<p><span class="math display">\[SE = \frac{s}{\sqrt{n}} \leftarrow this\ is\ our\ new\ denominator\ for\ standardized\ statistic\]</span></p>
-<p><span class="math display">\[Standardized\ Statistic = t = \frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}\]</span></p>
-<p>Note that the cutoffs are the same as Chapter 1: “outside the 2’s -&gt; reject”</p>
-<p><strong>Example:</strong> You observe the bike sales for 30 days to find the average number of sales to be 19.5, with a sample standard deviation of 2.1</p>
-<p><span class="math inline">\(H_{0}:\mu = 20\)</span></p>
-<p><span class="math inline">\(H_{A}:\mu &lt; 20\)</span></p>
-<p>Conclusion: “We ______ have evidence to conclude the long run average number of bikes sold<br>
-<br>
-at the store is __________________</p>
-</section>
-</section>
-<section id="errors-and-significance" class="level1">
-<h1>Errors and Significance</h1>
-<p>With all our hypotheses, we made assumptions about the null hypothesis. Our statistic provided strength of evidence.</p>
-<p>Strength of evidence</p>
-<ul>
-<li><p>Calculate p-value- Probability of our observed statistic happening given the null is true.</p></li>
-<li><p>p-value <span class="math inline">\(&lt; \ 0.05\  \rightarrow\)</span> Reject the Null (suggests the alternative)</p></li>
-<li><p>p-value <span class="math inline">\(\geq \ 0.05\  \rightarrow\)</span> Fail to Reject the Null</p></li>
-</ul>
-<p>However, some of the null distribution was true even when we rejected the null hypothesis. How do we classify the instances when we are wrong? Recall the Buzz and Doris example.</p>
-<p>Hypotheses:</p>
-<ul>
-<li><p><span class="math inline">\(H_{O}:\)</span> Buzz is just guessing.</p></li>
-<li><p><span class="math inline">\(H_{A}:\)</span> Buzz is not guessing (i.e.&nbsp;they are communicating).</p></li>
-</ul>
-<p><strong>Type I Error</strong></p>
-<ul>
-<li><p>________ the null hypothesis, but in reality the null is actually _________</p></li>
-<li><p>False alarm – believe we have discovered a difference when no difference exists</p></li>
-<li><p>What would a Type I Error look like for the Buzz and Doris scenario?</p>
-<ul>
-<li>We conclude that Buzz is <em>not</em> guessing, but he actually is guessing</li>
-</ul></li>
-</ul>
-<p><strong>Type II Error</strong></p>
-<ul>
-<li><p>_________________ the null, but in reality the null is actually __________</p></li>
-<li><p>Missed opportunity – failing to detect difference that is there</p></li>
-<li><p>What would a Type II Error look like for the Buzz and Doris scenario?</p>
-<ul>
-<li>We conclude that Buzz is guessing, when Buzz is actually <em>not</em> guessing</li>
-</ul></li>
-</ul>
-<p><img src="media/image4.png" class="img-fluid"><img src="media/image5.png" style="width:6.40833in;height:2.40449in" alt="Diagram Description automatically generated"></p>
-<p>In reality, we never know if we made an error or not. However, we can control what we want to happen: significance level and power.</p>
-<section id="significance-level-α" class="level2">
-<h2 class="anchored" data-anchor-id="significance-level-α">Significance Level (α)</h2>
-<p>α (alpha) is our “threshold” for p-value (<em>we have been using 0.05</em>).</p>
-<ul>
-<li><p>How small a p-value needs to be to provide convincing evidence to reject the null hypothesis</p></li>
-<li><p>p-value <span class="math inline">\(&lt; \alpha\  \rightarrow\)</span> Reject <span class="math inline">\(H_{O}\)</span></p></li>
-<li><p>p-value <span class="math inline">\(\geq \alpha\  \rightarrow\)</span> Fail to Reject <span class="math inline">\(H_{O}\)</span></p></li>
-</ul>
-<p>Example:</p>
-<ul>
-<li><p>If α = 0.05, then for a p-value of 0.07, we will fail to reject our null.</p></li>
-<li><p>If α = 0.10, then for a p-value of 0.07, we will reject our null.</p></li>
-</ul>
-<p>This value changes depending on the study, your discipline, etc. Consider a significance level of 0.1. This means, that if the null is really true, 10% of random samples would produce a sample statistic that is extreme enough to reject the null hypothesis.</p>
-<p>$= $Probability of Type I Error</p>
-<ul>
-<li><p>The __________ it is, _________ likely to make a Type I Error</p></li>
-<li><p>As the probability of a Type I Error goes ____, the probability of a Type II Error goes ___</p></li>
-</ul>
-</section>
-<section id="power" class="level2">
-<h2 class="anchored" data-anchor-id="power">Power</h2>
-<p>Power is defined as the probability of rejecting a _____ null hypothesis. The calculation of power goes beyond the scope of our class, but we want power to be as high as possible.</p>
-<p><span class="math display">\[Power = 1 - P(Type\ II\ Error)\]</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="media/image6.png" style="width:6.5in;height:2.56736in" class="figure-img"></p>
-<figcaption>Diagram Description automatically generated</figcaption>
-</figure>
-</div>
-<p>Example: Suppose you are implementing an algorithm that detects fraud on credit cards. From the gathered information, you decide to test the following hypothesis:</p>
-<ul>
-<li><p>$H_{0}:$No fraud detected</p></li>
-<li><p><span class="math inline">\(H_{A}:\)</span> Fraud detected</p></li>
-</ul>
-<p>In context, describe the impacts of each type of conclusion.</p>
-<ul>
-<li><p>Reject the null when the null is true (what type of error is this?)</p></li>
-<li><p>Reject the null when the null is false</p></li>
-<li><p>Fail to reject the null when the null is true</p></li>
-<li><p>Fail to reject the null when the null is false.</p></li>
+<li>Each group member contributed approximately equally in the project</li>
+<li>Note: not participating with your group results in 0% for the final</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

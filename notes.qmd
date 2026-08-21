@@ -10,9 +10,11 @@ Simulation applets for our book can be found here: <http://www.isi-stats.com/isi
 
 **Chapter P**
 
-- [Slides](notes/ch0/Notes218_Chapter_P.qmd) | [Notes (pdf)](/notes/ch0/Notes218_Chapter_P.pdf)
+- [Slides](notes/ch0/Notes218_Chapter_P.qmd)
 
 **Chapter 1**
+
+- [Handout](notes/ch1/Notes218_Chapter_1.qmd)
 
 **Chapter 2**
 

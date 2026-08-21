@@ -10,7 +10,7 @@ format:
 
 Name: Tyler Wiederich, Ph.D. \
 Office: Hardin Hall 343A \
-Office hours: TBD. \
+Office hours: W 1-3, and by appointment \
 E-mail: [twiederich2@unl.edu](mailto:twiederich2@unl.edu)
 
 
@@ -26,26 +26,21 @@ The practical application of statistical thinking to contemporary issues; collec
 
 This course consists of quizzes, projects, and exams. 
 
-**Quizzes**: After the completion of each chapter, 
+**Projects/Quizzes**: Projects and quizzes will be assigned periodically throughout the semester. You will have at least one week to complete the assessment.
 
-**Projects**: Four group projects (2-3 people/group) will be assigned throughout the semester. 
+**Midterm**: There will be one midterm approximately halfway through the semester. Details will be provided in class.
 
-**Exams**: There will be 2 exams during the semester. Each exam will have a closed-book and open-book portion. More details will be provided in class.
-
-**Final**: To be announced in class
+**Final**: To be announced in class.
 
 These assessments are weighted as follows:
 
-| | Quizzes | Projects\* | Exams\*\* | Final | 
-| :---: | :---: | :---: | :---: | :---: |
-| % of grade | 20% | 30% | 30% | 20% |
+| | Projects/quizzes\* | Midterm | Final | 
+| :---: | :---: | :---: | :---: |
+| % of grade | 20% | 30% | 50% |
 
-\*Each project is worth 10% of your grade.\
-\*\*Each exam is worth 15% of your grade.
+\*All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. Quizzes will be assigned on Canvas. No late projects or quizzes are accepted.
 
-All projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. No late projects or quizzes are accepted.
-
-For group projects, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student's project grade if he/she/they do not abide by this group work policy.
+If projects allow for group work, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student's project grade if he/she/they do not abide by this group work policy.
 
 # Grades
 

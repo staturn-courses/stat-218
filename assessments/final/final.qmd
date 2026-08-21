@@ -1,0 +1,72 @@
+---
+title: "Final Project"
+format: html
+---
+
+## Overview
+
+In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do **not** need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.
+
+For your convenience, below are the eligible statistical tests:
+
+- One proportion
+- Two proportions
+- One mean
+- Two means
+- Paired means
+
+## Description of Experiment
+
+The purpose of your proposed experiment is to demonstrate your knowledge of the topics taught in our course. The following criteria **must** be met:
+
+- Experiment is feasible to conduct.
+- Outcomes occur due to a random (stochastic) process (no observational data).
+- Experimental units are able to be randomly assigned (if applicable).
+- Hypothesis is reasonable with respect to the subject matter.
+- Experiment can be ethically conducted.
+
+## Written Component
+
+**Due date**: by the end of the scheduled final exam
+
+The written component of the final includes writing up your experiment in the style of academic research. Your paper should be around 3-5 pages and include the following:
+
+- **Introduction**: describe what is currently known about your topic and your hypothesis/objective. If testing one group/process, what value is reasonable to test against? For two groups/processes, what difference provides practical significance? Include at least three sources and cite them correctly.
+- **Methods**: describe how you designed the experiment and the statistical test associated with the analysis. What are the experimental units, explanatory variable(s), response variable(s), and treatment groups? Describe how randomization occurs in the sampling and/or assignment. If appropriate, a diagram of your study would be helpful. What sample size is sufficient to meet the assumptions of the test?
+- **Discussion**: describe how the results of the experiment would fit into the literature, as well as potential limitations (no study is perfect!). 
+
+## Presentation
+
+**Dates**: last week of classes
+
+Each group will have 7-10 minutes to present their experiment. In addition to the Introduction, Methods, and Discussion (as described above), you are required to analyze simulated data of the experiment and interpret it with correct conclusions using $\alpha=0.05$. This includes calculating the appropriate point estimate, standardized statistic, and confidence interval. You may ask your instructor to help you obtain simulated data for your experiment (don't wait until the week of presentations).
+
+## Rubric
+
+Each component listed below will be graded with following scale.
+
+| Full credit | 80% | Half Credit | 20% | No credit |
+| --- | --- | --- | --- | --- |
+| Fully sufficient | Minor errors | Major errors  | Critical errors | No effort was made | 
+
+
+
+**Written component** (40%)
+
+- Introduction: sufficient background knowledge is provided on the subject matter; hypothesis is clearly stated
+- Methods: experiment and analysis can be fully replicated 
+- Discussion: limitations are discussed; future research areas are included based on your research
+- References: at least 3 references are used and cited correctly
+
+**Presentation** (40%)
+
+- Introduction: motivation is clearly given; hypothesis is stated
+- Methods: describe the setup of your experiment and statistical test
+- Results: describe the results of your experiment; at least one visualization is included
+- Discussion: connect your results back to the hypothesis (what is the main takeaway?)
+- Attendance: attended and listened to your peers present their findings
+
+**Peer Review** (20%)
+
+- Each group member contributed approximately equally in the project
+- Note: not participating with your group results in 0% for the final

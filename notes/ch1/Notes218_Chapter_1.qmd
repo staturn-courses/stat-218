@@ -339,7 +339,12 @@ In this course, we will mainly focus on the cutoff value for p-values \< 0.05. T
 
 Consider the Rock Paper Scissors example. When we simulate the 12 matches 100 times, we get the following null distribution.
 
-![]()
+\
+\
+\
+\
+\
+
 
 p-value: probability of obtaining a simulated value as or more extreme than the observed statistic when the null hypothesis is true
 
