@@ -1,5 +1,16 @@
 ---
 title: "STAT 218"
+subtitle: Tyler Wiederich, Ph.D.
+about:
+  template: jolla
+  image: "icon-218.png"
+  links:
+    - text: All courses
+      icon: house
+      href: https://staturn-courses.github.io
 ---
 
+This website is open to my students in the University of Nebraska-Lincoln's STAT 218 course. 
+
 **Course description:** The practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing.
+

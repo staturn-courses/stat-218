@@ -1,15 +1,29 @@
 ---
-title: Chapter 1
-subtitle: Introduction to Chance Models
-author: Stat 218
-date: today
-date-format: "[Fall 2026]"
 format: 
-  revealjs:
-    smaller: true
-  pdf: default
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 218}
+        \chead{Chapter 1}
+        \rhead{Fall 2026}
+        \cfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
 ---
 
+<!---
+  revealjs:
+    smaller: true
+    fig-align: center
+    chalkboard:
+      theme: whiteboard
+      boardfmarker-width: 2
+--->
+
+\newpage
 
 ## Terminology
 
@@ -380,13 +394,13 @@ Answer the following questions:
 
 - What is the sample size?
 
-- How would you set up the hypothesis?
+- How would you set up the hypothesis (in words and symbols)?
 
-> $H_{0}:\$
+> $H_{0}:$
 \
 \
 \
-> $H_{A}:\$
+> $H_{A}:$
 
 - What conclusion can you say about your friend's die?
 
@@ -418,13 +432,9 @@ How to interpret the Z statistic
 
 - The observed statistic is "Z" standard deviations above (+) or below (-) the mean of the Null distribution.
 
-<!-- -->
-
-- Normally use +/- 2 as a single cut-off
+- Normally use +/- 2 as a single cut-off ("Is it outside the 2's?")
 
 - The farther the standardized statistic is away from zero, the stronger the evidence against the null
-
-- "Is it outside the 2's?"
 
 
 
@@ -432,23 +442,31 @@ How to interpret the Z statistic
 
 Consider the simulation studies
 
+:::{.columns}
+:::{.column}
+
 - Sample size: 45
 
 - Replications: 100
 
 - Nulls at 0.2, 0.5, and 0.8
+:::
 
+:::{.column}
+![](../images/Notes218_Chapter_1_image9.jpeg)
+:::
+:::
 
-
-## Example: Heart Transplant Operations
+## Example: Heart Transplant Operations {.scrollable}
 
 In an article published in the British Medical Journal (2004), researchers Poloniecki, Sismanidis, Bland, and Jones reported that heart transplantations at St. George\'s Hospital in London had been suspended in September 2000 after a sudden spike in mortality rate. Of the last 10 heart transplants, 80% had resulted in deaths within 30 days of the transplant. Newspapers reported that this mortality rate was over five times the national average. Based on historical national data, the researchers used 15% as a reasonable value for comparison. We would like to know whether the current underlying heart transplantation mortality rate at St. George\'s Hospital exceeds the national rate.
 
+
 - **Research question:** Is the proportion of patients who die within 30 days of a heart transplant at St. George's greater than that of the national average?
 
-- **Observational Units:**
+- **Observational Units:** one heart transplant
 
-- **Variable of Interest:**
+- **Variable of Interest:** mortality (died or not)
 
 - **Parameter:** The long run proportion of patients who die within 30 days of a heart transplant at St. George.
 
@@ -464,11 +482,13 @@ In an article published in the British Medical Journal (2004), researchers Pol
 
   - Symbols:
 
-    - $H_{o}:$
+    - $H_{o}:\ \pi=0.15$
 
-    - $H_{A}:$
+    - $H_{A}:\ \pi>0.15$
 
 Run 1000 simulations of sample size 10 using the one proportion applet.
+
+![](../images/Notes218_Chapter_1_image10.png)
 
 - What is your p-value? \<0.001
 
@@ -488,25 +508,32 @@ Run 1000 simulations of sample size 10 using the one proportion applet.
 
   - Standardized Statistic = $\frac{\mathbf{0.8 - .15}}{\mathbf{0.119}}\mathbf{=}\mathbf{5}\mathbf{.}\mathbf{47}$
 
+## Example: Heart Transplant Operations (cont.)
+
 Now assume we collected a larger sample and found that 71 out of 361 patients whom received a heart transplant at St. George hospital died.
 
-- What is your new observed statistic? $\frac{\mathbf{71}}{\mathbf{361}}\mathbf{= 0.197}$
+- What is your new observed statistic? 
 
 - Run 1000 simulations of sample size 361.
 
-  - What is your p-value? **0.011**
+  - What is your p-value? 
 
-> 
 
 - Calculate the standardized statistic.
 
-  - Observed Statistic = **0.197**
+  - Observed Statistic = 
 
-  - Null value (hypothesized value) = **0.15**
+  - Null value (hypothesized value) = 
 
-  - Standard deviation = **0.019**
+  - Standard deviation = 
 
-  - Standardized Statistic =$\frac{\mathbf{0.197 - .15}}{\mathbf{0.019}}\mathbf{=}\mathbf{2}\mathbf{.}\mathbf{47}$
+  - Standardized Statistic =
+  
+---
+
+![](../images/Notes218_Chapter_1_image11.png)
+  
+## Example: Heart Transplant Operations (cont.)
 
   -------------------------------------------------------------------------------------------------------------------------------
                             **n = 10**                                                     **n = 361**
@@ -524,9 +551,9 @@ The observed statistic falls 'Z' standard deviations above the mean of the null 
 
 ## Comparing P-Values vs Standardized Statistics
 
-Large standardized statistic 🡪 Small p-value 🡪 Reject Null 🡪 Evidence to conclude *alternative*
+Large standardized statistic -- Small p-value -- Reject Null -- Evidence to conclude *alternative*
 
-Smaller standardized statistic 🡪 Large p-value 🡪 Fail to Reject Null 🡪 No Evidence to conclude *alternative*
+Smaller standardized statistic -- Large p-value -- Fail to Reject Null -- No Evidence to conclude *alternative*
 
   --------------------------------------------------------------------------------------------
   **Strength of evidence**           **P-value**                  **Standardized statistic**
@@ -551,13 +578,13 @@ Null value -- What would we expect to see based on random chance?
 
 - Where is the null distribution \_\_\_\_\_\_\_\_\_\_?
 
-- Farther apart 🡪 Random chance/null less plausible
+- Farther apart -- Random chance/null less plausible
 
 - P-value gets \_\_\_\_\_\_\_\_\_\_\_
 
 - Standardized statistic \_\_\_\_\_\_\_\_\_\_
 
-Closer together 🡪 Random chance becoming more plausible
+Closer together -- Random chance becoming more plausible
 
 - P-value gets \_\_\_\_\_\_\_\_\_\_
 
@@ -569,9 +596,9 @@ As sample size increases, variability of the null distribution \_\_\_\_\_\_\_\_\
 
 
 
-As the sample size increases (and the value of the observed sample statistic stays the same) the strength of evidence increases. (i.e. reject the null more).
+As the sample size **increases** (and the value of the observed sample statistic stays the same) the strength of evidence **increases.** (i.e. reject the null more).
 
-As the sample size decreases (and the value of the observed sample statistic stays the same) the strength of evidence decreases. (i.e. reject the null less).
+As the sample size **decreases** (and the value of the observed sample statistic stays the same) the strength of evidence **decreases.** (i.e. reject the null less).
 
 ## One-Sided vs. Two-Sided Alternative Hypothesis
 
@@ -583,24 +610,18 @@ As the sample size decreases (and the value of the observed sample statistic sta
 
 - Don't have idea/interest in which way statistic is going to fall
 
-- Only care if there is a **difference** 🡪 ≠
+- Only care if there is a **difference** (e.g., $\pi \neq 0.5$)
 
-- Causes p-values to **approximately** \_\_\_\_\_\_\_\_\_\_\_ (because we also look as or more extreme in the other direction too)
+- Causes p-values to approximately \_\_\_\_\_\_\_\_\_\_\_ (because we also look as or more extreme in the other direction too)
 
-**Examples**
+## Example: One-Sided vs. Two-Sided Tests
 
-- Rock/Paper/Scissors
+Rock/Paper/Scissors
 
   - Do we really think people throw scissors **less** often? (***One-sided-test)***
 
   - Do we throw scissors **differently** than rock and paper? (***Two-sided-test)***
 
-  -------------------------------------------------------------------------------------------------------------------------------------------
-                     One sided (throw scissors less)                                   Two-sided (throw scissors differently)
-  --------------------------------------------------------------------- ---------------------------------------------------------------------
-      
-
-  -------------------------------------------------------------------------------------------------------------------------------------------
 
 # Theory Based Approach
 
@@ -630,9 +651,7 @@ $$Standard\ deviation\ of\ the\ null = \sqrt{\frac{\pi_{o}(1 - \pi_{o})}{n}}$$
 
 Going to be used as the *standard deviation of the null* in the denominator of the standardized statistic
 
-> $$z = \ \frac{statistic - hypothesized\ value}{standard\ deviation\ of\ the\ null} = \frac{\widehat{p} - \pi_{0}}{\sqrt{\frac{\pi_{o}(1 - \pi_{o})}{n}}}$$
-
-Note: We will not be using a theory approach to determine p-values. To do this, we would need to use calculus to find the area under a theory null distribution (STAT 380). Instead, you can find the p-value using the theory approach by using the "Normal Approximation" box on the applets.
+$$z = \ \frac{statistic - hypothesized\ value}{standard\ deviation\ of\ the\ null} = \frac{\widehat{p} - \pi_{0}}{\sqrt{\frac{\pi_{o}(1 - \pi_{o})}{n}}}$$
 
 ## Validity Conditions
 
@@ -641,8 +660,6 @@ For the theory approach to work, we need the data to satisfy certain conditions.
 Consider the St. George example.
 
 - 10 heart transplants
-
-<!-- -->
 
 - \# of successes? (i.e. patient died)
 
@@ -670,7 +687,7 @@ This does not always work.
 
 - Simulation ALWAYS works
 
-## Husker Example
+## Husker Example {.scrollable}
 
 **Research Question:** Do husker fans show a preference for football over volleyball?
 
@@ -686,11 +703,11 @@ Researchers took a sample of 283 husker fans and found that 148 preferred to go 
 
 **Parameter & Symbol:** The long run proportion of husker fans who prefer football. ($\pi$)
 
-**Statistic & Symbol:** $\widehat{p}\$ = $148/283\  = \ 0.523$
+**Statistic & Symbol:** $\widehat{p}=148/283 = 0.523$
 
 **Can theory-based method be used?** (i.e., validity conditions met?)
 
-- Yes, because successes (selecting football) $148\  > \ 10\$and failures (selecting volleyball) $135\  > 10.$
+- Yes, because "successes" (selecting football) $148 > 10$ and "failures" (selecting volleyball) $135 > 10$.
 
 **Theory Approach**
 
@@ -700,7 +717,7 @@ Standardized Statistic = $\frac{0.523\  - 0.5}{0.0297} = 0.774 \rightarrow FTR$
 
 **Simulation Approach**
 
-
+![](../images/Notes218_Chapter_1_image15.png)
 
 Standardized Statistic = $\frac{0.523\  - 0.5}{0.029} = 0.793 \rightarrow FTR$
 

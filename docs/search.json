@@ -1,0 +1,758 @@
+[
+  {
+    "objectID": "stat218-syllabus-f26.html",
+    "href": "stat218-syllabus-f26.html",
+    "title": "STAT 218 (Fall 2026)",
+    "section": "",
+    "text": "Instructor\nName: Tyler Wiederich, Ph.D. \nOffice: Hardin Hall 343A\nOffice hours: TBD.\nE-mail: twiederich2@unl.edu\nAll office hours are guaranteed for the first 30 minutes. If no students are present after 30 minutes, office hours are ended.\n\n\nCourse Description\nThe practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing.\nACE 3 Outcomes: Use mathematical, computational, statistical, or formal reasoning (including reasoning based on principles of logic) to solve problems, draw inferences, and determine reasonableness. The reinforced skills for STAT 218 are Writing and Critical Thinking. STAT 218 will provide the student opportunities to achieve this learning outcome through readings, quizzes, and in-class activities. These assignments (together with exams) will be used by the instructor to assess achievement of the outcome. The final exam will be used by the Department of Statistics to carry out an overall assessment of STAT 218, and the course’s effectiveness at assisting students in achieving Outcome 3.\n\n\nAssessments\nThis course consists of quizzes, projects, and exams.\nQuizzes: After the completion of each chapter,\nProjects: Four group projects (2-3 people/group) will be assigned throughout the semester.\nExams: There will be 2 exams during the semester. Each exam will have a closed-book and open-book portion. More details will be provided in class.\nFinal: To be announced in class\nThese assessments are weighted as follows:\n\n\n\n\nQuizzes\nProjects*\nExams**\nFinal\n\n\n\n\n% of grade\n20%\n30%\n30%\n20%\n\n\n\n*Each project is worth 10% of your grade.\n**Each exam is worth 15% of your grade.\nAll projects need to be turned electronically via PDF documents. A project completed in an unreadable or unprofessional manner will be returned for a zero grade. No late projects or quizzes are accepted.\nFor group projects, all group members are expected to participate equally and have a complete understanding of all components for it. I will lower a student’s project grade if he/she/they do not abide by this group work policy.\n\n\nGrades\nYour overall course grade percentage guarantees the following grade for the course.\n\n\n\nLetter Grade\n+\n\n-\n\n\n\n\n\nA\n\n93\n90\n\n\n\nB\n87\n83\n80\n\n\n\nC\n77\n73\n70\n\n\n\nD\n67\n63\n60\n\n\n\nF\n\n&lt;60\n\n\n\n\n\n\n\nContinuity of Instruction Policy\nIn the event that the university is closed during our regular class hours, please check the Canvas announcements for alternative class arrangements.\n\n\nAI Disclaimer\nThe recent popularity of large language models and other artificial intelligence tools introduces a unique challenge in the academic community. As an instructor, my goal is to promote critical thinking for the topics taught in this course. Unless otherwise stated, the use of AI tools is not permitted. If you are suspected of using AI, I reserve the right to give a zero grade.\n\n\nTentative Schedule\n\n\n\n\n\n\n\n\n\nWeek\nMonday\nTopics\nNotes\n\n\n\n\n1\n8/24\nChapter P\nNo lab\n\n\n2\n8/31\nChapter 1\n\n\n\n3\n9/7\nChapter 1\nNo lab (Labor Day)\n\n\n4\n9/14\nChapter 2\n\n\n\n5\n9/21\nChapter 2\n\n\n\n6\n9/28\nReview + Exam 1\n\n\n\n7\n9/28\nInference for two means\n\n\n\n8\n10/12\nInference for proportions\n\n\n\n9\n10/19\nInference for Variances\nNo class on Tuesday (Fall break)\n\n\n10\n10/26\nANOVA\n\n\n\n11\n11/2\nANOVA\nNo class on Tuesday – Go Vote!\n\n\n12\n11/9\nReview + Exam 2\n\n\n\n13\n11/16\nRegression\n\n\n\n14\n11/23\nNo class/lab\nThanksgiving\n\n\n15\n11/30\nRegression\n\n\n\n16\n12/7\nDead week\n\n\n\n17\n12/14\nFinal*\n\n\n\n\n*The final will be held in-person on Monday, Dec. 14 from 10:00 to noon.\n\n\nUNL Course Policies and Resources\nStudents are responsible for knowing the university policies and resources found on this page: https://go.unl.edu/coursepolicies\n\nUniversity-wide Attendance Policy\nAcademic Honesty Policy\nServices for Students with Disabilities\nMental Health and Well-Being Resources\nFinal Exam Schedule\nFifteenth Week Policy\nEmergency Procedures\nDiversity & Inclusiveness\nTitle IX Policy\nOther Relevant University-Wide Policies"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html",
+    "href": "notes/ch6/Notes218_Chapter_6.html",
+    "title": "Section 6.1",
+    "section": "",
+    "text": "One categorical variable (ch.1):\n\nThe long run proportion of “context”.\n\nOne quantitative variable (ch.2):\n\nThe long run average “context.\n\nTwo categorical variables (ch.5):\n\nThe long run difference in proportion of “context” between “group 1” and “group 2”.\n\nTwo quantitative variables (ch.6):\n\nThe long run difference in average “context” between “group 1” and “group 2”.\n\n\n\n\nSummarization of quantitative data\n\nDot plots\nFive number summaries\nBoxplots\nDifference in averages\n\n\n\n\nA common method of looking at quantitative data is with a boxplot. There are 6 components that make up the boxplot.\n\nMinimum - the smallest value\nLower quartile (Q1) - value for which 25% of the data lie below (“median” of minimum and median\nMedian - the middle value (if there is an even number of values, then take the average of the two values in the middle)\nUpper Quartile (Q3) - the value for which 75% of the data lie below (“median” of median and max)\nMaximum - the largest value\nOutliers - unusual extreme values in the data\n\n\nInterquartile range\n\nThe difference between ________________\nThis will be resistant to outliers\n\nBoxplot\n\nVisual display of the five number summary\n\n\n\n\nSuppose you collected the following ten values from your sample:\n23 22 27 23 28 26 27 27 25 21\nThe first step is to arrange the numbers in order from least to greatest:\n21 22 23 23 25 26 27 27 27 28\n\nSince there is an even count of values, we need to take the average of the two values in the middle. Here, the values are 25 and 26, so the median is 25.5.\nNote: There appears to be a discrepancy in the calculations of Q1 and Q3. I have seen some software include the use of the median and other software exclude the median. However, this discrepancy is negligible because the goal of quartiles for summarizing data is to get an idea of how the data behaves. In this class, you are not expected to calculate quartiles other than the median.\n\nBoxplot on the data\n21 22 23 23 25 26 27 27 27 28\nBoxplot to scale\n\nHere, you can see that Q1 is 23 and Q3 is 27. Therefore, the interquartile range is \\(27 - 23 = 4\\)\nTo find outliers, check values that are \\(Q1 - 1.5 \\cdot IQR\\) or \\(Q3 + 1.5 \\cdot IQR\\). Some software programs use points on the plot to specify values that are outliers.\nQuestion: are there any outliers in this example set of data?\n\n\n\n\nRecall the example that measured the amount of time between eruptions at Old Faithful. The data and boxplot are below for the years 1978 and 2003.\n\n\n\nTable Description automatically generated\n\n\n\n\nNote: The whiskers of the plot do not extend to the minimum. They extend to the farthest point that is not considered an outlier.\n\nQuestions\n\nWhat is the explanatory variable? Is it categorical or quantitative?\nWhat is the response variable? Is it categorical or quantitative?\nDescribe the difference between the two distributions. Which year had a higher average time between eruptions?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCategorical\n(2 Groups)\nQuantitative\n(2 Groups)\n\n\n\n\nParameter\n\\[\\pi_{1} - \\pi_{2}\\]\n\\[\\mu_{1} - \\mu_{2}\\]\n\n\nStatistic\n\\[{\\widehat{p}}_{1} - {\\widehat{p}}_{2}\\]\n\\[{\\overline{x}}_{1} - {\\overline{x}}_{2}\\]\n\n\n\nParameter: The long run difference in average “context” between “group 1” and “group 2”\nImportant note: This is not the same as “The long run average difference.” We will talk more about this in Chapter 7."
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#review-of-topics",
+    "href": "notes/ch6/Notes218_Chapter_6.html#review-of-topics",
+    "title": "Section 6.1",
+    "section": "",
+    "text": "One categorical variable (ch.1):\n\nThe long run proportion of “context”.\n\nOne quantitative variable (ch.2):\n\nThe long run average “context.\n\nTwo categorical variables (ch.5):\n\nThe long run difference in proportion of “context” between “group 1” and “group 2”.\n\nTwo quantitative variables (ch.6):\n\nThe long run difference in average “context” between “group 1” and “group 2”."
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#overview",
+    "href": "notes/ch6/Notes218_Chapter_6.html#overview",
+    "title": "Section 6.1",
+    "section": "",
+    "text": "Summarization of quantitative data\n\nDot plots\nFive number summaries\nBoxplots\nDifference in averages"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#five-number-summaries",
+    "href": "notes/ch6/Notes218_Chapter_6.html#five-number-summaries",
+    "title": "Section 6.1",
+    "section": "",
+    "text": "A common method of looking at quantitative data is with a boxplot. There are 6 components that make up the boxplot.\n\nMinimum - the smallest value\nLower quartile (Q1) - value for which 25% of the data lie below (“median” of minimum and median\nMedian - the middle value (if there is an even number of values, then take the average of the two values in the middle)\nUpper Quartile (Q3) - the value for which 75% of the data lie below (“median” of median and max)\nMaximum - the largest value\nOutliers - unusual extreme values in the data\n\n\nInterquartile range\n\nThe difference between ________________\nThis will be resistant to outliers\n\nBoxplot\n\nVisual display of the five number summary"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#boxplot-example",
+    "href": "notes/ch6/Notes218_Chapter_6.html#boxplot-example",
+    "title": "Section 6.1",
+    "section": "",
+    "text": "Suppose you collected the following ten values from your sample:\n23 22 27 23 28 26 27 27 25 21\nThe first step is to arrange the numbers in order from least to greatest:\n21 22 23 23 25 26 27 27 27 28\n\nSince there is an even count of values, we need to take the average of the two values in the middle. Here, the values are 25 and 26, so the median is 25.5.\nNote: There appears to be a discrepancy in the calculations of Q1 and Q3. I have seen some software include the use of the median and other software exclude the median. However, this discrepancy is negligible because the goal of quartiles for summarizing data is to get an idea of how the data behaves. In this class, you are not expected to calculate quartiles other than the median.\n\nBoxplot on the data\n21 22 23 23 25 26 27 27 27 28\nBoxplot to scale\n\nHere, you can see that Q1 is 23 and Q3 is 27. Therefore, the interquartile range is \\(27 - 23 = 4\\)\nTo find outliers, check values that are \\(Q1 - 1.5 \\cdot IQR\\) or \\(Q3 + 1.5 \\cdot IQR\\). Some software programs use points on the plot to specify values that are outliers.\nQuestion: are there any outliers in this example set of data?"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#geyser-example",
+    "href": "notes/ch6/Notes218_Chapter_6.html#geyser-example",
+    "title": "Section 6.1",
+    "section": "",
+    "text": "Recall the example that measured the amount of time between eruptions at Old Faithful. The data and boxplot are below for the years 1978 and 2003.\n\n\n\nTable Description automatically generated\n\n\n\n\nNote: The whiskers of the plot do not extend to the minimum. They extend to the farthest point that is not considered an outlier.\n\nQuestions\n\nWhat is the explanatory variable? Is it categorical or quantitative?\nWhat is the response variable? Is it categorical or quantitative?\nDescribe the difference between the two distributions. Which year had a higher average time between eruptions?"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#notation",
+    "href": "notes/ch6/Notes218_Chapter_6.html#notation",
+    "title": "Section 6.1",
+    "section": "",
+    "text": "Categorical\n(2 Groups)\nQuantitative\n(2 Groups)\n\n\n\n\nParameter\n\\[\\pi_{1} - \\pi_{2}\\]\n\\[\\mu_{1} - \\mu_{2}\\]\n\n\nStatistic\n\\[{\\widehat{p}}_{1} - {\\widehat{p}}_{2}\\]\n\\[{\\overline{x}}_{1} - {\\overline{x}}_{2}\\]\n\n\n\nParameter: The long run difference in average “context” between “group 1” and “group 2”\nImportant note: This is not the same as “The long run average difference.” We will talk more about this in Chapter 7."
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#parameters-and-hypotheses",
+    "href": "notes/ch6/Notes218_Chapter_6.html#parameters-and-hypotheses",
+    "title": "Section 6.1",
+    "section": "Parameters and Hypotheses",
+    "text": "Parameters and Hypotheses\nParameter:\nLong run difference in average “context here” between group 1 and group 2\nHypotheses:\nSymbols\n\\[H_{0}:\\ \\mu_{Group\\ 1}\\  - \\ \\mu_{Group\\ 2} = 0\\]\n\\[H_{A}:\\ \\mu_{Group\\ 1}\\  - \\ \\mu_{Group\\ 2} &gt; OR &lt; OR \\neq 0\\]\nWords\nNull: The long run difference in average “context” between group 1 and group 2 is equal to zero\nAlt: The long run difference in average “context” between group 1 and group 2 ______ zero"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#validity-conditions",
+    "href": "notes/ch6/Notes218_Chapter_6.html#validity-conditions",
+    "title": "Section 6.1",
+    "section": "Validity conditions",
+    "text": "Validity conditions\n\nAt least 20 observations in each group\nDistributions are not strongly skewed"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#standard-error",
+    "href": "notes/ch6/Notes218_Chapter_6.html#standard-error",
+    "title": "Section 6.1",
+    "section": "Standard Error",
+    "text": "Standard Error\nThe standard error for two means is as follows:\n\\[SE = \\sqrt{\\frac{s_{1}^{2}}{n_{1}} + \\frac{s_{2}^{2}}{n_{2}}}\\]"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#two-sample-t-test-standardized-statistic",
+    "href": "notes/ch6/Notes218_Chapter_6.html#two-sample-t-test-standardized-statistic",
+    "title": "Section 6.1",
+    "section": "Two Sample T-test (Standardized Statistic)",
+    "text": "Two Sample T-test (Standardized Statistic)\n\\[t = \\frac{\\left( {\\overline{x}}_{Group\\ 1}\\  - \\ {\\overline{x}}_{Group\\ 2} \\right) - 0\\ }{SE} = \\frac{{\\overline{x}}_{\\ 1}\\  - \\ {\\overline{x}}_{\\ 2}}{\\sqrt{\\frac{s_{1}^{2}}{n_{1}} + \\frac{s_{2}^{2}}{n_{2}}}}\\]"
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#confidence-interval",
+    "href": "notes/ch6/Notes218_Chapter_6.html#confidence-interval",
+    "title": "Section 6.1",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\n\n\\[{\\overline{x}}_{\\ 1}\\  - \\ {\\overline{x}}_{\\ 2} \\pm multipler\\ *\\sqrt{\\frac{s_{1}^{2}}{n_{1}} + \\frac{s_{2}^{2}}{n_{2}}}\\]\nFormal Interpretation: We are 95% confident that the long run difference in average “context”** between”group A”** and “group B” falls between ______ and ______."
+  },
+  {
+    "objectID": "notes/ch6/Notes218_Chapter_6.html#example-bike-in-class",
+    "href": "notes/ch6/Notes218_Chapter_6.html#example-bike-in-class",
+    "title": "Section 6.1",
+    "section": "Example (Bike; in class)",
+    "text": "Example (Bike; in class)\nA bike company wants to test the effect of two brands of bike tires (Roadster and Trail-days) on the amount of miles ridden before the tires wear out. The company randomly selects 40 customers from their records and ask them to participate in the study in exchange for free tires. The participants were randomly assigned to either tire (20 participants to each tire brand). The data is summarized below, and you may assume that the data was not strongly skewed. Did the Roaster bike tires on average get more miles than the Trail-days tires?\n\n\n\n\n\n\n\n\nTire Brand\nMean (miles)\nSD (miles)\n\n\n\n\nRoadster\n2120\n201\n\n\nTrail-days\n2080\n196\n\n\n\n\nHow might the data look in a spreadsheet?\n\n\n    ...             ...             ...\n\n\nWhich variable is the explanatory variable?\nWhich variable is the response variable?\nWhat is the population of interest?\nWhat is the parameter of interest?\nSet up the null and alterative hypothesis.\n\n\n\\[H_{0}:\\]\n\\[\n{H_{A}:}\\]\n\n\nIntuitively, would you expect there to be a difference between the two tire brands?\nCalculate the standard error.\nCalculate the standardized statistic.\nCalculate the confidence interval.\nWrite a conclusion based on the research question."
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html",
+    "href": "notes/ch4/Notes218_Chapter_4.html",
+    "title": "Association and Confounding",
+    "section": "",
+    "text": "Explanatory Variable (_______________, Predictor)\n\nVariable we think is “explaining” the change in the response variable\nIn an experiment, this is what researchers __________________\n\nResponse Variable (Dependent)\n\nVariable that is being changed by the explanatory variable (i.e., the outcome)\n\nConfounding Variable\n\nA variable that is related to both the explanatory and response variable in such a way that its effects cannot be ________________ from the effects of the explanatory\n\n\n\n\n\n\n\n\nSuppose that a study is researching the effect of gasoline usage and miles driven in a car. Identify the following:\nExplanatory Variable:\nResponse Variable:\nPotential Confounding Variables:\n\n\n\n\n\n\nFrom the following scenarios, think about which variable is the explanatory and which one is the response. Also try to come up with some potential confounding variables\n\n\nSmoking and cancer\nNumber of pets and size of home\nMoney spent on groceries and number of people in household\nAmount of rainfall and river level\n\n\n\n\nAssociation: a relationship between two variables\n\nInformation provided form one variable helps to ______________ another variable.\n\nCausal Connection: a cause-and-effect relationship between variables\n\nOne variable has a __________ influence on the response variable\n\nNote: Association does NOT justify causation. (www.tylervigen.com)\n\n\n\nResearchers found that countries that have more TV’s per 1,000 people have a higher average lifespan. Identify the following:\n\nExplanatory variable:\n\n\n\n\n\nCategorical or quantitative:\nResponse variable:\n\n\n\n\n\nCategorical or quantitative:\nPotential confounding variable(s):"
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#definitions",
+    "href": "notes/ch4/Notes218_Chapter_4.html#definitions",
+    "title": "Association and Confounding",
+    "section": "",
+    "text": "Explanatory Variable (_______________, Predictor)\n\nVariable we think is “explaining” the change in the response variable\nIn an experiment, this is what researchers __________________\n\nResponse Variable (Dependent)\n\nVariable that is being changed by the explanatory variable (i.e., the outcome)\n\nConfounding Variable\n\nA variable that is related to both the explanatory and response variable in such a way that its effects cannot be ________________ from the effects of the explanatory"
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#example-1-types-of-variables",
+    "href": "notes/ch4/Notes218_Chapter_4.html#example-1-types-of-variables",
+    "title": "Association and Confounding",
+    "section": "",
+    "text": "Suppose that a study is researching the effect of gasoline usage and miles driven in a car. Identify the following:\nExplanatory Variable:\nResponse Variable:\nPotential Confounding Variables:"
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#your-turn",
+    "href": "notes/ch4/Notes218_Chapter_4.html#your-turn",
+    "title": "Association and Confounding",
+    "section": "",
+    "text": "From the following scenarios, think about which variable is the explanatory and which one is the response. Also try to come up with some potential confounding variables\n\n\nSmoking and cancer\nNumber of pets and size of home\nMoney spent on groceries and number of people in household\nAmount of rainfall and river level"
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#definitions-cont.",
+    "href": "notes/ch4/Notes218_Chapter_4.html#definitions-cont.",
+    "title": "Association and Confounding",
+    "section": "",
+    "text": "Association: a relationship between two variables\n\nInformation provided form one variable helps to ______________ another variable.\n\nCausal Connection: a cause-and-effect relationship between variables\n\nOne variable has a __________ influence on the response variable\n\nNote: Association does NOT justify causation. (www.tylervigen.com)"
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#example-2",
+    "href": "notes/ch4/Notes218_Chapter_4.html#example-2",
+    "title": "Association and Confounding",
+    "section": "",
+    "text": "Researchers found that countries that have more TV’s per 1,000 people have a higher average lifespan. Identify the following:\n\nExplanatory variable:\n\n\n\n\n\nCategorical or quantitative:\nResponse variable:\n\n\n\n\n\nCategorical or quantitative:\nPotential confounding variable(s):"
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#observational-studies",
+    "href": "notes/ch4/Notes218_Chapter_4.html#observational-studies",
+    "title": "Association and Confounding",
+    "section": "Observational Studies",
+    "text": "Observational Studies\nThe groups that you wish to compare are “just there.” Data is observed and collected on subjects without intervention of the results.\nExamples: customer review surveys, teacher evaluations, smokers vs nonsmokers and lung cancer, etc."
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#experiments",
+    "href": "notes/ch4/Notes218_Chapter_4.html#experiments",
+    "title": "Association and Confounding",
+    "section": "Experiments",
+    "text": "Experiments\nYou create the groups by what you choose to do to the people or the experimental units by assigning the conditions (i.e., _____________________ of groups)\nExamples:\n\nAssigning two diets to two different groups, then measuring the weight loss on each group\nAssigning students to listen to either classical music or country music before an exam, then comparing the group scores"
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#randomized-experiments",
+    "href": "notes/ch4/Notes218_Chapter_4.html#randomized-experiments",
+    "title": "Association and Confounding",
+    "section": "Randomized Experiments",
+    "text": "Randomized Experiments\nExperiments can be designed in such a way that we can balance out confounding variables. This is done through random assignment into different treatment groups. For randomized experiments, this means that each subject/participant is randomly placed into a group.\nWhen conducting an experiment, our observational units are now called experimental units. Technical note: an experimental unit, by definition, is the smallest entity to which randomization can occur."
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#what-type-of-study-to-use",
+    "href": "notes/ch4/Notes218_Chapter_4.html#what-type-of-study-to-use",
+    "title": "Association and Confounding",
+    "section": "What Type of Study to Use?",
+    "text": "What Type of Study to Use?\nConsider the scenario of a researcher wanting to answer this research question: “Does exercise help prevent against colds and flus?”\n\nHow can we make this an experimental study?\n\n\n\n\nHow can we make this an observational study?\n\n\n\nExperimental Study\nObservational Study"
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#random-sampling-vs.-random-assignment",
+    "href": "notes/ch4/Notes218_Chapter_4.html#random-sampling-vs.-random-assignment",
+    "title": "Association and Confounding",
+    "section": "Random Sampling vs. Random Assignment",
+    "text": "Random Sampling vs. Random Assignment\nRandom Sampling: representative sample from population so we can extend conclusion to the larger population.\n\nWhen random sampling is present, we can generalize the results to the population of interest.\nWhen random sampling is not present, we cannot generalize results to the population of interest.\n\nExample: Suppose that a study wants to estimate the average weight of the Western Meadowlark (state bird of Nebraska). Researchers get samples from random areas in the state of Nebraska.\nCan we generalize the average weight to all Western Meadowlarks? To where can we generalize the results?\n\nRandom Assignment: produce similar groups so we can say that there is a cause-and-effect (causal) relationship between explanatory and response variables.\n\nWhen random assignment is present, we can determine causation because the study “balances out” potential confounding variables.\nWhen random assignment is not present, we cannot determine causation (only association). The confounding variables add bias into the results\n\nNote: This is common with observational studies."
+  },
+  {
+    "objectID": "notes/ch4/Notes218_Chapter_4.html#claims-from-study-types",
+    "href": "notes/ch4/Notes218_Chapter_4.html#claims-from-study-types",
+    "title": "Association and Confounding",
+    "section": "Claims from Study Types",
+    "text": "Claims from Study Types\nThe following table summarizes what types of claims you can make depending on the type of study. We will not be focusing on how to write conclusions for each situation, but you should pay attention to how a study is designed and its implications.\n\n\n\n\n\n\n\n\n\nAssociation\nCausal Connection\n\n\n\n\nSubjects within the study\nCalculated statistics\nExperimental study with random assignment\n\n\nPopulation\nObservational study with a random sample\nExperimental study with random assignment AND from a random sample"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html",
+    "href": "notes/ch2/Notes218_Chapter_2.html",
+    "title": "Sampling from a Finite Population",
+    "section": "",
+    "text": "Population\n\nEntire collection of observational units we are interested in\nRelates to the ___________\n\nSample\n\nA subset of the population\nRelates to the ___________\n\nGeneralizations\n\nNot only to describe a sample, but to generalize characteristics of a sample to a much larger population\n\n\n\n\n\nA sample is considered to be a _______________ sample if it is like or represents the whole population from which it has been drawn.\n\nWould our class be representative of all UNL students?\n\nBias is when a statistic ______________ overestimates or underestimates the population for the parameter of interest.\n\nWould asking UNL students enrolled in 8 am classes if they are morning people be representative of all UNL students?\n\n\n\n\n\nConvenience Sampling\n\nGo and pick out a set of observational units\nNot a very good way to select a sample because this will introduce _______\nExample: taking surveys outside of the cafeteria\n\nSimple Random Sample\n\nEvery population member has an equal probability of being chosen\nAllows us to ________________ our results to the entire population\nChoose individuals randomly from the sampling frame and each individual has the same chance of being selected\nSampling frame: ______ of all individuals in the population of interest\n\n\nExample 1: Researchers at UNL are looking for student feedback (approval/disapproval) regarding an upcoming project. They set up a table outside of each dorm hall and ask passing students for their input. The volunteers at the table talk to any student who is interested in providing feedback.\n\nIdentify the following\n\nPopulation:\nParameter of interest:\nSampling Frame:\nSample:\nPotential Bias:\n\n\nExample 2: A business magazine mailed a questionnaire to the human resources of all the Fortune 500 companies and received responses from 23% of them. Those responding reported that they did not find that such surveys intruded significantly on their workday.\n\nIdentify the following\n\nPopulation:\nParameter of interest:\nSampling Frame:\nSample:\nPotential Bias:\n\n\nExample 3: State police set up a roadblock to check cars for up-to-date registration and insurance. They usually find problems in about 10% of the cars they stop.\n\nIdentify the following:\n\nPopulation:\nParameter of interest\nSampling Frame:\nSample:\nPotential Bias:"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#definitions",
+    "href": "notes/ch2/Notes218_Chapter_2.html#definitions",
+    "title": "Sampling from a Finite Population",
+    "section": "",
+    "text": "Population\n\nEntire collection of observational units we are interested in\nRelates to the ___________\n\nSample\n\nA subset of the population\nRelates to the ___________\n\nGeneralizations\n\nNot only to describe a sample, but to generalize characteristics of a sample to a much larger population"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#sampling",
+    "href": "notes/ch2/Notes218_Chapter_2.html#sampling",
+    "title": "Sampling from a Finite Population",
+    "section": "",
+    "text": "A sample is considered to be a _______________ sample if it is like or represents the whole population from which it has been drawn.\n\nWould our class be representative of all UNL students?\n\nBias is when a statistic ______________ overestimates or underestimates the population for the parameter of interest.\n\nWould asking UNL students enrolled in 8 am classes if they are morning people be representative of all UNL students?"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#sampling-methods",
+    "href": "notes/ch2/Notes218_Chapter_2.html#sampling-methods",
+    "title": "Sampling from a Finite Population",
+    "section": "",
+    "text": "Convenience Sampling\n\nGo and pick out a set of observational units\nNot a very good way to select a sample because this will introduce _______\nExample: taking surveys outside of the cafeteria\n\nSimple Random Sample\n\nEvery population member has an equal probability of being chosen\nAllows us to ________________ our results to the entire population\nChoose individuals randomly from the sampling frame and each individual has the same chance of being selected\nSampling frame: ______ of all individuals in the population of interest\n\n\nExample 1: Researchers at UNL are looking for student feedback (approval/disapproval) regarding an upcoming project. They set up a table outside of each dorm hall and ask passing students for their input. The volunteers at the table talk to any student who is interested in providing feedback.\n\nIdentify the following\n\nPopulation:\nParameter of interest:\nSampling Frame:\nSample:\nPotential Bias:\n\n\nExample 2: A business magazine mailed a questionnaire to the human resources of all the Fortune 500 companies and received responses from 23% of them. Those responding reported that they did not find that such surveys intruded significantly on their workday.\n\nIdentify the following\n\nPopulation:\nParameter of interest:\nSampling Frame:\nSample:\nPotential Bias:\n\n\nExample 3: State police set up a roadblock to check cars for up-to-date registration and insurance. They usually find problems in about 10% of the cars they stop.\n\nIdentify the following:\n\nPopulation:\nParameter of interest\nSampling Frame:\nSample:\nPotential Bias:"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#definitions-1",
+    "href": "notes/ch2/Notes218_Chapter_2.html#definitions-1",
+    "title": "Sampling from a Finite Population",
+    "section": "Definitions",
+    "text": "Definitions\nSummary Statistics: statistics calculated from a sample that provide numeric information about the sample\n\nMean / Average\n\nAdd up all the values first, then divide by the total number of values\n\nMedian\n\nHalf of the data is above, half is below\n“Middle” value when data is ordered\n\nOutliers: unusual data points\n\nA summary statistic is called ______________ if its value does not change much when outliers are included\nExample: Suppose that the following values are observed. Calculate the mean and median.\n\nSuppose that instead of 15, the value 30 was observed. Calculate the mean and the median.\n\n\n\n30\n\n\nNote: The standard deviation will _____________ if an outlier is added to the data set."
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#symbols",
+    "href": "notes/ch2/Notes218_Chapter_2.html#symbols",
+    "title": "Sampling from a Finite Population",
+    "section": "Symbols",
+    "text": "Symbols\nSample mean: \\(\\overline{x}\\) (observed statistic)\nSample Standard Deviation: \\(s\\)\nPopulation Mean: \\(\\mu\\) (hypothesized value)\nPopulation Standard Deviation: \\(\\sigma\\)\nReview:\n\n\n\n\n\n\n\n\n\nQuantitative\nCategorical\n\n\n\n\nPopulation\nµ\nπ\n\n\nSample\n\\[\\overline{x}\\]\n\\[\\widehat{p}\\]"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#analysis-of-a-single-quantitative-variable",
+    "href": "notes/ch2/Notes218_Chapter_2.html#analysis-of-a-single-quantitative-variable",
+    "title": "Sampling from a Finite Population",
+    "section": "Analysis of a Single Quantitative Variable",
+    "text": "Analysis of a Single Quantitative Variable\nVariable of Interest:\n\nNumber of … context, quantitative\n\nParameter:\n\n“The long run average…context” (\\(\\mu\\))\n\nHypotheses:\n\nWords:\n\nNull: The long-run average …context… is equal to previously known #.\nAlternative: The long-run average …context… is greater than/ less than/ different from previously known #..\n\nSymbols:\n\n\\(H_{0}:\\mu = previously\\ known\\ \\#\\)\n\\(H_{A}:\\mu &gt; , &lt; , \\neq previously\\ known\\ \\#\\)\n\n\nExample: Suppose you are interested in whether the average number of bikes sold at a store per day is less than 20\n\nVariable of interest: number of bikes sold in a day, quantitative\nParameter: the long-run average number of bikes sold at the store (µ)\nHypotheses\n\nWords\n\nNull: The long-run average number of bikes sold at the store is equal to 20\nAlternative: The long run average number of bikes sold at the store is less than 20\n\nSymbols\n\n\\(H_{0}:\\)\n\\(H_{A}:\\)\n\n\n\nFor the purposes of our class, we will not use the simulation approach for quantitative data because we do not have coin flips or spinners to model quantitative data. This means that we will not calculate p-values."
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#theory-based-approach-quantitative",
+    "href": "notes/ch2/Notes218_Chapter_2.html#theory-based-approach-quantitative",
+    "title": "Sampling from a Finite Population",
+    "section": "Theory Based Approach (Quantitative)",
+    "text": "Theory Based Approach (Quantitative)\nWe need to satisfy at least one of the following conditions to use the theory approach.\n\nThe quantitative variable should have a symmetric distribution\nSample size ≥ _____ and sampling distribution is not strongly skewed\n\nStandard Error = \\(\\frac{s}{\\sqrt{n}}\\) where s is our sample standard deviation\nStandardized Statistic = \\(\\frac{\\overline{x} - \\mu}{SE} = \\frac{\\overline{x} - \\mu}{\\frac{s}{\\sqrt{n}}}\\)"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#standardized-statistic-for-quantitative-data",
+    "href": "notes/ch2/Notes218_Chapter_2.html#standardized-statistic-for-quantitative-data",
+    "title": "Sampling from a Finite Population",
+    "section": "Standardized Statistic for Quantitative Data",
+    "text": "Standardized Statistic for Quantitative Data\nRemember that the standardized statistic calculates how many standard deviation from the null value that the statistics falls\n\nFor quantitative variables:\n\n\\[z = \\ Standardized\\ statistic\\  = \\frac{sample\\ mean\\  - null\\ value}{standard\\ deviation\\ of\\ sample\\ mean} = \\ \\frac{\\overline{x} - \\mu_{0}}{\\frac{\\sigma}{\\sqrt{n}}}\\]\nSince $$is not usually known, we use the sample standard deviation (s) to approximate the standard deviation of sample mean\n\nThis approximation is called the standard error (SE) of sample mean\nt = standardized statistic = \\(\\frac{\\overline{x} - \\mu}{\\frac{s}{\\sqrt{n}}}\\)\n\nLike with the normal approximation, we need a reference distribution. With categorical data, we used the z (standard normal) distribution. Since we are now using the sample standard deviation, we need to use the t distribution instead of the z distribution\n\n\n\nImage result for t distribution vs z distribution\n\n\nOne Quantitative Variable\n\\[SE = \\frac{s}{\\sqrt{n}} \\leftarrow this\\ is\\ our\\ new\\ denominator\\ for\\ standardized\\ statistic\\]\n\\[Standardized\\ Statistic = t = \\frac{\\overline{x} - \\mu}{\\frac{s}{\\sqrt{n}}}\\]\nNote that the cutoffs are the same as Chapter 1: “outside the 2’s -&gt; reject”\nExample: You observe the bike sales for 30 days to find the average number of sales to be 19.5, with a sample standard deviation of 2.1\n\\(H_{0}:\\mu = 20\\)\n\\(H_{A}:\\mu &lt; 20\\)\nConclusion: “We ______ have evidence to conclude the long run average number of bikes sold\n\nat the store is __________________"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#significance-level-α",
+    "href": "notes/ch2/Notes218_Chapter_2.html#significance-level-α",
+    "title": "Sampling from a Finite Population",
+    "section": "Significance Level (α)",
+    "text": "Significance Level (α)\nα (alpha) is our “threshold” for p-value (we have been using 0.05).\n\nHow small a p-value needs to be to provide convincing evidence to reject the null hypothesis\np-value \\(&lt; \\alpha\\  \\rightarrow\\) Reject \\(H_{O}\\)\np-value \\(\\geq \\alpha\\  \\rightarrow\\) Fail to Reject \\(H_{O}\\)\n\nExample:\n\nIf α = 0.05, then for a p-value of 0.07, we will fail to reject our null.\nIf α = 0.10, then for a p-value of 0.07, we will reject our null.\n\nThis value changes depending on the study, your discipline, etc. Consider a significance level of 0.1. This means, that if the null is really true, 10% of random samples would produce a sample statistic that is extreme enough to reject the null hypothesis.\n$= $Probability of Type I Error\n\nThe __________ it is, _________ likely to make a Type I Error\nAs the probability of a Type I Error goes ____, the probability of a Type II Error goes ___"
+  },
+  {
+    "objectID": "notes/ch2/Notes218_Chapter_2.html#power",
+    "href": "notes/ch2/Notes218_Chapter_2.html#power",
+    "title": "Sampling from a Finite Population",
+    "section": "Power",
+    "text": "Power\nPower is defined as the probability of rejecting a _____ null hypothesis. The calculation of power goes beyond the scope of our class, but we want power to be as high as possible.\n\\[Power = 1 - P(Type\\ II\\ Error)\\]\n\n\n\nDiagram Description automatically generated\n\n\nExample: Suppose you are implementing an algorithm that detects fraud on credit cards. From the gathered information, you decide to test the following hypothesis:\n\n$H_{0}:$No fraud detected\n\\(H_{A}:\\) Fraud detected\n\nIn context, describe the impacts of each type of conclusion.\n\nReject the null when the null is true (what type of error is this?)\nReject the null when the null is false\nFail to reject the null when the null is true\nFail to reject the null when the null is false."
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "References\nSimulation applets for our book can be found here: http://www.isi-stats.com/isi2nd/applets2021.html\n\nChapter P\n\nSlides | Notes (pdf)\n\nChapter 1\nChapter 2\nChapter 3\nChapter 4\nChapter 5\nChapter 6\nChapter 7\nChapter 10"
+  },
+  {
+    "objectID": "canvas.html",
+    "href": "canvas.html",
+    "title": "Canvas",
+    "section": "",
+    "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+  },
+  {
+    "objectID": "assessements/test.html",
+    "href": "assessements/test.html",
+    "title": "HW 1",
+    "section": "",
+    "text": "Instructions\nComplete the following problems and submit them on Canvas by the due date.\nSyllabus\n\nWhen does your instructor host office hours, and where?\nThe following table is an example of grades awarded for the semester. What is their final letter grade according to this course’s grading scheme?\n\nChapter P"
+  },
+  {
+    "objectID": "assessements/final/final.html",
+    "href": "assessements/final/final.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "The final project for this course"
+  },
+  {
+    "objectID": "assignments.html#exams",
+    "href": "assignments.html#exams",
+    "title": "Assignments",
+    "section": "Exams",
+    "text": "Exams"
+  },
+  {
+    "objectID": "assignments.html#final",
+    "href": "assignments.html#final",
+    "title": "Assignments",
+    "section": "Final",
+    "text": "Final"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 218 course.\nCourse description: The practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing."
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#statistical-investigation",
+    "href": "notes/ch0/Notes218_Chapter_P.html#statistical-investigation",
+    "title": "Chapter P",
+    "section": "Statistical Investigation",
+    "text": "Statistical Investigation\nThere are six steps to the statistical investigation process. We will mainly focus on steps 3-5 in our course.\n\nAsk a research question\nDesign a study and collect data\nExplore the data\nDraw inferences from the data\nFormulate conclusions\nLook back and ahead"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#step-1",
+    "href": "notes/ch0/Notes218_Chapter_P.html#step-1",
+    "title": "Chapter P",
+    "section": "Step 1",
+    "text": "Step 1\nAsk a research question\n\nQuestions that can be addressed by collecting data\n\nComparing groups\nDoes one thing affect something else?\nAssessing opinions"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#step-2",
+    "href": "notes/ch0/Notes218_Chapter_P.html#step-2",
+    "title": "Chapter P",
+    "section": "Step 2",
+    "text": "Step 2\nDesign a study and collect data\n\nSelecting people or objects to be studied\nDeciding how to gather relevant data\nCarrying out data collection in a careful, systematic manner"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#step-3",
+    "href": "notes/ch0/Notes218_Chapter_P.html#step-3",
+    "title": "Chapter P",
+    "section": "Step 3",
+    "text": "Step 3\nExplore the data\n\nLooking for patterns related to the research question\nLook for unexpected outcomes that may point to additional questions\nCharts, tables, etc."
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#step-4",
+    "href": "notes/ch0/Notes218_Chapter_P.html#step-4",
+    "title": "Chapter P",
+    "section": "Step 4",
+    "text": "Step 4\nDraw inferences from the data\n\nDetermine whether any findings in the data reflect a genuine tendency and estimating the size of that tendency"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#step-5",
+    "href": "notes/ch0/Notes218_Chapter_P.html#step-5",
+    "title": "Chapter P",
+    "section": "Step 5",
+    "text": "Step 5\nFormulate conclusions\n\nConsider the scope of inference from step 4\nCan results be generalized?\nCan a cause-and-effect conclusion be drawn?"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#step-6",
+    "href": "notes/ch0/Notes218_Chapter_P.html#step-6",
+    "title": "Chapter P",
+    "section": "Step 6",
+    "text": "Step 6\nLook back and ahead\n\nLimitations of the study\nSuggest new studies based on findings"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#terminology",
+    "href": "notes/ch0/Notes218_Chapter_P.html#terminology",
+    "title": "Chapter P",
+    "section": "Terminology",
+    "text": "Terminology\nData: the values measured or categories recorded on individual entities of interest\nPopulation: the complete collection of ALL elements that are of interest for a given problem\nSample: a sub-collection of elements drawn from a population\nObservation: the collection of measurements from a particular unit in a sample\nObservational unit: the smallest unit to which data is collected\nVariable: any measurable characteristic of an observation"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#sample",
+    "href": "notes/ch0/Notes218_Chapter_P.html#sample",
+    "title": "Chapter P",
+    "section": "Sample",
+    "text": "Sample"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#variables",
+    "href": "notes/ch0/Notes218_Chapter_P.html#variables",
+    "title": "Chapter P",
+    "section": "Variables",
+    "text": "Variables\nIn our course, we will focus on two types of variables: categorical and quantitative.\n\nCategorical: measurements that are classified into one of a group of categories Proportion:\n\n\n\n\nQuantitative: measurements that are recorded on a naturally occurring"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#example",
+    "href": "notes/ch0/Notes218_Chapter_P.html#example",
+    "title": "Chapter P",
+    "section": "Example",
+    "text": "Example\nSuppose a study collected a sample of cars. Are the variables categorical or quantitative?"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#example-1-weight-loss-study",
+    "href": "notes/ch0/Notes218_Chapter_P.html#example-1-weight-loss-study",
+    "title": "Chapter P",
+    "section": "Example 1: Weight Loss Study",
+    "text": "Example 1: Weight Loss Study\nSuppose that a study wants to compare the weight loss on two diets, Diet A and Diet B, for adults in the United States. The study had 2,000 participants and measured the amount of weight loss on each participant. Identify the following:\nPopulation:\nObservational unit:\nSample size:\nVariables and their type:"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#example-1-cont",
+    "href": "notes/ch0/Notes218_Chapter_P.html#example-1-cont",
+    "title": "Chapter P",
+    "section": "Example 1 (cont)",
+    "text": "Example 1 (cont)\nA sample of the data is shown below. It may sometimes be important to change the variable type. For example, suppose that you were looking for the proportion of people who showed a decrease in weight. In this case, we would change all negative values to “decrease” and positive values to “increase.”\n\nNote: quantitative data can become categorical data, but NOT vice versa."
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#your-turn",
+    "href": "notes/ch0/Notes218_Chapter_P.html#your-turn",
+    "title": "Chapter P",
+    "section": "Your Turn!",
+    "text": "Your Turn!\nSuppose there are 10 multiple choice questions, which all questions have three options: A, B, and C. You are interested in the proportion of times that A is the correct answer.\n\nObservational unit-\nVariable of interest-\nCategorical or quantitative-\n\nIf the correct answer was placed completely at random, what would be a typical proportion of times that A is the correct answer?"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#helper-or-hinderer",
+    "href": "notes/ch0/Notes218_Chapter_P.html#helper-or-hinderer",
+    "title": "Chapter P",
+    "section": "Helper or Hinderer",
+    "text": "Helper or Hinderer\nCheck out the following study: https://www.youtube.com/watch?v=HBW5vdhr_PA\n\nA study investigated whether infants take into account an individual’s actions toward others in evaluating that individual as appealing or aversive (perhaps laying the foundation for social interaction)\n16 infants (10-months old) were shown a “climber” character that could not make it up a hill in two tries\nTwo scenarios were provided:\n\nThe climber received help from another character (“helper”)\nThe climber was pushed back down by another character (“hinderer”)\n\nThe infant was then presented with the helper and hinderer and was asked to pick one to play with"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#distributions",
+    "href": "notes/ch0/Notes218_Chapter_P.html#distributions",
+    "title": "Chapter P",
+    "section": "Distributions",
+    "text": "Distributions\nDistributions are the pattern (or behavior) or outcomes for variables. When looking at distributions, there are a few important things to take note of.\n\nShape: symmetric, mound-shaped, skewed?\nCenter: where does the center of the pattern appear?\nVariability: how spread out is the distribution?\n\nStandard deviation: the “average” spread of all data points away from the mean\n\nUnusual data: Outliers?"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#shape",
+    "href": "notes/ch0/Notes218_Chapter_P.html#shape",
+    "title": "Chapter P",
+    "section": "Shape",
+    "text": "Shape\nSkew Left\n\n\nSymmetric\n\n\nSkew Right\n\n\nIf a distribution has two or more mound/peaks, comment on these rather than the skewness."
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#example-2-old-faithful",
+    "href": "notes/ch0/Notes218_Chapter_P.html#example-2-old-faithful",
+    "title": "Chapter P",
+    "section": "Example 2: Old Faithful",
+    "text": "Example 2: Old Faithful\nMillions of people from around the world flock to Yellowstone Park to watch eruptions of Old Faithful Geyser. Suppose the park ranger gives you a prediction for the next eruption time, and then that eruption occurs five minutes after that predicted time. Would you conclude that predictions by the Park Service are accurate or not very accurate?\nIn order to better predict the times until the next eruption of Old Faithful, researchers collected times until the next eruption on 222 eruptions of Old Faithful taken over a number of days in August 1978 and August 1979.\n\nObservational unit:\nSample:\nPopulation:\nVariable of interest:\nCategorical or quantitative:"
+  },
+  {
+    "objectID": "notes/ch0/Notes218_Chapter_P.html#gathering-evidence",
+    "href": "notes/ch0/Notes218_Chapter_P.html#gathering-evidence",
+    "title": "Chapter P",
+    "section": "Gathering Evidence",
+    "text": "Gathering Evidence\nRandom Process: A random process is a process that can be repeated a very large number of times (theoretically infinitely many times) under identical conditions where outcomes cannot be known in advance.\nProbability: The probability of an outcome is the long run proportion of times that outcome would occur if a random process were repeated a very large number of times under identical conditions.\nSimulation: Artificially re-creating a random process.\n\nCan be done using computer, dice, cards, coins, etc…"
+  },
+  {
+    "objectID": "notes/ch10/Notes218_Chapter_10.html",
+    "href": "notes/ch10/Notes218_Chapter_10.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Simple Linear Regression (SLR) is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables.\nExamples: fuel efficiency of cars and their weights; grade point average and number of classes skipped for high school students\nWe will be using three methods to look at regression.\n\nScatterplots\nCorrelation\nLine of best fit\n\n\n\\[y = mx + b\\]\n\n\nPrediction\nResiduals"
+  },
+  {
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#scatterplots",
+    "href": "notes/ch10/Notes218_Chapter_10.html#scatterplots",
+    "title": "Introduction",
+    "section": "Scatterplots",
+    "text": "Scatterplots\nThe first step is to analyze the data graphically through the use of scatterplots.\n\nMay have called them x − y plots\nThe explanatory/predictor variable goes on the x−axis\nThe response variable goes on the y−axis\nThere is a dot on the plot for each point in the data set\n\nTo visually analyze, will look at four aspects:\n\nDirection: positive, negative or no relationship\nForm: Is the association linear (do the points follow a linear pattern) or some more complicated curve?\nStrength\n\nHow closely do the points follow a pattern?\nIf you imagine a line through the points, the points all fall pretty close to that line, the association is fairly strong\n\nUnusual Observations\n\nAre there any points that do not seem to adhere to the overall pattern\n\n\nExam example: The data is plotted below.\n\n\n\nhttps://s3.amazonaws.com/wiley-p/411/media/images/118/RT_w0240.png\n\n\nDirection:\n\nNegative (as time increases, scores tend to decrease)\n\nForm:\n\nSeems to be linear pattern\n\nStrength:\n\nModerately (points tend to fall closely to a line)\n\nUnusual observations:\n\nNone here"
+  },
+  {
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#summarizing-the-relationship",
+    "href": "notes/ch10/Notes218_Chapter_10.html#summarizing-the-relationship",
+    "title": "Introduction",
+    "section": "Summarizing the Relationship",
+    "text": "Summarizing the Relationship\nIn addition to graphically, we will want to use numeric summaries.\nCorrelation Coefficient (r)\n\nMeasures the strength and direction of a linear association\n−1 ≤ r ≤ 1\nCloser to one of the extremes, the stronger the relationship\n\nIf r = 1 or r = −1, the points fall exactly in a straight line\nIf r=0, no linear relationship\n\nIf r is positive 🡪 positive relationship (also vice versa)\n\n\n\n\nTimeline Description automatically generated\n\n\nExamples:\n\n\n\nChart, scatter chart Description automatically generated"
+  },
+  {
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#example-growing-plates",
+    "href": "notes/ch10/Notes218_Chapter_10.html#example-growing-plates",
+    "title": "Introduction",
+    "section": "Example: Growing Plates?",
+    "text": "Example: Growing Plates?\nResearch question: Are dinner plates getting larger?\nThere are many recent articles and TV reports about the obesity problem. One reason some have given is that the size of differ plates are increasing. Are these black circles the same size, or is one larger than the other?\n\n\n\nA picture containing shape Description automatically generated\n\n\nThe circle on the right is about 20% larger than the one on the left. This suggests that people will put more food on larger dinner plates without knowing. This is known as Delboeuf illusion.\nResearchers gathered data to investigate the claim that dinner plates are growing by using American dinner plates sold on ebay on March 30th, 2010 (Van Ittersum and Wansink, 2011). The year manufactured and diameter are given below.\n\n\n\nTable Description automatically generated\n\n\nBoth year (explanatory) and diameter (response) are quantitative. Each dot on the plot below represents one plate.\n\n\n\nChart, scatter chart Description automatically generated\n\n\nThe data is trending upward, which indicates a positive association. We also do not see any curves within the data, which suggests this is a linear trend.\nThe regression equation is \\(\\widehat{y} = a + bx\\):\n\na is the y-intercept\nb is the slope\nx is a value of the explanatory variable\nŷ is the predicted value for the response variable\n\nFor a specific value of x, the corresponding distance \\(y - \\widehat{y}\\) (or actual – predicted) is a residual"
+  },
+  {
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#residual",
+    "href": "notes/ch10/Notes218_Chapter_10.html#residual",
+    "title": "Introduction",
+    "section": "Residual",
+    "text": "Residual\nA residual is the vertical distance from a point to the regression line. This can also be described as the difference between an observed response and the corresponding predicted response.\nResidual = Observed - Predicted\n\nNegative residuals fall below the line (overestimate)\nPositive residuals are above the line (underestimate)\nEach observational unit has a residual"
+  },
+  {
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#regression-line-for-growing-plate-example",
+    "href": "notes/ch10/Notes218_Chapter_10.html#regression-line-for-growing-plate-example",
+    "title": "Introduction",
+    "section": "Regression Line for Growing Plate example",
+    "text": "Regression Line for Growing Plate example\nSoftware will calculate the coefficients for us. The least squares line for the dinner plate data is \\(\\widehat{y} = - 14.8 + 0.0128x\\)\nOr \\(\\widehat{diameter} = - 14.8 + 0.0128(year)\\)\n\nThis allows us to predict plate diameter for a particular year.\n\nWhat is the predicted diameter for a plate manufactured in 2000?\n-14.8 + 0.0128(2000) = 10.8 in.\nWhat is the predicted diameter for a plate manufactured in 2001?\n\n-14.8 + 0.0128(2001) = 10.8128 in.\n\nHow does this compare to our prediction for the year 2000?\n\n0.0128 larger\n\nSlope b = 0.0128 means that diameters are predicted to increase by 0.0128 inches per year on average\nSlope is the predicted change in the response variable for one-unit change in the explanatory variable. Both the slope and the correlation coefficient for this study were positive.\n\nThe slope is 0.0128\nThe correlation is 0.604\n\nThe slope and correlation coefficient will always have the same sign.\nThe y-intercept is where the regression line crosses the y-axis or the predicted response when the explanatory variable equals 0.\n\nWe had a y-intercept of -14.8 in the dinner plate equation. What does this tell us about our dinner plate example?\n\nDinner plates in year 0 were -14.8 inches.\n\n\n\n\nHow can it be negative?\n\nThe equation works well within the range of values given for the explanatory variable, but fails outside that range.\n\nOur equation should only be used to predict the size of dinner plates from about 1950 to 2010."
+  },
+  {
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#coefficient-of-determination",
+    "href": "notes/ch10/Notes218_Chapter_10.html#coefficient-of-determination",
+    "title": "Introduction",
+    "section": "Coefficient of Determination",
+    "text": "Coefficient of Determination\nWhile the intercept and slope have meaning in the context of year and diameter, remember that the correlation does not. It is just 0.604. However, the square of the correlation (coefficient of determination or r2) does have meaning.\n\nr2 = 0.6042 = 0.365 or 36.5%\n36.5% of the variation in plate size (or the response variable) can be explained by its linear association with the year (the explanatory variable)."
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html",
+    "href": "notes/ch3/Notes218_Chapter_3.html",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "",
+    "text": "Up until now, we have been using hypothesis tests to determine if a value for a parameter is plausible. Our new goal is estimation: what values of the parameter are plausible?\nConfidence Interval: a range of likely values for the ____________________\n\n\n\n\nIn February of 2014, a Star Tribune Minnesota poll asked a random sample of adults in Minnesota, “Do you support or oppose legalizing marijuana for medical purposes in Minnesota?” Of the 800 adults surveyed, 408 (51%) answered that they would support this.\nUltimately, the Star Tribune conducted this poll because they wanted to estimate the proportion of adults in Minnesota that felt (at the time of the survey) that medical marijuana should be legalized. Keep this in mind as you answer the following questions.\nSource: http://www.startribune.com/politics/statelocal/245910931.html\nAnswer the following questions:\n\nWhat is the population of interest?\n\n\n\n\nWhat is the parameter of interest?\n\n\n\n\n\nWhat is the sample?\n\n\n\nWhat is the observed statistic of interest? This is also called a point estimation.\n\n\n\nWhat would happen if you took a different sample of 800 Minnesota adults?\n\n\nHypothesis\n\nNull: The long run proportion of Minnesotans who feel medical marijuana should be legalized is equal to _____.\nIn symbols: \\(H_{0}:\\pi =\\)\nAlternative: The long run proportion of Minnesotans who feel medical marijuana should be legalized is different from _____.\nIn symbols: \\(H_{A}:\\pi \\neq\\)\n\nCalculate the p-value from the Theory Based Inference Applet.\n\nNote: when setting up the applet, you either enter the number of successes into the “count” box or the point estimation into “sample \\(\\widehat{p}\\)”. The other box will automatically fill in.\n\nBased off the p-value, would you Reject (R) or Fail to Reject (FTR) at a significance level of 0.05?\n\nThe general idea behind constructing a confidence interval is that we can use our sample to provide a plausible range of parameter values.\nUsing the Theory Based Inference applet, change the values of π to fill in the following table. (i.e., change the hypothesis test for different parameter values while using the same sample)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nπ\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n0.51\n0.52\n0.53\n0.54\n0.55\n\n\n\n\np-value\n\n\n\n\n\n\n\n\n\n\n\n\n\nR/FTR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat trends do we see?\n\n\n\n\nWhen we Fail to Reject, are we saying the null or alternative is plausible?\n\n\n\nWhat is the interval of plausible values?\n\n\nInterpretation: We are 95% confident that the long-run proportion of Minnesotans who feel that medical marijuana should be legalized is between _____ and _____.\n\n\n\nNotice how the confidence interval is centered around the point estimate.\n\n\\[\\text{Confidence Interval (CI)}\\mathbf{=}\\text{Point Estimate}\\mathbf{\\pm}\\text{Margin of Error}\\]\nIn the previous example, the confidence interval can be expressed as:\n51% ± 3.5% (i.e., 47.5% ≤ π ≤ 54.5%).\n\n\n\n\nSignificance Level + Confidence Level = 100%\nWhen \\(\\alpha = 0.10\\),\n\nRelates to a 90% CI\nRejects when p-value &lt; 0.10\nNarrower than 95% CI\nRejects the null more often (remember than \\(\\alpha = 0.10\\) means that we reject the null 10 percent of the time)\n\n\n\nWhen \\(\\alpha = 0.05\\),\n\nRelates to a 95% CI\nRejects when p-value &lt; 0.05\n\nWhen \\(\\alpha = 0.01\\),\n\nRelates to a 99% CI\nRejects when p-value &lt; 0.01\nWider than 95% CI\nRejects the null less often than 95% CI\n\nUsing the 95% confidence interval as a reference, draw what you would expect from the 90% confidence interval and 99% confidence interval\n95% CI\n\n\n90% CI\n\n\n\n99% CI\n\n\n\n\n\n\nWe say that we are “\\(100 - \\alpha*100\\%\\) confident” because \\(100 - \\alpha*100\\%\\) of the confidence intervals generated from samples of a given population will cover the true parameter value. In the instance of \\(\\alpha = 0.05\\), this means that 95% of confidence intervals generated from samples within a population will cover the true parameter value. In Section 3.3, we will look at an applet that will demonstrate what this means. This is NOT the same as saying that the probability of the parameter being in the confidence interval is \\(100 - \\alpha*100\\%\\)"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#introduction",
+    "href": "notes/ch3/Notes218_Chapter_3.html#introduction",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "",
+    "text": "Up until now, we have been using hypothesis tests to determine if a value for a parameter is plausible. Our new goal is estimation: what values of the parameter are plausible?\nConfidence Interval: a range of likely values for the ____________________"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#example-legalization-of-medical-marijuana",
+    "href": "notes/ch3/Notes218_Chapter_3.html#example-legalization-of-medical-marijuana",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "",
+    "text": "In February of 2014, a Star Tribune Minnesota poll asked a random sample of adults in Minnesota, “Do you support or oppose legalizing marijuana for medical purposes in Minnesota?” Of the 800 adults surveyed, 408 (51%) answered that they would support this.\nUltimately, the Star Tribune conducted this poll because they wanted to estimate the proportion of adults in Minnesota that felt (at the time of the survey) that medical marijuana should be legalized. Keep this in mind as you answer the following questions.\nSource: http://www.startribune.com/politics/statelocal/245910931.html\nAnswer the following questions:\n\nWhat is the population of interest?\n\n\n\n\nWhat is the parameter of interest?\n\n\n\n\n\nWhat is the sample?\n\n\n\nWhat is the observed statistic of interest? This is also called a point estimation.\n\n\n\nWhat would happen if you took a different sample of 800 Minnesota adults?\n\n\nHypothesis\n\nNull: The long run proportion of Minnesotans who feel medical marijuana should be legalized is equal to _____.\nIn symbols: \\(H_{0}:\\pi =\\)\nAlternative: The long run proportion of Minnesotans who feel medical marijuana should be legalized is different from _____.\nIn symbols: \\(H_{A}:\\pi \\neq\\)\n\nCalculate the p-value from the Theory Based Inference Applet.\n\nNote: when setting up the applet, you either enter the number of successes into the “count” box or the point estimation into “sample \\(\\widehat{p}\\)”. The other box will automatically fill in.\n\nBased off the p-value, would you Reject (R) or Fail to Reject (FTR) at a significance level of 0.05?\n\nThe general idea behind constructing a confidence interval is that we can use our sample to provide a plausible range of parameter values.\nUsing the Theory Based Inference applet, change the values of π to fill in the following table. (i.e., change the hypothesis test for different parameter values while using the same sample)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nπ\n0.45\n0.46\n0.47\n0.48\n0.49\n0.50\n0.51\n0.52\n0.53\n0.54\n0.55\n\n\n\n\np-value\n\n\n\n\n\n\n\n\n\n\n\n\n\nR/FTR\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat trends do we see?\n\n\n\n\nWhen we Fail to Reject, are we saying the null or alternative is plausible?\n\n\n\nWhat is the interval of plausible values?\n\n\nInterpretation: We are 95% confident that the long-run proportion of Minnesotans who feel that medical marijuana should be legalized is between _____ and _____."
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#general-form-of-a-confidence-interval",
+    "href": "notes/ch3/Notes218_Chapter_3.html#general-form-of-a-confidence-interval",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "",
+    "text": "Notice how the confidence interval is centered around the point estimate.\n\n\\[\\text{Confidence Interval (CI)}\\mathbf{=}\\text{Point Estimate}\\mathbf{\\pm}\\text{Margin of Error}\\]\nIn the previous example, the confidence interval can be expressed as:\n51% ± 3.5% (i.e., 47.5% ≤ π ≤ 54.5%)."
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#significance-levels-alpha",
+    "href": "notes/ch3/Notes218_Chapter_3.html#significance-levels-alpha",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "",
+    "text": "Significance Level + Confidence Level = 100%\nWhen \\(\\alpha = 0.10\\),\n\nRelates to a 90% CI\nRejects when p-value &lt; 0.10\nNarrower than 95% CI\nRejects the null more often (remember than \\(\\alpha = 0.10\\) means that we reject the null 10 percent of the time)\n\n\n\nWhen \\(\\alpha = 0.05\\),\n\nRelates to a 95% CI\nRejects when p-value &lt; 0.05\n\nWhen \\(\\alpha = 0.01\\),\n\nRelates to a 99% CI\nRejects when p-value &lt; 0.01\nWider than 95% CI\nRejects the null less often than 95% CI\n\nUsing the 95% confidence interval as a reference, draw what you would expect from the 90% confidence interval and 99% confidence interval\n95% CI\n\n\n90% CI\n\n\n\n99% CI"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#technical-note-about-confidence-intervals",
+    "href": "notes/ch3/Notes218_Chapter_3.html#technical-note-about-confidence-intervals",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "",
+    "text": "We say that we are “\\(100 - \\alpha*100\\%\\) confident” because \\(100 - \\alpha*100\\%\\) of the confidence intervals generated from samples of a given population will cover the true parameter value. In the instance of \\(\\alpha = 0.05\\), this means that 95% of confidence intervals generated from samples within a population will cover the true parameter value. In Section 3.3, we will look at an applet that will demonstrate what this means. This is NOT the same as saying that the probability of the parameter being in the confidence interval is \\(100 - \\alpha*100\\%\\)"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#formula",
+    "href": "notes/ch3/Notes218_Chapter_3.html#formula",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Formula",
+    "text": "Formula\nThe general formula for confidence intervals is as follows:\n\\[\\text{Observed Statistic} \\pm \\text{Multiplier} \\cdot \\text{Standard Error}\\]\n\nUnlike in Chapter 1, we now have a new formula for the standard error:\n\n\\[SE = \\sqrt{\\frac{\\widehat{p} \\cdot \\left( 1 - \\widehat{p} \\right)}{n}}\\]\nNotice how we are no longer using π in the calculation, but rather \\(\\widehat{p}\\).\nTo construct a 95% Confidence interval, the multiplier we will use in this course is 2. This gives us the confidence interval for one proportions to be:\n\n\\[\\mathbf{CI =}\\widehat{\\mathbf{p\\ }}\\mathbf{\\pm 2*\\ }\\sqrt{\\frac{\\widehat{\\mathbf{p}}\\mathbf{*}\\left( \\mathbf{1 -}\\widehat{\\mathbf{p}} \\right)}{\\mathbf{n}}}\\mathbf{= (Lower\\ Limit,\\ Upper\\ Limit)}\\]\nTechnical aside: if you look into confidence intervals from sources outside of our class, you will notice that the multiplier value for a 95% confidence interval will likely be 1.96. However, we will only use a multiplier value of 2 for this course."
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#example-legalization-of-medical-marijuana-1",
+    "href": "notes/ch3/Notes218_Chapter_3.html#example-legalization-of-medical-marijuana-1",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Example: Legalization of Medical Marijuana",
+    "text": "Example: Legalization of Medical Marijuana\nRecall the medical marijuana survey question from Section 3.1. Calculate the 95% confidence interval.\nIn February of 2014, a Star Tribune Minnesota poll asked a random sample of adults in Minnesota, “Do you support or oppose legalizing marijuana for medical purposes in Minnesota?” Of the 800 adults surveyed, 408 (51%) answered that they would support this.\n\n\n\\[\\widehat{p} =\\]\n\n\\[n =\\]\n\n\\[SE = \\sqrt{\\frac{\\widehat{p}*\\left( 1 - \\widehat{p} \\right)}{n}} =\\]\n\n\\[\\widehat{p\\ } \\pm 2*SE =\\]"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#conclusions-based-off-of-confidence-intervals",
+    "href": "notes/ch3/Notes218_Chapter_3.html#conclusions-based-off-of-confidence-intervals",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Conclusions Based Off of Confidence Intervals",
+    "text": "Conclusions Based Off of Confidence Intervals\nRecall the general interpretation of a confidence interval.\n\nWe are 95% confident that the long run proportion of “context” falls between (lower limit) and (upper limit).\n\nIf the null hypothesis value is __________ of the interval\n\nIt is a likely value\nFail to Reject\n\nIf the null hypothesis value is ___________ of the interval\n\nIt is not a likely value\nReject\n\nConclusion: We (do/do not) have evidence to conclude (restate alternative in context).\nIn the context of the medical marijuana example,\n\nHypothesis\n\n\\(H_{O}:\\pi = 0.5\\)\n\\(H_{A}:\\pi \\neq 0.5\\)\n\nConfidence Interval\n\n\\((0.47,\\ 0.55) \\rightarrow Fail\\ to\\ Reject\\ since\\ 0.5\\ falls\\ inside\\ our\\ interval\\)\n\n\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\nInterpretation of Confidence Interval\n\nWe are 95% confident the long run proportion of adults in Minnesota who feel medical marijuana should be legalized falls between 0.47 and 0.55.\n\nConclusion in context\n\nWe do not have evidence to conclude the long run proportion of adults in Minnesota who feel medical marijuana should be legalized is different from 0.5"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#conclusions",
+    "href": "notes/ch3/Notes218_Chapter_3.html#conclusions",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Conclusions",
+    "text": "Conclusions\n\n\n\n\n\n\n\n\n\n\nP-value\nStandardized Statistic\nConfidence Interval\n\n\n\n\nReject\n&lt; 0.05\n“Outside the 2’s”\nHypothesized value outside of the CI\n\n\nFail to Reject\n&gt; 0.05\n“Between the 2’s”\nHypothesized value inside of the CI"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#formula-1",
+    "href": "notes/ch3/Notes218_Chapter_3.html#formula-1",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Formula",
+    "text": "Formula\nThe general formula for confidence intervals also applies to single means.\n\n\\[Observed\\ Statistic\\  \\pm \\ Multiplier\\ *\\ Standard\\ Error\\]\nBefore calculating the confidence interval, be sure that the validity conditions are met for the theory approach (sample size greater than 20 and the distribution is not strongly skewed).\nThe formula for the standard error is the same as from Chapter 2.\n\n\\[SE = \\frac{s}{\\sqrt{n}}\\]\n95% Confidence interval\n\\[\\mathbf{CI =}\\overline{\\mathbf{x}}\\mathbf{\\pm 2*}\\frac{\\mathbf{s}}{\\sqrt{\\mathbf{n}}}\\mathbf{= (Lower\\ Limit,\\ Upper\\ Limit)}\\]"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#example-textbooks",
+    "href": "notes/ch3/Notes218_Chapter_3.html#example-textbooks",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Example: Textbooks",
+    "text": "Example: Textbooks\nSuppose that two Winona State University students gathered data on prices for a random sample of 30 textbooks from the campus bookstore. They found the average price was $165.02 and the standard deviation was $31.42. The data is plotted below.\n\n\nAnswer the following questions to get the confidence interval.\n\nWhat is the point estimate (\\(\\overline{x}\\))?\n\n\n\nWhat is the sample standard deviation (s)?\n\n\n\nAre the validity conditions met?\n\n\n\n\nCalculate the 95% confidence interval.\n\n\n\n\n\nInterpretation: We are _____ confident that the long-run __________ price of textbooks at Winona State University is between _____ and _____.\n\nLet’s explore what is meant by 95% confidence in this example. Check out the applet located at https://twiedrw.shinyapps.io/confidence_intervals/. Suppose we know that in the previous academic year that the population was normally distributed with an average textbook price of $150 and a population standard deviation of $35. Enter the information into the applet so that it looks like this:\n\n\n\nGraphical user interface Description automatically generated\n\n\n(Note: ignore the limits on the mean and standard deviation in the applet)\nThis applet simulates drawing random samples from a known population (a luxury that we almost never have in practice). The “Study Replications” is the number of samples that you draw from the population and calculate the confidence interval.\n\n\n\nChart Description automatically generated\n\n\nIn this instance, the confidence interval calculated from the sample covered the true population mean of 150. Suppose now that we change the “Study Replications” to 5.\n\n\n\nChart, box and whisker chart Description automatically generated\n\n\nAll 5 studies covered the population mean. With study #5, you can see that the confidence interval almost narrowly misses population mean, but it is still contained within the interval. Recall the technical definition of a confidence interval: \\(100 - \\alpha*100\\%\\) of the confidence intervals generated from samples of a given population will cover the true parameter value. Change the number of study replications to 100.\n\nWhat percentage of the confidence intervals cover the true population mean?\nWhat does a single confidence interval represent?\nWhat happens as you increase the sample size? Does this impact the percent coverage of the true mean?"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#factors-influencing-the-confidence-interval",
+    "href": "notes/ch3/Notes218_Chapter_3.html#factors-influencing-the-confidence-interval",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Factors Influencing the Confidence Interval",
+    "text": "Factors Influencing the Confidence Interval\nThere are three factors that affect the width of a confidence interval: confidence level, sample size, and standard error."
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#confidence-level",
+    "href": "notes/ch3/Notes218_Chapter_3.html#confidence-level",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Confidence level",
+    "text": "Confidence level\nSignificance Level + Confidence Level = _______\n\nConfidence Level Increases \\(\\rightarrow\\) Significance Level ___________\n\nRejecting Less Often \\(\\rightarrow\\) More Likely Values\nInterval Widens\n\nConfidence Level Decreases \\(\\rightarrow\\) Significance Level ____________\n\nRejecting More Often \\(\\rightarrow\\) Fewer Likely Values\nInterval Narrows\n“If you want to be more confident you have to cover more values.”\n\n\n\n\nHypothetical: what would a 100% confidence interval look like?"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#sample-size",
+    "href": "notes/ch3/Notes218_Chapter_3.html#sample-size",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Sample Size",
+    "text": "Sample Size\nRecall what happened when increasing the sample size on the applet in Section 3.3.\nLarger sample size\n\n\nSmaller sample size\n\n\n\n“Larger sample sizes make you more precise in your answer.”\nDraw the relation between a large sample size and a small sample size.\n\n\n\n\n\n\nLarge sample size\n\n\n\n\n\n\nSmall sample size"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#standard-error",
+    "href": "notes/ch3/Notes218_Chapter_3.html#standard-error",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Standard Error",
+    "text": "Standard Error\nGeneral Formula\n\n\\[Observed\\ Statistic\\  \\pm \\ Multiplier\\ *\\ Standard\\ Error\\]\n\n\nStandard Error Increases\n\nMargin of Error Increases\n\n\n\n\n\nStandard Error Decreases\n\nMargin of Error Decreases"
+  },
+  {
+    "objectID": "notes/ch3/Notes218_Chapter_3.html#technical-aside",
+    "href": "notes/ch3/Notes218_Chapter_3.html#technical-aside",
+    "title": "Section 3.1: Confidence Intervals",
+    "section": "Technical Aside",
+    "text": "Technical Aside\nMathematically, why do the effects of sample size and standard error make sense? Recall the standard error formulas for both proportion and means below.\n\n\n\n\n\n\n\n\nOne Proportion\n\\[SE = \\sqrt{\\frac{\\widehat{p}\\left( 1 - \\widehat{p} \\right)}{n}}\\]\n\n\n\n\nOne Mean\n\\[SE = \\frac{s}{\\sqrt{n}}\\]\n\n\n\nFrom the general formula for the confidence interval, we know that the sample size and standard error do not affect the observed statistic or the multiplier. As the sample size increases, the denominator of the standard error increases, which decreases the value for the standard error.\n\nWhat would happen if you took an infinitely large sample size?"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html",
+    "href": "notes/ch5/Notes218_Chapter_5.html",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "",
+    "text": "Main focus: “Are these two groups different?”\n\nFor strength of evidence, we will use:\n\np-values (simulation only)\nStandardized statistics\nConfidence intervals\n\n\n\n\nFor several years in the 1990s, Kristen Gilbert worked as a nurse in the intensive care unit (ICU) of the Veterans Administration Hospital in Northampton, Massachusetts. Over the course of her time there, other nurses came to suspect that she was killing patients by injecting them with the heart stimulant epinephrine. Gilbert was eventually arrested and charged with these murders. Part of the evidence presented against Gilbert at her murder trial was a statistical analysis of 1,641 eight-hour shifts during the time Gilbert worked in the ICU. For each of these shifts, researchers recorded two variables: whether or not Gilbert worked on the shift and whether or not at least one patient died during the shift.\nResults: Of the 257 shifts that Gilbert worked, 40 of the shifts had a patient that died. Of the 1,384 shifts that Gilbert did not work, 34 had a patient that died\nAnswer the following questions:\n\nWhat is the observational unit?\n\n\n\nWhat is the explanatory variable? Variable type?\n\n\n\nWhat is the response variable? Variable type?\n\n\n\nWas the study observational or experimental? Why?\n\n\n\n\nHow would the data look in a spreadsheet?\n\n\n\n\n\n\n\n\n\nShift ID\n\n\n\n\n\n\n1\n\n\n\n\n2\n\n\n\n\n3\n\n\n\n\n…\n…\n…\n\n\n1,641\n\n\n\n\n\n\n\n\nA contingency table (also known as a two-way table) is a convenient method for organizing categorical data. In this course, we will put the explanatory variables as the column names and the response variable as the row names.\n\n\n\n\n\n\n\n\n\n\n\nGilbert working on shift\nGilbert not working on shift\nTotal\n\n\n\n\nPatient died during shift\n40\n34\n74\n\n\nNo patient died during shift\n217\n1,350\n1,567\n\n\nTotal\n257\n1,384\n1,641\n\n\n\nNow that the data is organized, why would comparing 40 to 34 not be a good idea?\n\n\n\n\nConditional proportion: the proportion of “successes” within each _______________________\n\n\n\n\n\nCalculating the conditional proportions\n\nProportion of Gilberts shifts in which a patient died\n\n\\({\\widehat{\\mathbf{p}}}_{\\mathbf{G}}\\mathbf{=}\\frac{Patients\\ died\\ Given\\ Gilbert\\ Working}{Total\\ Shifts\\ Gilbert\\ Works} = \\frac{40}{257} = 0.156\\)\n15.6% of patients die when Gilbert is working\n\nProportion of non-Gilbert shifts in which a patient died\n\n\\({\\widehat{\\mathbf{p}}}_{\\mathbf{NG}}\\mathbf{=}\\frac{Patients\\ died\\ Given\\ Gilbert\\ NOT\\ Working}{Total\\ Shifts\\ Gilbert\\ Does\\ NOT\\ Work} = \\frac{34}{1384} = 0.025\\)\n2.5% of patients die when Gilbert is not working\n\n\nCompare positive responses in both groups by looking at the difference in proportion\n\n\\[{\\widehat{p}}_{G} - {\\widehat{p}}_{NG} = 0.156 - 0.025 = 0.131\\]\nInterpretation: Proportion of deaths was 13.1% higher for Gilbert shifts than for non-Gilbert shifts.\n\n\n\nRelative risk: ratio between two ________________________________\n\n“How many times as large the risk of an outcome is for one group compared to another”\n\nFrom the example,\n\n\\[\\frac{{\\widehat{\\mathbf{p}}}_{\\mathbf{G}}}{{\\widehat{\\mathbf{p}}}_{\\mathbf{NG}}}\\mathbf{=}\\frac{\\frac{40}{257}}{\\frac{34}{1384}} = \\ \\frac{0.15}{0.02} = 7.5\\]\nInterpretation: The proportion of deaths is 7.5 times as large on a Gilbert shift than a non-Gilbert shift.\nIn general, it is common to calculate the relative risk using the larger proportion in the numerator.\nA word of caution, the use of relative risk can sometimes be misleading. Consider the following two examples:\n\n\n\n\\[\\frac{0.0005}{0.0001} = 5\\] \\[\\frac{0.5}{0.1} = 5\\]\n\n\n\n\nIf the proportions represent having a disease or not based on a particular genetic factor or not, which scenario would you have a lesser probability of having the disease?\n\n\n\nConsider the evidence from the murderous nurse scenario. Would you present the difference in proportion and relative to a jury as evidence?\n\nThe difference was greater than 0\nThe relative risk is greater than 1\n\nHowever, the study was observational and thus cannot conclude that Gilbert caused the deaths (no random assignment to shifts). One such possible alternative is that Gilbert possibly worked shifts where more patients die."
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#introduction",
+    "href": "notes/ch5/Notes218_Chapter_5.html#introduction",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "",
+    "text": "Main focus: “Are these two groups different?”\n\nFor strength of evidence, we will use:\n\np-values (simulation only)\nStandardized statistics\nConfidence intervals"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#example-murderous-nurse",
+    "href": "notes/ch5/Notes218_Chapter_5.html#example-murderous-nurse",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "",
+    "text": "For several years in the 1990s, Kristen Gilbert worked as a nurse in the intensive care unit (ICU) of the Veterans Administration Hospital in Northampton, Massachusetts. Over the course of her time there, other nurses came to suspect that she was killing patients by injecting them with the heart stimulant epinephrine. Gilbert was eventually arrested and charged with these murders. Part of the evidence presented against Gilbert at her murder trial was a statistical analysis of 1,641 eight-hour shifts during the time Gilbert worked in the ICU. For each of these shifts, researchers recorded two variables: whether or not Gilbert worked on the shift and whether or not at least one patient died during the shift.\nResults: Of the 257 shifts that Gilbert worked, 40 of the shifts had a patient that died. Of the 1,384 shifts that Gilbert did not work, 34 had a patient that died\nAnswer the following questions:\n\nWhat is the observational unit?\n\n\n\nWhat is the explanatory variable? Variable type?\n\n\n\nWhat is the response variable? Variable type?\n\n\n\nWas the study observational or experimental? Why?\n\n\n\n\nHow would the data look in a spreadsheet?\n\n\n\n\n\n\n\n\n\nShift ID\n\n\n\n\n\n\n1\n\n\n\n\n2\n\n\n\n\n3\n\n\n\n\n…\n…\n…\n\n\n1,641"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#two-way-table",
+    "href": "notes/ch5/Notes218_Chapter_5.html#two-way-table",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "",
+    "text": "A contingency table (also known as a two-way table) is a convenient method for organizing categorical data. In this course, we will put the explanatory variables as the column names and the response variable as the row names.\n\n\n\n\n\n\n\n\n\n\n\nGilbert working on shift\nGilbert not working on shift\nTotal\n\n\n\n\nPatient died during shift\n40\n34\n74\n\n\nNo patient died during shift\n217\n1,350\n1,567\n\n\nTotal\n257\n1,384\n1,641\n\n\n\nNow that the data is organized, why would comparing 40 to 34 not be a good idea?"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#conditional-proportions",
+    "href": "notes/ch5/Notes218_Chapter_5.html#conditional-proportions",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "",
+    "text": "Conditional proportion: the proportion of “successes” within each _______________________\n\n\n\n\n\nCalculating the conditional proportions\n\nProportion of Gilberts shifts in which a patient died\n\n\\({\\widehat{\\mathbf{p}}}_{\\mathbf{G}}\\mathbf{=}\\frac{Patients\\ died\\ Given\\ Gilbert\\ Working}{Total\\ Shifts\\ Gilbert\\ Works} = \\frac{40}{257} = 0.156\\)\n15.6% of patients die when Gilbert is working\n\nProportion of non-Gilbert shifts in which a patient died\n\n\\({\\widehat{\\mathbf{p}}}_{\\mathbf{NG}}\\mathbf{=}\\frac{Patients\\ died\\ Given\\ Gilbert\\ NOT\\ Working}{Total\\ Shifts\\ Gilbert\\ Does\\ NOT\\ Work} = \\frac{34}{1384} = 0.025\\)\n2.5% of patients die when Gilbert is not working\n\n\nCompare positive responses in both groups by looking at the difference in proportion\n\n\\[{\\widehat{p}}_{G} - {\\widehat{p}}_{NG} = 0.156 - 0.025 = 0.131\\]\nInterpretation: Proportion of deaths was 13.1% higher for Gilbert shifts than for non-Gilbert shifts."
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#relative-risk",
+    "href": "notes/ch5/Notes218_Chapter_5.html#relative-risk",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "",
+    "text": "Relative risk: ratio between two ________________________________\n\n“How many times as large the risk of an outcome is for one group compared to another”\n\nFrom the example,\n\n\\[\\frac{{\\widehat{\\mathbf{p}}}_{\\mathbf{G}}}{{\\widehat{\\mathbf{p}}}_{\\mathbf{NG}}}\\mathbf{=}\\frac{\\frac{40}{257}}{\\frac{34}{1384}} = \\ \\frac{0.15}{0.02} = 7.5\\]\nInterpretation: The proportion of deaths is 7.5 times as large on a Gilbert shift than a non-Gilbert shift.\nIn general, it is common to calculate the relative risk using the larger proportion in the numerator.\nA word of caution, the use of relative risk can sometimes be misleading. Consider the following two examples:\n\n\n\n\\[\\frac{0.0005}{0.0001} = 5\\] \\[\\frac{0.5}{0.1} = 5\\]\n\n\n\n\nIf the proportions represent having a disease or not based on a particular genetic factor or not, which scenario would you have a lesser probability of having the disease?"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#example-murderous-nurse-1",
+    "href": "notes/ch5/Notes218_Chapter_5.html#example-murderous-nurse-1",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "",
+    "text": "Consider the evidence from the murderous nurse scenario. Would you present the difference in proportion and relative to a jury as evidence?\n\nThe difference was greater than 0\nThe relative risk is greater than 1\n\nHowever, the study was observational and thus cannot conclude that Gilbert caused the deaths (no random assignment to shifts). One such possible alternative is that Gilbert possibly worked shifts where more patients die."
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#example-swimming-with-dolphins",
+    "href": "notes/ch5/Notes218_Chapter_5.html#example-swimming-with-dolphins",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "Example: Swimming with Dolphins",
+    "text": "Example: Swimming with Dolphins\nIs swimming with dolphins therapeutic for patients with clinical depression? A 2005 study (Antonioli and Reveley) recruited 30 subjects with a clinical diagnosis of mild to moderate depression. These 30 subjects went to an island oﬀ the coast of Honduras, where they were randomly assigned to one of two treatment groups. Both groups engaged in one hour of swimming and snorkeling each day, but one group did so in the presence of bottlenose dolphins and the other group did not. However, note that participants in the dolphin group and the control group experienced identical conditions except for the presence of dolphins. At the end of two weeks, each subject’s level of depression was evaluated. The researchers looked to see whether or not the subject achieved substantial reduction (improvement) in their depression. They found that, of the 10 subjects in the dolphin group, 9 showed substantial improvement. Of the 20 in the control group, 3 showed substantial improvement.\nSource: https://www.medpagetoday.com/psychiatry/depression/2221\nResearch question: Is swimming with dolphins therapeutic?\nExplanatory Variable: Dolphin or control (categorical)\nResponse Variable: Improve or did not improve (categorical)\n\n\n\n\n\n\n\n\n\n\nDolphin\nControl\nTotal\n\n\n\n\nImprove\n\n\n12\n\n\nNot Improve\n\n\n18\n\n\nTotal\n10\n20\n30\n\n\n\nConditional Proportions of Improved\n\n\nDolphin group: \\({\\widehat{p}}_{D} = \\frac{9}{10} = 0.9\\)\nControl group: \\({\\widehat{p}}_{C} = \\frac{3}{20} = 0.15\\)\n\nRelative risk\n\n\\(\\frac{\\frac{9}{10}}{\\frac{3}{20}}\\) = 6\nWhat is the interpretation?\n\nDifference in proportions\n\n0.9 – 0.15 = 0.75\n\nWhat is the interpretation?\n\n\nConsider the research question to formulate the hypothesis test.\n\n\n\\[{H_{0}:\\ \\pi_{D} = \\pi_{C}\n}{H_{0}:\\pi_{D} &gt; \\pi_{C}}\\]\n\n\nor equivalently,\n\n\n\\[H_{0}:\\ \\]\n\\[\n{H_{0}:}\\]\n\n\nTwo Proportions Applet:\n\n\n\nA picture containing diagram Description automatically generated\n\n\n\n\n\nChart Description automatically generated\n\n\nThe applet calculates the p-value using the alternative hypothesis of\n\\[GroupA - GroupB &lt; , &gt; , \\neq 0\\]\nIt is important to keep track of the difference in proportions and the interpretation of the hypothesis test.\n\nStandardized statistic\n\n\\[\\frac{\\mathbf{Observed\\ Statistic\\  - Hypothesized\\ value}}{\\mathbf{Standard\\ Deviation\\ of\\ the\\ Null}} = \\frac{(\\ {\\widehat{p}}_{1}\\  - \\ {\\widehat{p}}_{2}\\ )\\  - \\text{0~}}{Simulated\\ from\\ Applet}\\]\n\nConclusions\nWe use the same p-value and standardized statistic conclusions as before. For p-values, we have evidence against the null if the p-value is less than the significance level (typically 0.05). For standardized statistics, we have evidence against the null if the standardized statistic is outside of the 2’s.\nIn context,\n\nWe “do/do not” have strong evidence to conclude that the long run difference in proportions of “context” between the “group 1” and “group 2” is “greater than/less than/not equal to” zero.\n\nFrom the example, the standardized statistic is\n\n\\[\\frac{{\\widehat{p}}_{Dolphin} - {\\widehat{p}}_{Control}}{Simulated\\ SD} = \\frac{0.75 - 0}{0.191} = 3.9\\]\nSince 3.9 is outside of the 2’s, our conclusion is:\n\nWe do have strong evidence to conclude that the long run difference in proportions of improvers between the dolphin group and the control group is greater than zero.\n\nConfidence interval\n\n95% Confidence Interval from simulation\n\n\\[observed\\ statistic \\pm 2*SE = \\widehat{p_{1}} - \\widehat{p_{2}} \\pm 2*(SD\\ of\\ Null)\\]\n\nInterpretation in Context\n\nWe’re 95% confident that the long run difference in proportions of “context” between “group 1” and “group 2” falls between ________ and _________.\n\nIf 0 is inside the interval $$ Fail to Reject\n\n0 is a plausible value, and it is possible that the groups are the same\n\nIf 0 is outside the interval \\(\\rightarrow\\) Reject\n\nWe would not expect to see 0 as a difference and the groups are different\n\n\n\nFrom the example,\n\n\nC\\(onfidence\\ Interval\\)\n\n\n\\[0.75 \\pm 2*(0.193) = (\\ \\ \\ \\ \\ \\ ,\\ \\ \\ \\ \\ \\ )\\]\n\n\n\nWe are 95% confident that the long run difference in proportions of improvers between the dolphin group and the control group falls between _____and _______."
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#setting-up-the-hypothesis",
+    "href": "notes/ch5/Notes218_Chapter_5.html#setting-up-the-hypothesis",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "Setting up the hypothesis",
+    "text": "Setting up the hypothesis\n\nParameter: Long run difference in proportion of “context here” between group 1 and group 2.\nHypotheses in words:\n\nNull: Long run difference in proportion of “context here” between group 1 and group 2 is zero.\nAlternative: Long run difference in proportion of “context here” between group 1 and group 2 is (less than, greater than, not equal to) zero."
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#validity-conditions",
+    "href": "notes/ch5/Notes218_Chapter_5.html#validity-conditions",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "Validity Conditions",
+    "text": "Validity Conditions\nFor the theory conditions to hold, we need to have at least 10 observations of the 2x2 table.\n\n\n\n\n\n\n\n\n\n\nGroup 1\nGroup 2\nTotal\n\n\n\n\nResponse 1\n(Success)\n\\[s_{1} \\geq 10\\]\n\\[s_{2} &gt; 10\\]\n\\[s_{1} + s_{2}\\]\n\n\nResponse 2\n(Failure)\n\\[f_{1} \\geq 10\\]\n\\[f_{2} \\geq 10\\]\n\n\n\nTotal\n\\[n_{1}\\]\n\\[n_{2}\\]\n\\[n_{1} + n_{2}\\]"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#standard-error-for-standardized-statistics",
+    "href": "notes/ch5/Notes218_Chapter_5.html#standard-error-for-standardized-statistics",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "Standard Error for Standardized Statistics",
+    "text": "Standard Error for Standardized Statistics\n\n\n\\(SE = \\sqrt{\\overline{p}\\left( 1 - \\overline{p} \\right)(\\frac{1}{n_{1}} + \\frac{1}{n_{2}}\\ )}\\)\nWhere does \\(\\overline{p}\\) come from?\n\nwe’re assuming the null hypothesis is true and trying to show the alternative is true\nif the null is true, there is no difference in \\({\\widehat{p}}_{1}\\ and\\ {\\widehat{p}}_{2}\\). Why??\n\n\n\n\\[\\overline{\\mathbf{p}}\\mathbf{=}\\frac{\\mathbf{s1 + s2}}{\\mathbf{n1 + n2}}\\]"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#standardized-statistic",
+    "href": "notes/ch5/Notes218_Chapter_5.html#standardized-statistic",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "Standardized Statistic",
+    "text": "Standardized Statistic\n\nGeneral Formula:\n\n\\[SS = \\frac{observed\\ statistic\\  - null\\ value}{SD\\ of\\ the\\ null\\ (or\\ SE)}\\]\n\nTwo Group Categorical Specific:\n\n\\[SS = \\frac{\\left( {\\widehat{p}}_{1}\\  - \\ {\\widehat{p}}_{2} \\right) - 0\\ \\text{~}}{SE} = \\frac{\\left( {\\widehat{p}}_{1}\\  - \\ {\\widehat{p}}_{2} \\right) - 0\\ \\text{~}}{\\sqrt{\\overline{p}\\left( 1 - \\overline{p} \\right)(\\frac{1}{n_{1}} + \\frac{1}{n_{2}}\\ )}}\\]"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#confidence-interval",
+    "href": "notes/ch5/Notes218_Chapter_5.html#confidence-interval",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "Confidence Interval",
+    "text": "Confidence Interval\n\nGeneral Formula:\n\n\\[\\ Observed\\ Statistic \\pm Multiplier*SE\\]\nMargin of Error (MOE)\nRecall that we had a different standard error formula in Chapter 1 when we are calculating for either a standardized statistic or confidence interval when the data is categorical. For confidence intervals,\n\n\\[SE = \\sqrt{\\frac{{\\widehat{p}}_{1}(1 - {\\widehat{p}}_{1})}{n_{1}} + \\frac{{\\widehat{p}}_{2}(1 - {\\widehat{p}}_{2})}{n_{2}}}\\]\n\nTwo Group Categorical Specific (95% Confidence):\n\n\\[\\widehat{(p_{1}} - \\widehat{p_{2}}\\ ) \\pm 2*\\sqrt{\\frac{{\\widehat{p}}_{1}(1 - {\\widehat{p}}_{1})}{n_{1}} + \\frac{{\\widehat{p}}_{2}(1 - {\\widehat{p}}_{2})}{n_{2}}}\\]\nInterpretation\n\nWe are 95% confident that the long run difference in proportion of “context here” between group 1 and group 2 is between ________ and _________.\n\nAlternately… Be careful with wording on this one!\n\nWe are 95% confident the true proportion of “context” in “group 1” is ”lower limit” to ”upper limit” ”more or less” than the true proportion of ”context” in”group 2.”\nWith differences, if 0 in interval, NOT significantly different"
+  },
+  {
+    "objectID": "notes/ch5/Notes218_Chapter_5.html#example-near-sightedness",
+    "href": "notes/ch5/Notes218_Chapter_5.html#example-near-sightedness",
+    "title": "Section 5.1: Comparing Two Groups - Categorical Response",
+    "section": "Example: Near-sightedness",
+    "text": "Example: Near-sightedness\nMyopia, or near-sightedness, typically develops during childhood years. Some studies have explored whether there is an association between development of myopia and the use of nightlights with infants. One study (Quinn, et al., 1999) interviewed parents of 479 children who were seen as outpatients in a university pediatric ophthalmology clinic. One of the questions asked whether the child typically slept with light in the room or in darkness before age 2. Based on the child’s most recent eye examination, the children were also separated into two groups: near-sighted or not near-sighted.\nResearch Question:\n\nAre children who sleep in darkness less likely to develop near-sightedness?\n\nExplanatory Variable:\n\nDarkness or Light in Room, categorical\n\nResponse Variable:\n\nNear-sighted or Not near-sighted, categorical\n\nParameter:\n\nThe long run difference in proportions between children who sleep in darkness and those who sleep with light in their rooms.\n\n\n\n\n\n\n\n\n\n\nDarkness\nLight in Room\nTotal\n\n\n\n\nNear-sighted\n18\n119\n137\n\n\nNot near-sighted\n154\n188\n342\n\n\nTotal\n172\n307\n479\n\n\n\n\nAnswer the following questions\n\nSet up the null and alternative hypothesis, in symbols.\n\n\n\n\\[{H_{0}:\\\n}{H_{A}:\\ }\\]\n\n\n\nAre the validity conditions met? Why or why not?\n\n\n\nCalculate the conditional proportions.\n\n\n\nCalculate the difference in proportions.\n\n\n\nCalculate the relative risk.\n\n\n\nCalculate \\(\\overline{p}\\).\n\n\n\nCalculate the standard error.\nCalculate the standardized statistic. Does this reject or fail to reject the null hypothesis? Explain why.\n\n\n\nCalculate the 95% confidence interval. Does this reject or fail to reject the null hypothesis? Explain why.\nWhat conclusion would you tell the researchers?\n\nWe do have evidence to conclude that the long run difference in proportion for developing near-sightedness between children who slept in the dark and children who slept in the light is less than 0.\n\nWhat type of error might this study have made?\n\nType I error is possible"
+  },
+  {
+    "objectID": "notes/ch7/Notes218_Chapter_7.html",
+    "href": "notes/ch7/Notes218_Chapter_7.html",
+    "title": "Chapter 7",
+    "section": "",
+    "text": "Recall from Chapter 6 that we were comparing two groups with a quantitative response. The steps to comparing two groups involved calculating the sample means, finding the difference, and then conducting a hypothesis test.\nConsider an example where researchers are studying the effect of listening to music with or without lyrics on students’ ability to memorize words. The study recruits 28 students to memorize a list of 25 common five-letter words for 90 seconds (while listening to music with or without lyrics) and then write down as many words as they can remember.\nExplanatory variable: Music with lyrics or music without lyrics (categorical)\nResponse variable: Number of words remembered (quantitative)\nPreviously, we would randomly assign 14 students to each music group. This is known as an independent design. Each individual in the group is unrelated to all the other individuals in the study."
+  },
+  {
+    "objectID": "notes/ch7/Notes218_Chapter_7.html#same-individual-twice",
+    "href": "notes/ch7/Notes218_Chapter_7.html#same-individual-twice",
+    "title": "Chapter 7",
+    "section": "Same Individual Twice",
+    "text": "Same Individual Twice\nIn the example above, we do not really care about the variability between the students. We can design the experiment in such a way where we measure each individual twice. In this case, the randomization comes from randomly assigning which order the students listen to the music.\nQuestion: why is it important to randomize the order?\nThe data would be arranged in the following format.\n\n\n\n\n\n\n\n\n\nStudent ID\nWith Lyrics\nWithout Lyrics\n\n\n\n\n1\n18\n19\n\n\n2\n10\n13\n\n\n…\n…\n…\n\n\n28\n7\n15"
+  },
+  {
+    "objectID": "notes/ch7/Notes218_Chapter_7.html#matching-individual",
+    "href": "notes/ch7/Notes218_Chapter_7.html#matching-individual",
+    "title": "Chapter 7",
+    "section": "Matching individual",
+    "text": "Matching individual\nAnother method for creating a paired design is to match up similar experimental units. In the case of the example, we could have the students take a pretest and then pair up students based on their pretest. After the students are paired up, they are randomly assigned to listen to music either with or without lyrics.\n\n\n\n\n\n\n\n\n\nStudent ID Grouping (and order)\nWith Lyrics\nWithout Lyrics\n\n\n\n\n1 / 16\n18\n19\n\n\n3 / 22\n10\n13\n\n\n…\n…\n…\n\n\n28 / 9\n7\n15"
+  },
+  {
+    "objectID": "notes/ch7/Notes218_Chapter_7.html#paired-designs",
+    "href": "notes/ch7/Notes218_Chapter_7.html#paired-designs",
+    "title": "Chapter 7",
+    "section": "Paired Designs",
+    "text": "Paired Designs\nPaired Designs: response variables come in pairs, with one response value in the pair belonging to each explanatory variable group.\nPairs can come from matching individuals OR measuring the same individual twice (repeated measures).\nWith the pairs, we can focus on the differences as our response. There are advantages to using a paired design. In many cases, it is better to measure the response on the same person/thing (because of similar units, measured over time, etc.). Pairing helps us to look at the differences between the explanatory variable groups rather than the differences between the observational units. If your design is a matched paired design, it must be analyzed as matched pairs."
+  },
+  {
+    "objectID": "notes/ch7/Notes218_Chapter_7.html#examples",
+    "href": "notes/ch7/Notes218_Chapter_7.html#examples",
+    "title": "Chapter 7",
+    "section": "Examples",
+    "text": "Examples\nWhich of the following scenarios can be conducted as a paired design?\n\nReaction times for students taken at 8:00 a.m. compared to reaction times for the same students taken at 10:00 p.m.\nChange in weight for those on the Atkins Diet compared to the change in weight for those on the Paleo Diet.\nTimes for skiers to complete a downhill skiing race course on skis treated with wax A with times for skiers with similar experience to complete the course on skis treated with wax B\n\nWhich of the following scenarios are examples of a paired design?\n\nA teacher taught one class a lesson using technology and another class without technology. Their scores on a quiz were then compared.\nA teacher taught a lesson using technology and then compared the class scores on a quiz to the national average score.\nPairs of students were matched by similar IQs. One of the pair was taught a lesson using technology and one without technology. Their scores on a quiz were then compared."
+  },
+  {
+    "objectID": "notes/ch7/Notes218_Chapter_7.html#music-example",
+    "href": "notes/ch7/Notes218_Chapter_7.html#music-example",
+    "title": "Chapter 7",
+    "section": "Music Example",
+    "text": "Music Example\nConsider the music example that introduced paired designs. Suppose that you are given the following data.\n\n\n\n\n\n\n\n\n\nStudent ID\nLyrics\nNo Lyrics\nDifference\n\n\n\n\n1\n13\n18\n-5\n\n\n2\n20\n23\n-3\n\n\n…\n…\n…\n…\n\n\n40\n15\n13\n2\n\n\n\n\n\\({\\overline{x}}_{d}\\) : -5.02\\(s_{d}\\): 3.1\\(n_{d}\\): 40\nCalculate the theory-based standardized statistic and 95% CI\n\n\n\\[t = \\frac{- 5.02 - 0}{\\frac{3.1}{\\sqrt{40}}} = - 10.24\\]\n\nCI: \\(- 5.02 \\pm 2*\\frac{3.1}{\\sqrt{40}} = ( - 6,\\  - 4.04)\\)\n\nReject/fail to reject:\n\nReject since standardized statistic &lt; -2 and CI doesn’t contain 0\n\nState a conclusion in context:\n\nWe have strong enough evidence to conclude that the long-run average difference number of words memorized while listening to music with lyrics compared to without lyrics is less than 0.\n\nNotice how the process is the exact same as comparing a single mean (Chapter 2). The only difference is our parameter of interest and the study design."
+  },
+  {
+    "objectID": "notes/ch7/Notes218_Chapter_7.html#example-weight-loss",
+    "href": "notes/ch7/Notes218_Chapter_7.html#example-weight-loss",
+    "title": "Chapter 7",
+    "section": "Example: Weight Loss",
+    "text": "Example: Weight Loss\nSuppose that a study recruited 50 people to participate in a weight loss study. Researchers are randomly assigning two different diets, A and B, to determine if there is a difference between the two diets. Answer the following questions to each scenario of how this study could be conducted. All scenarios use Diet A - Diet B.\nScenario 1\nThe researchers randomly pair up the participants according to similar characteristics and lifestyles. Within each pair, the researchers randomly assign one participant to Diet A and the other participant to Diet B. The data is listed below, and you may assume that the data is not strongly skewed.\n\n\n\n\n\n\n\n\n\nGrouping ID\nDiet A\nDiet B\nDifference\n\n\n\n\n1\n-1.3\n2.1\n-3.4\n\n\n…\n…\n…\n…\n\n\n25\n-8.8\n2.8\n-0.1\n\n\n\n\nDifference mean: -6.49\nDifference SD: 4.85\nDifference sample size: 25\n\nQuestions\n\nWhat is the parameter of interest in both words and symbols?\nSet up the null and alternative hypothesis in symbols.\n\n\n\\[{H_{0}:\\\n}{H_{A}:\\ }\\]\n\nCalculate the standard error.\nCalculate the standardized statistic.\nCalculate the 95% confidence interval.\nWrite a conclusion for this scenario.\n\n****\nScenario 2\nThe researchers randomly assigned participants to either Diet A or Diet B. The data is listed below, and you may assume that the data is not strongly skewed.\n\n\n\n\n\n\n\n\nID\nDiet\nResponse\n\n\n\n\n1\nA\n-2.1\n\n\n…\n…\n…\n\n\n50\nB\n-0.9\n\n\n\n\nDiet A mean: -5.22\nDiet A SD: 3.46\nDiet A sample size: 25\nDiet B mean: 1.23\nDiet B SD: 2.86\nDiet B sample size: 25\nQuestions\n\nWhat is the parameter of interest in both words and symbols?\n\n\n\nSet up the null and alternative hypothesis in symbols.\n\n\n\\[{H_{0}:\\\n}{H_{A}:\\ }\\]\n\n\nCalculate the standard error.\nCalculate the standardized statistic.\nCalculate the 95% confidence interval.\nWrite a conclusion for this scenario.\n\n****\nScenario 3\nThe researchers randomly assign each participant to either take Diet A first or Diet B first. After concluding the results, they have the participants switch to the opposite diet. The data is listed below, and you may assume that the data is not strongly skewed.\n\n\n\n\n\n\n\n\n\nID\nDiet A\nDiet B\nDifference\n\n\n\n\n1\n-1.4\n-0.6\n-2.0\n\n\n…\n…\n…\n…\n\n\n50\n-0.3\n2.7\n-3.0\n\n\n\n\nDifference mean: -5.42\nDifference SD: 4.43\nDifference sample size: 50\nQuestions\n\nWhat is the parameter of interest in both words and symbols?\n\n\n\nSet up the null and alternative hypothesis in symbols.\n\n\n\\[{H_{0}:\\\n}{H_{A}:\\ }\\]\n\n\nCalculate the standard error.\nCalculate the standardized statistic.\nCalculate the 95% confidence interval.\nWrite a conclusion for this scenario.\n\n\n\nWhich of the three scenarios do you think is the best for the given context? Explain why."
+  }
+]

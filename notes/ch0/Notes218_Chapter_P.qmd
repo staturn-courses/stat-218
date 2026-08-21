@@ -6,7 +6,6 @@ date-format: "[Fall] 2026"
 format: 
   revealjs:
     smaller: true
-  pdf: default
 ---
 
 ## Statistical Investigation

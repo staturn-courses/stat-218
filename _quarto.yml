@@ -1,5 +1,10 @@
 project:
   type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+  resources:
+    - "*.pdf"
   
 website:
   title: "STAT 218"
@@ -14,10 +19,9 @@ website:
       - href: notes.qmd
         text: Notes
 
-
 format: 
   html:
-    theme: cosmo
+    theme: flatly
     toc: true
     
 execute:

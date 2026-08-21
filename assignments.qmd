@@ -1,14 +1,16 @@
 ---
 title: "Assignments"
-format: html
+format: 
+  html:
+    toc: false
 ---
 
 ## Homework / Projects
 
-- [HW 1](assessements/test.qmd), due NOW
+<!-- - [HW 1](assessments/hw1/hw1.qmd), due NOW -->
 
-## Tests
-
-
+## Exams
 
 ## Final
+
+

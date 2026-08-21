@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>notes218_chapter_3 – STAT 218</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">STAT 218</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Course Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../canvas.html"> 
+<span class="menu-text">Canvas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../assignments.html"> 
+<span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes.html"> 
+<span class="menu-text">Notes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section-3.1-confidence-intervals" id="toc-section-3.1-confidence-intervals" class="nav-link active" data-scroll-target="#section-3.1-confidence-intervals">Section 3.1: Confidence Intervals</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#example-legalization-of-medical-marijuana" id="toc-example-legalization-of-medical-marijuana" class="nav-link" data-scroll-target="#example-legalization-of-medical-marijuana">Example: Legalization of Medical Marijuana</a></li>
+  <li><a href="#general-form-of-a-confidence-interval" id="toc-general-form-of-a-confidence-interval" class="nav-link" data-scroll-target="#general-form-of-a-confidence-interval">General Form of a Confidence Interval</a></li>
+  <li><a href="#significance-levels-alpha" id="toc-significance-levels-alpha" class="nav-link" data-scroll-target="#significance-levels-alpha">Significance Levels (<span class="math inline">\(\alpha\)</span>)</a></li>
+  <li><a href="#technical-note-about-confidence-intervals" id="toc-technical-note-about-confidence-intervals" class="nav-link" data-scroll-target="#technical-note-about-confidence-intervals">Technical Note About Confidence Intervals</a></li>
+  </ul></li>
+  <li><a href="#section-3.2-confidence-intervals-for-one-proportion" id="toc-section-3.2-confidence-intervals-for-one-proportion" class="nav-link" data-scroll-target="#section-3.2-confidence-intervals-for-one-proportion"><img src="media/image109.png" class="img-fluid">Section 3.2: Confidence Intervals for One Proportion</a>
+  <ul class="collapse">
+  <li><a href="#formula" id="toc-formula" class="nav-link" data-scroll-target="#formula"><img src="media/image110.png" class="img-fluid">Formula</a></li>
+  <li><a href="#example-legalization-of-medical-marijuana-1" id="toc-example-legalization-of-medical-marijuana-1" class="nav-link" data-scroll-target="#example-legalization-of-medical-marijuana-1">Example: Legalization of Medical Marijuana</a></li>
+  <li><a href="#conclusions-based-off-of-confidence-intervals" id="toc-conclusions-based-off-of-confidence-intervals" class="nav-link" data-scroll-target="#conclusions-based-off-of-confidence-intervals">Conclusions Based Off of Confidence Intervals</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><img src="media/image146.png" class="img-fluid">Conclusions</a></li>
+  </ul></li>
+  <li><a href="#section-3.3-confidence-intervals-for-single-means" id="toc-section-3.3-confidence-intervals-for-single-means" class="nav-link" data-scroll-target="#section-3.3-confidence-intervals-for-single-means"><img src="media/image147.png" class="img-fluid">Section 3.3: Confidence Intervals for Single Means</a>
+  <ul class="collapse">
+  <li><a href="#formula-1" id="toc-formula-1" class="nav-link" data-scroll-target="#formula-1">Formula</a></li>
+  <li><a href="#example-textbooks" id="toc-example-textbooks" class="nav-link" data-scroll-target="#example-textbooks">Example: Textbooks</a></li>
+  </ul></li>
+  <li><a href="#section-3.4-width-of-confidence-intervals" id="toc-section-3.4-width-of-confidence-intervals" class="nav-link" data-scroll-target="#section-3.4-width-of-confidence-intervals">Section 3.4: Width of Confidence Intervals</a>
+  <ul class="collapse">
+  <li><a href="#factors-influencing-the-confidence-interval" id="toc-factors-influencing-the-confidence-interval" class="nav-link" data-scroll-target="#factors-influencing-the-confidence-interval">Factors Influencing the Confidence Interval</a></li>
+  <li><a href="#confidence-level" id="toc-confidence-level" class="nav-link" data-scroll-target="#confidence-level"><img src="media/image198.png" class="img-fluid"><img src="media/image199.png" class="img-fluid"><img src="media/image200.png" class="img-fluid">Confidence level</a></li>
+  <li><a href="#sample-size" id="toc-sample-size" class="nav-link" data-scroll-target="#sample-size">Sample Size</a></li>
+  <li><a href="#standard-error" id="toc-standard-error" class="nav-link" data-scroll-target="#standard-error"><img src="media/image221.png" class="img-fluid">Standard Error</a></li>
+  <li><a href="#technical-aside" id="toc-technical-aside" class="nav-link" data-scroll-target="#technical-aside">Technical Aside</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="section-3.1-confidence-intervals" class="level1">
+<h1>Section 3.1: Confidence Intervals</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p><img src="media/image1.png" class="img-fluid">Up until now, we have been using hypothesis tests to determine if a value for a parameter is plausible. Our new goal is <strong>estimation</strong>: what values of the parameter are plausible?</p>
+<p><img src="media/image2.png" class="img-fluid"><img src="media/image3.png" class="img-fluid"><strong>Confidence Interval:</strong> a range of likely values for the ____________________</p>
+<p><img src="media/image4.png" class="img-fluid"></p>
+</section>
+<section id="example-legalization-of-medical-marijuana" class="level2">
+<h2 class="anchored" data-anchor-id="example-legalization-of-medical-marijuana">Example: Legalization of Medical Marijuana</h2>
+<p>In February of 2014, a Star Tribune Minnesota poll asked a random sample of adults in Minnesota, “Do you support or oppose legalizing marijuana for medical purposes in Minnesota?” Of the 800 adults surveyed, 408 (51%) answered that they would support this.</p>
+<p>Ultimately, the Star Tribune conducted this poll because they wanted to estimate the proportion of adults in Minnesota that felt (at the time of the survey) that medical marijuana should be legalized. Keep this in mind as you answer the following questions.</p>
+<p>Source: <a href="http://www.startribune.com/politics/statelocal/245910931.html" class="uri">http://www.startribune.com/politics/statelocal/245910931.html</a></p>
+<p><img src="media/image5.png" class="img-fluid"><img src="media/image6.png" class="img-fluid">Answer the following questions:</p>
+<ol type="1">
+<li><img src="media/image7.png" class="img-fluid">What is the population of interest?</li>
+</ol>
+<p><img src="media/image8.png" class="img-fluid"></p>
+<p><img src="media/image9.png" class="img-fluid"><img src="media/image10.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>What is the parameter of interest?</li>
+</ol>
+<p><img src="media/image11.png" class="img-fluid"><img src="media/image12.png" class="img-fluid"><img src="media/image13.png" class="img-fluid"><img src="media/image14.png" class="img-fluid"><img src="media/image15.png" class="img-fluid"></p>
+<p><img src="media/image16.png" class="img-fluid"><img src="media/image17.png" class="img-fluid"><img src="media/image18.png" class="img-fluid"><img src="media/image19.png" class="img-fluid"><img src="media/image20.png" class="img-fluid"></p>
+<p><img src="media/image21.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>What is the sample?</li>
+</ol>
+<p><img src="media/image22.png" class="img-fluid"><img src="media/image23.png" class="img-fluid"><img src="media/image24.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li><img src="media/image25.png" class="img-fluid">What is the observed statistic of interest? This is also called a <strong>point estimation.</strong></li>
+</ol>
+<p><img src="media/image26.png" class="img-fluid"><img src="media/image27.png" class="img-fluid"><img src="media/image28.png" class="img-fluid"><img src="media/image29.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>What would happen if you took a different sample of 800 Minnesota adults?</li>
+</ol>
+<p><img src="media/image30.png" class="img-fluid"><img src="media/image31.png" class="img-fluid"></p>
+<p>Hypothesis</p>
+<blockquote class="blockquote">
+<p><img src="media/image32.png" class="img-fluid">Null: The long run proportion of Minnesotans who feel medical marijuana should be legalized is equal to _____.</p>
+<p><img src="media/image33.png" class="img-fluid">In symbols: <span class="math inline">\(H_{0}:\pi =\)</span></p>
+<p><img src="media/image34.png" class="img-fluid">Alternative: The long run proportion of Minnesotans who feel medical marijuana should be legalized is different from _____.</p>
+<p><img src="media/image35.png" class="img-fluid">In symbols: <span class="math inline">\(H_{A}:\pi \neq\)</span></p>
+</blockquote>
+<p>Calculate the p-value from the <strong>Theory Based Inference Applet.</strong></p>
+<p><img src="media/image36.png" class="img-fluid"><img src="media/image37.png" class="img-fluid"><img src="media/image38.png" class="img-fluid"><img src="media/image39.png" style="width:6.5in;height:3.84722in" alt="Chart Description automatically generated"></p>
+<p>Note: when setting up the applet, you either enter the number of successes into the “count” box or the point estimation into “sample <span class="math inline">\(\widehat{p}\)</span>”. The other box will automatically fill in.</p>
+<ol start="6" type="1">
+<li>Based off the p-value, would you Reject (R) or Fail to Reject (FTR) at a significance level of 0.05?</li>
+</ol>
+<p>The general idea behind constructing a confidence interval is that we can use our sample to provide a plausible range of parameter values.</p>
+<p>Using the Theory Based Inference applet, change the values of π to fill in the following table. (i.e., change the hypothesis test for different parameter values while using the same sample)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 2%">
+<col style="width: 19%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 13%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">π</th>
+<th style="text-align: center;">0.45</th>
+<th style="text-align: center;">0.46</th>
+<th style="text-align: center;">0.47</th>
+<th style="text-align: center;">0.48</th>
+<th style="text-align: center;">0.49</th>
+<th style="text-align: center;">0.50</th>
+<th style="text-align: center;">0.51</th>
+<th style="text-align: center;">0.52</th>
+<th style="text-align: center;">0.53</th>
+<th style="text-align: center;">0.54</th>
+<th style="text-align: center;">0.55</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">p-value</td>
+<td style="text-align: center;"><img src="media/image40.png" class="img-fluid"><img src="media/image41.png" class="img-fluid"><img src="media/image42.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image43.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image44.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image45.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image46.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image47.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image48.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image49.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image50.png" class="img-fluid"><img src="media/image51.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image52.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image53.png" class="img-fluid"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">R/FTR</td>
+<td style="text-align: center;"><img src="media/image54.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image55.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image56.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image57.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image58.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image59.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image60.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image61.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image62.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image63.png" class="img-fluid"></td>
+<td style="text-align: center;"><img src="media/image64.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image65.png" class="img-fluid"><img src="media/image66.png" class="img-fluid"></p>
+<ol start="7" type="1">
+<li>What trends do we see?</li>
+</ol>
+<p><img src="media/image67.png" class="img-fluid"></p>
+<p><img src="media/image68.png" class="img-fluid"><img src="media/image69.png" class="img-fluid"><img src="media/image70.png" class="img-fluid"><img src="media/image71.png" class="img-fluid"></p>
+<ol start="8" type="1">
+<li>When we Fail to Reject, are we saying the null or alternative is plausible?</li>
+</ol>
+<p><img src="media/image72.png" class="img-fluid"></p>
+<ol start="9" type="1">
+<li>What is the interval of plausible values?</li>
+</ol>
+<p><img src="media/image73.png" class="img-fluid"><img src="media/image74.png" class="img-fluid"><img src="media/image75.png" class="img-fluid"><img src="media/image76.png" class="img-fluid"></p>
+<p><img src="media/image77.png" class="img-fluid"><img src="media/image78.png" class="img-fluid"><strong>Interpretation:</strong> We are 95% confident that the long-run proportion of Minnesotans who feel that medical marijuana should be legalized is between _____ and _____.</p>
+</section>
+<section id="general-form-of-a-confidence-interval" class="level2">
+<h2 class="anchored" data-anchor-id="general-form-of-a-confidence-interval">General Form of a Confidence Interval</h2>
+<p>Notice how the confidence interval is centered around the point estimate.</p>
+<p><img src="media/image79.png" class="img-fluid"><img src="media/image80.png" class="img-fluid"></p>
+<p><span class="math display">\[\text{Confidence Interval (CI)}\mathbf{=}\text{Point Estimate}\mathbf{\pm}\text{Margin of Error}\]</span></p>
+<p>In the previous example, the confidence interval can be expressed as:</p>
+<p><img src="media/image81.png" class="img-fluid">51% ± 3.5% (i.e., 47.5% ≤ π ≤ 54.5%).</p>
+<p><img src="media/image82.png" class="img-fluid"><img src="media/image83.png" class="img-fluid"></p>
+</section>
+<section id="significance-levels-alpha" class="level2">
+<h2 class="anchored" data-anchor-id="significance-levels-alpha">Significance Levels (<span class="math inline">\(\alpha\)</span>)</h2>
+<p><img src="media/image84.png" class="img-fluid">Significance Level + Confidence Level = 100%</p>
+<p>When <span class="math inline">\(\alpha = 0.10\)</span>,</p>
+<ul>
+<li><p>Relates to a 90% CI</p></li>
+<li><p>Rejects when p-value &lt; 0.10</p></li>
+<li><p>Narrower than 95% CI</p></li>
+<li><p>Rejects the null more often (remember than <span class="math inline">\(\alpha = 0.10\)</span> means that we reject the null 10 percent of the time)</p></li>
+</ul>
+<p><img src="media/image85.png" class="img-fluid"><img src="media/image86.png" class="img-fluid"></p>
+<p><img src="media/image87.png" class="img-fluid"><img src="media/image88.png" class="img-fluid"><img src="media/image89.png" class="img-fluid"><img src="media/image90.png" class="img-fluid"></p>
+<p>When <span class="math inline">\(\alpha = 0.05\)</span>,</p>
+<ul>
+<li><p>Relates to a 95% CI</p></li>
+<li><p>Rejects when p-value &lt; 0.05</p></li>
+</ul>
+<p>When <span class="math inline">\(\alpha = 0.01\)</span>,</p>
+<ul>
+<li><p>Relates to a 99% CI</p></li>
+<li><p>Rejects when p-value &lt; 0.01</p></li>
+<li><p>Wider than 95% CI</p></li>
+<li><p>Rejects the null less often than 95% CI</p></li>
+</ul>
+<p>Using the 95% confidence interval as a reference, draw what you would expect from the 90% confidence interval and 99% confidence interval</p>
+<p>95% CI</p>
+<hr>
+<hr>
+<p>90% CI</p>
+<hr>
+<hr>
+<p><img src="media/image91.png" class="img-fluid"><img src="media/image92.png" class="img-fluid"></p>
+<p>99% CI</p>
+<hr>
+<hr>
+<p><img src="media/image93.png" class="img-fluid"><img src="media/image94.png" class="img-fluid"></p>
+</section>
+<section id="technical-note-about-confidence-intervals" class="level2">
+<h2 class="anchored" data-anchor-id="technical-note-about-confidence-intervals">Technical Note About Confidence Intervals</h2>
+<p><img src="media/image95.png" class="img-fluid"><img src="media/image96.png" class="img-fluid">We say that we are “<span class="math inline">\(100 - \alpha*100\%\)</span> confident” because <span class="math inline">\(100 - \alpha*100\%\)</span> of the confidence intervals generated from samples of a given population will cover the true parameter value. In the instance of <span class="math inline">\(\alpha = 0.05\)</span>, this means that 95% of confidence intervals generated from samples within a population will cover the true parameter value. In Section 3.3, we will look at an applet that will demonstrate what this means. This is NOT the same as saying that the probability of the parameter being in the confidence interval is <span class="math inline">\(100 - \alpha*100\%\)</span></p>
+<p><img src="media/image97.png" class="img-fluid"><img src="media/image98.png" class="img-fluid"><img src="media/image99.png" class="img-fluid"><img src="media/image100.png" class="img-fluid"><img src="media/image101.png" class="img-fluid"><img src="media/image102.png" class="img-fluid"><img src="media/image103.png" class="img-fluid"><img src="media/image104.png" class="img-fluid"><img src="media/image105.png" class="img-fluid"><img src="media/image106.png" class="img-fluid"><img src="media/image107.png" class="img-fluid"><img src="media/image108.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="section-3.2-confidence-intervals-for-one-proportion" class="level1">
+<h1><img src="media/image109.png" class="img-fluid">Section 3.2: Confidence Intervals for One Proportion</h1>
+<section id="formula" class="level2">
+<h2 class="anchored" data-anchor-id="formula"><img src="media/image110.png" class="img-fluid">Formula</h2>
+<p>The general formula for confidence intervals is as follows:</p>
+<p><span class="math display">\[\text{Observed Statistic} \pm \text{Multiplier} \cdot \text{Standard Error}\]</span></p>
+<p><img src="media/image111.png" class="img-fluid"></p>
+<p>Unlike in Chapter 1, we now have a new formula for the standard error:</p>
+<p><img src="media/image112.png" class="img-fluid"><img src="media/image113.png" class="img-fluid"></p>
+<p><span class="math display">\[SE = \sqrt{\frac{\widehat{p} \cdot \left( 1 - \widehat{p} \right)}{n}}\]</span></p>
+<p>Notice how we are no longer using π in the calculation, but rather <span class="math inline">\(\widehat{p}\)</span>.</p>
+<p>To construct a 95% Confidence interval, the multiplier we will use in this course is 2. This gives us the confidence interval for one proportions to be:</p>
+<p><img src="media/image114.png" class="img-fluid"></p>
+<p><span class="math display">\[\mathbf{CI =}\widehat{\mathbf{p\ }}\mathbf{\pm 2*\ }\sqrt{\frac{\widehat{\mathbf{p}}\mathbf{*}\left( \mathbf{1 -}\widehat{\mathbf{p}} \right)}{\mathbf{n}}}\mathbf{= (Lower\ Limit,\ Upper\ Limit)}\]</span></p>
+<p><img src="media/image115.png" class="img-fluid">Technical aside: if you look into confidence intervals from sources outside of our class, you will notice that the multiplier value for a 95% confidence interval will likely be 1.96. However, we will <u>only use a multiplier value of 2 for this course.</u></p>
+</section>
+<section id="example-legalization-of-medical-marijuana-1" class="level2">
+<h2 class="anchored" data-anchor-id="example-legalization-of-medical-marijuana-1">Example: Legalization of Medical Marijuana</h2>
+<p>Recall the medical marijuana survey question from Section 3.1. Calculate the 95% confidence interval.</p>
+<p>In February of 2014, a Star Tribune Minnesota poll asked a random sample of adults in Minnesota, “Do you support or oppose legalizing marijuana for medical purposes in Minnesota?” Of the 800 adults surveyed, 408 (51%) answered that they would support this.</p>
+<p><img src="media/image116.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p><span class="math display">\[\widehat{p} =\]</span></p>
+<p><img src="media/image117.png" class="img-fluid"></p>
+<p><span class="math display">\[n =\]</span></p>
+<p><img src="media/image118.png" class="img-fluid"><img src="media/image119.png" class="img-fluid"><img src="media/image120.png" class="img-fluid"></p>
+<p><span class="math display">\[SE = \sqrt{\frac{\widehat{p}*\left( 1 - \widehat{p} \right)}{n}} =\]</span></p>
+<p><img src="media/image121.png" class="img-fluid"><img src="media/image122.png" class="img-fluid"><img src="media/image123.png" class="img-fluid"><img src="media/image124.png" class="img-fluid"><img src="media/image125.png" class="img-fluid"><img src="media/image126.png" class="img-fluid"><img src="media/image127.png" class="img-fluid"><img src="media/image128.png" class="img-fluid"><img src="media/image129.png" class="img-fluid"><img src="media/image130.png" class="img-fluid"><img src="media/image131.png" class="img-fluid"><img src="media/image132.png" class="img-fluid"><img src="media/image133.png" class="img-fluid"></p>
+<p><span class="math display">\[\widehat{p\ } \pm 2*SE =\]</span></p>
+</blockquote>
+</section>
+<section id="conclusions-based-off-of-confidence-intervals" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions-based-off-of-confidence-intervals">Conclusions Based Off of Confidence Intervals</h2>
+<p>Recall the general interpretation of a confidence interval.</p>
+<ul>
+<li>We are 95% confident that the long run proportion of <em>“context”</em> falls between (<em>lower limit</em>) and (<em>upper limit</em>).</li>
+</ul>
+<p><img src="media/image134.png" class="img-fluid">If the null hypothesis value is __________ of the interval</p>
+<ul>
+<li><p>It is a likely value</p></li>
+<li><p>Fail to Reject</p></li>
+</ul>
+<p><img src="media/image135.png" class="img-fluid">If the null hypothesis value is ___________ of the interval</p>
+<ul>
+<li><p>It is not a likely value</p></li>
+<li><p>Reject</p></li>
+</ul>
+<p>Conclusion: We (do/do not) have evidence to conclude (restate alternative in context).</p>
+<p>In the context of the medical marijuana example,</p>
+<ul>
+<li><p><img src="media/image136.png" class="img-fluid"><img src="media/image137.png" class="img-fluid"><img src="media/image138.png" class="img-fluid"><img src="media/image139.png" class="img-fluid">Hypothesis</p>
+<ul>
+<li><p><span class="math inline">\(H_{O}:\pi = 0.5\)</span></p></li>
+<li><p><span class="math inline">\(H_{A}:\pi \neq 0.5\)</span></p></li>
+</ul></li>
+<li><p>Confidence Interval</p>
+<ul>
+<li><span class="math inline">\((0.47,\ 0.55) \rightarrow Fail\ to\ Reject\ since\ 0.5\ falls\ inside\ our\ interval\)</span></li>
+</ul></li>
+</ul>
+<blockquote class="blockquote">
+<p><img src="media/image140.png" class="img-fluid"></p>
+</blockquote>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><img src="media/image141.png" class="img-fluid"> <img src="media/image142.png" class="img-fluid"> <img src="media/image143.png" class="img-fluid"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<blockquote class="blockquote">
+<p><img src="media/image144.png" class="img-fluid"><img src="media/image145.png" class="img-fluid"></p>
+</blockquote>
+<ul>
+<li><p>Interpretation of Confidence Interval</p>
+<ul>
+<li>We are 95% confident the long run proportion of adults in Minnesota who feel medical marijuana should be legalized falls between 0.47 and 0.55.</li>
+</ul></li>
+<li><p>Conclusion in context</p>
+<ul>
+<li>We do not have evidence to conclude the long run proportion of adults in Minnesota who feel medical marijuana should be legalized is different from 0.5</li>
+</ul></li>
+</ul>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions"><img src="media/image146.png" class="img-fluid">Conclusions</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 16%">
+<col style="width: 26%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;"><strong>P-value</strong></th>
+<th style="text-align: center;"><strong>Standardized Statistic</strong></th>
+<th style="text-align: center;"><strong>Confidence Interval</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reject</strong></td>
+<td style="text-align: center;">&lt; 0.05</td>
+<td style="text-align: center;">“Outside the 2’s”</td>
+<td style="text-align: center;">Hypothesized value outside of the CI</td>
+</tr>
+<tr class="even">
+<td><strong>Fail to Reject</strong></td>
+<td style="text-align: center;">&gt; 0.05</td>
+<td style="text-align: center;">“Between the 2’s”</td>
+<td style="text-align: center;">Hypothesized value inside of the CI</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="section-3.3-confidence-intervals-for-single-means" class="level1">
+<h1><img src="media/image147.png" class="img-fluid">Section 3.3: Confidence Intervals for Single Means</h1>
+<section id="formula-1" class="level2">
+<h2 class="anchored" data-anchor-id="formula-1">Formula</h2>
+<p>The general formula for confidence intervals also applies to single means.</p>
+<p><img src="media/image148.png" class="img-fluid"></p>
+<p><span class="math display">\[Observed\ Statistic\  \pm \ Multiplier\ *\ Standard\ Error\]</span></p>
+<p>Before calculating the confidence interval, be sure that the validity conditions are met for the theory approach (sample size greater than 20 and the distribution is not strongly skewed).</p>
+<p>The formula for the standard error is the same as from Chapter 2.</p>
+<p><img src="media/image149.png" class="img-fluid"></p>
+<p><span class="math display">\[SE = \frac{s}{\sqrt{n}}\]</span></p>
+<p>95% Confidence interval</p>
+<p><span class="math display">\[\mathbf{CI =}\overline{\mathbf{x}}\mathbf{\pm 2*}\frac{\mathbf{s}}{\sqrt{\mathbf{n}}}\mathbf{= (Lower\ Limit,\ Upper\ Limit)}\]</span></p>
+<p><img src="media/image150.png" class="img-fluid"></p>
+</section>
+<section id="example-textbooks" class="level2">
+<h2 class="anchored" data-anchor-id="example-textbooks">Example: Textbooks</h2>
+<p><img src="media/image151.png" class="img-fluid"><img src="media/image152.png" class="img-fluid">Suppose that two Winona State University students gathered data on prices for a random sample of 30 textbooks from the campus bookstore. They found the average price was $165.02 and the standard deviation was $31.42. The data is plotted below.</p>
+<p><img src="media/image153.png" class="img-fluid"></p>
+<p><img src="media/image154.png" class="img-fluid"><img src="media/image155.png" style="width:4.16667in;height:2.77778in" alt="Chart, bar chart, histogram Description automatically generated"></p>
+<p>Answer the following questions to get the confidence interval.</p>
+<ol type="1">
+<li>What is the point estimate (<span class="math inline">\(\overline{x}\)</span>)?</li>
+</ol>
+<p><img src="media/image156.png" class="img-fluid"><img src="media/image157.png" class="img-fluid"><img src="media/image158.png" class="img-fluid"><img src="media/image159.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>What is the sample standard deviation (s)?</li>
+</ol>
+<p><img src="media/image160.png" class="img-fluid"><img src="media/image161.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Are the validity conditions met?</li>
+</ol>
+<p><img src="media/image162.png" class="img-fluid"><img src="media/image163.png" class="img-fluid"><img src="media/image164.png" class="img-fluid"></p>
+<p><img src="media/image165.png" class="img-fluid"><img src="media/image166.png" class="img-fluid"><img src="media/image167.png" class="img-fluid"><img src="media/image168.png" class="img-fluid"><img src="media/image169.png" class="img-fluid"><img src="media/image170.png" class="img-fluid"><img src="media/image171.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Calculate the 95% confidence interval.</li>
+</ol>
+<p><img src="media/image172.png" class="img-fluid"><img src="media/image173.png" class="img-fluid"><img src="media/image174.png" class="img-fluid"><img src="media/image175.png" class="img-fluid"><img src="media/image176.png" class="img-fluid"><img src="media/image177.png" class="img-fluid"><img src="media/image178.png" class="img-fluid"><img src="media/image179.png" class="img-fluid"><img src="media/image180.png" class="img-fluid"><img src="media/image181.png" class="img-fluid"><img src="media/image182.png" class="img-fluid"></p>
+<p><img src="media/image183.png" class="img-fluid"></p>
+<p><img src="media/image184.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li><img src="media/image185.png" class="img-fluid"><img src="media/image186.png" class="img-fluid"><img src="media/image187.png" class="img-fluid"><img src="media/image188.png" class="img-fluid"><img src="media/image189.png" class="img-fluid">Interpretation: We are _____ confident that the long-run __________ price of textbooks at Winona State University is between _____ and _____.</li>
+</ol>
+<p>Let’s explore what is meant by 95% confidence in this example. Check out the applet located at <a href="https://twiedrw.shinyapps.io/confidence_intervals/" class="uri">https://twiedrw.shinyapps.io/confidence_intervals/</a>. Suppose we know that in the previous academic year that the population was normally distributed with an average textbook price of $150 and a population standard deviation of $35. Enter the information into the applet so that it looks like this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image190.png" style="width:2.45088in;height:3.39726in" class="figure-img"></p>
+<figcaption>Graphical user interface Description automatically generated</figcaption>
+</figure>
+</div>
+<p>(Note: ignore the limits on the mean and standard deviation in the applet)</p>
+<p>This applet simulates drawing random samples from a known population (a luxury that we almost never have in practice). The “Study Replications” is the number of samples that you draw from the population and calculate the confidence interval.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image191.png" style="width:4.38356in;height:2.69149in" class="figure-img"></p>
+<figcaption>Chart Description automatically generated</figcaption>
+</figure>
+</div>
+<p>In this instance, the confidence interval calculated from the sample covered the true population mean of 150. Suppose now that we change the “Study Replications” to 5.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/image192.png" style="width:4.07865in;height:2.58794in" class="figure-img"></p>
+<figcaption>Chart, box and whisker chart Description automatically generated</figcaption>
+</figure>
+</div>
+<p>All 5 studies covered the population mean. With study #5, you can see that the confidence interval almost narrowly misses population mean, but it is still contained within the interval. Recall the technical definition of a confidence interval: <span class="math inline">\(100 - \alpha*100\%\)</span> of the confidence intervals generated from samples of a given population will cover the true parameter value. Change the number of study replications to 100.</p>
+<ol type="1">
+<li><p>What percentage of the confidence intervals cover the true population mean?</p></li>
+<li><p>What does a single confidence interval represent?</p></li>
+<li><p>What happens as you increase the sample size? Does this impact the percent coverage of the true mean?</p></li>
+</ol>
+</section>
+</section>
+<section id="section-3.4-width-of-confidence-intervals" class="level1">
+<h1>Section 3.4: Width of Confidence Intervals</h1>
+<section id="factors-influencing-the-confidence-interval" class="level2">
+<h2 class="anchored" data-anchor-id="factors-influencing-the-confidence-interval">Factors Influencing the Confidence Interval</h2>
+<p><img src="media/image193.png" class="img-fluid"><img src="media/image194.png" class="img-fluid">There are three factors that affect the width of a confidence interval: confidence level, sample size, and standard error.</p>
+<p><img src="media/image195.png" class="img-fluid"><img src="media/image196.png" class="img-fluid"><img src="media/image197.png" class="img-fluid"></p>
+</section>
+<section id="confidence-level" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-level"><img src="media/image198.png" class="img-fluid"><img src="media/image199.png" class="img-fluid"><img src="media/image200.png" class="img-fluid">Confidence level</h2>
+<p><img src="media/image201.png" class="img-fluid">Significance Level + Confidence Level = _______</p>
+<ul>
+<li><p><img src="media/image202.png" class="img-fluid">Confidence Level Increases <span class="math inline">\(\rightarrow\)</span> Significance Level ___________</p>
+<ul>
+<li><p>Rejecting Less Often <span class="math inline">\(\rightarrow\)</span> More Likely Values</p></li>
+<li><p>Interval Widens</p></li>
+</ul></li>
+<li><p><img src="media/image203.png" class="img-fluid">Confidence Level Decreases <span class="math inline">\(\rightarrow\)</span> Significance Level ____________</p>
+<ul>
+<li><p>Rejecting More Often <span class="math inline">\(\rightarrow\)</span> Fewer Likely Values</p></li>
+<li><p>Interval Narrows</p></li>
+<li><p><img src="media/image204.png" class="img-fluid">“If you want to be more confident you have to cover more values.”</p></li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li>Hypothetical: what would a 100% confidence interval look like?</li>
+</ul>
+</section>
+<section id="sample-size" class="level2">
+<h2 class="anchored" data-anchor-id="sample-size">Sample Size</h2>
+<p>Recall what happened when increasing the sample size on the applet in Section 3.3.</p>
+<p>Larger sample size</p>
+<p><img src="media/image205.png" class="img-fluid"><img src="media/image206.png" class="img-fluid"><img src="media/image207.png" class="img-fluid"></p>
+<p><img src="media/image208.png" class="img-fluid"><img src="media/image209.png" class="img-fluid"><img src="media/image210.png" class="img-fluid"></p>
+<p>Smaller sample size</p>
+<p><img src="media/image211.png" class="img-fluid"><img src="media/image212.png" class="img-fluid"><img src="media/image213.png" class="img-fluid"></p>
+<p><img src="media/image214.png" class="img-fluid"></p>
+<p><img src="media/image215.png" class="img-fluid"><img src="media/image216.png" class="img-fluid"></p>
+<p>“Larger sample sizes make you more precise in your answer.”</p>
+<p>Draw the relation between a large sample size and a small sample size.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>Large sample size</p>
+<p><img src="media/image217.png" class="img-fluid"></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><img src="media/image218.png" class="img-fluid"></p>
+<p>Small sample size</p></td>
+</tr>
+</tbody>
+</table>
+<p><img src="media/image219.png" class="img-fluid"><img src="media/image220.png" class="img-fluid"></p>
+</section>
+<section id="standard-error" class="level2">
+<h2 class="anchored" data-anchor-id="standard-error"><img src="media/image221.png" class="img-fluid">Standard Error</h2>
+<p>General Formula</p>
+<blockquote class="blockquote">
+<p><span class="math display">\[Observed\ Statistic\  \pm \ Multiplier\ *\ Standard\ Error\]</span></p>
+<p><img src="media/image222.png" class="img-fluid"><img src="media/image223.png" class="img-fluid"></p>
+</blockquote>
+<p>Standard Error Increases</p>
+<ul>
+<li><img src="media/image224.png" class="img-fluid"><img src="media/image225.png" class="img-fluid"><img src="media/image226.png" class="img-fluid">Margin of Error Increases</li>
+</ul>
+<blockquote class="blockquote">
+<p><img src="media/image227.png" class="img-fluid"><img src="media/image228.png" class="img-fluid"></p>
+<p><img src="media/image229.png" class="img-fluid"><img src="media/image230.png" class="img-fluid"><img src="media/image231.png" class="img-fluid"></p>
+</blockquote>
+<p>Standard Error Decreases</p>
+<ul>
+<li>Margin of Error Decreases</li>
+</ul>
+<p><img src="media/image232.png" class="img-fluid"><img src="media/image233.png" class="img-fluid"><img src="media/image234.png" class="img-fluid"></p>
+<p><img src="media/image235.png" class="img-fluid"><img src="media/image236.png" class="img-fluid"><img src="media/image237.png" class="img-fluid"></p>
+</section>
+<section id="technical-aside" class="level2">
+<h2 class="anchored" data-anchor-id="technical-aside">Technical Aside</h2>
+<p>Mathematically, why do the effects of sample size and standard error make sense? Recall the standard error formulas for both proportion and means below.</p>
+<p><img src="media/image238.png" class="img-fluid"><img src="media/image239.png" class="img-fluid"><img src="media/image240.png" class="img-fluid"><img src="media/image241.png" class="img-fluid"><img src="media/image242.png" class="img-fluid"><img src="media/image243.png" class="img-fluid"></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>One Proportion</strong></th>
+<th style="text-align: center;"><span class="math display">\[SE = \sqrt{\frac{\widehat{p}\left( 1 - \widehat{p} \right)}{n}}\]</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img src="media/image244.png" class="img-fluid"><strong>One Mean</strong></td>
+<td style="text-align: center;"><span class="math display">\[SE = \frac{s}{\sqrt{n}}\]</span></td>
+</tr>
+</tbody>
+</table>
+<p>From the general formula for the confidence interval, we know that the sample size and standard error do not affect the observed statistic or the multiplier. As the sample size increases, the denominator of the standard error increases, which decreases the value for the standard error.</p>
+<ol type="1">
+<li><img src="media/image245.png" class="img-fluid"><img src="media/image246.png" class="img-fluid"><img src="media/image247.png" class="img-fluid"><img src="media/image248.png" class="img-fluid"><img src="media/image249.png" class="img-fluid"><img src="media/image250.png" class="img-fluid"><img src="media/image251.png" class="img-fluid">What would happen if you took an infinitely large sample size?</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

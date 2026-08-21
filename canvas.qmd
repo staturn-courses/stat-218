@@ -1,11 +1,13 @@
 ---
-title: "canvas.qmd"
+title: "Canvas"
 format: html
 ---
 
-[Canvas](canvas.nebraska.edu) will be used for the following: 
+[Canvas](canvas.nebraska.edu) is used for the following:
 
 - Discussion/message board
 - Online quizzes
 - Submitting assignments/projects/tests
 - Checking final course grades
+
+All other material can be found on this webpage. If you wish to [email](mailto:twiederich2@unl.edu) me instead of using Canvas, please include your course number in the subject line. 
