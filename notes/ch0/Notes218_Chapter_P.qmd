@@ -6,6 +6,10 @@ date-format: "[Fall] 2026"
 format: 
   revealjs:
     smaller: true
+    chalkboard: 
+      src: drawings.json
+      theme: whiteboard
+      boardmarker-width: 2
 ---
 
 ## Statistical Investigation
