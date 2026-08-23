@@ -1,16 +1,11 @@
 ---
-title: "Assignments"
 format: 
   html:
     toc: false
 ---
 
-## Homework / Projects
+Unless otherwise stated, all assignments are due by 5 p.m. on Canvas. 
 
-<!-- - [HW 1](assessments/hw1/hw1.qmd), due NOW -->
-
-## Exams
-
-## Final
-
-
+| Project | Due date | Data | Solutions | Notes |
+| :---: | :---: | :---: | :---: | :---: |
+| Project 1 |

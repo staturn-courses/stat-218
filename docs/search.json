@@ -191,7 +191,7 @@
   {
     "objectID": "canvas.html",
     "href": "canvas.html",
-    "title": "Canvas",
+    "title": "STAT 218",
     "section": "",
     "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
   },
@@ -245,18 +245,11 @@
     "text": "Rubric\nEach component listed below will be graded with following scale.\n\n\n\n\n\n\n\n\n\n\nFull credit\n80%\nHalf Credit\n20%\nNo credit\n\n\n\n\nFully sufficient\nMinor errors\nMajor errors\nCritical errors\nNo effort was made\n\n\n\nWritten component (40%)\n\nIntroduction: sufficient background knowledge is provided on the subject matter; hypothesis is clearly stated\nMethods: experiment and analysis can be fully replicated\nDiscussion: limitations are discussed; future research areas are included based on your research\nReferences: at least 3 references are used and cited correctly\n\nPresentation (40%)\n\nIntroduction: motivation is clearly given; hypothesis is stated\nMethods: describe the setup of your experiment and statistical test\nResults: describe the results of your experiment; at least one visualization is included\nDiscussion: connect your results back to the hypothesis (what is the main takeaway?)\nAttendance: attended and listened to your peers present their findings\n\nPeer Review (20%)\n\nEach group member contributed approximately equally in the project\nNote: not participating with your group results in 0% for the final"
   },
   {
-    "objectID": "assignments.html#exams",
-    "href": "assignments.html#exams",
-    "title": "Assignments",
-    "section": "Exams",
-    "text": "Exams"
-  },
-  {
-    "objectID": "assignments.html#final",
-    "href": "assignments.html#final",
-    "title": "Assignments",
-    "section": "Final",
-    "text": "Final"
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1"
   },
   {
     "objectID": "index.html",
