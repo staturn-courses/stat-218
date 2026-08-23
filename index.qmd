@@ -8,6 +8,9 @@ about:
     - text: All courses
       icon: house
       href: https://staturn-courses.github.io
+    - text: Syllabus
+      icon: file-text
+      href: stat218-syllabus-f26.qmd
 ---
 
 This website is open to my students in the University of Nebraska-Lincoln's STAT 218 course. 
