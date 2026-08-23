@@ -78,7 +78,6 @@ The recent popularity of large language models and other artificial intelligence
 - Paired data
 - Regression
 
-
 # UNL Course Policies and Resources
 
 Students are responsible for knowing the university policies and resources found on this page: <https://go.unl.edu/coursepolicies>
