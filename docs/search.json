@@ -98,102 +98,18 @@
     "text": "Example (Bike; in class)\nA bike company wants to test the effect of two brands of bike tires (Roadster and Trail-days) on the amount of miles ridden before the tires wear out. The company randomly selects 40 customers from their records and ask them to participate in the study in exchange for free tires. The participants were randomly assigned to either tire (20 participants to each tire brand). The data is summarized below, and you may assume that the data was not strongly skewed. Did the Roaster bike tires on average get more miles than the Trail-days tires?\n\n\n\n\n\n\n\n\nTire Brand\nMean (miles)\nSD (miles)\n\n\n\n\nRoadster\n2120\n201\n\n\nTrail-days\n2080\n196\n\n\n\n\nHow might the data look in a spreadsheet?\n\n\n    ...             ...             ...\n\n\nWhich variable is the explanatory variable?\nWhich variable is the response variable?\nWhat is the population of interest?\nWhat is the parameter of interest?\nSet up the null and alterative hypothesis.\n\n\n\\[H_{0}:\\]\n\\[\n{H_{A}:}\\]\n\n\nIntuitively, would you expect there to be a difference between the two tire brands?\nCalculate the standard error.\nCalculate the standardized statistic.\nCalculate the confidence interval.\nWrite a conclusion based on the research question."
   },
   {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html",
-    "href": "notes/ch4/Notes218_Chapter_4.html",
-    "title": "Association and Confounding",
-    "section": "",
-    "text": "Explanatory Variable (_______________, Predictor)\n\nVariable we think is “explaining” the change in the response variable\nIn an experiment, this is what researchers __________________\n\nResponse Variable (Dependent)\n\nVariable that is being changed by the explanatory variable (i.e., the outcome)\n\nConfounding Variable\n\nA variable that is related to both the explanatory and response variable in such a way that its effects cannot be ________________ from the effects of the explanatory\n\n\n\n\n\n\n\n\nSuppose that a study is researching the effect of gasoline usage and miles driven in a car. Identify the following:\nExplanatory Variable:\nResponse Variable:\nPotential Confounding Variables:\n\n\n\n\n\n\nFrom the following scenarios, think about which variable is the explanatory and which one is the response. Also try to come up with some potential confounding variables\n\n\nSmoking and cancer\nNumber of pets and size of home\nMoney spent on groceries and number of people in household\nAmount of rainfall and river level\n\n\n\n\nAssociation: a relationship between two variables\n\nInformation provided form one variable helps to ______________ another variable.\n\nCausal Connection: a cause-and-effect relationship between variables\n\nOne variable has a __________ influence on the response variable\n\nNote: Association does NOT justify causation. (www.tylervigen.com)\n\n\n\nResearchers found that countries that have more TV’s per 1,000 people have a higher average lifespan. Identify the following:\n\nExplanatory variable:\n\n\n\n\n\nCategorical or quantitative:\nResponse variable:\n\n\n\n\n\nCategorical or quantitative:\nPotential confounding variable(s):"
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#definitions",
-    "href": "notes/ch4/Notes218_Chapter_4.html#definitions",
-    "title": "Association and Confounding",
-    "section": "",
-    "text": "Explanatory Variable (_______________, Predictor)\n\nVariable we think is “explaining” the change in the response variable\nIn an experiment, this is what researchers __________________\n\nResponse Variable (Dependent)\n\nVariable that is being changed by the explanatory variable (i.e., the outcome)\n\nConfounding Variable\n\nA variable that is related to both the explanatory and response variable in such a way that its effects cannot be ________________ from the effects of the explanatory"
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#example-1-types-of-variables",
-    "href": "notes/ch4/Notes218_Chapter_4.html#example-1-types-of-variables",
-    "title": "Association and Confounding",
-    "section": "",
-    "text": "Suppose that a study is researching the effect of gasoline usage and miles driven in a car. Identify the following:\nExplanatory Variable:\nResponse Variable:\nPotential Confounding Variables:"
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#your-turn",
-    "href": "notes/ch4/Notes218_Chapter_4.html#your-turn",
-    "title": "Association and Confounding",
-    "section": "",
-    "text": "From the following scenarios, think about which variable is the explanatory and which one is the response. Also try to come up with some potential confounding variables\n\n\nSmoking and cancer\nNumber of pets and size of home\nMoney spent on groceries and number of people in household\nAmount of rainfall and river level"
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#definitions-cont.",
-    "href": "notes/ch4/Notes218_Chapter_4.html#definitions-cont.",
-    "title": "Association and Confounding",
-    "section": "",
-    "text": "Association: a relationship between two variables\n\nInformation provided form one variable helps to ______________ another variable.\n\nCausal Connection: a cause-and-effect relationship between variables\n\nOne variable has a __________ influence on the response variable\n\nNote: Association does NOT justify causation. (www.tylervigen.com)"
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#example-2",
-    "href": "notes/ch4/Notes218_Chapter_4.html#example-2",
-    "title": "Association and Confounding",
-    "section": "",
-    "text": "Researchers found that countries that have more TV’s per 1,000 people have a higher average lifespan. Identify the following:\n\nExplanatory variable:\n\n\n\n\n\nCategorical or quantitative:\nResponse variable:\n\n\n\n\n\nCategorical or quantitative:\nPotential confounding variable(s):"
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#observational-studies",
-    "href": "notes/ch4/Notes218_Chapter_4.html#observational-studies",
-    "title": "Association and Confounding",
-    "section": "Observational Studies",
-    "text": "Observational Studies\nThe groups that you wish to compare are “just there.” Data is observed and collected on subjects without intervention of the results.\nExamples: customer review surveys, teacher evaluations, smokers vs nonsmokers and lung cancer, etc."
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#experiments",
-    "href": "notes/ch4/Notes218_Chapter_4.html#experiments",
-    "title": "Association and Confounding",
-    "section": "Experiments",
-    "text": "Experiments\nYou create the groups by what you choose to do to the people or the experimental units by assigning the conditions (i.e., _____________________ of groups)\nExamples:\n\nAssigning two diets to two different groups, then measuring the weight loss on each group\nAssigning students to listen to either classical music or country music before an exam, then comparing the group scores"
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#randomized-experiments",
-    "href": "notes/ch4/Notes218_Chapter_4.html#randomized-experiments",
-    "title": "Association and Confounding",
-    "section": "Randomized Experiments",
-    "text": "Randomized Experiments\nExperiments can be designed in such a way that we can balance out confounding variables. This is done through random assignment into different treatment groups. For randomized experiments, this means that each subject/participant is randomly placed into a group.\nWhen conducting an experiment, our observational units are now called experimental units. Technical note: an experimental unit, by definition, is the smallest entity to which randomization can occur."
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#what-type-of-study-to-use",
-    "href": "notes/ch4/Notes218_Chapter_4.html#what-type-of-study-to-use",
-    "title": "Association and Confounding",
-    "section": "What Type of Study to Use?",
-    "text": "What Type of Study to Use?\nConsider the scenario of a researcher wanting to answer this research question: “Does exercise help prevent against colds and flus?”\n\nHow can we make this an experimental study?\n\n\n\n\nHow can we make this an observational study?\n\n\n\nExperimental Study\nObservational Study"
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#random-sampling-vs.-random-assignment",
-    "href": "notes/ch4/Notes218_Chapter_4.html#random-sampling-vs.-random-assignment",
-    "title": "Association and Confounding",
-    "section": "Random Sampling vs. Random Assignment",
-    "text": "Random Sampling vs. Random Assignment\nRandom Sampling: representative sample from population so we can extend conclusion to the larger population.\n\nWhen random sampling is present, we can generalize the results to the population of interest.\nWhen random sampling is not present, we cannot generalize results to the population of interest.\n\nExample: Suppose that a study wants to estimate the average weight of the Western Meadowlark (state bird of Nebraska). Researchers get samples from random areas in the state of Nebraska.\nCan we generalize the average weight to all Western Meadowlarks? To where can we generalize the results?\n\nRandom Assignment: produce similar groups so we can say that there is a cause-and-effect (causal) relationship between explanatory and response variables.\n\nWhen random assignment is present, we can determine causation because the study “balances out” potential confounding variables.\nWhen random assignment is not present, we cannot determine causation (only association). The confounding variables add bias into the results\n\nNote: This is common with observational studies."
-  },
-  {
-    "objectID": "notes/ch4/Notes218_Chapter_4.html#claims-from-study-types",
-    "href": "notes/ch4/Notes218_Chapter_4.html#claims-from-study-types",
-    "title": "Association and Confounding",
-    "section": "Claims from Study Types",
-    "text": "Claims from Study Types\nThe following table summarizes what types of claims you can make depending on the type of study. We will not be focusing on how to write conclusions for each situation, but you should pay attention to how a study is designed and its implications.\n\n\n\n\n\n\n\n\n\nAssociation\nCausal Connection\n\n\n\n\nSubjects within the study\nCalculated statistics\nExperimental study with random assignment\n\n\nPopulation\nObservational study with a random sample\nExperimental study with random assignment AND from a random sample"
-  },
-  {
     "objectID": "notes.html",
     "href": "notes.html",
     "title": "STAT 218",
     "section": "",
-    "text": "References\nStat 218 Syllabus\nSimulation applets for our book can be found here: http://www.isi-stats.com/isi2nd/applets2021.html\n\nChapter P\n\nSlides\n\nChapter 1\n\nHandout\n\nChapter 2\nChapter 3\nChapter 4\nChapter 5\nChapter 6\nChapter 7\nChapter 10"
+    "text": "References\nStat 218 Syllabus\nThe textbook (and related resources) can be found on Canvas under Wiley Course Resources.\nSimulation applets for our book can be found here: http://www.isi-stats.com/isi2nd/applets2021.html\n\nChapter P\n\nSlides\n\nChapter 1\n\nHandout\n\nChapter 2\nChapter 3\nChapter 4\nChapter 5\nChapter 6\nChapter 7\nChapter 10"
   },
   {
     "objectID": "canvas.html",
     "href": "canvas.html",
     "title": "STAT 218",
     "section": "",
-    "text": "Canvas is used for the following:\n\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+    "text": "Canvas is used for the following:\n\nAccessing textbook\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
   },
   {
     "objectID": "assessments/test.html",

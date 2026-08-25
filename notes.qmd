@@ -6,6 +6,8 @@ format: html
 
 [Stat 218 Syllabus](stat218-syllabus-f26.qmd)
 
+The textbook (and related resources) can be found on Canvas under Wiley Course Resources.
+
 Simulation applets for our book can be found here: <http://www.isi-stats.com/isi2nd/applets2021.html>
 
 ---

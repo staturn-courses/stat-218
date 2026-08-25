@@ -4,6 +4,7 @@ format: html
 
 [Canvas](canvas.nebraska.edu) is used for the following:
 
+- Accessing textbook
 - Discussion/message board
 - Online quizzes
 - Submitting assignments/projects/tests

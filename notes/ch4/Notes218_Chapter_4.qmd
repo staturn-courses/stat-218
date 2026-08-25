@@ -1,12 +1,28 @@
+---
+format: 
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 218}
+        \chead{Chapter 3}
+        \rhead{Fall 2026}
+        \rfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
+---
+
 # Association and Confounding
 
 ## Definitions
 
-![](media/image1.png)Explanatory Variable (\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, Predictor)
+Explanatory Variable (\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_, Predictor)
 
 - Variable we think is "explaining" the change in the response variable
 
-- ![](media/image2.png)In an experiment, this is what researchers \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+- In an experiment, this is what researchers \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 Response Variable (Dependent)
 
@@ -14,55 +30,81 @@ Response Variable (Dependent)
 
 Confounding Variable
 
-- ![](media/image3.png)A variable that is related to both the explanatory and response variable in such a way that its effects cannot be \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ from the effects of the explanatory
+- A variable that is related to both the explanatory and response variable in such a way that its effects cannot be \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ from the effects of the explanatory
 
-![](media/image4.png)
 
-![](media/image5.png)![](media/image6.png)
 
-![](media/image7.png)
 
-![](media/image8.png)
+
+
+
+
 
 ## Example 1: Types of Variables
 
 Suppose that a study is researching the effect of gasoline usage and miles driven in a car. Identify the following:
 
-![](media/image9.png)![](media/image10.png)![](media/image11.png)![](media/image12.png)**Explanatory Variable:**
+**Explanatory Variable:**
 
-![](media/image13.png)![](media/image14.png)![](media/image15.png)![](media/image16.png)**Response Variable:**
+\
+\
+\
+
+**Response Variable:**
+
+\
+\
+\
 
 **Potential Confounding Variables:**
 
-![](media/image17.png)![](media/image18.png)
+\
+\
+\
 
-![](media/image19.png)![](media/image20.png)![](media/image21.png)![](media/image22.png)
 
-![](media/image23.png)![](media/image24.png)
+
+
+
 
 ## Your turn!
 
 From the following scenarios, think about which variable is the explanatory and which one is the response. Also try to come up with some potential confounding variables
 
-![](media/image25.png)![](media/image26.png)![](media/image27.png)
+- Smoking and cancer
 
-- ![](media/image28.png)![](media/image29.png)Smoking and cancer
+\
+\
+\
 
-- ![](media/image30.png)Number of pets and size of home
+- Number of pets and size of home
 
-- ![](media/image31.png)Money spent on groceries and number of people in household
+\
+\
+\
+
+- Money spent on groceries and number of people in household
+
+\
+\
+\
 
 - Amount of rainfall and river level
+
+\
+\
+\
+
 
 ## Definitions (cont.)
 
 Association: a relationship between two variables
 
-- ![](media/image32.png)Information provided form one variable helps to \_\_\_\_\_\_\_\_\_\_\_\_\_\_ another variable.
+- Information provided form one variable helps to \_\_\_\_\_\_\_\_\_\_\_\_\_\_ another variable.
 
 Causal Connection: a cause-and-effect relationship between variables
 
-- ![](media/image33.png)One variable has a \_\_\_\_\_\_\_\_\_\_ influence on the response variable
+- One variable has a \_\_\_\_\_\_\_\_\_\_ influence on the response variable
 
 Note: Association does NOT justify causation. ([www.tylervigen.com](http://www.tylervigen.com/))
 
@@ -70,33 +112,55 @@ Note: Association does NOT justify causation. ([www.tylervigen.com](http://www.t
 
 Researchers found that countries that have more TV's per 1,000 people have a higher average lifespan. Identify the following:
 
-- ![](media/image34.png)![](media/image35.png)![](media/image36.png)![](media/image37.png)Explanatory variable:
+- Explanatory variable:
 
-> ![](media/image38.png)![](media/image39.png)
+\
+\
+\
 
-- ![](media/image40.png)![](media/image41.png)Categorical or quantitative:
 
-- ![](media/image42.png)![](media/image43.png)Response variable:
+- Categorical or quantitative:
 
-> ![](media/image44.png)
+\
+\
+\
 
-- ![](media/image45.png)Categorical or quantitative:
 
-- ![](media/image46.png)![](media/image47.png)![](media/image48.png)Potential confounding variable(s):
+- Response variable:
+
+\
+\
+\
+
+
+- Categorical or quantitative:
+
+\
+\
+\
+
+- Potential confounding variable(s):
+
+\
+\
+\
+\
+\
+
 
 # Observational Studies vs. Experiments
 
-![](media/image49.png)Motivation: How can we take a sample so that we can reduce the risk of having confounding variables? Confounding variables add bias into a study, but there are ways to deal with this.
+Motivation: How can we take a sample so that we can reduce the risk of having confounding variables? Confounding variables add bias into a study, but there are ways to deal with this.
 
 ## Observational Studies
 
-![](media/image50.png)The groups that you wish to compare are "just there." Data is observed and collected on subjects without intervention of the results.
+The groups that you wish to compare are "just there." Data is observed and collected on subjects without intervention of the results.
 
 Examples: customer review surveys, teacher evaluations, smokers vs nonsmokers and lung cancer, etc.
 
 ## Experiments
 
-![](media/image51.png)You create the groups by what you choose to do to the people or the experimental units by assigning the conditions (i.e., \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ of groups)
+You create the groups by what you choose to do to the people or the experimental units by assigning the conditions (i.e., \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ of groups)
 
 Examples:
 
@@ -106,9 +170,7 @@ Examples:
 
 ## Randomized Experiments
 
-Experiments can be designed in such a way that we can balance out confounding variables. This is done through random assignment into different treatment groups. For randomized experiments, this means that each subject/participant is randomly placed into a group.
-
-![](media/image52.png)When conducting an experiment, our observational units are now called **experimental units.** Technical note: an experimental unit, by definition, is the smallest entity to which randomization can occur.
+Experiments can be designed in such a way that we can balance out confounding variables. This is done through random assignment into different treatment groups. For randomized experiments, this means that each subject/participant is randomly placed into a group. When conducting an experiment, our observational units are now called **experimental units.** (Technical note: an experimental unit, by definition, is the smallest entity to which randomization can occur.)
 
 ## What Type of Study to Use?
 
@@ -116,47 +178,56 @@ Consider the scenario of a researcher wanting to answer this research question: 
 
 - How can we make this an experimental study?
 
-![](media/image53.png)![](media/image54.png)
+\
+\
+\
+\
+\
 
-![](media/image55.png)![](media/image56.png)![](media/image57.png)![](media/image58.png)![](media/image59.png)![](media/image60.png)
 
 - How can we make this an observational study?
 
-![](media/image61.png)
+\
+\
+\
+\
+\
 
-![](media/image62.png)![](media/image63.png)![](media/image64.png)![](media/image65.png)![](media/image66.png)![](media/image67.png)![](media/image68.png)![](media/image69.png)![](media/image70.png)
 
-Experimental Study
 
-Observational Study
 
-![](media/image71.png)![](media/image72.png)![](media/image73.png)![](media/image74.png)![](media/image75.png)![](media/image76.png)
+\newpage
 
-![](media/image77.png)
 
-![](media/image78.png)![](media/image79.png)![](media/image80.png)![](media/image81.png)![](media/image82.png)![](media/image83.png)
 
-![](media/image84.png)![](media/image85.png)![](media/image86.png)
 
-![](media/image87.png)
 
-![](media/image88.png)![](media/image89.png)![](media/image90.png)![](media/image91.png)
 
-![](media/image92.png)![](media/image93.png)![](media/image94.png)![](media/image95.png)![](media/image96.png)![](media/image97.png)![](media/image98.png)![](media/image99.png)![](media/image100.png)![](media/image101.png)![](media/image102.png)![](media/image103.png)![](media/image104.png)![](media/image105.png)
+
+
+
+
+
+
+
+
 
 ## Random Sampling vs. Random Assignment
 
 **Random Sampling:** representative sample from population so we can extend conclusion to the larger population.
 
-- ![](media/image106.png)When random sampling is present, we can generalize the results to the population of interest.
+- When random sampling is present, we can generalize the results to the population of interest.
 
 - When random sampling is not present, we cannot generalize results to the population of interest.
 
-Example: Suppose that a study wants to estimate the average weight of the Western Meadowlark (state bird of Nebraska). Researchers get samples from random areas in the state of Nebraska.
+Example: Suppose that a study wants to estimate the average weight of the Western Meadowlark (state bird of Nebraska). Researchers get samples from random areas in the state of Nebraska. Can we generalize the average weight to all Western Meadowlarks? To where can we generalize the results?
 
-Can we generalize the average weight to all Western Meadowlarks? To where can we generalize the results?
+\
+\
+\
+\
+\
 
-![](media/image107.png)![](media/image108.png)![](media/image109.png)![](media/image110.png)
 
 **Random Assignment:** produce similar groups so we can say that there is a cause-and-effect (causal) relationship between explanatory and response variables.
 
@@ -165,8 +236,6 @@ Can we generalize the average weight to all Western Meadowlarks? To where can we
 - When random assignment is not present, we cannot determine causation (only association). The confounding variables add bias into the results
 
   - Note: This is common with observational studies.
-
-![](media/image111.png){width="5.673468941382327in" height="3.13374343832021in"}
 
 ## Claims from Study Types
 
@@ -182,30 +251,66 @@ The following table summarizes what types of claims you can make depending on th
 
 # Example Problems
 
-![](media/image112.png)![](media/image113.png)A study finds that larger cities have more traffic stops than smaller cities per 1,000 people. Identify the following:
+A study finds that larger cities have more traffic stops than smaller cities per 1,000 people. Identify the following:
 
-- ![](media/image114.png)Observational or experimental:
+- Observational or experimental:
 
-- ![](media/image115.png)Explanatory variable:
+\
+\
+\
 
-- ![](media/image116.png)![](media/image117.png)Response variable:
-
-- ![](media/image118.png)Randomness:
-
-- ![](media/image119.png)![](media/image120.png)![](media/image121.png)![](media/image122.png)![](media/image123.png)![](media/image124.png)Potential confounding variables:
-
-Researchers randomly assigned two drugs, A and B, to two groups of subjects. They found that Drug A performed better than Drug B.
-
-- ![](media/image125.png)Observational or experimental:
 
 - Explanatory variable:
 
-- ![](media/image126.png)Response variable:
+\
+\
+\
 
-- ![](media/image127.png)![](media/image128.png)![](media/image129.png)Randomness:
+
+- Response variable:
+
+\
+\
+\
+
+- Randomness:
+
+\
+\
+\
 
 - Potential confounding variables:
 
-![](media/image130.png)![](media/image131.png)![](media/image132.png)![](media/image133.png)
+\newpage
 
-![](media/image134.png)![](media/image135.png)
+Researchers randomly assigned two drugs, A and B, to two groups of volunteers. They found that Drug A performed better than Drug B.
+
+- Observational or experimental:
+
+\
+\
+\
+
+- Explanatory variable:
+
+\
+\
+\
+
+- Response variable:
+
+\
+\
+\
+
+- Randomness:
+
+\
+\
+\
+
+- Potential confounding variables:
+
+
+
+
