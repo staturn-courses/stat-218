@@ -1,0 +1,23 @@
+---
+title: "Data Types Activity"
+format: html
+---
+
+In this activity, we will familiarize ourselves with data types by constructing data sets. Recall that quantitative data represents values that can take on any real number and that categorical data represents values that take on categories. For each of the following scenarios, construct a data set and identify each variable as quantitative or categorical. Additionally, state whether each variable could be summarized with a mean or proportion. Calculate the mean/proportion for these variables (for proportions, define the category of interest and calculate the proportion). 
+
+- Mean: sum of values divided by the count of values
+- Proportion: count of category of interested divided by total count
+
+
+
+Construct a data set consisting of the predicted weather forecast over the next five days. Include the variables of low temperature, high temperature, conditions (e.g., mostly sunny), and if there is at least a 20% chance of rain.
+
+\
+\
+\
+\
+\
+
+Construct a data set consisting of four student grades. Include the variables of course name, final grade percentage, and final course grade. 
+
+

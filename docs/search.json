@@ -98,83 +98,6 @@
     "text": "Example (Bike; in class)\nA bike company wants to test the effect of two brands of bike tires (Roadster and Trail-days) on the amount of miles ridden before the tires wear out. The company randomly selects 40 customers from their records and ask them to participate in the study in exchange for free tires. The participants were randomly assigned to either tire (20 participants to each tire brand). The data is summarized below, and you may assume that the data was not strongly skewed. Did the Roaster bike tires on average get more miles than the Trail-days tires?\n\n\n\n\n\n\n\n\nTire Brand\nMean (miles)\nSD (miles)\n\n\n\n\nRoadster\n2120\n201\n\n\nTrail-days\n2080\n196\n\n\n\n\nHow might the data look in a spreadsheet?\n\n\n    ...             ...             ...\n\n\nWhich variable is the explanatory variable?\nWhich variable is the response variable?\nWhat is the population of interest?\nWhat is the parameter of interest?\nSet up the null and alterative hypothesis.\n\n\n\\[H_{0}:\\]\n\\[\n{H_{A}:}\\]\n\n\nIntuitively, would you expect there to be a difference between the two tire brands?\nCalculate the standard error.\nCalculate the standardized statistic.\nCalculate the confidence interval.\nWrite a conclusion based on the research question."
   },
   {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "STAT 218",
-    "section": "",
-    "text": "References\nStat 218 Syllabus\nThe textbook (and related resources) can be found on Canvas under Wiley Course Resources.\nSimulation applets for our book can be found here: http://www.isi-stats.com/isi2nd/applets2021.html\n\nChapter P\n\nSlides\n\nChapter 1\n\nHandout\n\nChapter 2\nChapter 3\nChapter 4\nChapter 5\nChapter 6\nChapter 7\nChapter 10"
-  },
-  {
-    "objectID": "canvas.html",
-    "href": "canvas.html",
-    "title": "STAT 218",
-    "section": "",
-    "text": "Canvas is used for the following:\n\nAccessing textbook\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
-  },
-  {
-    "objectID": "assessments/test.html",
-    "href": "assessments/test.html",
-    "title": "HW 1",
-    "section": "",
-    "text": "Instructions\nComplete the following problems and submit them on Canvas by the due date.\nSyllabus\n\nWhen does your instructor host office hours, and where?\nThe following table is an example of grades awarded for the semester. What is their final letter grade according to this course’s grading scheme?\n\nChapter P"
-  },
-  {
-    "objectID": "assessments/final/final.html",
-    "href": "assessments/final/final.html",
-    "title": "Final Project",
-    "section": "",
-    "text": "In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do not need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.\nFor your convenience, below are the eligible statistical tests:\n\nOne proportion\nTwo proportions\nOne mean\nTwo means\nPaired means"
-  },
-  {
-    "objectID": "assessments/final/final.html#overview",
-    "href": "assessments/final/final.html#overview",
-    "title": "Final Project",
-    "section": "",
-    "text": "In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do not need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.\nFor your convenience, below are the eligible statistical tests:\n\nOne proportion\nTwo proportions\nOne mean\nTwo means\nPaired means"
-  },
-  {
-    "objectID": "assessments/final/final.html#description-of-experiment",
-    "href": "assessments/final/final.html#description-of-experiment",
-    "title": "Final Project",
-    "section": "Description of Experiment",
-    "text": "Description of Experiment\nThe purpose of your proposed experiment is to demonstrate your knowledge of the topics taught in our course. The following criteria must be met:\n\nExperiment is feasible to conduct.\nOutcomes occur due to a random (stochastic) process (no observational data).\nExperimental units are able to be randomly assigned (if applicable).\nHypothesis is reasonable with respect to the subject matter.\nExperiment can be ethically conducted."
-  },
-  {
-    "objectID": "assessments/final/final.html#written-component",
-    "href": "assessments/final/final.html#written-component",
-    "title": "Final Project",
-    "section": "Written Component",
-    "text": "Written Component\nDue date: by the end of the scheduled final exam\nThe written component of the final includes writing up your experiment in the style of academic research. Your paper should be around 3-5 pages and include the following:\n\nIntroduction: describe what is currently known about your topic and your hypothesis/objective. If testing one group/process, what value is reasonable to test against? For two groups/processes, what difference provides practical significance? Include at least three sources and cite them correctly.\nMethods: describe how you designed the experiment and the statistical test associated with the analysis. What are the experimental units, explanatory variable(s), response variable(s), and treatment groups? Describe how randomization occurs in the sampling and/or assignment. If appropriate, a diagram of your study would be helpful. What sample size is sufficient to meet the assumptions of the test?\nDiscussion: describe how the results of the experiment would fit into the literature, as well as potential limitations (no study is perfect!)."
-  },
-  {
-    "objectID": "assessments/final/final.html#presentation",
-    "href": "assessments/final/final.html#presentation",
-    "title": "Final Project",
-    "section": "Presentation",
-    "text": "Presentation\nDates: last week of classes\nEach group will have 7-10 minutes to present their experiment. In addition to the Introduction, Methods, and Discussion (as described above), you are required to analyze simulated data of the experiment and interpret it with correct conclusions using \\(\\alpha=0.05\\). This includes calculating the appropriate point estimate, standardized statistic, and confidence interval. You may ask your instructor to help you obtain simulated data for your experiment (don’t wait until the week of presentations)."
-  },
-  {
-    "objectID": "assessments/final/final.html#rubric",
-    "href": "assessments/final/final.html#rubric",
-    "title": "Final Project",
-    "section": "Rubric",
-    "text": "Rubric\nEach component listed below will be graded with following scale.\n\n\n\n\n\n\n\n\n\n\nFull credit\n80%\nHalf Credit\n20%\nNo credit\n\n\n\n\nFully sufficient\nMinor errors\nMajor errors\nCritical errors\nNo effort was made\n\n\n\nWritten component (40%)\n\nIntroduction: sufficient background knowledge is provided on the subject matter; hypothesis is clearly stated\nMethods: experiment and analysis can be fully replicated\nDiscussion: limitations are discussed; future research areas are included based on your research\nReferences: at least 3 references are used and cited correctly\n\nPresentation (40%)\n\nIntroduction: motivation is clearly given; hypothesis is stated\nMethods: describe the setup of your experiment and statistical test\nResults: describe the results of your experiment; at least one visualization is included\nDiscussion: connect your results back to the hypothesis (what is the main takeaway?)\nAttendance: attended and listened to your peers present their findings\n\nPeer Review (20%)\n\nEach group member contributed approximately equally in the project\nNote: not participating with your group results in 0% for the final"
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "STAT 218",
-    "section": "",
-    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STAT 218",
-    "section": "",
-    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 218 course.\nCourse description: The practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing."
-  },
-  {
     "objectID": "notes/ch0/Notes218_Chapter_P.html#statistical-investigation",
     "href": "notes/ch0/Notes218_Chapter_P.html#statistical-investigation",
     "title": "Chapter P",
@@ -306,6 +229,90 @@
     "title": "Chapter P",
     "section": "Gathering Evidence",
     "text": "Gathering Evidence\nRandom Process: A random process is a process that can be repeated a very large number of times (theoretically infinitely many times) under identical conditions where outcomes cannot be known in advance.\nProbability: The probability of an outcome is the long run proportion of times that outcome would occur if a random process were repeated a very large number of times under identical conditions.\nSimulation: Artificially re-creating a random process.\n\nCan be done using computer, dice, cards, coins, etc…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 218 course.\nCourse description: The practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1"
+  },
+  {
+    "objectID": "assessments/final/final.html",
+    "href": "assessments/final/final.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do not need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.\nFor your convenience, below are the eligible statistical tests:\n\nOne proportion\nTwo proportions\nOne mean\nTwo means\nPaired means"
+  },
+  {
+    "objectID": "assessments/final/final.html#overview",
+    "href": "assessments/final/final.html#overview",
+    "title": "Final Project",
+    "section": "",
+    "text": "In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do not need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.\nFor your convenience, below are the eligible statistical tests:\n\nOne proportion\nTwo proportions\nOne mean\nTwo means\nPaired means"
+  },
+  {
+    "objectID": "assessments/final/final.html#description-of-experiment",
+    "href": "assessments/final/final.html#description-of-experiment",
+    "title": "Final Project",
+    "section": "Description of Experiment",
+    "text": "Description of Experiment\nThe purpose of your proposed experiment is to demonstrate your knowledge of the topics taught in our course. The following criteria must be met:\n\nExperiment is feasible to conduct.\nOutcomes occur due to a random (stochastic) process (no observational data).\nExperimental units are able to be randomly assigned (if applicable).\nHypothesis is reasonable with respect to the subject matter.\nExperiment can be ethically conducted."
+  },
+  {
+    "objectID": "assessments/final/final.html#written-component",
+    "href": "assessments/final/final.html#written-component",
+    "title": "Final Project",
+    "section": "Written Component",
+    "text": "Written Component\nDue date: by the end of the scheduled final exam\nThe written component of the final includes writing up your experiment in the style of academic research. Your paper should be around 3-5 pages and include the following:\n\nIntroduction: describe what is currently known about your topic and your hypothesis/objective. If testing one group/process, what value is reasonable to test against? For two groups/processes, what difference provides practical significance? Include at least three sources and cite them correctly.\nMethods: describe how you designed the experiment and the statistical test associated with the analysis. What are the experimental units, explanatory variable(s), response variable(s), and treatment groups? Describe how randomization occurs in the sampling and/or assignment. If appropriate, a diagram of your study would be helpful. What sample size is sufficient to meet the assumptions of the test?\nDiscussion: describe how the results of the experiment would fit into the literature, as well as potential limitations (no study is perfect!)."
+  },
+  {
+    "objectID": "assessments/final/final.html#presentation",
+    "href": "assessments/final/final.html#presentation",
+    "title": "Final Project",
+    "section": "Presentation",
+    "text": "Presentation\nDates: last week of classes\nEach group will have 7-10 minutes to present their experiment. In addition to the Introduction, Methods, and Discussion (as described above), you are required to analyze simulated data of the experiment and interpret it with correct conclusions using \\(\\alpha=0.05\\). This includes calculating the appropriate point estimate, standardized statistic, and confidence interval. You may ask your instructor to help you obtain simulated data for your experiment (don’t wait until the week of presentations)."
+  },
+  {
+    "objectID": "assessments/final/final.html#rubric",
+    "href": "assessments/final/final.html#rubric",
+    "title": "Final Project",
+    "section": "Rubric",
+    "text": "Rubric\nEach component listed below will be graded with following scale.\n\n\n\n\n\n\n\n\n\n\nFull credit\n80%\nHalf Credit\n20%\nNo credit\n\n\n\n\nFully sufficient\nMinor errors\nMajor errors\nCritical errors\nNo effort was made\n\n\n\nWritten component (40%)\n\nIntroduction: sufficient background knowledge is provided on the subject matter; hypothesis is clearly stated\nMethods: experiment and analysis can be fully replicated\nDiscussion: limitations are discussed; future research areas are included based on your research\nReferences: at least 3 references are used and cited correctly\n\nPresentation (40%)\n\nIntroduction: motivation is clearly given; hypothesis is stated\nMethods: describe the setup of your experiment and statistical test\nResults: describe the results of your experiment; at least one visualization is included\nDiscussion: connect your results back to the hypothesis (what is the main takeaway?)\nAttendance: attended and listened to your peers present their findings\n\nPeer Review (20%)\n\nEach group member contributed approximately equally in the project\nNote: not participating with your group results in 0% for the final"
+  },
+  {
+    "objectID": "assessments/test.html",
+    "href": "assessments/test.html",
+    "title": "HW 1",
+    "section": "",
+    "text": "Instructions\nComplete the following problems and submit them on Canvas by the due date.\nSyllabus\n\nWhen does your instructor host office hours, and where?\nThe following table is an example of grades awarded for the semester. What is their final letter grade according to this course’s grading scheme?\n\nChapter P"
+  },
+  {
+    "objectID": "canvas.html",
+    "href": "canvas.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "Canvas is used for the following:\n\nAccessing textbook\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "References\nStat 218 Syllabus\nThe textbook (and related resources) can be found on Canvas under Wiley Course Resources.\nSimulation applets for our book can be found here: http://www.isi-stats.com/isi2nd/applets2021.html\n\nChapter P\n\nSlides\nData types activity\n\nChapter 1\n\nHandout\n\nChapter 2\nChapter 3\nChapter 4\nChapter 5\nChapter 6\nChapter 7\nChapter 10"
+  },
+  {
+    "objectID": "notes/ch0/data-types-activity.html",
+    "href": "notes/ch0/data-types-activity.html",
+    "title": "Data Types Activity",
+    "section": "",
+    "text": "In this activity, we will familiarize ourselves with data types by constructing data sets. Recall that quantitative data represents values that can take on any real number and that categorical data represents values that take on categories. For each of the following scenarios, construct a data set and identify each variable as quantitative or categorical. Additionally, state whether each variable could be summarized with a mean or proportion. Calculate the mean/proportion for these variables (for proportions, define the category of interest and calculate the proportion).\n\nMean: sum of values divided by the count of values\nProportion: count of category of interested divided by total count\n\nConstruct a data set consisting of the predicted weather forecast over the next five days. Include the variables of low temperature, high temperature, conditions (e.g., mostly sunny), and if there is at least a 20% chance of rain.\n\n\n\n\n\n\nConstruct a data set consisting of four student grades. Include the variables of course name, final grade percentage, and final course grade."
   },
   {
     "objectID": "notes/ch10/Notes218_Chapter_10.html",

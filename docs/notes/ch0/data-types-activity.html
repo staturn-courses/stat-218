@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>notes – STAT 218</title>
+<title>Data Types Activity – STAT 218</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">STAT 218</span>
     </a>
   </div>
@@ -95,15 +95,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./canvas.html"> 
+    <a class="nav-link" href="../../canvas.html"> 
 <span class="menu-text">Canvas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assignments.html"> 
+    <a class="nav-link" href="../../assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./notes.html" aria-current="page"> 
+    <a class="nav-link" href="../../notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
@@ -121,32 +121,40 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Types Activity</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p><strong>References</strong></p>
-<p><a href="./stat218-syllabus-f26.html">Stat 218 Syllabus</a></p>
-<p>The textbook (and related resources) can be found on Canvas under Wiley Course Resources.</p>
-<p>Simulation applets for our book can be found here: <a href="http://www.isi-stats.com/isi2nd/applets2021.html" class="uri">http://www.isi-stats.com/isi2nd/applets2021.html</a></p>
-<hr>
-<p><strong>Chapter P</strong></p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>In this activity, we will familiarize ourselves with data types by constructing data sets. Recall that quantitative data represents values that can take on any real number and that categorical data represents values that take on categories. For each of the following scenarios, construct a data set and identify each variable as quantitative or categorical. Additionally, state whether each variable could be summarized with a mean or proportion. Calculate the mean/proportion for these variables (for proportions, define the category of interest and calculate the proportion).</p>
 <ul>
-<li><a href="./notes/ch0/Notes218_Chapter_P.html">Slides</a></li>
-<li><a href="./notes/ch0/data-types-activity.html">Data types activity</a></li>
+<li>Mean: sum of values divided by the count of values</li>
+<li>Proportion: count of category of interested divided by total count</li>
 </ul>
-<p><strong>Chapter 1</strong></p>
-<ul>
-<li><a href="./notes/ch1/Notes218_Chapter_1.pdf">Handout</a></li>
-</ul>
-<p><strong>Chapter 2</strong></p>
-<p><strong>Chapter 3</strong></p>
-<p><strong>Chapter 4</strong></p>
-<p><strong>Chapter 5</strong></p>
-<p><strong>Chapter 6</strong></p>
-<p><strong>Chapter 7</strong></p>
-<p><strong>Chapter 10</strong></p>
+<p>Construct a data set consisting of the predicted weather forecast over the next five days. Include the variables of low temperature, high temperature, conditions (e.g., mostly sunny), and if there is at least a 20% chance of rain.</p>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<p>Construct a data set consisting of four student grades. Include the variables of course name, final grade percentage, and final course grade.</p>
 
 
 
