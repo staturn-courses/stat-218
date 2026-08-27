@@ -8,3 +8,5 @@
 **/*.quarto_ipynb
 /notes/old-notes/
 *.DS_Store
+
+old/
