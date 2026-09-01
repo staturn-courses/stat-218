@@ -21,6 +21,7 @@ Simulation applets for our book can be found here: <http://www.isi-stats.com/isi
 **Chapter 1**
 
 - [Handout](notes/ch1/Notes218_Chapter_1.qmd)
+- [Never accept the null](notes/ch1/never-accept-the-null.pdf)
 
 **Chapter 2**
 
