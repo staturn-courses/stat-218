@@ -1,0 +1,16 @@
+---
+title: "Chapter 1: One Proportion"
+format: html
+---
+
+In groups of 2-3, discuss the design of an experiment that could be analyzed using the methods discussed in Chapter 1. You do not need to conduct the experiment, but it should be designed so that it is feasible. Discuss and record the following:
+
+- Research question
+- Variable of interest, and type
+- Parameter
+- Statistic (choose a plausible value)
+- Sample size
+- If you collected data from your experiment, sketch what the data set would look like.
+- Using the theory approach, what is you standardized statistic?
+- Using the simulation approach, what is your p-value and standardized statistic?
+- What conclusion would you state given the standardized statistics and p-value?
