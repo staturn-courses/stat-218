@@ -8,4 +8,4 @@ Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.
 
 | Project | Due date | Data | Solutions | Notes |
 | :---: | :---: | :---: | :---: | :---: |
-| [Project 1](project1/project1.qmd) | September 18th | | | |
+| [Project 1](assessments/project1/project1.qmd) | September 18th | | | |
