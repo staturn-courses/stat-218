@@ -226,7 +226,7 @@ Remember that the standardized statistic calculates how many standard deviation 
 
 $$z = \ Standardized\ statistic\  = \frac{sample\ mean\  - null\ value}{standard\ deviation\ of\ sample\ mean} = \ \frac{\overline{x} - \mu_{0}}{\frac{\sigma}{\sqrt{n}}}$$
 
-Since $\sigma\$ is not usually known, we use the sample standard deviation (s) to approximate the standard deviation of sample mean
+Since $\sigma$ is not usually known, we use the sample standard deviation (s) to approximate the standard deviation of sample mean
 
 - This approximation is called the **standard error** (SE) of sample mean
 
