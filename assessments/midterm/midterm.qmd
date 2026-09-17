@@ -1,0 +1,17 @@
+---
+format: 
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 218}
+        \chead{Midterm}
+        \rhead{Fall 2026}
+        \rfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
+---
+
+Suppose that executives at Treasure Island Casino in Red Wing, MN are interested in learning about their customers. Through a mixture of in-person tracking technology 

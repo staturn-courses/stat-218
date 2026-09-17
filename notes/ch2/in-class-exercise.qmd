@@ -1,0 +1,23 @@
+---
+title: "Chapter 2: One Mean"
+format: html
+---
+
+In groups of 2-3, discuss the design of an experiment that could be analyzed using the methods discussed in Chapter 2 (inference of one mean). You do not need to conduct the experiment, but it should be designed so that it is feasible. Discuss and record the following:
+
+- Research question
+- Variable of interest, and type of variable
+- Parameter (definition and symbol)
+- Null and alternative hypotheses (in words and symbols)
+- Statistic
+
+    - Note: you will need two values here (i.e., sample mean and sample standard deviation)
+
+- Sample and sample size
+
+    - Note any possible sources of bias. How would you conduct the study with SRS, and how would you practically conduct the study?
+
+- In a spreadsheet program (e.g., Excel), write what the first few observations would look like.
+- Calculate the standardized statistic and state whether it Rejects or Fails To Reject the null hypothesis
+- What conclusion would you state given the standardized statistics? 
+- What type of error might your study have made? In context, what does it mean?

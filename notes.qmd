@@ -28,6 +28,7 @@ Simulation applets for our book can be found here: <http://www.isi-stats.com/isi
 **Chapter 2**
 
 - [Handout](notes/ch2/ch2-notes.pdf)
+- [Your turn!](notes/ch2/in-class-exercise.qmd)
 
 **Chapter 3**
 

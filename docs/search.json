@@ -98,102 +98,60 @@
     "text": "Example (Bike; in class)\nA bike company wants to test the effect of two brands of bike tires (Roadster and Trail-days) on the amount of miles ridden before the tires wear out. The company randomly selects 40 customers from their records and ask them to participate in the study in exchange for free tires. The participants were randomly assigned to either tire (20 participants to each tire brand). The data is summarized below, and you may assume that the data was not strongly skewed. Did the Roaster bike tires on average get more miles than the Trail-days tires?\n\n\n\n\n\n\n\n\nTire Brand\nMean (miles)\nSD (miles)\n\n\n\n\nRoadster\n2120\n201\n\n\nTrail-days\n2080\n196\n\n\n\n\nHow might the data look in a spreadsheet?\n\n\n    ...             ...             ...\n\n\nWhich variable is the explanatory variable?\nWhich variable is the response variable?\nWhat is the population of interest?\nWhat is the parameter of interest?\nSet up the null and alterative hypothesis.\n\n\n\\[H_{0}:\\]\n\\[\n{H_{A}:}\\]\n\n\nIntuitively, would you expect there to be a difference between the two tire brands?\nCalculate the standard error.\nCalculate the standardized statistic.\nCalculate the confidence interval.\nWrite a conclusion based on the research question."
   },
   {
-    "objectID": "notes/ch1/in-class-exercise.html",
-    "href": "notes/ch1/in-class-exercise.html",
-    "title": "Chapter 1: One Proportion",
+    "objectID": "notes/ch2/in-class-exercise.html",
+    "href": "notes/ch2/in-class-exercise.html",
+    "title": "Chapter 2: One Mean",
     "section": "",
-    "text": "In groups of 2-3, discuss the design of an experiment that could be analyzed using the methods discussed in Chapter 1. You do not need to conduct the experiment, but it should be designed so that it is feasible. Discuss and record the following:\n\nResearch question\nVariable of interest, and type\nParameter\nStatistic (choose a plausible value)\nSample size\nIf you collected data from your experiment, sketch what the data set would look like.\nUsing the theory approach, what is you standardized statistic?\nUsing the simulation approach, what is your p-value and standardized statistic?\nWhat conclusion would you state given the standardized statistics and p-value?"
+    "text": "In groups of 2-3, discuss the design of an experiment that could be analyzed using the methods discussed in Chapter 2 (inference of one mean). You do not need to conduct the experiment, but it should be designed so that it is feasible. Discuss and record the following:\n\nResearch question\nVariable of interest, and type of variable\nParameter (definition and symbol)\nNull and alternative hypotheses (in words and symbols)\nStatistic\n\nNote: you will need two values here (i.e., sample mean and sample standard deviation)\n\nSample and sample size\n\nNote any possible sources of bias. How would you conduct the study with SRS, and how would you practically conduct the study?\n\nIn a spreadsheet program (e.g., Excel), write what the first few observations would look like.\nCalculate the standardized statistic and state whether it Rejects or Fails To Reject the null hypothesis\nWhat conclusion would you state given the standardized statistics?\nWhat type of error might your study have made? In context, what does it mean?"
   },
   {
-    "objectID": "notes/ch0/data-types-activity.html",
-    "href": "notes/ch0/data-types-activity.html",
-    "title": "Data Types Activity",
+    "objectID": "notes/ch10/Notes218_Chapter_10.html",
+    "href": "notes/ch10/Notes218_Chapter_10.html",
+    "title": "Introduction",
     "section": "",
-    "text": "In this activity, we will familiarize ourselves with data types by constructing data sets. Recall that quantitative data represents values that can take on any real number and that categorical data represents values that take on categories. For each of the following scenarios, construct a data set and identify each variable as quantitative or categorical. Additionally, state whether each variable could be summarized with a mean or proportion. Calculate the mean/proportion for these variables (for proportions, define the category of interest and calculate the proportion).\n\nMean: sum of values divided by the count of values\nProportion: count of category of interested divided by total count\n\nConstruct a data set consisting of the predicted weather forecast over the next five days. Include the variables of low temperature, high temperature, conditions (e.g., mostly sunny), and if there is at least a 20% chance of rain.\n\n\n\n\n\n\nConstruct a data set consisting of four student grades. Include the variables of course name, final grade percentage, and final course grade."
+    "text": "Simple Linear Regression (SLR) is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables.\nExamples: fuel efficiency of cars and their weights; grade point average and number of classes skipped for high school students\nWe will be using three methods to look at regression.\n\nScatterplots\nCorrelation\nLine of best fit\n\n\n\\[y = mx + b\\]\n\n\nPrediction\nResiduals"
   },
   {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "STAT 218",
-    "section": "",
-    "text": "References\nStat 218 Syllabus\nThe textbook (and related resources) can be found on Canvas under Wiley Course Resources.\nSimulation applets for our book can be found here: http://www.isi-stats.com/isi2nd/applets2021.html\n\nChapter P\n\nSlides\nData types activity\nPractice problems\n\nChapter 1\n\nHandout\nNever accept the null\nYour turn!\nExploration\n\nChapter 2\n\nHandout\n\nChapter 3\nChapter 4\nChapter 5\nChapter 6\nChapter 7\nChapter 10"
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#scatterplots",
+    "href": "notes/ch10/Notes218_Chapter_10.html#scatterplots",
+    "title": "Introduction",
+    "section": "Scatterplots",
+    "text": "Scatterplots\nThe first step is to analyze the data graphically through the use of scatterplots.\n\nMay have called them x − y plots\nThe explanatory/predictor variable goes on the x−axis\nThe response variable goes on the y−axis\nThere is a dot on the plot for each point in the data set\n\nTo visually analyze, will look at four aspects:\n\nDirection: positive, negative or no relationship\nForm: Is the association linear (do the points follow a linear pattern) or some more complicated curve?\nStrength\n\nHow closely do the points follow a pattern?\nIf you imagine a line through the points, the points all fall pretty close to that line, the association is fairly strong\n\nUnusual Observations\n\nAre there any points that do not seem to adhere to the overall pattern\n\n\nExam example: The data is plotted below.\n\n\n\nhttps://s3.amazonaws.com/wiley-p/411/media/images/118/RT_w0240.png\n\n\nDirection:\n\nNegative (as time increases, scores tend to decrease)\n\nForm:\n\nSeems to be linear pattern\n\nStrength:\n\nModerately (points tend to fall closely to a line)\n\nUnusual observations:\n\nNone here"
   },
   {
-    "objectID": "canvas.html",
-    "href": "canvas.html",
-    "title": "STAT 218",
-    "section": "",
-    "text": "Canvas is used for the following:\n\nAccessing textbook\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#summarizing-the-relationship",
+    "href": "notes/ch10/Notes218_Chapter_10.html#summarizing-the-relationship",
+    "title": "Introduction",
+    "section": "Summarizing the Relationship",
+    "text": "Summarizing the Relationship\nIn addition to graphically, we will want to use numeric summaries.\nCorrelation Coefficient (r)\n\nMeasures the strength and direction of a linear association\n−1 ≤ r ≤ 1\nCloser to one of the extremes, the stronger the relationship\n\nIf r = 1 or r = −1, the points fall exactly in a straight line\nIf r=0, no linear relationship\n\nIf r is positive 🡪 positive relationship (also vice versa)\n\n\n\n\nTimeline Description automatically generated\n\n\nExamples:\n\n\n\nChart, scatter chart Description automatically generated"
   },
   {
-    "objectID": "assessments/test.html",
-    "href": "assessments/test.html",
-    "title": "HW 1",
-    "section": "",
-    "text": "Instructions\nComplete the following problems and submit them on Canvas by the due date.\nSyllabus\n\nWhen does your instructor host office hours, and where?\nThe following table is an example of grades awarded for the semester. What is their final letter grade according to this course’s grading scheme?\n\nChapter P"
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#example-growing-plates",
+    "href": "notes/ch10/Notes218_Chapter_10.html#example-growing-plates",
+    "title": "Introduction",
+    "section": "Example: Growing Plates?",
+    "text": "Example: Growing Plates?\nResearch question: Are dinner plates getting larger?\nThere are many recent articles and TV reports about the obesity problem. One reason some have given is that the size of differ plates are increasing. Are these black circles the same size, or is one larger than the other?\n\n\n\nA picture containing shape Description automatically generated\n\n\nThe circle on the right is about 20% larger than the one on the left. This suggests that people will put more food on larger dinner plates without knowing. This is known as Delboeuf illusion.\nResearchers gathered data to investigate the claim that dinner plates are growing by using American dinner plates sold on ebay on March 30th, 2010 (Van Ittersum and Wansink, 2011). The year manufactured and diameter are given below.\n\n\n\nTable Description automatically generated\n\n\nBoth year (explanatory) and diameter (response) are quantitative. Each dot on the plot below represents one plate.\n\n\n\nChart, scatter chart Description automatically generated\n\n\nThe data is trending upward, which indicates a positive association. We also do not see any curves within the data, which suggests this is a linear trend.\nThe regression equation is \\(\\widehat{y} = a + bx\\):\n\na is the y-intercept\nb is the slope\nx is a value of the explanatory variable\nŷ is the predicted value for the response variable\n\nFor a specific value of x, the corresponding distance \\(y - \\widehat{y}\\) (or actual – predicted) is a residual"
   },
   {
-    "objectID": "assessments/final/final.html",
-    "href": "assessments/final/final.html",
-    "title": "Final Project",
-    "section": "",
-    "text": "In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do not need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.\nFor your convenience, below are the eligible statistical tests:\n\nOne proportion\nTwo proportions\nOne mean\nTwo means\nPaired means"
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#residual",
+    "href": "notes/ch10/Notes218_Chapter_10.html#residual",
+    "title": "Introduction",
+    "section": "Residual",
+    "text": "Residual\nA residual is the vertical distance from a point to the regression line. This can also be described as the difference between an observed response and the corresponding predicted response.\nResidual = Observed - Predicted\n\nNegative residuals fall below the line (overestimate)\nPositive residuals are above the line (underestimate)\nEach observational unit has a residual"
   },
   {
-    "objectID": "assessments/final/final.html#overview",
-    "href": "assessments/final/final.html#overview",
-    "title": "Final Project",
-    "section": "",
-    "text": "In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do not need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.\nFor your convenience, below are the eligible statistical tests:\n\nOne proportion\nTwo proportions\nOne mean\nTwo means\nPaired means"
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#regression-line-for-growing-plate-example",
+    "href": "notes/ch10/Notes218_Chapter_10.html#regression-line-for-growing-plate-example",
+    "title": "Introduction",
+    "section": "Regression Line for Growing Plate example",
+    "text": "Regression Line for Growing Plate example\nSoftware will calculate the coefficients for us. The least squares line for the dinner plate data is \\(\\widehat{y} = - 14.8 + 0.0128x\\)\nOr \\(\\widehat{diameter} = - 14.8 + 0.0128(year)\\)\n\nThis allows us to predict plate diameter for a particular year.\n\nWhat is the predicted diameter for a plate manufactured in 2000?\n-14.8 + 0.0128(2000) = 10.8 in.\nWhat is the predicted diameter for a plate manufactured in 2001?\n\n-14.8 + 0.0128(2001) = 10.8128 in.\n\nHow does this compare to our prediction for the year 2000?\n\n0.0128 larger\n\nSlope b = 0.0128 means that diameters are predicted to increase by 0.0128 inches per year on average\nSlope is the predicted change in the response variable for one-unit change in the explanatory variable. Both the slope and the correlation coefficient for this study were positive.\n\nThe slope is 0.0128\nThe correlation is 0.604\n\nThe slope and correlation coefficient will always have the same sign.\nThe y-intercept is where the regression line crosses the y-axis or the predicted response when the explanatory variable equals 0.\n\nWe had a y-intercept of -14.8 in the dinner plate equation. What does this tell us about our dinner plate example?\n\nDinner plates in year 0 were -14.8 inches.\n\n\n\n\nHow can it be negative?\n\nThe equation works well within the range of values given for the explanatory variable, but fails outside that range.\n\nOur equation should only be used to predict the size of dinner plates from about 1950 to 2010."
   },
   {
-    "objectID": "assessments/final/final.html#description-of-experiment",
-    "href": "assessments/final/final.html#description-of-experiment",
-    "title": "Final Project",
-    "section": "Description of Experiment",
-    "text": "Description of Experiment\nThe purpose of your proposed experiment is to demonstrate your knowledge of the topics taught in our course. The following criteria must be met:\n\nExperiment is feasible to conduct.\nOutcomes occur due to a random (stochastic) process (no observational data).\nExperimental units are able to be randomly assigned (if applicable).\nHypothesis is reasonable with respect to the subject matter.\nExperiment can be ethically conducted."
-  },
-  {
-    "objectID": "assessments/final/final.html#written-component",
-    "href": "assessments/final/final.html#written-component",
-    "title": "Final Project",
-    "section": "Written Component",
-    "text": "Written Component\nDue date: by the end of the scheduled final exam\nThe written component of the final includes writing up your experiment in the style of academic research. Your paper should be around 3-5 pages and include the following:\n\nIntroduction: describe what is currently known about your topic and your hypothesis/objective. If testing one group/process, what value is reasonable to test against? For two groups/processes, what difference provides practical significance? Include at least three sources and cite them correctly.\nMethods: describe how you designed the experiment and the statistical test associated with the analysis. What are the experimental units, explanatory variable(s), response variable(s), and treatment groups? Describe how randomization occurs in the sampling and/or assignment. If appropriate, a diagram of your study would be helpful. What sample size is sufficient to meet the assumptions of the test?\nDiscussion: describe how the results of the experiment would fit into the literature, as well as potential limitations (no study is perfect!)."
-  },
-  {
-    "objectID": "assessments/final/final.html#presentation",
-    "href": "assessments/final/final.html#presentation",
-    "title": "Final Project",
-    "section": "Presentation",
-    "text": "Presentation\nDates: last week of classes\nEach group will have 7-10 minutes to present their experiment. In addition to the Introduction, Methods, and Discussion (as described above), you are required to analyze simulated data of the experiment and interpret it with correct conclusions using \\(\\alpha=0.05\\). This includes calculating the appropriate point estimate, standardized statistic, and confidence interval. You may ask your instructor to help you obtain simulated data for your experiment (don’t wait until the week of presentations)."
-  },
-  {
-    "objectID": "assessments/final/final.html#rubric",
-    "href": "assessments/final/final.html#rubric",
-    "title": "Final Project",
-    "section": "Rubric",
-    "text": "Rubric\nEach component listed below will be graded with following scale.\n\n\n\n\n\n\n\n\n\n\nFull credit\n80%\nHalf Credit\n20%\nNo credit\n\n\n\n\nFully sufficient\nMinor errors\nMajor errors\nCritical errors\nNo effort was made\n\n\n\nWritten component (40%)\n\nIntroduction: sufficient background knowledge is provided on the subject matter; hypothesis is clearly stated\nMethods: experiment and analysis can be fully replicated\nDiscussion: limitations are discussed; future research areas are included based on your research\nReferences: at least 3 references are used and cited correctly\n\nPresentation (40%)\n\nIntroduction: motivation is clearly given; hypothesis is stated\nMethods: describe the setup of your experiment and statistical test\nResults: describe the results of your experiment; at least one visualization is included\nDiscussion: connect your results back to the hypothesis (what is the main takeaway?)\nAttendance: attended and listened to your peers present their findings\n\nPeer Review (20%)\n\nEach group member contributed approximately equally in the project\nNote: not participating with your group results in 0% for the final"
-  },
-  {
-    "objectID": "assessments/project1/project1.html",
-    "href": "assessments/project1/project1.html",
-    "title": "Project 1",
-    "section": "",
-    "text": "Complete each problem using the scenario described below. You must type up your solutions and submit them as a pdf file to Canvas. While your solutions must be typed, you may show your work by attaching screenshots of legible handwriting. You are allowed to work with your classmates, but you are responsible for completing and submitting your own work (i.e., do not copy your classmate’s work verbatim).\n\nA television studio is deciding whether or not to produce a new season of their show. The format of the show is that each episode is a self-contained plot, meaning that the narrative of one episode is not largely dependent on the narrative of another episode. To get an idea of what the reviews for the next season may look like, the studio takes a random sample of 35 aired episodes and classifies their Metacritic reviews into the following categories:\n\nStrongly Unfavorable\nUnfavorable\nNeutral\nFavorable\nStrongly Favorable\n\nStudio producers will only fund the next season if they reasonably believe that more than 60% of the episodes will have a favorable or strongly favorable Metacritic review. However, the star actor will only return if he believes that 70% of the episodes are favorable or strongly favorable, and so the producers decide to use pi = 0.7 for their hypothesis test. From the sample of 35 episodes, 29 episodes had either favorable or strongly favorable reviews.\n\n\nWhat is the research question?\nWhat is the observational unit?\nWhat is the variable of interest, and is it categorical or quantitative?\nWhat is the parameter?\nWhat is the observed statistic?\nIn words and symbols, what are the null and alternative hypotheses?\nConduct 1000 simulations using the One Proportion applet. Attach a screenshot of your results.\nWhat p-value is reported from your simulations? Would this Reject or Fail to Reject the null hypothesis?\nCalculate the standardized statistic using the standard deviation from your simulations. Would this Reject or Fail to Reject the null hypothesis?\nIf conditions are met for the theory-based approach, calculate the standardized statistic. Would this Reject or Fail to Reject the null hypothesis? If the theory conditions are not met, explain why you should not use the theory-based approach.\nBased on your findings in Problems 8-10, write a one-sentence conclusion. If you have conflicting conclusions, choose the conclusion that occurred most often (e.g., for two R and one FTR, write your conclusion for the R)."
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "STAT 218",
-    "section": "",
-    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nSeptember 18th"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "STAT 218",
-    "section": "",
-    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 218 course.\nCourse description: The practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing."
+    "objectID": "notes/ch10/Notes218_Chapter_10.html#coefficient-of-determination",
+    "href": "notes/ch10/Notes218_Chapter_10.html#coefficient-of-determination",
+    "title": "Introduction",
+    "section": "Coefficient of Determination",
+    "text": "Coefficient of Determination\nWhile the intercept and slope have meaning in the context of year and diameter, remember that the correlation does not. It is just 0.604. However, the square of the correlation (coefficient of determination or r2) does have meaning.\n\nr2 = 0.6042 = 0.365 or 36.5%\n36.5% of the variation in plate size (or the response variable) can be explained by its linear association with the year (the explanatory variable)."
   },
   {
     "objectID": "notes/ch0/Notes218_Chapter_P.html#statistical-investigation",
@@ -329,53 +287,102 @@
     "text": "Gathering Evidence\nRandom Process: A random process is a process that can be repeated a very large number of times (theoretically infinitely many times) under identical conditions where outcomes cannot be known in advance.\nProbability: The probability of an outcome is the long run proportion of times that outcome would occur if a random process were repeated a very large number of times under identical conditions.\nSimulation: Artificially re-creating a random process.\n\nCan be done using computer, dice, cards, coins, etc…"
   },
   {
-    "objectID": "notes/ch10/Notes218_Chapter_10.html",
-    "href": "notes/ch10/Notes218_Chapter_10.html",
-    "title": "Introduction",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "STAT 218",
     "section": "",
-    "text": "Simple Linear Regression (SLR) is a statistical method that allows us to summarize and study relationships between two continuous (quantitative) variables.\nExamples: fuel efficiency of cars and their weights; grade point average and number of classes skipped for high school students\nWe will be using three methods to look at regression.\n\nScatterplots\nCorrelation\nLine of best fit\n\n\n\\[y = mx + b\\]\n\n\nPrediction\nResiduals"
+    "text": "This website is open to my students in the University of Nebraska-Lincoln’s STAT 218 course.\nCourse description: The practical application of statistical thinking to contemporary issues; collection and organization of data; probability distributions; statistical inference; estimation; and hypothesis testing."
   },
   {
-    "objectID": "notes/ch10/Notes218_Chapter_10.html#scatterplots",
-    "href": "notes/ch10/Notes218_Chapter_10.html#scatterplots",
-    "title": "Introduction",
-    "section": "Scatterplots",
-    "text": "Scatterplots\nThe first step is to analyze the data graphically through the use of scatterplots.\n\nMay have called them x − y plots\nThe explanatory/predictor variable goes on the x−axis\nThe response variable goes on the y−axis\nThere is a dot on the plot for each point in the data set\n\nTo visually analyze, will look at four aspects:\n\nDirection: positive, negative or no relationship\nForm: Is the association linear (do the points follow a linear pattern) or some more complicated curve?\nStrength\n\nHow closely do the points follow a pattern?\nIf you imagine a line through the points, the points all fall pretty close to that line, the association is fairly strong\n\nUnusual Observations\n\nAre there any points that do not seem to adhere to the overall pattern\n\n\nExam example: The data is plotted below.\n\n\n\nhttps://s3.amazonaws.com/wiley-p/411/media/images/118/RT_w0240.png\n\n\nDirection:\n\nNegative (as time increases, scores tend to decrease)\n\nForm:\n\nSeems to be linear pattern\n\nStrength:\n\nModerately (points tend to fall closely to a line)\n\nUnusual observations:\n\nNone here"
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nSeptember 18th"
   },
   {
-    "objectID": "notes/ch10/Notes218_Chapter_10.html#summarizing-the-relationship",
-    "href": "notes/ch10/Notes218_Chapter_10.html#summarizing-the-relationship",
-    "title": "Introduction",
-    "section": "Summarizing the Relationship",
-    "text": "Summarizing the Relationship\nIn addition to graphically, we will want to use numeric summaries.\nCorrelation Coefficient (r)\n\nMeasures the strength and direction of a linear association\n−1 ≤ r ≤ 1\nCloser to one of the extremes, the stronger the relationship\n\nIf r = 1 or r = −1, the points fall exactly in a straight line\nIf r=0, no linear relationship\n\nIf r is positive 🡪 positive relationship (also vice versa)\n\n\n\n\nTimeline Description automatically generated\n\n\nExamples:\n\n\n\nChart, scatter chart Description automatically generated"
+    "objectID": "assessments/project1/project1.html",
+    "href": "assessments/project1/project1.html",
+    "title": "Project 1",
+    "section": "",
+    "text": "Complete each problem using the scenario described below. You must type up your solutions and submit them as a pdf file to Canvas. While your solutions must be typed, you may show your work by attaching screenshots of legible handwriting. You are allowed to work with your classmates, but you are responsible for completing and submitting your own work (i.e., do not copy your classmate’s work verbatim).\n\nA television studio is deciding whether or not to produce a new season of their show. The format of the show is that each episode is a self-contained plot, meaning that the narrative of one episode is not largely dependent on the narrative of another episode. To get an idea of what the reviews for the next season may look like, the studio takes a random sample of 35 aired episodes and classifies their Metacritic reviews into the following categories:\n\nStrongly Unfavorable\nUnfavorable\nNeutral\nFavorable\nStrongly Favorable\n\nStudio producers will only fund the next season if they reasonably believe that more than 60% of the episodes will have a favorable or strongly favorable Metacritic review. However, the star actor will only return if he believes that 70% of the episodes are favorable or strongly favorable, and so the producers decide to use pi = 0.7 for their hypothesis test. From the sample of 35 episodes, 29 episodes had either favorable or strongly favorable reviews.\n\n\nWhat is the research question?\nWhat is the observational unit?\nWhat is the variable of interest, and is it categorical or quantitative?\nWhat is the parameter?\nWhat is the observed statistic?\nIn words and symbols, what are the null and alternative hypotheses?\nConduct 1000 simulations using the One Proportion applet. Attach a screenshot of your results.\nWhat p-value is reported from your simulations? Would this Reject or Fail to Reject the null hypothesis?\nCalculate the standardized statistic using the standard deviation from your simulations. Would this Reject or Fail to Reject the null hypothesis?\nIf conditions are met for the theory-based approach, calculate the standardized statistic. Would this Reject or Fail to Reject the null hypothesis? If the theory conditions are not met, explain why you should not use the theory-based approach.\nBased on your findings in Problems 8-10, write a one-sentence conclusion. If you have conflicting conclusions, choose the conclusion that occurred most often (e.g., for two R and one FTR, write your conclusion for the R)."
   },
   {
-    "objectID": "notes/ch10/Notes218_Chapter_10.html#example-growing-plates",
-    "href": "notes/ch10/Notes218_Chapter_10.html#example-growing-plates",
-    "title": "Introduction",
-    "section": "Example: Growing Plates?",
-    "text": "Example: Growing Plates?\nResearch question: Are dinner plates getting larger?\nThere are many recent articles and TV reports about the obesity problem. One reason some have given is that the size of differ plates are increasing. Are these black circles the same size, or is one larger than the other?\n\n\n\nA picture containing shape Description automatically generated\n\n\nThe circle on the right is about 20% larger than the one on the left. This suggests that people will put more food on larger dinner plates without knowing. This is known as Delboeuf illusion.\nResearchers gathered data to investigate the claim that dinner plates are growing by using American dinner plates sold on ebay on March 30th, 2010 (Van Ittersum and Wansink, 2011). The year manufactured and diameter are given below.\n\n\n\nTable Description automatically generated\n\n\nBoth year (explanatory) and diameter (response) are quantitative. Each dot on the plot below represents one plate.\n\n\n\nChart, scatter chart Description automatically generated\n\n\nThe data is trending upward, which indicates a positive association. We also do not see any curves within the data, which suggests this is a linear trend.\nThe regression equation is \\(\\widehat{y} = a + bx\\):\n\na is the y-intercept\nb is the slope\nx is a value of the explanatory variable\nŷ is the predicted value for the response variable\n\nFor a specific value of x, the corresponding distance \\(y - \\widehat{y}\\) (or actual – predicted) is a residual"
+    "objectID": "assessments/final/final.html",
+    "href": "assessments/final/final.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do not need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.\nFor your convenience, below are the eligible statistical tests:\n\nOne proportion\nTwo proportions\nOne mean\nTwo means\nPaired means"
   },
   {
-    "objectID": "notes/ch10/Notes218_Chapter_10.html#residual",
-    "href": "notes/ch10/Notes218_Chapter_10.html#residual",
-    "title": "Introduction",
-    "section": "Residual",
-    "text": "Residual\nA residual is the vertical distance from a point to the regression line. This can also be described as the difference between an observed response and the corresponding predicted response.\nResidual = Observed - Predicted\n\nNegative residuals fall below the line (overestimate)\nPositive residuals are above the line (underestimate)\nEach observational unit has a residual"
+    "objectID": "assessments/final/final.html#overview",
+    "href": "assessments/final/final.html#overview",
+    "title": "Final Project",
+    "section": "",
+    "text": "In groups of 2-3, your task is to design an experiment focused on one of the statistical tests discussed in our course. You do not need to conduct the experiment. There is a written and presented component of the final, where each part is equally weighted. Details of the experiment and assessments are below.\nFor your convenience, below are the eligible statistical tests:\n\nOne proportion\nTwo proportions\nOne mean\nTwo means\nPaired means"
   },
   {
-    "objectID": "notes/ch10/Notes218_Chapter_10.html#regression-line-for-growing-plate-example",
-    "href": "notes/ch10/Notes218_Chapter_10.html#regression-line-for-growing-plate-example",
-    "title": "Introduction",
-    "section": "Regression Line for Growing Plate example",
-    "text": "Regression Line for Growing Plate example\nSoftware will calculate the coefficients for us. The least squares line for the dinner plate data is \\(\\widehat{y} = - 14.8 + 0.0128x\\)\nOr \\(\\widehat{diameter} = - 14.8 + 0.0128(year)\\)\n\nThis allows us to predict plate diameter for a particular year.\n\nWhat is the predicted diameter for a plate manufactured in 2000?\n-14.8 + 0.0128(2000) = 10.8 in.\nWhat is the predicted diameter for a plate manufactured in 2001?\n\n-14.8 + 0.0128(2001) = 10.8128 in.\n\nHow does this compare to our prediction for the year 2000?\n\n0.0128 larger\n\nSlope b = 0.0128 means that diameters are predicted to increase by 0.0128 inches per year on average\nSlope is the predicted change in the response variable for one-unit change in the explanatory variable. Both the slope and the correlation coefficient for this study were positive.\n\nThe slope is 0.0128\nThe correlation is 0.604\n\nThe slope and correlation coefficient will always have the same sign.\nThe y-intercept is where the regression line crosses the y-axis or the predicted response when the explanatory variable equals 0.\n\nWe had a y-intercept of -14.8 in the dinner plate equation. What does this tell us about our dinner plate example?\n\nDinner plates in year 0 were -14.8 inches.\n\n\n\n\nHow can it be negative?\n\nThe equation works well within the range of values given for the explanatory variable, but fails outside that range.\n\nOur equation should only be used to predict the size of dinner plates from about 1950 to 2010."
+    "objectID": "assessments/final/final.html#description-of-experiment",
+    "href": "assessments/final/final.html#description-of-experiment",
+    "title": "Final Project",
+    "section": "Description of Experiment",
+    "text": "Description of Experiment\nThe purpose of your proposed experiment is to demonstrate your knowledge of the topics taught in our course. The following criteria must be met:\n\nExperiment is feasible to conduct.\nOutcomes occur due to a random (stochastic) process (no observational data).\nExperimental units are able to be randomly assigned (if applicable).\nHypothesis is reasonable with respect to the subject matter.\nExperiment can be ethically conducted."
   },
   {
-    "objectID": "notes/ch10/Notes218_Chapter_10.html#coefficient-of-determination",
-    "href": "notes/ch10/Notes218_Chapter_10.html#coefficient-of-determination",
-    "title": "Introduction",
-    "section": "Coefficient of Determination",
-    "text": "Coefficient of Determination\nWhile the intercept and slope have meaning in the context of year and diameter, remember that the correlation does not. It is just 0.604. However, the square of the correlation (coefficient of determination or r2) does have meaning.\n\nr2 = 0.6042 = 0.365 or 36.5%\n36.5% of the variation in plate size (or the response variable) can be explained by its linear association with the year (the explanatory variable)."
+    "objectID": "assessments/final/final.html#written-component",
+    "href": "assessments/final/final.html#written-component",
+    "title": "Final Project",
+    "section": "Written Component",
+    "text": "Written Component\nDue date: by the end of the scheduled final exam\nThe written component of the final includes writing up your experiment in the style of academic research. Your paper should be around 3-5 pages and include the following:\n\nIntroduction: describe what is currently known about your topic and your hypothesis/objective. If testing one group/process, what value is reasonable to test against? For two groups/processes, what difference provides practical significance? Include at least three sources and cite them correctly.\nMethods: describe how you designed the experiment and the statistical test associated with the analysis. What are the experimental units, explanatory variable(s), response variable(s), and treatment groups? Describe how randomization occurs in the sampling and/or assignment. If appropriate, a diagram of your study would be helpful. What sample size is sufficient to meet the assumptions of the test?\nDiscussion: describe how the results of the experiment would fit into the literature, as well as potential limitations (no study is perfect!)."
+  },
+  {
+    "objectID": "assessments/final/final.html#presentation",
+    "href": "assessments/final/final.html#presentation",
+    "title": "Final Project",
+    "section": "Presentation",
+    "text": "Presentation\nDates: last week of classes\nEach group will have 7-10 minutes to present their experiment. In addition to the Introduction, Methods, and Discussion (as described above), you are required to analyze simulated data of the experiment and interpret it with correct conclusions using \\(\\alpha=0.05\\). This includes calculating the appropriate point estimate, standardized statistic, and confidence interval. You may ask your instructor to help you obtain simulated data for your experiment (don’t wait until the week of presentations)."
+  },
+  {
+    "objectID": "assessments/final/final.html#rubric",
+    "href": "assessments/final/final.html#rubric",
+    "title": "Final Project",
+    "section": "Rubric",
+    "text": "Rubric\nEach component listed below will be graded with following scale.\n\n\n\n\n\n\n\n\n\n\nFull credit\n80%\nHalf Credit\n20%\nNo credit\n\n\n\n\nFully sufficient\nMinor errors\nMajor errors\nCritical errors\nNo effort was made\n\n\n\nWritten component (40%)\n\nIntroduction: sufficient background knowledge is provided on the subject matter; hypothesis is clearly stated\nMethods: experiment and analysis can be fully replicated\nDiscussion: limitations are discussed; future research areas are included based on your research\nReferences: at least 3 references are used and cited correctly\n\nPresentation (40%)\n\nIntroduction: motivation is clearly given; hypothesis is stated\nMethods: describe the setup of your experiment and statistical test\nResults: describe the results of your experiment; at least one visualization is included\nDiscussion: connect your results back to the hypothesis (what is the main takeaway?)\nAttendance: attended and listened to your peers present their findings\n\nPeer Review (20%)\n\nEach group member contributed approximately equally in the project\nNote: not participating with your group results in 0% for the final"
+  },
+  {
+    "objectID": "assessments/test.html",
+    "href": "assessments/test.html",
+    "title": "HW 1",
+    "section": "",
+    "text": "Instructions\nComplete the following problems and submit them on Canvas by the due date.\nSyllabus\n\nWhen does your instructor host office hours, and where?\nThe following table is an example of grades awarded for the semester. What is their final letter grade according to this course’s grading scheme?\n\nChapter P"
+  },
+  {
+    "objectID": "canvas.html",
+    "href": "canvas.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "Canvas is used for the following:\n\nAccessing textbook\nDiscussion/message board\nOnline quizzes\nSubmitting assignments/projects/tests\nChecking final course grades\n\nAll other material can be found on this webpage. If you wish to email me instead of using Canvas, please include your course number in the subject line."
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "STAT 218",
+    "section": "",
+    "text": "References\nStat 218 Syllabus\nThe textbook (and related resources) can be found on Canvas under Wiley Course Resources.\nSimulation applets for our book can be found here: http://www.isi-stats.com/isi2nd/applets2021.html\n\nChapter P\n\nSlides\nData types activity\nPractice problems\n\nChapter 1\n\nHandout\nNever accept the null\nYour turn!\nExploration\n\nChapter 2\n\nHandout\nYour turn!\n\nChapter 3\nChapter 4\nChapter 5\nChapter 6\nChapter 7\nChapter 10"
+  },
+  {
+    "objectID": "notes/ch0/data-types-activity.html",
+    "href": "notes/ch0/data-types-activity.html",
+    "title": "Data Types Activity",
+    "section": "",
+    "text": "In this activity, we will familiarize ourselves with data types by constructing data sets. Recall that quantitative data represents values that can take on any real number and that categorical data represents values that take on categories. For each of the following scenarios, construct a data set and identify each variable as quantitative or categorical. Additionally, state whether each variable could be summarized with a mean or proportion. Calculate the mean/proportion for these variables (for proportions, define the category of interest and calculate the proportion).\n\nMean: sum of values divided by the count of values\nProportion: count of category of interested divided by total count\n\nConstruct a data set consisting of the predicted weather forecast over the next five days. Include the variables of low temperature, high temperature, conditions (e.g., mostly sunny), and if there is at least a 20% chance of rain.\n\n\n\n\n\n\nConstruct a data set consisting of four student grades. Include the variables of course name, final grade percentage, and final course grade."
+  },
+  {
+    "objectID": "notes/ch1/in-class-exercise.html",
+    "href": "notes/ch1/in-class-exercise.html",
+    "title": "Chapter 1: One Proportion",
+    "section": "",
+    "text": "In groups of 2-3, discuss the design of an experiment that could be analyzed using the methods discussed in Chapter 1. You do not need to conduct the experiment, but it should be designed so that it is feasible. Discuss and record the following:\n\nResearch question\nVariable of interest, and type\nParameter\nStatistic (choose a plausible value)\nSample size\nIf you collected data from your experiment, sketch what the data set would look like.\nUsing the theory approach, what is you standardized statistic?\nUsing the simulation approach, what is your p-value and standardized statistic?\nWhat conclusion would you state given the standardized statistics and p-value?"
   },
   {
     "objectID": "notes/ch5/Notes218_Chapter_5.html",
