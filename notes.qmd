@@ -27,11 +27,13 @@ Simulation applets for our book can be found here: <http://www.isi-stats.com/isi
 
 **Chapter 2**
 
-- [Handout](notes/ch2/ch2-notes.pdf)
+- [Handout](notes/ch2/ch2-notes.pdf) | [Instructor copy](notes/ch2/ch2-notes-instructor-copy.pdf)
 - [Example problem](notes/ch2/in-class-practice.pdf) (not graded)
 - [Your turn!](notes/ch2/in-class-exercise.qmd)
 
 **Chapter 3**
+
+- [Handout](notes/ch3/ch3-notes.docx)
 
 **Chapter 4**
 
