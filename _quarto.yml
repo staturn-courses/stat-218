@@ -5,6 +5,7 @@ project:
     - "*.qmd"
   resources:
     - "*.pdf"
+    - "*.docx"
   
 website:
   title: "STAT 218"
