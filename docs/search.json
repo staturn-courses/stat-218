@@ -298,7 +298,7 @@
     "href": "assignments.html",
     "title": "STAT 218",
     "section": "",
-    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nSeptember 18th"
+    "text": "Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.\n\n\n\nProject\nDue date\nData\nSolutions\nNotes\n\n\n\n\nProject 1\nSeptember 18th\n\nSolutions"
   },
   {
     "objectID": "assessments/project1/project1.html",
@@ -348,6 +348,13 @@
     "title": "Final Project",
     "section": "Rubric",
     "text": "Rubric\nEach component listed below will be graded with following scale.\n\n\n\n\n\n\n\n\n\n\nFull credit\n80%\nHalf Credit\n20%\nNo credit\n\n\n\n\nFully sufficient\nMinor errors\nMajor errors\nCritical errors\nNo effort was made\n\n\n\nWritten component (40%)\n\nIntroduction: sufficient background knowledge is provided on the subject matter; hypothesis is clearly stated\nMethods: experiment and analysis can be fully replicated\nDiscussion: limitations are discussed; future research areas are included based on your research\nReferences: at least 3 references are used and cited correctly\n\nPresentation (40%)\n\nIntroduction: motivation is clearly given; hypothesis is stated\nMethods: describe the setup of your experiment and statistical test\nResults: describe the results of your experiment; at least one visualization is included\nDiscussion: connect your results back to the hypothesis (what is the main takeaway?)\nAttendance: attended and listened to your peers present their findings\n\nPeer Review (20%)\n\nEach group member contributed approximately equally in the project\nNote: not participating with your group results in 0% for the final"
+  },
+  {
+    "objectID": "assessments/project1/project1-solutions.html",
+    "href": "assessments/project1/project1-solutions.html",
+    "title": "Project 1 Solutions",
+    "section": "",
+    "text": "Problem 1\nAre Metacritic reviews of the show expected to be at least 60% favorable or strongly favorable?\n\n\nProblem 2\nThe observational unit is the Metacritic review of one episode.\n\n\nProblem 3\nMetacritic review; categorical (either favorable or strongly favorable, or other rating)\n\n\nProblem 4\nLong run proportion of episodes that have a favorable or strongly favorable Metacritic review (\\(\\pi\\))\n\n\nProblem 5\n29/35 = 0.8285714\n\n\nProblem 6\n\nH0: The long run proportion of episodes that have a favorable or strongly favorable Metacritic review is equal to 0.6.\n\n\nHA: The long run proportion of episodes that have a favorable or strongly favorable Metacritic review is greater than 0.6.\n\n\\[\nH_0:\\pi=0.6\n\\]\n\\[\nH_A: \\pi\\gt0.6\n\\]\n\n\nProblem 7\n\n\n\nSolutions will vary\n\n\n\n\nProblem 8\nApproximately 0.0030 (solutions will vary). This rejects the null hypothesis since p-value &lt; 0.05.\n\n\nProblem 9\n\\(Z=\\frac{\\hat{p}-\\pi}{SD}\\approx 2.753873\\). This is outside the 2’s and rejects the null hypothesis.\n\n\nProblem 10\nConditions are not met for the theory-based approach since there are not at least 10 successes and 10 failures.\n\n\nProblem 11\nThere is evidence to conclude that the long run proportion of episodes that have a favorable or strongly favorable Metacritic review is greater than 0.6. They can produce the next season!"
   },
   {
     "objectID": "assessments/test.html",
