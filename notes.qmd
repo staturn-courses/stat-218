@@ -39,6 +39,8 @@ Simulation applets for our book can be found here: <http://www.isi-stats.com/isi
 
 - [In-class problems](notes/ch3/Chapter 3 Problems.docx)
 
+    - [Solutions](notes/ch3/ch3-problems-key.pdf)
+
 **Chapter 4**
 
 **Chapter 5**

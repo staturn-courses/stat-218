@@ -1,0 +1,33 @@
+---
+title: "Project 2"
+date: "10/02/26"
+date-format: "MMMM D, YYYY [by 5 p.m.]"
+published-title: "Due date"
+format: 
+  html: default
+---
+
+Complete each problem using the scenario described below. You must type up your solutions and submit them as a pdf file to Canvas. While your solutions must be typed, you may show your work by attaching screenshots of legible handwriting. You are allowed to work with your classmates, but you are responsible for completing and submitting your own work (i.e., do not copy your classmate's work verbatim).
+
+---
+
+A study of the Minnesota River is measuring the amount of Nitrogen in mg/L. Historical records suggest that the average quantity is 4.19 mg/L. To conduct their study, they take 40 water samples from randomly determined locations from the river. 
+
+1. What is the population of interest?
+2. What is the observational unit?
+3. What is the sample?
+4. Why is it important that the sample locations were randomized.
+
+Some samples were taken in slow moving portions of the river and other samples were taken in fast moving portions of the river. In the sampled region, it is known that 70 percent of the river is fast moving. When reviewing the data, 26 of the samples came from fast moving portions of the river. Res
+
+5. Define the parameter of interest, using words and symbols.
+6. Set up the null and alternative hypotheses
+7. Calculate the standardized statistic using the theory-based approach.
+8. Calculate the 95% confidence interval.
+9. Write a conclusion that satisfies the research question.
+
+
+
+
+
+
