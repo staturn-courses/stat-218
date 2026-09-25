@@ -1,33 +1,59 @@
 ---
 title: "Project 2"
 date: "10/02/26"
-date-format: "MMMM D, YYYY [by 5 p.m.]"
+date-format: "MMMM D, YYYY [by 11:59 p.m.]"
 published-title: "Due date"
 format: 
   html: default
+execute:
+  echo: false
 ---
 
 Complete each problem using the scenario described below. You must type up your solutions and submit them as a pdf file to Canvas. While your solutions must be typed, you may show your work by attaching screenshots of legible handwriting. You are allowed to work with your classmates, but you are responsible for completing and submitting your own work (i.e., do not copy your classmate's work verbatim).
 
 ---
 
-A study of the Minnesota River is measuring the amount of Nitrogen in mg/L. Historical records suggest that the average quantity is 4.19 mg/L. To conduct their study, they take 40 water samples from randomly determined locations from the river. 
+A study of the Minnesota River is measuring the amount of Nitrogen in mg/L. Historical records suggest that the average quantity of Nitrogen is 4.19 mg/L. To conduct their study, researchers take 40 water samples from randomly determined locations from the river and measure the quantity of Nitrogen. They are interested in if Nitrogen has increased from the historical average. 
 
 1. What is the population of interest?
 2. What is the observational unit?
 3. What is the sample?
-4. Why is it important that the sample locations were randomized.
+4. Why is it important that the sample locations were randomized? What could happen if they took all 40 samples from the same location?
 
-Some samples were taken in slow moving portions of the river and other samples were taken in fast moving portions of the river. In the sampled region, it is known that 70 percent of the river is fast moving. When reviewing the data, 26 of the samples came from fast moving portions of the river. Res
+--- 
 
-5. Define the parameter of interest, using words and symbols.
-6. Set up the null and alternative hypotheses
-7. Calculate the standardized statistic using the theory-based approach.
-8. Calculate the 95% confidence interval.
-9. Write a conclusion that satisfies the research question.
+A histogram of the data is plotted below. The mean of the samples was computed to be 4.23 mg/L and the standard deviation was computed to be 0.19.
+
+```{r}
+set.seed(218)
+y <- rnorm(40, 4.23, 1/6)
+
+library(ggplot2)
+ggplot(mapping = aes(x = y)) + 
+  geom_histogram(bins = 10, color = 'black', fill = '#1a80bb',
+                 ) + 
+  theme_bw() + 
+  labs(x = 'Nitrogen (mg/L)',
+       title = 'Histogram of Nitrogen',
+       subtitle = 'Minnesota River',
+       y = 'Count')
+```
 
 
+5. Are the validity conditions met for using the theory-based approach? Explain why or why not.
+6. Define the null and alternative hypotheses in words.
+7. Define the null and alternative hypotheses in symbols.
+8. Compute the standardized statistic. Does this reject or fail to reject the null hypothesis?
+9. Compute and interpret the 95% confidence interval. Does this interval reject or fail to reject the null hypothesis?
+10. Write a conclusion that satisfies the research question.
 
+---
+
+The results of the lab analysis also showed that 11 of the 40 samples had sulfate quantities that exceeded the safe limit, although the specific test did not provide the exact quantities of sulfate. Knowing that another set of water samples would have different results, the researchers want to estimate the proportion of samples that exceed the safe limit of sulfate. 
+
+11. Define the parameter of interest in words and provide its appropriate symbol. 
+12. Compute the 95% confidence interval and interpret its meaning.
+13. Would it be accurate to say that more than 10% of samples have sulfate quantities that exceed the safe limit? Explain why or why not? 
 
 
 
