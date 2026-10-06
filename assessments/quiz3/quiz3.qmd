@@ -1,0 +1,49 @@
+---
+format: 
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 218}
+        \chead{Quiz 3}
+        \rhead{Fall 2026}
+        \rfoot{\thepage}
+        \setlength{\headheight}{14pt}
+        \pagenumbering{gobble}
+    fig-align: center
+---
+
+In groups of 2–3, answer the following questions. For any calculation-based question, you only need to set up the calculation by writing the appropriate formula and substituting the given values. You do not need to carry out the calculation.
+
+---
+
+A large grocery store chain is preparing a new marketing campaign and wants to better understand its customers. Through data analytics, the research team took a random sample of 40 regular customers and recorded:
+
+- Average transaction amount: the average amount of money the customer spends each time they make a purchase.
+- Payment method: whether the customer typically pays with cash, card, or check. A "success" is considered payment by card.
+
+1. What is the population of interest?
+2. What is the observational unit?
+3. For each variable, identify whether the variable is categorical or quantitative, and write out the parameter in both words and symbols.
+
+---
+
+Researchers decided to first look at payment method. From the sample of 40 regular customers, they found that 29 of them (72.5%) preferred to pay with card and want to test whether this is less than the national average of 84%. 
+
+4. In symbols, write the hypothesis test that the researchers are conducting.
+5. Set up the calculation for the standardized statistic. 
+6. Set up the calculation for the 95% confidence interval.
+7. The p-value was found to be 0.02363. Using a significance level of 0.05, what conclusion would the researchers make?
+
+---
+
+When analyzing the average transaction amount per customer, the average amount spent was \$92 with a standard deviation of \$45. This distribution of average transaction amounts was found to be approximately symmetric without strong skew. 
+
+8. Set up the calculation for the 95% confidence interval for the mean amount spent per transaction.
+9. The 95% confidence interval was found to be (\$77.77, \$106.23). Explain what this confidence interval means in context.
+
+
+
+

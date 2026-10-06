@@ -1,0 +1,30 @@
+---
+format: 
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 218}
+        \rhead{Standard Error Formulas}
+        \rfoot{\thepage}
+        \setlength{\headheight}{14pt}
+        \pagenumbering{gobble}
+    fig-align: center
+---
+
+$$
+SE=\sqrt{\frac{\pi_0(1-\pi_0)}{n}}
+$$
+\vspace{1in}
+
+$$
+SE=\sqrt{\frac{\hat p(1-\hat p)}{n}}
+$$
+
+\vspace{1in}
+
+$$
+SE=\frac{s}{\sqrt{n}}
+$$

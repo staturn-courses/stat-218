@@ -6,6 +6,7 @@ project:
   resources:
     - "*.pdf"
     - "*.docx"
+    - "*.xlsx"
   
 website:
   title: "STAT 218"
