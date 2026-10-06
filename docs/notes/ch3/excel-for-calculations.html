@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>notes – STAT 218</title>
+<title>Excel for Calculations – STAT 218</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9d96f532d65220ca877c0304385df42f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -84,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">STAT 218</span>
     </a>
   </div>
@@ -95,15 +124,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./canvas.html"> 
+    <a class="nav-link" href="../../canvas.html"> 
 <span class="menu-text">Canvas</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assignments.html"> 
+    <a class="nav-link" href="../../assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./notes.html" aria-current="page"> 
+    <a class="nav-link" href="../../notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
@@ -121,56 +150,68 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Excel for Calculations</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p><strong>References</strong></p>
-<p><a href="./stat218-syllabus-f26.html">Stat 218 Syllabus</a></p>
-<p>The textbook (and related resources) can be found on Canvas under Wiley Course Resources.</p>
-<p>Simulation applets for our book can be found here: <a href="http://www.isi-stats.com/isi2nd/applets2021.html" class="uri">http://www.isi-stats.com/isi2nd/applets2021.html</a></p>
-<hr>
-<p><strong>Chapter P</strong></p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Microsoft Excel is a widely used spreadsheet program for storing and using data. Here, we will look at how to use Excel for helping us with our calculations.</p>
+<p>The data below is available on the course webpage as Corn yield: computations using Excel.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="excel-corn.png" class="img-fluid figure-img"></p>
+<figcaption>First few observations</figcaption>
+</figure>
+</div>
+<p>Three variables are present.</p>
 <ul>
-<li><a href="./notes/ch0/Notes218_Chapter_P.html">Slides</a></li>
-<li><a href="./notes/ch0/data-types-activity.html">Data types activity</a></li>
-<li><a href="notes/ch0/example-problems.pdf">Practice problems</a></li>
+<li>id: the identifier for the observational unit</li>
+<li>uses_cover_crops: identifies whether cover crops were used or not</li>
+<li>yield: the yield of corn.</li>
 </ul>
-<p><strong>Chapter 1</strong></p>
+<p>Suppose that farmers want to know if the long-run proportion of crops from their population that use cover crops is greater than 50%. We would establish this test as follows:</p>
+<p><span class="math display">\[
+H_0: \pi=0.5
+\]</span></p>
+<p><span class="math display">\[
+H_A:\pi&gt;0.5
+\]</span></p>
+<p>We first need to calculate the proportion of crops that are “yes” and the total number of crops. The easiest way to do this in Excel is to use PivotTables. This can be accomplished by selecting the columns of our data and selecting Insert -&gt; PivotTable. Counts for each category of uses_cover_crops can be computed by dragging uses_cover_crops to the Rows and Values sections of the PivotTable Fields.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="categorical-pt.png" class="img-fluid figure-img"></p>
+<figcaption>PivotTable</figcaption>
+</figure>
+</div>
+<p>From here, we can now compute our statistic, <span class="math inline">\(\hat{p}\)</span>, and our standardized statistic / confidence intervals. To have Excel do these computations for use, in an empty cell, use “=44/100” to get our sample proportion. Then, enter the following into another empty cell: “=(Cell of sample proportion-0.5)/SQRT((0.5*(1-0.5))/100)“. For confidence intervals, we use our formula across two cells to get the lower and upper limits.</p>
 <ul>
-<li><a href="./notes/ch1/Notes218_Chapter_1.pdf">Handout</a></li>
-<li><a href="notes/ch1/never-accept-the-null.pdf">Never accept the null</a></li>
-<li><a href="./notes/ch1/in-class-exercise.html">Your turn!</a></li>
-<li><a href="notes/ch1/Exploration1-4.pdf">Exploration</a></li>
+<li>Lower Confidence Limit: =p_hat cell-2*SQRT((p_hat cell*(1-p_hat cell))/100)</li>
+<li>Upper Confidence Limit: =p_hat cell+2*SQRT((p_hat cell*(1-p_hat cell))/100)</li>
 </ul>
-<p><strong>Chapter 2</strong></p>
-<ul>
-<li><a href="notes/ch2/ch2-notes.pdf">Handout</a> | <a href="notes/ch2/ch2-notes-instructor-copy.pdf">Instructor copy</a></li>
-<li><a href="notes/ch2/in-class-practice.pdf">Example problem</a> (not graded)</li>
-<li><a href="./notes/ch2/in-class-exercise.html">Your turn!</a></li>
-</ul>
-<p><strong>Chapter 3</strong></p>
-<ul>
-<li><p><a href="notes/ch3/ch3-notes.docx">Handout</a></p>
-<ul>
-<li><a href="notes/ch3/ch3-notes-inclass.pdf">Notes from Tuesday</a></li>
-</ul></li>
-<li><p><a href="notes/ch3/Chapter 3 Problems.docx">In-class problems</a></p>
-<ul>
-<li><a href="notes/ch3/ch3-problems-key.pdf">Solutions</a></li>
-</ul></li>
-<li><p><a href="./notes/ch3/excel-for-calculations.html">Excel Example</a></p></li>
-<li><p><a href="notes/data/corn-yield.xlsx">Corn yield</a>: computations using Excel</p></li>
-</ul>
-<p><strong>Chapter 4</strong></p>
-<ul>
-<li>Handout: <a href="notes/ch4/handout4.docx">docx</a>; <a href="notes/ch4/handout4.pdf">pdf</a></li>
-</ul>
-<p><strong>Chapter 5</strong></p>
-<p><strong>Chapter 6</strong></p>
-<p><strong>Chapter 7</strong></p>
-<p><strong>Chapter 10</strong></p>
+<p>It may also be helpful to precalculate the standard error before doing these calculations.</p>
+<p>For quantitative data, like yield, you can use PivotTables to calculate the mean and standard deviation. However, we can also use formulas for this calculation. Using “=AVERAGE(Column)” and “=STDEV(Column)”, we can get these values and compute our standardized statistics and confidence intervals in a similar fashion. For example, in an empty cell, we can compute the standard error as “=STDEV(Column)/SQRT(100)” and get the confidence intervals by computing <span class="math inline">\(\bar{x}\pm2\times SE\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="quant-ci.png" class="img-fluid figure-img"></p>
+<figcaption>95% Confidence Intervals</figcaption>
+</figure>
+</div>
 
 
 
