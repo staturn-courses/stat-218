@@ -44,7 +44,7 @@ Simulation applets for our book can be found here: <http://www.isi-stats.com/isi
 - [Excel Example](notes/ch3/excel-for-calculations.qmd)
 - [Corn yield](notes/data/corn-yield.xlsx): computations using Excel
 
-**Exam 1 Review**
+**Midterm**
 
 - [Review](notes/F26_Exam1_Review.docx)
 
