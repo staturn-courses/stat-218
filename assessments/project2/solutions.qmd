@@ -1,0 +1,20 @@
+---
+title: "Project 2 Solutions"
+format: html
+---
+
+1. All possible water samples in the MN River.
+2. One water sample from MN River.
+3. 40 water samples
+4. Localized Nitrogen quantities could bias the results. Taking samples from randomly determined locations would be better representative of Nitrogen in the river.
+5. Yes. The sample size is large and the distribution is not largely skewed.
+6. $H_0$: The long run average quantity of Nitrogen in the MN River is equal to 4.19 mg/L. $H_A$: The long run average quantity of Nitrogen in the MN River is greater than 4.19 mg/L.
+7. $H_0:\mu=4.19 \text{ vs. }H_A:\mu>4.19$
+8. $$\frac{4.23-4.19}{0.19/\sqrt{40}}=1.331485$$. This value is inside the 2's and rejects the null hypothesis.
+9. $$4.23\pm2\cdot 0.19/\sqrt{40}=(4.169917,4.290083)$$. The value of 4.19 is inside this interval and thus a plausible value for the average quantity of Nitrogen. This rejects the null hypothesis.
+10. There is not evidence to conclude that the true average quantity of Nitrogen in mg/L is greater than the historical average of 4.19 mg/L. 
+11. The long-run proportion of water samples with sulfate quantities that exceed the safe limit, $\pi$
+12. $$\frac{11}{40}\pm 2\cdot \sqrt{\frac{(11/40)(1-11/40)}{40}}=(0.1337998,0.4162002)$$. We are 95% confident that the true proportion of water samples from the MN River that have sulfate quantities that exceed the safe limit is between 0.1337998 and 0.4162002. 
+13. Since we can expect the proportion of samples with unsafe sulfate levels to change with different samples, we can test $H_0:\pi=0.1\text{ vs. }H_A:\pi>0.1$. Since 0.1 is less than the entire confidence interval, we can conclude with 95% confidence that the true proportion of water samples from the MN River would be greater than 0.1.
+
+
