@@ -10,3 +10,6 @@
 *.DS_Store
 
 old/
+grades/
+assessments/midterm/
+.gitignore

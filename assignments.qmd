@@ -10,3 +10,9 @@ Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.
 | :---: | :---: | :---: | :---: | :---: |
 | [Project 1](assessments/project1/project1.qmd) | September 18th | | [Solutions](assessments/project1/project1-solutions.qmd) | |
 | [Project 2](assessments/project2/project2.qmd) | October 2nd at 11:59 pm | | [Solutions](assessments/project2/solutions.qmd) | |
+
+---
+
+Final Project
+
+- [Information](assessments/final/final.qmd)

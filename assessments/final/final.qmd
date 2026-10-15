@@ -45,7 +45,7 @@ Each group will have 7-10 minutes to present their experiment. In addition to th
 
 Each component listed below will be graded with following scale.
 
-| Full credit | 80% | Half Credit | 20% | No credit |
+| Full credit | 75% | Half Credit | 25% | No credit |
 | --- | --- | --- | --- | --- |
 | Fully sufficient | Minor errors | Major errors  | Critical errors | No effort was made | 
 
@@ -66,7 +66,7 @@ Each component listed below will be graded with following scale.
 - Discussion: connect your results back to the hypothesis (what is the main takeaway?)
 - Attendance: attended and listened to your peers present their findings
 
-**Peer Review** (20%)
+**Peer Evaluation** (20%)
 
 - Each group member contributed approximately equally in the project
 - Note: not participating with your group results in 0% for the final
