@@ -1,0 +1,25 @@
+---
+title: "Your turn!"
+format: html
+---
+
+Read the extended abstract located under Chapter 4's material. In groups, discuss the following:
+
+1. What is the research objective?
+2. What is the ideal population of interest?
+3. What sample will the researchers use?
+4. What explanatory variables are the researchers using? Are these categorical or quantitative?
+5. What is the response variable? Is this categorical or quantitative?
+6. As designed, can a cause-and-effect relationship be determined between the explanatory variables and the response variables? 
+7. As designed, to what population can the results be generalized to?
+
+---
+
+When writing the conclusion for a research study, there are four possible types of statements that can be made. Each group will be assigned to one type of statement. Explain how this study could be designed so that your statement type is valid.
+
+1. Association for participants in the study.
+2. Association for the population.
+3. Cause-and-effect for participants in the study.
+4. Cause-and-effect for the population.
+
+Suppose that 3D-printed charts showed lower accuracy than the 2D charts. Write the appropriate statement for your given experimental design.

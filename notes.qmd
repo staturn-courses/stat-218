@@ -51,8 +51,9 @@ Simulation applets for our book can be found here: <http://www.isi-stats.com/isi
 **Chapter 4**
 
 - Handout: [docx](notes/ch4/handout4.docx); [pdf](notes/ch4/handout4.pdf)
-- [Writing claims](notes/ch4/CH4_Writing_claims.docx)
 - Alcohol study: [CNN Article](notes/ch4/alcohol_article_CNN.pdf) | [Study Paper](notes/ch4/alcohol_article_paper.pdf) | [Questions](notes/ch4/alcohol_questions.docx)
+- [Writing claims](notes/ch4/CH4_Writing_claims.docx)
+- [Your turn!](notes/ch4/your-turn.qmd) | [Extended abstract](notes/ch4/graphics-abstract.pdf)
 
 **Chapter 5**
 
