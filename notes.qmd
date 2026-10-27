@@ -57,9 +57,11 @@ Simulation applets for our book can be found here: <http://www.isi-stats.com/isi
 
 **Chapter 5**
 
-- [Handout 5](notes/flipped/Notes218_Chapter5.docx)
+- [Handout 5](notes/flipped/Notes218_Chapter_5.docx)
 
 **Chapter 6**
+
+- [Handout 6](notes/flipped/Notes218_Chapter_6.docx)
 
 **Chapter 7**
 
