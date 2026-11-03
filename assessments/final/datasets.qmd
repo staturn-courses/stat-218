@@ -1,0 +1,88 @@
+---
+title: "Datasets for Final"
+format: html
+execute:
+  echo: false
+---
+
+On this page, you can find many possible datasets to use for the final project. 
+
+```{r}
+library(stringr)
+all.files <- list.files('data/', pattern = '.csv') %>% 
+  str_sort(numeric = T)
+one.mean <- all.files[str_detect(all.files, 'one-mean')]
+one.prop <- all.files[str_detect(all.files, 'one-prop')]
+two.mean <- all.files[str_detect(all.files, 'two-mean')]
+two.prop <- all.files[str_detect(all.files, 'two-prop')]
+paired <- all.files[str_detect(all.files, 'pair')]
+```
+
+
+## Proportions
+
+::: {layout-ncol=2}
+
+### One Proportion
+
+```{r}
+#| output: asis
+
+cat(paste0(
+  "- [", one.prop, "]",
+  "(data/", one.prop, ")\n"
+))
+```
+
+### Two Proportions
+
+```{r}
+#| output: asis
+
+cat(paste0(
+  "- [", two.prop, "]",
+  "(data/", two.prop, ")\n"
+))
+```
+
+:::
+
+## Means
+
+::: {layout-ncol=3}
+
+### One Mean
+
+```{r}
+#| output: asis
+
+cat(paste0(
+  "- [", one.mean, "]",
+  "(data/", one.mean, ")\n"
+))
+```
+
+### Two Means
+
+```{r}
+#| output: asis
+
+cat(paste0(
+  "- [", two.mean, "]",
+  "(data/", two.mean, ")\n"
+))
+```
+
+### Paired Data
+
+```{r}
+#| output: asis
+
+cat(paste0(
+  "- [", paired, "]",
+  "(data/", paired, ")\n"
+))
+```
+
+:::
+
