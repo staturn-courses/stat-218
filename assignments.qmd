@@ -17,3 +17,4 @@ Unless otherwise stated, all assignments are due by 5 p.m. on Canvas.
 Final Project
 
 - [Information](assessments/final/final.qmd)
+- [Datasets](assessments/final/datasets.qmd)

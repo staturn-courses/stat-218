@@ -5,7 +5,7 @@ execute:
   echo: false
 ---
 
-On this page, you can find many possible datasets to use for the final project. 
+On this page, you can find many simulated datasets to use for the final project. Your are free to simulate your own data, but these are provided for convenience. 
 
 ```{r}
 library(stringr)
@@ -20,6 +20,8 @@ paired <- all.files[str_detect(all.files, 'pair')]
 
 
 ## Proportions
+
+In these datasets, 0 represents a "failure" and 1 represents a "success". Taking the average of the response columns (per group) will provide the sample proportion of success.
 
 ::: {layout-ncol=2}
 
@@ -48,6 +50,8 @@ cat(paste0(
 :::
 
 ## Means
+
+These are the numeric responses for each observation. For the paired data, you will need to calculate the difference between the "first" and "second" columns.
 
 ::: {layout-ncol=3}
 
