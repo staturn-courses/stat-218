@@ -1,4 +1,6 @@
 ---
+title: "Chapter 6 Quiz"
+subtitle: "STAT 218"
 format: 
   html: default
   pdf: default
