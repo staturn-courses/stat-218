@@ -1,0 +1,17 @@
+{
+  "hash": "48da3d8b86d856cdd41873a056f3680f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Chapter 6 Quiz\"\nformat: \n  html: default\n  pdf: default\n---\n\nA data analyst at YouTube is interested in determining whether users watch more videos on weekends than on weekdays. To investigate this question, the analyst randomly selects 400 YouTube users from the platform's user population who watch YouTube on a daily basis. Using each user's viewing history over the previous month, the analyst calculates the average number of minutes each user spends watching YouTube per day on weekdays and weekends. The analyst then randomly assigns each participant so that the number of minutes watched is averaged for weekdays or weekends (i.e., 200 participants having responses for weekdays and the other 200 participants having responses for weekends).\n\nA plot of the data and descriptive statistics are provided below.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](quiz-ch6_files/figure-pdf/unnamed-chunk-1-1.pdf)\n:::\n\n::: {.cell-output-display}\n\n\n|Type of Day | Mean|   SD| Count|\n|:-----------|----:|----:|-----:|\n|Weekday     | 62.1| 25.3|   200|\n|Weekend     | 83.0| 29.8|   200|\n\n\n:::\n:::\n\n\nAnswer each of the following questions.\n\n1)  Identify the population of interest.\n2)  Identify the explanatory variable and classify the type of variable.\n3)  Identify the response variable and classify the type of variable.\n4)  Describe the distributions of the data. What do you notice?\n5)  Would the results of this study be able to be generalized? Why or why not?\n6)  Would the results of this study be able to determine a cause-and-effect relationship? Why or why not?\n7)  Identify any issues with the design of this experiment.\n8)  Define the parameter of interest and assign the appropriate symbol.\n9)  Set up the null and alternative hypothesis, in symbols, based on the research question.\n10) Are the validity conditions met for the theory approach? Explain why or why not.\n11) Calculate the standard error.\n12) Calculate either the standardized statistic or the 95% confidence interval. Does this reject or fail to reject the null hypothesis?\n13) Write a conclusion for the research question.\n",
+    "supporting": [
+      "quiz-ch6_files/figure-pdf"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
