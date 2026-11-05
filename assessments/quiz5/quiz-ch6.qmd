@@ -1,9 +1,18 @@
 ---
-title: "Chapter 6 Quiz"
-subtitle: "STAT 218"
 format: 
   html: default
-  pdf: default
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 218}
+        \chead{Chapter 6 Quiz}
+        \rhead{Fall 2026}
+        \rfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
 ---
 
 A data analyst at YouTube is interested in determining whether users watch more videos on weekends than on weekdays. To investigate this question, the analyst randomly selects 400 YouTube users from the platform's user population who watch YouTube on a daily basis. Using each user's viewing history over the previous month, the analyst calculates the average number of minutes each user spends watching YouTube per day on weekdays and weekends. The analyst then randomly assigns each participant so that the number of minutes watched is averaged for weekdays or weekends (i.e., 200 participants having responses for weekdays and the other 200 participants having responses for weekends).
