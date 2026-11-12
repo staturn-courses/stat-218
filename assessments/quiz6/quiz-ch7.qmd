@@ -1,0 +1,46 @@
+---
+format: 
+  pdf: 
+    include-in-header:
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \lhead{STAT 218}
+        \chead{Chapter 7 Quiz}
+        \rhead{Fall 2026}
+        %\rfoot{\thepage}
+        \setlength{\headheight}{14pt}
+    fig-align: center
+---
+
+Suppose that you are working as a statistical consultant and a client brings his study to you to analyze. In the initial meeting, he explains how he is comparing two fertilizers, FastGrow and Prairie-dise, on the growth height of Bottlebrush Grass, a prairie grass found in the Midwest. For the study, he describes that the plants were randomly assigned a fertilizer and then planted into pots inside of a greenhouse. The height of the plant at the end of the growing season was recorded. The study is trying to determine if a difference exists between the two fertilizers.
+
+1. What is the population of interest?
+2. What is the explanatory variable? What type of variable is this?
+3. What is the response variable? What type of variable is this?
+4. Would we be able to generalize the results to the population of interest? Explain why.
+5. Can the study determine a cause-and-effect relationship between the explanatory and response variable? Explain why?
+
+
+The client provided the following information from the study. You may assume that the responses look normally distributed.
+
+| |	FastGrow	| Prairie-dise |	Difference |
+| :---: | :---: | :---: | :---: |
+| Mean	| 30.06 |	30.13 |	-0.07 |
+| Standard Deviation (SD)	| 0.54	| 0.49 |	0.12 |
+| Sample Size (n)	| 50 |	50 |	50 |
+
+6. Define the parameter of interest and assign the appropriate symbol.
+7. Set up the null and alternative hypothesis, in symbols, based on the research question.
+8. Calculate the standard error.
+9. Calculate either the standardized statistic or the 95% confidence interval. Does this reject or fail to reject the null hypothesis?
+
+In your follow up meeting with the client, you find out that the client did not correctly convey the design of the study. In actuality, the seeds were paired up by similar initial weights and then randomly assigned a fertilizer within each pair. Since the design is different than your initial analysis, you sigh and work on the correct analysis.
+
+10. Define the parameter of interest and assign the appropriate symbol.
+11. Set up the null and alternative hypothesis, in symbols, based on the research question.
+12. Calculate the standard error.
+13. Calculate either the standardized statistic or the 95% confidence interval. Does this reject or fail to reject the null hypothesis?
+14. Which analysis would you provide to the client? Explain why.
+15. Using the correct analysis, write a conclusion for the research question. 
